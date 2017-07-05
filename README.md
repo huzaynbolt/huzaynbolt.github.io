@@ -1,2 +1,2 @@
 # huzaynbolt.github.io
-SAEDConnect officila site
+SAEDConnect official site
