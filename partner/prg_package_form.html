@@ -1,0 +1,535 @@
+<!doctype html>
+<html lang="en-US" class="no-js">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Program packages  | SAED Partner </title>
+    <link rel="icon" href="../img/favicon.ico" type="image/x-icon">
+    <link href="../css/font-awesome.css" rel="stylesheet">
+    <link href="../css/select2.min.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="../css/datepicker.min.css">
+    <link href="../css/base.min.css" rel="stylesheet" type="text/css">
+    <link href="../css/style.css" rel="stylesheet" type="text/css">
+    <link href="../css/admin_area.css" rel="stylesheet" type="text/css">
+    <script src="../js/modernizr.js"></script> <!-- Modernizr -->
+</head>
+
+<body class="admin_user">
+    
+    <div class="modal fade in" id="contact_info">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                </div>
+                <div class="modal-body">
+                   <div class="content_header">
+                       <h4 class="title">Create new contact</h4>
+                       <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                    <i class="fa fa-times"></i></button>
+                   </div>
+                    <div class="content-panel">
+                        <p>Add a new contact person.</p>
+                        <form action="">
+                            <!--You can preload all form fields with the country default and the user can change at will.-->
+                            <div class="form-group">
+                                <label class="control-label">Name of Contact Person</label>
+                                <input type="text" class="form-control" placeholder="Full name of your contact"/>
+                            </div>
+                            <div class="form-group">
+                                <label class="control-label">Contact Address</label>
+                                <textarea rows="3" class="form-control" placeholder="Address of contact person"></textarea>
+                            </div>
+                            <div class="form-group">
+                                <label class="control-label">Telephone Number</label>
+                                <input type="tel" class="form-control" placeholder="2348055738799"/>
+                            </div>
+                            <div class="form-group">
+                                <label class="control-label">Email address</label>
+                                <input type="tel" class="form-control" placeholder="email@mycompany.com"/>
+                            </div>
+                            <div class="action_btn text-center">
+                                <button type="button" data-dismiss="modal" class="btn btn-default btn-rounded">Cancel</button>
+                                <button type="submit" class="btn btn-rounded btn-primary">Save Contact</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade in" id="post_states">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-body">
+                   <div class="content_header">
+                       <h4 class="title">Select states</h4>
+                       <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                    <i class="fa fa-times"></i></button>
+                   </div>
+                    <div class="content-panel">
+                        <p class="bold-font">Select the states you want to post this articles to.</p>
+                        <div class="multi_sel_item">
+                            <label class="checkbox-inline control_item" for="user_all">
+                                <input type="checkbox" id="user_all">
+                                <span>All states</span>
+                            </label>
+                            <label class="checkbox-inline control_item">
+                                <input type="checkbox">
+                                <span>State Name</span>
+                            </label>
+                            <label class="checkbox-inline control_item">
+                                <input type="checkbox">
+                                <span>State Name</span>
+                            </label>
+                            <label class="checkbox-inline control_item">
+                                <input type="checkbox">
+                                <span>State Name</span>
+                            </label>
+                            <label class="checkbox-inline control_item">
+                                <input type="checkbox">
+                                <span>State Name</span>
+                            </label>
+                            <label class="checkbox-inline control_item">
+                                <input type="checkbox">
+                                <span>State Name</span>
+                            </label>
+                            <label class="checkbox-inline control_item">
+                                <input type="checkbox">
+                                <span>State Name</span>
+                            </label>
+                            <label class="checkbox-inline control_item">
+                                <input type="checkbox">
+                                <span>State Name</span>
+                            </label>
+                            <label class="checkbox-inline control_item">
+                                <input type="checkbox">
+                                <span>State Name</span>
+                            </label>
+                            <label class="checkbox-inline control_item">
+                                <input type="checkbox">
+                                <span>State Name</span>
+                            </label>
+                            <label class="checkbox-inline control_item">
+                                <input type="checkbox">
+                                <span>State Name</span>
+                            </label>
+                            <label class="checkbox-inline control_item">
+                                <input type="checkbox">
+                                <span>State Name</span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary btn-rounded">Done</button>
+                    <button type="button" class="btn btn-default btn-rounded" data-dismiss="modal">Cancel</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <header role="banner">
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+            <div class="container">
+                <div class="logo">
+                    <a href="index.html" class="logo-link">
+                        <span class="sr-only">NYSC SAEDConnect</span>
+                        <img src="../img/partner_logo.png" alt="SAED Partner">
+                    </a>
+                </div>
+
+                <nav class="sec-nav ">
+                    <ul class="account_info">
+                        <li class="dropdown accounts">
+                            <a href="#" data-toggle="dropdown" class="navbar_link_item dropdown-toggle">
+                            <span class="profile_img">
+                                <img src="../img/user_avis/3.jpg" alt="Ikenna David">
+                            </span>
+                            <span class="profile_name">Jane Doe</span>
+                            <i class="fa fa-chevron-circle-down"></i></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="user_profile.html"><i class="fa fa-user"></i>My Profile</a></li>
+                                <li><a href="../login.html"><i class="fa fa-power-off"></i>Log Out</a></li>
+                            </ul>
+                        </li>
+                        <li class="mail_box">
+                            <a href="mail_box.html" class="" data-title="Mailbox">
+                                <i class="fa fa-envelope"></i>
+                                <span class="badge">3
+                                </span>
+                            </a>
+                        </li>
+                        <li class="nav_trigger">
+                            <a class="primary-nav-trigger" title="Open Menu" href="#0" data-effect="st-effect-1">
+                                <span class="menu-icon"></span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <div class="user_info_banner">
+        <div class="container clearfix">
+            <h4 class="title">
+                Welcome,
+                <span class="value">Sule Zankara and Sons Cow and Milk making industry</span>
+            </h4>
+            <div class="float_item">
+                <span title="My Partner ID">
+                    <span class="label">Partner ID</span>
+                    <span class="value">#######</span>
+                </span>
+            </div>
+        </div>
+    </div>
+
+    <main class="sd-main-content admin_content">
+
+        <!--Insert offcanvas nav here-->
+        <nav class="st-menu">
+        </nav>
+
+        <div class="content_body">
+            <div class="container">
+
+                <!--Right Sidebar-->
+                <aside class="aside_content">
+                    <div class="content_wrapper">
+                       <div class="pane_widgets">
+                            <header class="pane_heading">
+                                <h2 class="pane_title">Where do you want to go?</h2>
+                            </header>
+                            <ul class="pane_options nav_links">
+                                <li class="nav_link_main ">
+                                    <div class="link_wrapper">
+                                        <a href="part_welcome.html" class="option_label">Welcome</a>
+                                        <i class="option_icon fa fa-info" title="Your welcome page to the saedconnect platform." data-toggle="tooltip" data-placement="bottom"></i>
+                                    </div>
+                                </li>
+                                <li class="nav_link_main ">
+                                    <div class="link_wrapper">
+                                        <a href="dashboard.html" class="option_label">My Dashboard</a>
+                                        <i class="option_icon fa fa-info" title="See all your activities on the platform in one place" data-toggle="tooltip" data-placement="bottom"></i>
+                                    </div>
+                                </li>
+                                <li class="nav_link_main">
+                                    <div class="link_wrapper">
+                                        <a href="#int_links" data-toggle="collapse" class="option_label">Submit a Program Proposal</a>
+                                        <i class="option_icon fa fa-info" title="Manage your corps empowerment interventions" data-toggle="tooltip" data-placement="bottom"></i>
+                                    </div>
+                                    <div class="panel-collapse collapse" id="int_links">
+                                        <ul class="link_children">
+                                            <li class=""><a href="str_support_application.html">Offer a Business Opportunity</a></li>
+                                            <li><a href="str_support_application.html">Host a Competition</a></li>
+                                            <li><a href="str_support_application.html">Offer a Scholarship</a></li>
+                                            <li><a href="str_support_application.html">Offer Loans, Grants or equity investments</a></li>
+                                            <li><a href="str_support_application.html">Host an Impact Programme</a></li>
+                                            <li><a href="str_support_application.html">Train SAED Program Managers</a></li>
+                                            <li><a href="str_support_application.html">Donate an Item</a></li>
+                                            <li><a href="str_support_application.html">Run a Sensitization Campaign</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="nav_link_main">
+                                    <div class="link_wrapper">
+                                        <a href="admin_memos.html" class="option_label">My Memos</a>
+                                        <i class="option_icon fa fa-info" title="Find all memos addressed to you from the SAED directorate" data-toggle="tooltip" data-placement="bottom"></i>
+                                    </div>
+                                </li>
+                                <li class="nav_link_main">
+                                    <div class="link_wrapper">
+                                        <a href="articles_management.html" class="option_label">Post to the Empower Blog</a>
+                                        <i class="option_icon fa fa-info" title="Share your wisdom and experience with corps members to inspire and motivate them on their journey." data-toggle="tooltip" data-placement="bottom"></i>
+                                    </div>
+                                </li>
+                                <li class="nav_link_main">
+                                    <div class="link_wrapper">
+                                        <a href="tr_interventions.html" class="option_label req_verified">My Trainings</a>
+                                        <i class="option_icon fa fa-info" title="Offer trainings to corps members in any state, nationwide;" data-toggle="tooltip" data-placement="bottom"></i>
+                                    </div>
+                                </li>
+                                <li class="nav_link_main active">
+                                    <div class="link_wrapper">
+                                        <a href="part_programs.html" class="option_label">My Approved Programs</a>
+                                        <i class="option_icon fa fa-info" title="See all your approved proposals which have been passed as programmes." data-toggle="tooltip" data-placement="bottom"></i>
+                                    </div>
+                                </li>
+                                <li class="nav_link_main">
+                                    <div class="link_wrapper">
+                                        <a href="announcements.html" class="option_label">Announcements</a>
+                                        <i class="option_icon fa fa-info" title="Manage your transaction record and spending" data-toggle="tooltip" data-placement="bottom"></i>
+                                    </div>
+                                </li>
+                                <li class="nav_link_main">
+                                    <div class="link_wrapper">
+                                        <a href="sub_feedback.html" class="option_label">Give Feedback</a>
+                                        <i class="option_icon fa fa-info" title="Manage your transaction record and spending" data-toggle="tooltip" data-placement="bottom"></i>
+                                    </div>
+                                </li>
+                                <li class="nav_link_main">
+                                    <div class="link_wrapper">
+                                        <a href="user_profile.html" class="option_label">My Profile Settings</a>
+                                        <i class="option_icon fa fa-info" title="Manage your transaction record and spending" data-toggle="tooltip" data-placement="bottom"></i>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>  
+                    </div>
+                </aside>
+
+                <article class="main_content">
+                    <div class="content_wrapper clearfix">
+
+                        <header class="pane_heading main_callout text-center">
+                            <h2 class="pane_title color-primary">Program Title goes here</h2>
+                            <!--Use this to display the name of the training the user is editing-->
+                            <h4 class="subtitle hidden">Title of the program package you are editing</h4>
+                        </header>
+
+                        <!--Main content view-->
+                        <section class="content_main">
+                            <div class="content_wrapper">
+                                <article class="content_preview">
+
+                                    <!--  Show this after the package has been save or created successfully. -->
+                                    <div class="default_content hidden post_result ">
+                                        <div class="def_wrapper">
+                                            <div class="intro-text centered">
+                                                <div class="def_img">
+                                                    <img src="../img/app_icon/success.png" alt="Oops, Empty">
+                                                </div>
+                                                <h4 class="title color-primary">Hurray! Package Created</h4>
+                                                <p class="subtitle">Your package <span class="font_bold">Package name here</span> has been created and posted to <span class="font_bold">Ogun State</span>.</p>
+                                                <div class="action_btn">
+                                                    <a href="prog_packages.html" class="btn btn-card  btn-rounded">
+                                                        <i class="fa fa-arrow-left"></i>Back to Packages
+                                                    </a>
+                                                    <!--  Hide this, and show the package creation form -->
+                                                    <button class="btn btn-primary btn-rounded">Create another</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="content_inner ">
+                                        <div class="step_form">
+
+                                            <header class="wizard_heading">
+                                                <h3 class="pane_title color-primary font_bold">Add/Edit Program Packages</h3>
+                                                <p class="help-block">A program package contains more specific details about the various iterations of the program that is available, or allows you offer slight variations of the program in different locations as the case may be. If you program has only one iteration, please create only only one package for the program.</p>
+                                            </header>
+
+                                            <div class="pane_item">
+
+                                                <form action="">
+                                                    <div class="form-group">
+                                                        <label class="control-label">Package title</label>
+                                                        <input type="text" class="form-control">
+                                                        <p class="help-block">e.g. Early Bird Registration</p>
+                                                    </div>
+                                                    
+                                                    <div class="form-group">
+                                                        <label class="control-label">Package Description</label>
+                                                        <textarea rows="8" class="form-control html_editor" placeholder="Please provide the corps member needs to know about this package"></textarea>
+                                                    </div>
+                                                       
+                                                    <div class="form-group">
+                                                        <label class="control-label">Package Terms</label>
+                                                        <textarea rows="5" class="form-control html_editor" placeholder="Any special condition or constraint the user should be aware of."></textarea>
+                                                    </div>
+                                                    
+                                                    <fieldset>
+                                                        <h4 class="form-title color-primary">Duration</h4>
+                                                        <div class="form-horizontal">
+                                                            <div class="form-group col-sm-6">
+                                                                <label class="control-label">Start date</label>
+                                                                <input type="text" class="form-control date" placeholder="05/03/2017">
+                                                            </div>
+                                                            <!--Hide if duration is flexible-->
+                                                            <div class="col-sm-6 form-group">
+                                                                <label class="control-label">End Date</label>
+                                                                <input type="text" placeholder="DD/MM/YYYY" class="date form-control">
+                                                            </div>
+                                                        </div>
+                                                    </fieldset>
+                                                    
+                                                     <fieldset>
+                                                        <h3 class="form-title color-primary">Venue</h3>
+
+                                                        <div class="form-group">
+                                                            <label class="control-label">Address of Venue</label>
+                                                            <input type="text" class="form-control" placeholder="Address to the venue of your training or event"/>
+                                                            <p class="help-block">E.g Suite 1, Adamawa close, off Nnamdi Azikwe road, Garki, Abuja.</p>
+                                                        </div>
+
+                                                        <!--Show for start date-->
+                                                        <div class="form-horizontal">
+                                                            <div class="col-sm-6 form-group">
+                                                                <label class="control-label">State</label>
+                                                                <select class="form-control">
+                                                                    <option selected>FCT</option>
+                                                                    <option value="">Lagos</option>
+                                                                    <option value="">Oyo</option>
+                                                                    <option value="">Rivers</option>
+                                                                    <option value="">Cross River</option>
+                                                                    <option value="">Kano</option>
+                                                                    <option value="">Kaduna</option>
+                                                                    <option value="">Sokoto</option>
+                                                                    <option value="">Kebbi</option>
+                                                                    <option value="">Niger</option>
+                                                                    <option value="">Ogun</option>
+                                                                </select>
+                                                                <p class="help-block">State where event will hold</p>
+                                                            </div>
+                                                            <div class="col-sm-6 form-group">
+                                                                <label class="control-label">LGA</label>
+                                                                <select class="form-control">
+                                                                    <option>AMAC</option>
+                                                                    <option>Gwagwalada</option>
+                                                                    <option>Karshi</option>
+                                                                    <option>Karo</option>
+                                                                    <option>Kuje</option>
+                                                                </select>
+                                                                <p class="help-block">Local Government</p>
+                                                            </div>
+                                                        </div>
+                                                    </fieldset>
+
+                                                    <fieldset>
+                                                        <h4 class="form-title color-primary">Package Fee <small class="bracket_enclosure color-grey">Select “Free” if you are not charging any fees</small></h4>
+                                                        <div class="form-horizontal">
+                                                            <div class="form-group col-sm-6">
+                                                                <div class="input-group">
+                                                                    <span class="input-group-addon">
+                                                                        <i class="naira"></i>
+                                                                    </span>
+                                                                    <input type="number" class="form-control" placeholder="Specify amount">
+                                                                </div>
+                                                            </div>
+                                                            <div class="form-group col-sm-6">
+                                                                <label for="free_er" class="radio-inline">
+                                                                    <input type="radio" checked id="free_er" name="en_cost">
+                                                                    <span>Free</span>
+                                                                </label>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="form-group">
+                                                            <label class="control-label">What does fee cover?</label>
+                                                            <textarea  rows="5" class="form-control" placeholder="E.g. materials,Souvenir(s), lunch, certificates etc. and what is excluded, which they will have to pay for separately?" ></textarea>
+                                                            <p class="help-block">E.g. course materials, lunch, certificates etc.</p>
+                                                        </div>
+                                                    </fieldset>
+                                                    
+                                                    <div class="form-group">
+                                                        <label class="control-label">Contact details for further enquiries</label>
+                                                        <a href="#contact_info" data-backdrop="static" data-toggle="modal" class="font_bold color-primary pull-right">
+                                                            <i class="fa fa-plus"></i> New Contact
+                                                        </a>
+                                                        <select class="form-control">
+                                                            <option>Select Contact</option>
+                                                            <option>Busola Aremu F</option>
+                                                            <option>Fortunate Adediwura</option>
+                                                            <option>Busola Aremu F</option>
+                                                            <option>Fortunate Adediwura</option>
+                                                        </select>
+                                                    </div>
+                                                    
+                                                    <div class="form-group">
+                                                        <label class="control-label">Enrollment deadline</label>
+                                                        <input type="text" class="form-control date" placeholder="25/03/2017">
+                                                        <p class="help-block">This is the day when this package would cease to be available to corps members</p>
+                                                    </div>
+                                                    
+                                                    <div class="form-group">
+                                                        <label class="control-label">How to Apply</label>
+                                                        <textarea rows="5" class="form-control" placeholder="Please state the guildlines for applying for this package"></textarea>
+                                                    </div>
+                                                    
+                                                    <div class="form-group">
+                                                        <label class="control-label">Next step after Application</label>
+                                                        <textarea rows="5" class="form-control" placeholder="Please state what an applicant should do after applying for this package."></textarea>
+                                                    </div>
+
+                                                    <div class="form-group">
+                                                        <label class="control-label">General Remarks</label>
+                                                        <textarea  rows="5" class="form-control" placeholder="Provide any other information that you think will be help full for prospective applicants of this package." ></textarea>
+                                                    </div>
+
+                                                    <div class="action_btn text-center">
+                                                        <a href="prog_packages.html" class="btn btn-rounded btn-card">
+                                                            Cancel
+                                                        </a>
+                                                        <button type="submit" class="btn btn-rounded btn-grey-light">
+                                                            Save to Draft
+                                                        </button>
+                                                        <button type="submit" class="btn btn-rounded btn-primary">
+                                                            Send for Approval
+                                                        </button>
+                                                    </div>
+
+                                                </form>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </article>
+                            </div>
+                        </section>
+
+                    </div>
+                </article>
+
+            </div>
+        </div>
+    </main>
+
+    <script src="../js/jquery-2.1.4.js"></script>
+    <script src="../js/base.min.js"></script>
+    <script src="../js/site_nav.js"></script>
+    <script src="../js/icheck.min.js"></script>
+    <script src="../js/tinymce/tinymce.min.js"></script>
+    <script src="../js/datepicker.min.js"></script>
+    <script src="../js/main.js"></script>
+
+    <script>
+        $(document).ready(function(){
+            
+             tinymce.init({
+                selector: 'textarea.html_editor',
+                toolbar: 'undo redo | bold italic underline | bullist numlist table | link image',
+                menubar: '',
+                theme: 'modern',
+                statusbar: false,
+                plugins: ['advlist autolink lists link image charmap print preview anchor',
+                    'searchreplace visualblocks code fullscreen',
+                    'insertdatetime media table contextmenu paste code'
+                ],
+                content_css: '../css/style.css',
+                browser_spellcheck: true,
+                schema: 'html5',
+            });
+
+             $('input').iCheck({
+                checkboxClass: 'icheckbox_minimal-green',
+                radioClass: 'iradio_minimal-green'
+            });
+
+            $('.date').datepicker({
+                format: "D d, M, yyyy",
+                multidate: false,
+                autoclose: true,
+            });
+        });
+    </script>
+
+</body>
+
+</html>

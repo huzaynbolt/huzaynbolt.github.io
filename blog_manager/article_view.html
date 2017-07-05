@@ -1,0 +1,380 @@
+<!doctype html>
+<html lang="en-US" class="no-js">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Post title here | Saed Admin </title>
+    <link rel="icon" href="../img/favicon.ico" type="image/x-icon">
+    <link href="../css/font-awesome.css" rel="stylesheet">
+    <link href="../css/base.min.css" rel="stylesheet" type="text/css">
+    <link href="../css/style.css" rel="stylesheet" type="text/css">
+    <link href="../css/admin_area.css" rel="stylesheet" type="text/css">
+    <script src="../js/modernizr.js"></script>
+    <!-- Modernizr -->
+</head>
+
+<body class="admin_user">
+    
+    <div class="modal fade in" id="adm_remarks">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-body">
+                   <div class="content_header">
+                       <h4 class="title">Decline Remarks</h4>
+                       <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                    <i class="fa fa-times"></i></button>
+                   </div>
+                    <div class="content-panel">
+                        <p class="help-block color-inverse">Please state why you are rejecting this post.</p>
+                        <form action="">
+                            <div class="form-group">
+                                <textarea rows="10" class="form-control" placeholder="Enter remarks here"></textarea>
+                            </div>    
+                            <div class="action_btn text-center">
+                                <button type="submit" class="btn btn-primary btn-rounded">
+                                Confirm</button>
+                                <button type="button" data-dismiss="modal"  class="btn btn-default btn-rounded">Cancel</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="modal fade in" id="adm_request">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                </div>
+                <div class="modal-body">
+                   <div class="content_header">
+                       <h4 class="title">Request for Clarification</h4>
+                       <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                    <i class="fa fa-times"></i></button>
+                   </div>
+                    <div class="content-panel">
+                        <form action="">
+                            <div class="form-group">
+                                <label class="control-label">Select Recipient</label>
+                                <select class="form-control">
+                                    <option>Partner</option>
+                                    <option>State Cordinator</option>
+                                    <option>State SAED Head</option>
+                                    <option>National SAED Office</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label class="control-label">Request clarification on?</label>
+                                <div class="control_holder">
+                                    <label for="obj_package" class="radio-inline">
+                                        <input type="radio" id="obj_package" name="rq_obj" checked>
+                                        <span>This Package</span>
+                                    </label>
+                                    <label for="obj_intervention" class="radio-inline">
+                                        <input type="radio" id="obj_intervention" name="rq_obj">
+                                        <span>Intervention</span>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="" class="control-label">Request Title</label>
+                                <input type="text" class="form-control" placeholder="Short title for your request">
+                                <p class="help-block">Clarification on pricing</p>
+                            </div>
+                            <div class="form-group">
+                                <label class="control-label">Question</label>
+                                <textarea rows="5" class="form-control" placeholder="I need clarification on ..."></textarea>
+                                <p class="help-block">Give more explanation on what you seek clarification on.</p>
+                            </div>
+                            <div class="action_btn text-center">
+                                <button type="button" data-dismiss="modal" class="btn btn-default btn-rounded">Cancel</button>
+                                <button type="submit" class="btn btn-rounded btn-primary">Submit Request</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+     
+    <header role="banner">
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+            <div class="container">
+                <div class="logo">
+                    <a href="index.html" class="logo-link">
+                        <span class="sr-only">NYSC SAEDConnect</span>
+                        <img src="../img/admin_logo.png" alt="SAED Partner">
+                    </a>
+                </div>
+                                                
+                <nav class="sec-nav ">
+                    <ul class="account_info">
+                        <li class="dropdown accounts">
+                            <a href="#" data-toggle="dropdown" class="navbar_link_item dropdown-toggle">
+                            <span class="profile_img">
+                                <img src="../img/user_avis/3.jpg" alt="Ikenna David">
+                            </span>
+                            <span class="profile_name">Jane Doe</span>
+                            <i class="fa fa-chevron-circle-down"></i></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="user_profile.html"><i class="fa fa-user"></i>My Profile</a></li>
+                                <li><a href="../login.html"><i class="fa fa-power-off"></i>Log Out</a></li>
+                            </ul>
+                        </li>
+                        <li class="mail_box">
+                            <a href="mail_box.html" class="" data-title="Mailbox">
+                                <i class="fa fa-envelope"></i>
+                                <span class="badge">3
+                                </span>
+                            </a>
+                        </li>
+                        <li class="nav_trigger">
+                            <a class="primary-nav-trigger" title="Open Menu" href="#0" data-effect="st-effect-1">
+                                <span class="menu-icon"></span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    
+    <main class="sd-main-content admin_content">
+        <!--Insert offcanvas nav here-->
+        <nav class="st-menu"> </nav>
+        
+        <div class="content_body">
+            <div class="container">
+
+                <!--Right Sidebar-->
+                <aside class="aside_content">
+                    <div class="content_wrapper">
+                       <div class="pane_widgets">
+                            <header class="pane_heading">
+                                <h2 class="pane_title">Where do you want to go?</h2>
+                            </header>
+                            <ul class="pane_options nav_links">
+                                <li class="nav_link_main">
+                                    <div class="link_wrapper">
+                                        <a href="dashboard.html" class="option_label">Dashboard</a>
+                                        <i class="option_icon fa fa-info" title="Moderate posts make by SAED Partners" data-toggle="tooltip" data-placement="bottom"></i>
+                                    </div>
+                                </li>
+                                <li class="nav_link_main">
+                                    <div class="link_wrapper">
+                                        <a href="#memo_links" data-toggle="collapse" class="option_label">My Memos</a>
+                                        <i class="option_icon fa fa-info" title="Manage your corps empowerment interventions" data-toggle="tooltip" data-placement="bottom"></i>
+                                    </div>
+                                    <div class="panel-collapse collapse" id="memo_links">
+                                        <ul class="link_children">
+                                            <li><a href="adm_memo.html">All Memos <span class="badge badge-default">12</span></a></li>
+                                            <li><a href="adm_part_resp.html">Awaiting Recipient's Response<span class="badge badge-default">2</span></a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="nav_link_main active">
+                                    <div class="link_wrapper">
+                                        <a href="#act_links" data-toggle="collapse" class="option_label">Article Manager</a>
+                                        <i class="option_icon fa fa-info" title="Manage and write empowerment posts that goes to the corps member community" data-toggle="tooltip" data-placement="bottom"></i>
+                                    </div>
+                                    <div class="panel-collapse collapse" id="act_links">
+                                        <ul class="link_children">
+                                            <li><a href="articles_update.html">Un-Published Articles</a></li>
+                                            <li><a href="empower_posts.html">Published Articles</a></li>
+                                            <li class="active"><a href="my_posts.html">My Articles</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="nav_link_main">
+                                    <div class="link_wrapper">
+                                        <a href="user_profile.html" class="option_label">My Profile Settings</a>
+                                        <i class="option_icon fa fa-info" title="Manage your sign in details" data-toggle="tooltip" data-placement="bottom"></i>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div> 
+                    </div>
+                </aside>
+                
+                <article class="main_content">
+                    <div class="content_wrapper clearfix">
+                       
+                        <header class="pane_heading main_callout bg-black">
+                            <h5 class="act_label font_regular color-secondary">Empower Blog:</h5>
+                            <h2 class="pane_title color-white">
+                                How to make it in life without stress
+                                <span class="bracket_enclosure">BLG12231</span>
+                            </h2>
+                            <ul class="meta_details color-grey-light">
+                                <li class="meta_item">
+                                    <span class="label">By</span>
+                                    <span class="value">
+                                        <a href="about_part.html" target="_blank">
+                                            Dosky Multi-Ventures
+                                            <i class="bracket_enclosure">
+                                                17c/452/221
+                                            </i>
+                                        </a>
+                                    </span>
+                                </li>
+                                <li class="meta_item">
+                                    <span class="label">Date:</span>
+                                    <span class="value"><time>24/01/2017</time></span>
+                                </li>
+                            </ul>
+                        </header>
+                       
+                        <!--Left Sidebar-->
+                        <aside class="content_aside"> 
+                            <span class="panel_handle">Menu</span>
+                            <div class="content_wrapper">
+                                <header class="pane_heading">
+                                    <div class="centered">
+                                        <i class="title_icon">
+                                            <img src="../img/icons/help_black.png" alt="Platform Management">
+                                        </i>
+                                        <h2 class="pane_title color-primary">Article Manager</h2>
+                                    </div>
+                                </header>
+                                <div class="content_header header_secondary">
+                                    <h5 class="font_bold">Post ID:#XXXXX</h5>
+                                </div>
+                                
+                                <div class="section_ctx_menu">
+                                    <a href="articles_update.html" class="btn btn-secondary btn-block"> <i class="fa fa-arrow-left"></i> Back to Articles </a>
+                                </div>
+                                <div class="section_ctx_menu">
+                                    <ul class="ctx_menu">
+                                        <li class="active">
+                                            <a href="article_view.html">Post Details</a>
+                                        </li>
+                                        <li>
+                                            <a href="post_memos.html">Memo Comments</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </aside>
+                        
+                        <!--Main content view-->
+                        <section class="content_main">
+                            <div class="content_wrapper">
+                                <article class="content_preview">
+                                   
+                                    <header class="context_banner">
+                                        <div class="item_wrapper">
+                                           <div class="banner_content">
+                                                <h4 class="title title_md color-primary">Manage this article</h4>
+                                                <div class="banner_cto dropdown">
+                                                    <button class="btn btn-secondary btn-rounded dropdown-toggle" data-toggle="dropdown">
+                                                        Admin Actions <i class="fa fa-caret-down"></i> 
+                                                    </button>
+                                                    <ul class="dropdown-menu">
+                                                        <!--Only visible for posts that have not been approved-->
+                                                        <li><a href="#">Publish Post</a></li>
+                                                        <li><a href="#adm_request" data-toggle="modal">Add a Comment</a></li>
+                                                        <li><a href="post_memos.html">View Memo Comments</a></li>
+                                                        <!--Only visible if post has not been published-->
+                                                        <li><a href="#adm_remarks" data-toggle="modal">Reject Post</a></li>
+                                                        <!--only visible if post has been published only-->
+                                                        <li><a href="#" class="hidden">Delete Post</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </header>
+                                        
+                                    <div class="content_inner">
+                                        
+                                        <!--Visible if the post had previously been rejected -->
+                                        <article class="tile tile_full hidden tile-alert">
+                                            <div class="tile_wrapper">
+                                                <span class="label">Remark</span>
+                                                <p class="value">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis nihil voluptates maxime quisquam omnis repellendus repudiandae.</p>
+                                            </div>
+                                        </article>
+                                         
+                                        <article class=" post_container">
+                                            <div class="entry_header">
+                                                <h1 class="entry_title font_regular">
+                                                   How to make it in life without stress
+                                                </h1>
+                                                <div class="entry_meta">
+                                                    <span class="meta_prop meta_prop_date">
+                                                        <i class="fa fa-calendar"></i>
+                                                        <a href="#" rel="bookmark">
+                                                            <time class="entry-date published" datetime="2016-11-29T09:16:12+00:00">
+                                                                Nov 29, 2016
+                                                            </time>
+                                                        </a>
+                                                    </span>
+                                                    <span class="meta_prop meta_prop_cat" title="Enterpreneurship, Inspiration, Crafts" data-toggle="tooltip">
+                                                        <i class="label">In</i>
+                                                        <a href="#" rel="category tag">Enterpreneurship, +2 more</a>
+                                                    </span>
+                                                </div>
+                                            </div>
+
+                                            <div class="post_body">
+                                                <img src="../img/banners/article_image.jpg" alt="image of a paint">
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente sint velit maxime.</p>
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente sint velit maxime, quo eum repellat ab in quam, adipisci fugiat laborum minus voluptatum deserunt eligendi qui ipsa voluptatibus fuga tempora.</p>
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente sint velit maxime, quo eum repellat ab in quam, adipisci fugiat laborum minus voluptatum deserunt eligendi qui ipsa voluptatibus fuga tempora.</p>
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente sint velit maxime, quo eum repellat ab in quam, adipisci fugiat laborum minus voluptatum deserunt eligendi qui ipsa voluptatibus fuga tempora.</p>
+                                            </div>
+
+                                            <div class="post_footer">
+                                                <div class="widget">
+                                                   <h5 class="widget_title">Featured in</h5>
+                                                    <ul class="select_preview">
+                                                        <li class="selected_item">
+                                                            <div class="item_wrapper clearix">
+                                                                <span class="item_label">
+                                                                    <i class="item_main">Agriculture</i>
+                                                                </span>
+                                                            </div>
+                                                        </li>
+                                                        <li class="selected_item">
+                                                            <div class="item_wrapper clearix">
+                                                                <span class="item_label">
+                                                                    <i class="item_main">Enterpreneurship</i>
+                                                                </span>
+                                                            </div>
+                                                        </li>
+                                                    </ul>
+                                                </div>                                            
+                                                <div class="post_comments" id="#comments">
+                                                    <h4 class="feature_title">
+                                                        <i class="icon comments icon-sm"></i>
+                                                        25 Comments
+                                                    </h4>
+                                                    <div>
+                                                        <p>Insert Discuss comment here</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </article>
+                                    </div>
+                                </article>
+                            </div>
+                        </section>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </main>
+    <!-- Javascript starts here-->
+    <script src="../js/jquery-2.1.4.js"></script>
+    <script src="../js/base.min.js"></script>
+    <script src="../js/site_nav.js"></script>
+    <script src="../js/main.js"></script>
+    
+</body>
+
+</html>

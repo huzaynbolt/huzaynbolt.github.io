@@ -1,0 +1,768 @@
+<!doctype html>
+<html lang="en-US" class="no-js">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Welcome to SAEDConnect </title>
+    <link rel="icon" href="../img/favicon.ico" type="image/x-icon">
+    <link href="../css/font-awesome.css" rel="stylesheet">
+    <link href="../css/base.min.css" rel="stylesheet" type="text/css">
+    <link href="../css/style.css" rel="stylesheet" type="text/css">
+    <link href="../css/admin_area.css" rel="stylesheet" type="text/css">
+    <script src="../js/modernizr.js"></script> <!-- Modernizr -->
+</head>
+
+<body class="admin_user">
+        
+    <div class="modal fade in" id="part_verification">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                </div>
+                <div class="modal-body">
+                   <div class="content_header">
+                       <h4 class="title">Get Verified</h4>
+                       <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                    <i class="fa fa-times"></i></button>
+                   </div>
+                    <div class="content-panel">
+                        <div class="grid_holder">
+                           <h3 class="title color-primary">How to get verified</h3>
+                            <p class="subtitle">To be verified, you need to visit a SAED officer in any state or your choice with proof of your credibility and capacity to offer trainings to the Corps member community. Select a state where you will like to be verified.</p>
+                            
+                            <div class="step_form">
+                                <form action="">
+                                    <div class="form-group form_mng">
+                                        <label class="control-label color-primary">Select your preferred State</label>
+                                        <select class="form-control">
+                                           <!--Set partner state as default-->
+                                            <option>FCT</option>
+                                            <option>Lagos</option>
+                                            <option>Kaduna</option>
+                                            <option>Kano</option>
+                                            <option>Kogi</option>
+                                            <option>Zamfara</option>
+                                            <option>Rivers</option>
+                                            <option>Cross River</option>
+                                        </select>
+                                        <p class="help-block">If you are an existing trainer, select the state where you currently train so you can be easily verified.</p>
+                                    </div>
+                                    <div class="form-group">
+                                        <button type="Submit" class="btn btn-rounded btn-secondary">Apply</button>
+                                    </div>
+                                </form>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+         
+    <header role="banner">
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+            <div class="container">
+                <div class="logo">
+                    <a href="index.html" class="logo-link">
+                        <span class="sr-only">NYSC SAEDConnect</span>
+                        <img src="../img/partner_logo.png" alt="SAED Partner">
+                    </a>
+                </div>
+                                                
+                <nav class="sec-nav ">
+                    <ul class="account_info">
+                        <li class="dropdown accounts">
+                            <a href="#" data-toggle="dropdown" class="navbar_link_item dropdown-toggle">
+                            <span class="profile_img">
+                                <img src="../img/user_avis/3.jpg" alt="Ikenna David">
+                            </span>
+                            <span class="profile_name">Sule Zankara</span>
+                            <i class="fa fa-chevron-circle-down"></i></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="user_profile.html"><i class="fa fa-user"></i>My Profile</a></li>
+                                <li><a href="user_profile.html"><i class="fa fa-gears"></i>My Account</a></li>
+                                <li><a href="../login.html"><i class="fa fa-power-off"></i>Log Out</a></li>
+                            </ul>
+                        </li>
+                        <li class="mail_box">
+                            <a href="mail_box.html" class="" data-title="Mailbox">
+                                <i class="fa fa-envelope"></i>
+                                <span class="badge">3
+                                </span>
+                            </a>
+                        </li>
+                        <li class="nav_trigger">
+                            <a class="primary-nav-trigger" title="Open Menu" href="#0" data-effect="st-effect-1">
+                                <span class="menu-icon"></span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+       
+    <div class="user_info_banner">
+        <div class="container clearfix">
+            <h4 class="title">
+                Welcome,
+                <span class="value">Sule Zankara and Sons Cow and Milk making industry</span>
+                <!--Use the following classes to change the verified control: st_pending > Pendn verification, 
+                st_verified > Verified, st_default > not_verified-->
+                <span class="user_status st_default">
+                   <i class="icon"></i>
+                   <span class="st_label"></span>
+               </span>
+            </h4>
+            <div class="float_item">
+                <span title="My Partner ID">
+                    <span class="label">Partner ID</span>
+                    <span class="value">#######</span>
+                </span>
+            </div>
+        </div>
+    </div>
+        
+    <main class="sd-main-content admin_content">
+       
+        <!--Insert offcanvas nav here--> 
+        <nav class="st-menu">
+        </nav>
+                                                
+        <div class="content_body">
+           
+           <div class="alert alert_inverse floating_alert" >
+                <div class="wrapper">
+                    <button type="button" aria-hidden="true" class="dismiss_btn close">
+                        <i class="fa fa-times"></i>
+                    </button>
+                    <h4 class="title">Verify your profile first.</h4> 
+                    <p>We need to verify your profile before you can post a training to ensure that you are a credible and qualified trainer. Verification is easy, and you only get verified once to post a training to corps members anywhere in the country.</p>
+                    <p>Click the <kbd>'Verify Me'</kbd> button to get started</p>
+                    <div class="alert_actions">
+                        <a href="#part_verification" data-toggle="modal" class="btn btn-sm btn-primary btn-rounded">Verify Me</a>
+                        <a href="#" class="btn btn-sm btn-default btn-rounded dismiss_btn">Dismiss</a>
+                    </div>
+                </div>
+            </div>
+           
+            <div class="container">
+               
+               <!--Right Sidebar-->
+                <aside class="aside_content">
+                    <div class="content_wrapper">
+                       <div class="pane_widgets">
+                            <header class="pane_heading">
+                                <h2 class="pane_title">Where do you want to go?</h2>
+                            </header>
+                            <ul class="pane_options nav_links">
+                                <li class="nav_link_main active">
+                                    <div class="link_wrapper">
+                                        <a href="part_welcome.html" class="option_label">Welcome</a>
+                                        <i class="option_icon fa fa-info" title="Your welcome page to the saedconnect platform." data-toggle="tooltip" data-placement="bottom"></i>
+                                    </div>
+                                </li>
+                                <li class="nav_link_main ">
+                                    <div class="link_wrapper">
+                                        <a href="dashboard.html" class="option_label">My Dashboard</a>
+                                        <i class="option_icon fa fa-info" title="See all your activities on the platform in one place" data-toggle="tooltip" data-placement="bottom"></i>
+                                    </div>
+                                </li>
+                                <li class="nav_link_main">
+                                    <div class="link_wrapper">
+                                        <a href="#int_links" data-toggle="collapse" class="option_label">Submit a Program Proposal</a>
+                                        <i class="option_icon fa fa-info" title="Manage your corps empowerment interventions" data-toggle="tooltip" data-placement="bottom"></i>
+                                    </div>
+                                    <div class="panel-collapse collapse" id="int_links">
+                                        <ul class="link_children">
+                                            <li class=""><a href="str_support_application.html">Offer a Business Opportunity</a></li>
+                                            <li><a href="str_support_application.html">Host a Competition</a></li>
+                                            <li><a href="str_support_application.html">Offer a Scholarship</a></li>
+                                            <li><a href="str_support_application.html">Offer Loans, Grants or equity investments</a></li>
+                                            <li><a href="str_support_application.html">Host an Impact Programme</a></li>
+                                            <li><a href="str_support_application.html">Train SAED Program Managers</a></li>
+                                            <li><a href="str_support_application.html">Donate an Item</a></li>
+                                            <li><a href="str_support_application.html">Support Program Sensitization</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="nav_link_main">
+                                    <div class="link_wrapper">
+                                        <a href="admin_memos.html" class="option_label">My Memos</a>
+                                        <i class="option_icon fa fa-info" title="Find all memos addressed to you from the SAED directorate" data-toggle="tooltip" data-placement="bottom"></i>
+                                    </div>
+                                </li>
+                                <li class="nav_link_main">
+                                    <div class="link_wrapper">
+                                        <a href="articles_management.html" class="option_label">Post to the Empower Blog</a>
+                                        <i class="option_icon fa fa-info" title="Share your wisdom and experience with corps members to inspire and motivate them on their journey." data-toggle="tooltip" data-placement="bottom"></i>
+                                    </div>
+                                </li>
+                                <li class="nav_link_main">
+                                    <div class="link_wrapper">
+                                        <a href="tr_interventions.html" class="option_label req_verified">My Trainings</a>
+                                        <i class="option_icon fa fa-info" title="Offer trainings to corps members in any state, nationwide;" data-toggle="tooltip" data-placement="bottom"></i>
+                                    </div>
+                                </li>
+                                <li class="nav_link_main">
+                                    <div class="link_wrapper">
+                                        <a href="part_programs.html" class="option_label">My Approved Programs</a>
+                                        <i class="option_icon fa fa-info" title="See all your approved proposals which have been passed as programmes." data-toggle="tooltip" data-placement="bottom"></i>
+                                    </div>
+                                </li>
+                                <li class="nav_link_main">
+                                    <div class="link_wrapper">
+                                        <a href="announcements.html" class="option_label">Announcements</a>
+                                        <i class="option_icon fa fa-info" title="Manage your transaction record and spending" data-toggle="tooltip" data-placement="bottom"></i>
+                                    </div>
+                                </li>
+                                <li class="nav_link_main">
+                                    <div class="link_wrapper">
+                                        <a href="sub_feedback.html" class="option_label">Give Feedback</a>
+                                        <i class="option_icon fa fa-info" title="Manage your transaction record and spending" data-toggle="tooltip" data-placement="bottom"></i>
+                                    </div>
+                                </li>
+                                <li class="nav_link_main">
+                                    <div class="link_wrapper">
+                                        <a href="user_profile.html" class="option_label">My Profile Settings</a>
+                                        <i class="option_icon fa fa-info" title="Manage your transaction record and spending" data-toggle="tooltip" data-placement="bottom"></i>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>  
+                    </div>
+                </aside>
+                
+                <article class="main_content">
+                    <div class="content_wrapper clearfix">
+                                                
+                                                 
+                        <!--Main content view-->
+                        <section class="content_main">
+                            <div class="content_wrapper">
+                                <article class="content_preview">
+                                   
+                                    <header class="context_banner career_stgrad  ">
+                                        <div class="item_wrapper">
+                                            <h4 class="title font_regular color-primary">
+                                               Welcome <span class="value font_bold">Sule Zankara and Sons</span>
+                                            </h4>
+                                            <p class="subtitle">SAEDConnect enables you offer a variety of programs and services to serving and ex-corps members nationwide, and engage with them directly.</p>
+                                        </div>
+                                    </header>
+                                    
+                                    <!--Show this after the user has applied for verification-->
+                                    <div class="alert_banner hidden pre_verification">
+                                        <div class="wrapper color-white bg-black">
+                                            <div class="info_block">
+                                                <h4 class="title">
+                                                    <span class="alert_label">
+                                                        Please visit the NYSC office below for your verification 
+                                                    </span>
+                                                </h4>
+                                            </div>
+                                            <div class="app_info">
+                                               <p>If you are a new partner, Please go along with any relevant documentation you might heve to showcase you credibility and capacity to offer trainings, events, SAED products, services and programs to Corps members under the SAED program.</p>
+                                                <div class="data_list">
+                                                    <article class="data_item">
+                                                        <span class="label font_regular color-secondary">Address</span>
+                                                        <span class="value">
+                                                            NYSC Secretariate, Off Governor's office, Alausa, Ikeja, Lagos state
+                                                        </span>
+                                                    </article>
+                                                    <article class="data_item">
+                                                        <span class="label font_regular color-secondary">Contact Person</span>
+                                                        <span class="value">
+                                                            Mrs. Blah Blah
+                                                        </span>
+                                                    </article>
+                                                    <article class="data_item">
+                                                        <span class="label font_regular color-secondary">Email Address</span>
+                                                        <span class="value">
+                                                            <a href="mailto:lagos@nyscsaed.com">lagos@nyscsaed.com</a>
+                                                        </span>
+                                                    </article>
+                                                </div>
+                                                <p>If you are an existing partner in this state, please reachout to the SAED head with you partner ID <span>(#XXXXX)</span> to expedite your verification. </p>
+                                                <div class="alert_action text-left">
+                                                    <a href="#" class="btn btn-sm btn-rounded btn-default">
+                                                        <i class="fa fa-times"></i>Cancel Application
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                                                                    
+                                    <div class="content_inner ">
+                                           
+                                        <div class="row col_panes">
+                                                <article class="pane col-sm-6">
+                                                    <div class="item_wrapper">
+                                                        <header class="content_header">
+                                                            <h4 class="title font-bold">Submit a proposal to...</h4>
+                                                        </header>
+                                                       <div class="panel-group" id="left_col">
+                                                            <article class="panel card_panel">
+                                                                <div class="panel-heading">
+                                                                    <h4 class="feat_title">
+                                                                        <a href="str_support_application.html" class="title">Offer a Business Opportunity to Corps Members</a>
+                                                                        <a href="#feat_lt_1" class="info_trigger collapsed accordion-toggle" data-toggle="collapse" data-parent="#left_col">
+                                                                            <span class="info_icon">
+                                                                               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+                                                                                  <circle cx="32" cy="32" r="32" class="info_circle"/>
+                                                                                  <path d="M43.1 48.9c-1.9 3.7-4.7 7.3-8.4 9.3-3.2 1.7-7.8 2.3-10.6-.5-1.4-1.4-2.2-3.3-2.5-5.2-1.3-7.1 1.3-15.1 3.5-21.8 1.4-4.3 5-7.4 9.4-8.4l4.2-.9h.5c-1 3.1-8.1 25.7-6.6 27.9.7 1 2.1 1.2 3.2.8 1.9-.6 2.9-2.8 4.8-3.4 1.2-.1 2.5 1 2.5 2.2zM37.6 6.3c2.7 0 4.6 2.7 3.3 5.2-1.2 2.4-3.4 3.6-6.4 3.6-1 0-1.9-.1-2.8-.4-1.9-.5-2.9-2.8-2-4.6V10C31.1 7.3 34 5.9 37 6.2c.2.1.4.1.6.1z" class="info_path"/>
+                                                                                </svg>
+                                                                          </span>
+                                                                        </a>
+                                                                    </h4>
+                                                                </div>
+                                                                <div class="panel-collapse collapse" id="feat_lt_1">
+                                                                    <p>Expand your distribution strength and market base when you offer your micro enterprise opportunities to corps members</p>
+                                                                    <div class="feat_cto">
+                                                                        <a href="str_support_application.html" class="btn btn-sm btn-rounded btn-primary">
+                                                                            Get Started <i class="fa fa-caret-right"></i>
+                                                                        </a>   
+                                                                        <a href="" class="btn btn-sm btn-rounded btn-card">
+                                                                            Learn More <i class="fa fa-caret-right"></i>
+                                                                        </a>
+                                                                    </div>
+                                                                </div>
+                                                           </article>
+                                                            <article class="panel card_panel">
+                                                                <div class="panel-heading">
+                                                                    <h4 class="feat_title">
+                                                                        <a href="str_support_application.html" class="title">Host a Competition</a>
+                                                                        <a href="#feat_lt_2" class="info_trigger collapsed accordion-toggle" data-toggle="collapse" data-parent="#left_col">
+                                                                            <span class="info_icon">
+                                                                               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+                                                                                  <circle cx="32" cy="32" r="32" class="info_circle"/>
+                                                                                  <path d="M43.1 48.9c-1.9 3.7-4.7 7.3-8.4 9.3-3.2 1.7-7.8 2.3-10.6-.5-1.4-1.4-2.2-3.3-2.5-5.2-1.3-7.1 1.3-15.1 3.5-21.8 1.4-4.3 5-7.4 9.4-8.4l4.2-.9h.5c-1 3.1-8.1 25.7-6.6 27.9.7 1 2.1 1.2 3.2.8 1.9-.6 2.9-2.8 4.8-3.4 1.2-.1 2.5 1 2.5 2.2zM37.6 6.3c2.7 0 4.6 2.7 3.3 5.2-1.2 2.4-3.4 3.6-6.4 3.6-1 0-1.9-.1-2.8-.4-1.9-.5-2.9-2.8-2-4.6V10C31.1 7.3 34 5.9 37 6.2c.2.1.4.1.6.1z" class="info_path"/>
+                                                                                </svg>
+                                                                          </span>
+                                                                        </a>
+                                                                    </h4>
+                                                                </div>
+                                                                <div class="panel-collapse collapse" id="feat_lt_2">
+                                                                    <p>Host a Skill Acquisition and Entrepreneurship Development related competition for the corps members in a state or nationwide and boost your brand patronage while impacting lives.</p>
+                                                                    <div class="feat_cto">
+                                                                        <a href="str_support_application.html" class="btn btn-sm btn-rounded btn-primary">
+                                                                            Get Started <i class="fa fa-caret-right"></i>
+                                                                        </a>   
+                                                                        <a href="" class="btn btn-sm btn-rounded btn-card">
+                                                                            Learn More <i class="fa fa-caret-right"></i>
+                                                                        </a>
+                                                                    </div>
+                                                                </div>
+                                                           </article>
+                                                            <article class="panel card_panel">
+                                                                <div class="panel-heading">
+                                                                    <h4 class="feat_title">
+                                                                        <a href="str_support_application.html" class="title">Offer a Scholarship</a>
+                                                                        <a href="#feat_lt_3" class="info_trigger collapsed accordion-toggle" data-toggle="collapse" data-parent="#left_col">
+                                                                            <span class="info_icon">
+                                                                               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+                                                                                  <circle cx="32" cy="32" r="32" class="info_circle"/>
+                                                                                  <path d="M43.1 48.9c-1.9 3.7-4.7 7.3-8.4 9.3-3.2 1.7-7.8 2.3-10.6-.5-1.4-1.4-2.2-3.3-2.5-5.2-1.3-7.1 1.3-15.1 3.5-21.8 1.4-4.3 5-7.4 9.4-8.4l4.2-.9h.5c-1 3.1-8.1 25.7-6.6 27.9.7 1 2.1 1.2 3.2.8 1.9-.6 2.9-2.8 4.8-3.4 1.2-.1 2.5 1 2.5 2.2zM37.6 6.3c2.7 0 4.6 2.7 3.3 5.2-1.2 2.4-3.4 3.6-6.4 3.6-1 0-1.9-.1-2.8-.4-1.9-.5-2.9-2.8-2-4.6V10C31.1 7.3 34 5.9 37 6.2c.2.1.4.1.6.1z" class="info_path"/>
+                                                                                </svg>
+                                                                          </span>
+                                                                        </a>
+                                                                    </h4>
+                                                                </div>
+                                                                <div class="panel-collapse collapse" id="feat_lt_3">
+                                                                    <p>Offer Scholarships to deserving corps members and level the playing ground for outstanding youths to explore their potential to the full.</p>
+                                                                    <div class="feat_cto">
+                                                                        <a href="str_support_application.html" class="btn btn-sm btn-rounded btn-primary">
+                                                                            Get Started <i class="fa fa-caret-right"></i>
+                                                                        </a>   
+                                                                        <a href="" class="btn btn-sm btn-rounded btn-card">
+                                                                            Learn More <i class="fa fa-caret-right"></i>
+                                                                        </a>
+                                                                    </div>
+                                                                </div>
+                                                           </article>
+                                                            <article class="panel card_panel">
+                                                                <div class="panel-heading">
+                                                                    <h4 class="feat_title">
+                                                                        <a href="str_support_application.html" class="title">Offer Loans, Grants or equity investments </a>
+                                                                        <a href="#feat_lt_5" class="info_trigger collapsed accordion-toggle" data-toggle="collapse" data-parent="#left_col">
+                                                                            <span class="info_icon">
+                                                                               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+                                                                                  <circle cx="32" cy="32" r="32" class="info_circle"/>
+                                                                                  <path d="M43.1 48.9c-1.9 3.7-4.7 7.3-8.4 9.3-3.2 1.7-7.8 2.3-10.6-.5-1.4-1.4-2.2-3.3-2.5-5.2-1.3-7.1 1.3-15.1 3.5-21.8 1.4-4.3 5-7.4 9.4-8.4l4.2-.9h.5c-1 3.1-8.1 25.7-6.6 27.9.7 1 2.1 1.2 3.2.8 1.9-.6 2.9-2.8 4.8-3.4 1.2-.1 2.5 1 2.5 2.2zM37.6 6.3c2.7 0 4.6 2.7 3.3 5.2-1.2 2.4-3.4 3.6-6.4 3.6-1 0-1.9-.1-2.8-.4-1.9-.5-2.9-2.8-2-4.6V10C31.1 7.3 34 5.9 37 6.2c.2.1.4.1.6.1z" class="info_path"/>
+                                                                                </svg>
+                                                                          </span>
+                                                                        </a>
+                                                                    </h4>
+                                                                </div>
+                                                                <div class="panel-collapse collapse" id="feat_lt_5">
+                                                                    <p>Support corps members with necessary finance to power their needs & dreams.</p>
+                                                                    <div class="feat_cto">
+                                                                        <a href="str_support_application.html" class="btn btn-sm btn-rounded btn-primary">
+                                                                            Get Started <i class="fa fa-caret-right"></i>
+                                                                        </a>   
+                                                                        <a href="" class="btn btn-sm btn-rounded btn-card">
+                                                                            Learn More <i class="fa fa-caret-right"></i>
+                                                                        </a>
+                                                                    </div>
+                                                                </div>
+                                                           </article>
+                                                            <article class="panel card_panel">
+                                                                <div class="panel-heading">
+                                                                    <h4 class="feat_title">
+                                                                        <a href="str_support_application.html" class="title">Host an Impact Programme</a>
+                                                                        <a href="#feat_lt_4" class="info_trigger collapsed accordion-toggle" data-toggle="collapse" data-parent="#left_col">
+                                                                            <span class="info_icon">
+                                                                               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+                                                                                  <circle cx="32" cy="32" r="32" class="info_circle"/>
+                                                                                  <path d="M43.1 48.9c-1.9 3.7-4.7 7.3-8.4 9.3-3.2 1.7-7.8 2.3-10.6-.5-1.4-1.4-2.2-3.3-2.5-5.2-1.3-7.1 1.3-15.1 3.5-21.8 1.4-4.3 5-7.4 9.4-8.4l4.2-.9h.5c-1 3.1-8.1 25.7-6.6 27.9.7 1 2.1 1.2 3.2.8 1.9-.6 2.9-2.8 4.8-3.4 1.2-.1 2.5 1 2.5 2.2zM37.6 6.3c2.7 0 4.6 2.7 3.3 5.2-1.2 2.4-3.4 3.6-6.4 3.6-1 0-1.9-.1-2.8-.4-1.9-.5-2.9-2.8-2-4.6V10C31.1 7.3 34 5.9 37 6.2c.2.1.4.1.6.1z" class="info_path"/>
+                                                                                </svg>
+                                                                          </span>
+                                                                        </a>
+                                                                    </h4>
+                                                                </div>
+                                                                <div class="panel-collapse collapse" id="feat_lt_4">
+                                                                    <p>Impact programs includes all other types of programs that doesn't strictly qualify as a training, event, scholarship or competition.</p>
+                                                                    <div class="feat_cto">
+                                                                        <a href="str_support_application.html" class="btn btn-sm btn-rounded btn-primary">
+                                                                            Get Started <i class="fa fa-caret-right"></i>
+                                                                        </a>   
+                                                                        <a href="" class="btn btn-sm btn-rounded btn-card">
+                                                                            Learn More <i class="fa fa-caret-right"></i>
+                                                                        </a>
+                                                                    </div>
+                                                                </div>
+                                                           </article>
+                                                            <article class="panel card_panel">
+                                                                <div class="panel-heading">
+                                                                    <h4 class="feat_title">
+                                                                        <a href="str_support_application.html" class="title">Train SAED Program Managers</a>
+                                                                        <a href="#feat_lt_6" class="info_trigger collapsed accordion-toggle" data-toggle="collapse" data-parent="#left_col">
+                                                                            <span class="info_icon">
+                                                                               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+                                                                                  <circle cx="32" cy="32" r="32" class="info_circle"/>
+                                                                                  <path d="M43.1 48.9c-1.9 3.7-4.7 7.3-8.4 9.3-3.2 1.7-7.8 2.3-10.6-.5-1.4-1.4-2.2-3.3-2.5-5.2-1.3-7.1 1.3-15.1 3.5-21.8 1.4-4.3 5-7.4 9.4-8.4l4.2-.9h.5c-1 3.1-8.1 25.7-6.6 27.9.7 1 2.1 1.2 3.2.8 1.9-.6 2.9-2.8 4.8-3.4 1.2-.1 2.5 1 2.5 2.2zM37.6 6.3c2.7 0 4.6 2.7 3.3 5.2-1.2 2.4-3.4 3.6-6.4 3.6-1 0-1.9-.1-2.8-.4-1.9-.5-2.9-2.8-2-4.6V10C31.1 7.3 34 5.9 37 6.2c.2.1.4.1.6.1z" class="info_path"/>
+                                                                                </svg>
+                                                                          </span>
+                                                                        </a>
+                                                                    </h4>
+                                                                </div>
+                                                                <div class="panel-collapse collapse" id="feat_lt_6">
+                                                                    <p>SAED program welcomes partners offering to train our officers on new methods and best practices for achieving their mandate.</p>
+                                                                    <div class="feat_cto">
+                                                                        <a href="str_support_application.html" class="btn btn-sm btn-rounded btn-primary">
+                                                                            Get Started <i class="fa fa-caret-right"></i>
+                                                                        </a>   
+                                                                        <a href="" class="btn btn-sm btn-rounded btn-card">
+                                                                            Learn More <i class="fa fa-caret-right"></i>
+                                                                        </a>
+                                                                    </div>
+                                                                </div>
+                                                           </article>
+                                                            <article class="panel card_panel">
+                                                                <div class="panel-heading">
+                                                                    <h4 class="feat_title">
+                                                                        <a href="str_support_application.html" class="title">Donate an Item</a>
+                                                                        <a href="#feat_lt_7" class="info_trigger collapsed accordion-toggle" data-toggle="collapse" data-parent="#left_col">
+                                                                            <span class="info_icon">
+                                                                               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+                                                                                  <circle cx="32" cy="32" r="32" class="info_circle"/>
+                                                                                  <path d="M43.1 48.9c-1.9 3.7-4.7 7.3-8.4 9.3-3.2 1.7-7.8 2.3-10.6-.5-1.4-1.4-2.2-3.3-2.5-5.2-1.3-7.1 1.3-15.1 3.5-21.8 1.4-4.3 5-7.4 9.4-8.4l4.2-.9h.5c-1 3.1-8.1 25.7-6.6 27.9.7 1 2.1 1.2 3.2.8 1.9-.6 2.9-2.8 4.8-3.4 1.2-.1 2.5 1 2.5 2.2zM37.6 6.3c2.7 0 4.6 2.7 3.3 5.2-1.2 2.4-3.4 3.6-6.4 3.6-1 0-1.9-.1-2.8-.4-1.9-.5-2.9-2.8-2-4.6V10C31.1 7.3 34 5.9 37 6.2c.2.1.4.1.6.1z" class="info_path"/>
+                                                                                </svg>
+                                                                          </span>
+                                                                        </a>
+                                                                    </h4>
+                                                                </div>
+                                                                <div class="panel-collapse collapse" id="feat_lt_7">
+                                                                    <p>We welcome donation of skill development tools & equipments, skill centers, airtime, media slots, etc that can help boost the program success.</p>
+                                                                    <div class="feat_cto">
+                                                                        <a href="str_support_application.html" class="btn btn-sm btn-rounded btn-primary">
+                                                                            Get Started <i class="fa fa-caret-right"></i>
+                                                                        </a>   
+                                                                        <a href="" class="btn btn-sm btn-rounded btn-card">
+                                                                            Learn More <i class="fa fa-caret-right"></i>
+                                                                        </a>
+                                                                    </div>
+                                                                </div>
+                                                           </article>
+                                                            <article class="panel card_panel">
+                                                                <div class="panel-heading">
+                                                                    <h4 class="feat_title">
+                                                                        <a href="str_support_application.html" class="title">Support Program Sensitization</a>
+                                                                        <a href="#feat_lt_8" class="info_trigger collapsed accordion-toggle" data-toggle="collapse" data-parent="#left_col">
+                                                                            <span class="info_icon">
+                                                                               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+                                                                                  <circle cx="32" cy="32" r="32" class="info_circle"/>
+                                                                                  <path d="M43.1 48.9c-1.9 3.7-4.7 7.3-8.4 9.3-3.2 1.7-7.8 2.3-10.6-.5-1.4-1.4-2.2-3.3-2.5-5.2-1.3-7.1 1.3-15.1 3.5-21.8 1.4-4.3 5-7.4 9.4-8.4l4.2-.9h.5c-1 3.1-8.1 25.7-6.6 27.9.7 1 2.1 1.2 3.2.8 1.9-.6 2.9-2.8 4.8-3.4 1.2-.1 2.5 1 2.5 2.2zM37.6 6.3c2.7 0 4.6 2.7 3.3 5.2-1.2 2.4-3.4 3.6-6.4 3.6-1 0-1.9-.1-2.8-.4-1.9-.5-2.9-2.8-2-4.6V10C31.1 7.3 34 5.9 37 6.2c.2.1.4.1.6.1z" class="info_path"/>
+                                                                                </svg>
+                                                                            </span>
+                                                                        </a>
+                                                                    </h4>
+                                                                </div>
+                                                                <div class="panel-collapse collapse" id="feat_lt_8">
+                                                                    <p>Help us reach out to more stakeholders to know about the SAED program and support our mandate. </p>
+                                                                    <div class="feat_cto">
+                                                                        <a href="str_support_application.html" class="btn btn-sm btn-rounded btn-primary">
+                                                                            Get Started <i class="fa fa-caret-right"></i>
+                                                                        </a>   
+                                                                        <a href="" class="btn btn-sm btn-rounded btn-card">
+                                                                            Learn More <i class="fa fa-caret-right"></i>
+                                                                        </a>
+                                                                    </div>
+                                                                </div>
+                                                           </article>                                                            
+                                                       </div>
+                                                    </div>
+                                                </article>
+                                                
+                                                <article class="pane col-sm-6">
+                                                    <div class="item_wrapper">
+                                                        <div class="feature_cards hero_cols">
+                                                            <article class="feature_card">
+                                                               <div class="wrapper">
+                                                                   <div class="feature_info">
+                                                                       <h4 class="feat_title">
+                                                                        <a href="articles_management.html">Post an Article </a>
+                                                                    </h4>
+                                                                       <p class="sr-only">Share your wisdom and experience with corps members to inspire and motivate them on their journey.</p>
+                                                                       <div class="feat_cto cto_block">
+                                                                            <a href="new_article.html" class="btn btn-sm btn-block btn-rounded btn-primary">
+                                                                                Get Started <i class="fa fa-caret-right"></i>
+                                                                            </a>   
+                                                                            <a href="" class="btn btn-sm btn-block btn-rounded btn-card">
+                                                                                Learn More <i class="fa fa-caret-right"></i>
+                                                                            </a>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </article>
+                                                            <article class="feature_card">
+                                                               <div class="wrapper">
+                                                                   <div class="feature_info">
+                                                                       <h4 class="feat_title">
+                                                                            <a href="about_tr.html" class="req_verified">Post a Training</a>
+                                                                        </h4>
+                                                                       <p class="sr-only">Offer trainings to corps members in any state, nationwide; Showcase your events and get corps members to attend.</p>
+                                                                       <div class="feat_cto cto_block">
+                                                                            <a href="training_form.html" class="btn btn-sm btn-block req_verified btn-rounded btn-primary">
+                                                                                Get Started <i class="fa fa-caret-right"></i>
+                                                                            </a>   
+                                                                            <a href="" class="btn btn-sm btn-block btn-rounded btn-card">
+                                                                                Learn More <i class="fa fa-caret-right"></i>
+                                                                            </a>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </article> 
+                                                        </div>
+                                                    </div>
+                                                </article>
+                                               
+                                                <article class="pane col-sm-6">
+                                                    <div class="item_wrapper">
+                                                        <header class="content_header">
+                                                            <h4 class="title font-bold">Join Our Directory</h4>
+                                                        </header>
+                                                       <div class="panel-group" id="right_col">                                                           
+                                                           <article class="panel card_panel">
+                                                                <div class="panel-heading">
+                                                                    <h4 class="feat_title">
+                                                                        <a href="#" class="title ">Mentor Directory</a>
+                                                                        <a href="#feat_rt_1" class="info_trigger collapsed accordion-toggle" data-toggle="collapse" data-parent="#right_col">
+                                                                            <span class="info_icon">
+                                                                               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+                                                                                  <circle cx="32" cy="32" r="32" class="info_circle"/>
+                                                                                  <path d="M43.1 48.9c-1.9 3.7-4.7 7.3-8.4 9.3-3.2 1.7-7.8 2.3-10.6-.5-1.4-1.4-2.2-3.3-2.5-5.2-1.3-7.1 1.3-15.1 3.5-21.8 1.4-4.3 5-7.4 9.4-8.4l4.2-.9h.5c-1 3.1-8.1 25.7-6.6 27.9.7 1 2.1 1.2 3.2.8 1.9-.6 2.9-2.8 4.8-3.4 1.2-.1 2.5 1 2.5 2.2zM37.6 6.3c2.7 0 4.6 2.7 3.3 5.2-1.2 2.4-3.4 3.6-6.4 3.6-1 0-1.9-.1-2.8-.4-1.9-.5-2.9-2.8-2-4.6V10C31.1 7.3 34 5.9 37 6.2c.2.1.4.1.6.1z" class="info_path"/>
+                                                                                </svg>
+                                                                          </span>
+                                                                        </a>
+                                                                    </h4>
+                                                                </div>
+                                                                <div class="panel-collapse collapse" id="feat_rt_1">
+                                                                    <p>Guide our youths through their development process by providing insight into issues, and sharing expertise, values, skills, and perspectives.</p>
+                                                                    <div class="feat_cto">
+                                                                        <a href="" class="btn btn-sm btn-rounded btn-primary">
+                                                                            Get Started <i class="fa fa-caret-right"></i>
+                                                                        </a>   
+                                                                        <a href="" class="btn btn-sm btn-rounded btn-card">
+                                                                            Learn More <i class="fa fa-caret-right"></i>
+                                                                        </a>
+                                                                    </div>
+                                                                </div>
+                                                           </article>
+                                                           <article class="panel card_panel">
+                                                                <div class="panel-heading">
+                                                                    <h4 class="feat_title">
+                                                                        <a href="about_services.html" class="title">Service provider Directory</a>
+                                                                        <a href="#feat_rt_2" class="info_trigger collapsed accordion-toggle" data-toggle="collapse" data-parent="#right_col">
+                                                                            <span class="info_icon">
+                                                                               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+                                                                                  <circle cx="32" cy="32" r="32" class="info_circle"/>
+                                                                                  <path d="M43.1 48.9c-1.9 3.7-4.7 7.3-8.4 9.3-3.2 1.7-7.8 2.3-10.6-.5-1.4-1.4-2.2-3.3-2.5-5.2-1.3-7.1 1.3-15.1 3.5-21.8 1.4-4.3 5-7.4 9.4-8.4l4.2-.9h.5c-1 3.1-8.1 25.7-6.6 27.9.7 1 2.1 1.2 3.2.8 1.9-.6 2.9-2.8 4.8-3.4 1.2-.1 2.5 1 2.5 2.2zM37.6 6.3c2.7 0 4.6 2.7 3.3 5.2-1.2 2.4-3.4 3.6-6.4 3.6-1 0-1.9-.1-2.8-.4-1.9-.5-2.9-2.8-2-4.6V10C31.1 7.3 34 5.9 37 6.2c.2.1.4.1.6.1z" class="info_path"/>
+                                                                                </svg>
+                                                                          </span>
+                                                                        </a>
+                                                                    </h4>
+                                                                </div>
+                                                                <div class="panel-collapse collapse" id="feat_rt_2">
+                                                                    <p>Offer a support service like legal support, small business consultancy, etc to corps members nationwide.</p>
+                                                                    <div class="feat_cto">
+                                                                        <a href="new_services.html" class="btn btn-sm btn-rounded btn-primary">
+                                                                            Get Started <i class="fa fa-caret-right"></i>
+                                                                        </a>   
+                                                                        <a href="" class="btn btn-sm btn-rounded btn-card">
+                                                                            Learn More <i class="fa fa-caret-right"></i>
+                                                                        </a>
+                                                                    </div>
+                                                                </div>
+                                                           </article>
+                                                            <article class="panel card_panel">
+                                                                <div class="panel-heading">
+                                                                    <h4 class="feat_title">
+                                                                        <a href="#" class="title ">Skill Practice Center/Work Spaces Directory</a>
+                                                                        <a href="#feat_rt_3" class="info_trigger collapsed accordion-toggle" data-toggle="collapse" data-parent="#right_col">
+                                                                            <span class="info_icon">
+                                                                               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+                                                                                  <circle cx="32" cy="32" r="32" class="info_circle"/>
+                                                                                  <path d="M43.1 48.9c-1.9 3.7-4.7 7.3-8.4 9.3-3.2 1.7-7.8 2.3-10.6-.5-1.4-1.4-2.2-3.3-2.5-5.2-1.3-7.1 1.3-15.1 3.5-21.8 1.4-4.3 5-7.4 9.4-8.4l4.2-.9h.5c-1 3.1-8.1 25.7-6.6 27.9.7 1 2.1 1.2 3.2.8 1.9-.6 2.9-2.8 4.8-3.4 1.2-.1 2.5 1 2.5 2.2zM37.6 6.3c2.7 0 4.6 2.7 3.3 5.2-1.2 2.4-3.4 3.6-6.4 3.6-1 0-1.9-.1-2.8-.4-1.9-.5-2.9-2.8-2-4.6V10C31.1 7.3 34 5.9 37 6.2c.2.1.4.1.6.1z" class="info_path"/>
+                                                                                </svg>
+                                                                          </span>
+                                                                        </a>
+                                                                    </h4>
+                                                                </div>
+                                                                <div class="panel-collapse collapse" id="feat_rt_3">
+                                                                    <p>Give corps members access to your old tools and equipment to enable them gain hands on experience under supervised practice.</p>
+                                                                    <div class="feat_cto">
+                                                                        <a href="" class="btn btn-sm btn-rounded btn-primary">
+                                                                            Get Started <i class="fa fa-caret-right"></i>
+                                                                        </a>   
+                                                                        <a href="" class="btn btn-sm btn-rounded btn-card">
+                                                                            Learn More <i class="fa fa-caret-right"></i>
+                                                                        </a>
+                                                                    </div>
+                                                                </div>
+                                                           </article>
+                                                            <article class="panel card_panel">
+                                                                <div class="panel-heading">
+                                                                    <h4 class="feat_title">
+                                                                        <a href="#" class="title">Employer Directory</a>
+                                                                        <a href="#feat_rt_4" class="info_trigger collapsed accordion-toggle" data-toggle="collapse" data-parent="#right_col">
+                                                                            <span class="info_icon">
+                                                                               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+                                                                                  <circle cx="32" cy="32" r="32" class="info_circle"/>
+                                                                                  <path d="M43.1 48.9c-1.9 3.7-4.7 7.3-8.4 9.3-3.2 1.7-7.8 2.3-10.6-.5-1.4-1.4-2.2-3.3-2.5-5.2-1.3-7.1 1.3-15.1 3.5-21.8 1.4-4.3 5-7.4 9.4-8.4l4.2-.9h.5c-1 3.1-8.1 25.7-6.6 27.9.7 1 2.1 1.2 3.2.8 1.9-.6 2.9-2.8 4.8-3.4 1.2-.1 2.5 1 2.5 2.2zM37.6 6.3c2.7 0 4.6 2.7 3.3 5.2-1.2 2.4-3.4 3.6-6.4 3.6-1 0-1.9-.1-2.8-.4-1.9-.5-2.9-2.8-2-4.6V10C31.1 7.3 34 5.9 37 6.2c.2.1.4.1.6.1z" class="info_path"/>
+                                                                                </svg>
+                                                                          </span>
+                                                                        </a>
+                                                                    </h4>
+                                                                </div>
+                                                                <div class="panel-collapse collapse" id="feat_rt_4">
+                                                                    <p>Get your jobs and quick tasks done by engaging the services of Corps. members around you. </p>
+                                                                    <div class="feat_cto">
+                                                                        <a href="" class="btn btn-sm btn-rounded btn-primary">
+                                                                            Get Started <i class="fa fa-caret-right"></i>
+                                                                        </a>   
+                                                                        <a href="" class="btn btn-sm btn-rounded btn-card">
+                                                                            Learn More <i class="fa fa-caret-right"></i>
+                                                                        </a>
+                                                                    </div>
+                                                                </div>
+                                                           </article>
+                                                        </div>
+                                                    </div>
+                                                </article>
+                                            </div>
+                                            
+                                        <section class="col_panes row">
+                                            <article class="col-sm-12 pane">
+                                                <div class="item_wrapper">
+                                                    <header class="content_header">
+                                                        <h4 class="title font-bold">Recent Announcements</h4>
+                                                    </header>
+                                                    <div class="default_content hidden">
+                                                        <div class="def_wrapper">
+                                                            <div class="intro-text centered">
+                                                                <div class="def_img">
+                                                                    <i class="fa fa-comments fa-4x"></i>
+                                                                </div>
+                                                                <p class="subtitle">There are no new announcements at the moment</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="pane_content ">
+
+                                                        <div class="vertical_list">
+                                                            <article class="list_item">
+                                                                <a href="read_announcement.html" class="content_wrapper">
+                                                                    <h2 class="post_title">Notice to all partners who are yet to complete their conference registration.</h2>
+                                                                    <div class="post_meta">
+                                                                        <span class="meta_item"><time datetime="13-07-2016">Jan 03, 2017</time></span>
+                                                                    </div>
+                                                                </a>
+                                                            </article>
+                                                            <article class="list_item">
+                                                                <a href="read_announcement.html" class="content_wrapper">
+                                                                    <h2 class="post_title">Notice to all partners who are yet to complete their conference registration.</h2>
+                                                                    <div class="post_meta">
+                                                                        <span class="meta_item"><time datetime="13-07-2016">Jan 03, 2017</time></span>
+                                                                    </div>
+                                                                </a>
+                                                            </article>
+                                                            <article class="list_item">
+                                                                <a href="read_announcement.html" class="content_wrapper">
+                                                                    <h2 class="post_title">Notice to all partners who are yet to complete their conference registration.</h2>
+                                                                    <div class="post_meta">
+                                                                        <span class="meta_item"><time datetime="13-07-2016">Jan 03, 2017</time></span>
+                                                                    </div>
+                                                                </a>
+                                                            </article>
+                                                            <article class="list_item">
+                                                                <a href="read_announcement.html" class="content_wrapper">
+                                                                    <h2 class="post_title">Notice to all partners who are yet to complete their conference registration.</h2>
+                                                                    <div class="post_meta">
+                                                                        <span class="meta_item"><time datetime="13-07-2016">Jan 03, 2017</time></span>
+                                                                    </div>
+                                                                </a>
+                                                            </article>
+                                                            <article class="list_item">
+                                                                <a href="read_announcement.html" class="content_wrapper">
+                                                                    <h2 class="post_title">Notice to all partners who are yet to complete their conference registration.</h2>
+                                                                    <div class="post_meta">
+                                                                        <span class="meta_item"><time datetime="13-07-2016">Jan 03, 2017</time></span>
+                                                                    </div>
+                                                                </a>
+                                                            </article>
+                                                        </div>
+
+                                                        <div class="text-center">
+                                                            <a href="announcements.html" class="btn btn-rounded btn-primary">View All Announcements</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </article>
+                                        </section>
+                                    </div>
+                                </article>
+                            </div>
+                        </section>
+                        
+                    </div>
+                </article>
+                
+            </div>
+        </div>
+    </main>
+
+    <!-- Javascript starts here-->
+    <script src="../js/jquery-2.1.4.js"></script>
+    <script src="../js/base.min.js"></script>
+    <script src="../js/site_nav.js"></script>
+    <script src="../js/main.js"></script>
+        
+</body>
+
+</html>

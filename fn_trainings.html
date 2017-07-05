@@ -1,0 +1,1085 @@
+<!doctype html>
+<html lang="en-US" class="no-js">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Training Programs | SAED Connect </title>
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+    <link href="css/font-awesome.css" rel="stylesheet">
+    <link href="css/base.min.css" rel="stylesheet" type="text/css">
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <link href="css/admin_area.css" rel="stylesheet" type="text/css">
+    <link href="css/full_layout.css" rel="stylesheet" type="text/css">
+    <script src="js/modernizr.js"></script> <!-- Modernizr -->
+</head>
+
+<body class="admin_user">
+
+    <header role="banner">
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+            <div class="container">
+                <div class="logo">
+                    <a href="index.html" class="logo-link">
+                        <span class="sr-only">NYSC SAEDConnect</span>
+                        <img src="img/logo_admin.png" alt="NYSC SAEDConnect">
+                    </a>
+                </div>
+                <div class="left_nav">
+                    <ul>
+                        <li class="">
+                            <a href="timeline.html" class="navbar_link_item">Timeline</a>
+                        </li>
+                        <li class="">
+                            <a href="articles_home.html" class="navbar_link_item">Blog</a>
+                        </li>
+                        <li class="">
+                            <a href="forum.html" class="navbar_link_item">Forum</a>
+                        </li>
+                        <li class="">
+                            <a href="venture_oven.html" class="navbar_link_item">Ventures</a>
+                        </li>
+                        <li class="">
+                            <a href="#" class="navbar_link_item">Gigs</a>
+                        </li>
+                        <li class="dropdown active">
+                            <a href="#" class="navbar_link_item dropdown-toggle" data-toggle="dropdown">
+                                Directories
+                                <i class="fa fa-angle-down"></i>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a href="fn_trainings.html">Training and Events</a></li>
+                                <li><a href="fn_programs.html">Growth  Opportunities</a></li>
+                            </ul>
+                        </li>
+                        
+                        <li class="dropdown">
+                            <a href="#" class="navbar_link_item dropdown-toggle" data-toggle="dropdown">
+                                Others
+                                <i class="fa fa-angle-down"></i>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Announcements</a></li>
+                                <li><a href="help_center/help_center.html">Help Center</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>             
+                <nav class="sec-nav ">
+                    <ul class="account_info">
+                        <li class="dropdown accounts">
+                            <a href="#" data-toggle="dropdown" class="navbar_link_item dropdown-toggle">
+                            <span class="profile_img">
+                                <img src="img/user_avis/3.jpg" alt="Ikenna David">
+                            </span>
+                            <span class="profile_name">Jane Doe</span>
+                            <i class="fa fa-chevron-circle-down"></i></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="corp_profile.html"><i class="fa fa-user"></i>Personal Profile</a></li>
+                                <li><a href="skil_profile.html"><i class="fa fa-gears"></i>Skills Profile</a></li>
+                                <li><a href="corp_trainings.html"><i class="fa fa-briefcase"></i>My Briefcase</a></li>
+                                <li><a href="#"><i class="fa fa-power-off"></i>Log Out</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav_trigger">
+                            <a class="primary-nav-trigger" title="Open Menu" href="#0" data-effect="st-effect-1">
+                                <span class="menu-icon"></span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+        
+   <!-- work as ST-container-->
+    <main class="sd-main-content admin_content bg-off-white"> 
+       
+       <!--Insert offcanvas nav here--> 
+        <nav class="st-menu">
+        </nav>
+                         
+        <!--Work as st-content-pusher-->
+        <section class="">
+           <!--Wrap site content-->
+            <div class="container">
+               <div class="split_layout">
+                    <section class="split_view main_content">
+                        <div class="content_wrapper clearfix">
+
+                            <!--Left sidebar-->
+                            <aside class="content_aside"> 
+                                <span class="panel_handle">Menu</span>
+                                <div class="content_wrapper">
+                                    <header class="pane_heading">
+                                        <div class="centered">
+                                            <i class="title_icon">
+                                                <img src="img/icons/help_black.png" alt="Trainings">
+                                            </i>
+                                            <h2 class="pane_title color-primary">Trainings & Events</h2>
+                                        </div>
+                                    </header>
+                                    <div class="content_header header_primary">
+                                        <h4 class="title">Filter by</h4>
+                                        <i class="fa fa-filter"></i>
+                                    </div>
+                                    <div class="section_ctx_menu">
+                                        <div class="filter_block filter_vcal">
+                                            <div class="filter-item">
+                                                <div class="input-group search_bar">
+                                                    <input type="search" placeholder="Find by name or training id" class="form-control">
+                                                    <span class="input-group-btn">
+                                                        <button class="btn-primary btn">
+                                                            <i class="fa fa-search"></i>
+                                                        </button>
+                                                    </span>
+                                                </div>
+                                            </div>
+
+                                            <div class="filter-item" id="content_filter">
+
+                                                <article class="panel panel_opaque">
+                                                    <div class="panel-heading clearfix">
+                                                        <h4 class="panel-title clearfix">
+                                                            <a class="accordion-toggle" data-toggle="collapse"
+                                                            data-parent="#content_filter" href="#filter_user">
+                                                                <span class="font_bold">Category</span>
+                                                            </a>
+                                                        </h4>
+                                                    </div>
+                                                    <div class="panel-collapse collapse in" id="filter_user">
+                                                        <div class="panel-body">
+                                                            <ul class="topic_list">
+                                                                <li class="">
+                                                                    <label for="gs_corp_2" class="">
+                                                                        <input type="checkbox" id="gs_corp_2">
+                                                                        <span>Category Name
+                                                                            <span class="bracket_enclosure">2</span>
+                                                                        </span>
+                                                                    </label>
+                                                                </li>
+                                                                <li>
+                                                                    <label for="gs_corp_3" class="">
+                                                                        <input type="checkbox" id="gs_corp_3">
+                                                                        <span>Category Name
+                                                                            <span class="bracket_enclosure">0</span>
+                                                                        </span>
+                                                                    </label>
+                                                                </li>
+                                                                <li>
+                                                                    <label for="gs_corp_3" class="">
+                                                                        <input type="checkbox" id="gs_corp_3">
+                                                                        <span>Category Name
+                                                                            <span class="bracket_enclosure">0</span>
+                                                                        </span>
+                                                                    </label>
+                                                                </li>
+                                                                <li>
+                                                                    <label for="gs_corp_3" class="">
+                                                                        <input type="checkbox" id="gs_corp_3">
+                                                                        <span>Category Name
+                                                                            <span class="bracket_enclosure">0</span>
+                                                                        </span>
+                                                                    </label>
+                                                                </li>
+                                                                <li>
+                                                                    <label for="gs_corp_3" class="">
+                                                                        <input type="checkbox" id="gs_corp_3">
+                                                                        <span>Category Name
+                                                                            <span class="bracket_enclosure">0</span>
+                                                                        </span>
+                                                                    </label>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </article>
+
+                                                <article class="panel panel_opaque">
+                                                    <div class="panel-heading clearfix">
+                                                        <h4 class="panel-title clearfix">
+                                                            <a class="accordion-toggle" data-toggle="collapse"
+                                                            data-parent="#content_filter" href="#filter_user_0">
+                                                                <span class="font_bold">Training Cost</span>
+                                                            </a>
+                                                        </h4>
+                                                    </div>
+                                                    <div class="panel-collapse collapse in" id="filter_user_0">
+                                                        <div class="panel-body">
+                                                            <ul class="topic_list">
+                                                                <li class="">
+                                                                    <label for="gs_2" class="">
+                                                                        <input type="checkbox" id="gs_2">
+                                                                        <span>10,000 - 29,000
+                                                                            <span class="bracket_enclosure">2</span>
+                                                                        </span>
+                                                                    </label>
+                                                                </li>
+                                                                <li>
+                                                                    <label for="gs_3" class="">
+                                                                        <input type="checkbox" id="gs_3">
+                                                                        <span>30,000 - 49,000
+                                                                            <span class="bracket_enclosure">0</span>
+                                                                        </span>
+                                                                    </label>
+                                                                </li>
+                                                                <li>
+                                                                    <label for="gs_3" class="">
+                                                                        <input type="checkbox" id="gs_3">
+                                                                        <span>50,000 - 69,000
+                                                                            <span class="bracket_enclosure">0</span>
+                                                                        </span>
+                                                                    </label>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </article>
+
+                                                <article class="panel panel_opaque">
+                                                    <div class="panel-heading clearfix">
+                                                        <h4 class="panel-title clearfix">
+                                                            <a class="accordion-toggle" data-toggle="collapse"
+                                                            data-parent="#content_filter" href="#filter_type">
+                                                                <span class="font_bold">Date</span>
+                                                            </a>
+                                                        </h4>
+                                                    </div>
+                                                    <div class="panel-collapse collapse in" id="filter_type">
+                                                        <div class="panel-body">
+                                                            <input type="text" class="form-control date" placeholder="Filter by date">
+                                                        </div>
+                                                    </div>
+                                                </article>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </aside>
+
+                            <!--Main content view-->
+                            <section class="content_main">
+                                <div class="content_wrapper">
+                                    <article class="content_preview">
+                                        <header class="context_banner main_callout bg-black">
+                                            <div class="item_wrapper">
+                                                <div class="banner_content color-white">
+                                                    <h3 class="title title_md color-secondary">Trainings / Events</h3>
+                                                    <p class="subtitle">Find SAED authorized trainings happening around you.</p> 
+                                                </div>
+                                            </div>
+                                        </header>
+                                        <div class="default_content hidden">
+                                            <div class="def_wrapper">
+                                                <div class="intro-text centered">
+                                                    <div class="def_img">
+                                                        <img src="img/icons/icon_empty.png" alt="Empty">
+                                                    </div>
+                                                    <p class="subtitle color-primary">There are no trainings or Event happening around your location at the moment, please check again in a bit..</p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="content_inner ">
+                                            <div class="card_grid">
+                                                <article class="tr_card card_hr">
+                                                    <div class="card_wrapper">
+                                                    <div class="card_image">
+                                                        <a href="tr_description.html">
+                                                            <img src="./img/banners/training_banner.jpg" alt="An intensive training in fashion designing.">
+                                                        </a>
+                                                    </div>
+                                                    <div class="card_details">
+                                                        <div class="card_info">
+                                                            <h4 class="card_title" title="An intensive training in fashion designing.">
+                                                                <a href="tr_description.html">
+                                                                An intensive training in fashion designing.
+                                                                </a>
+                                                            </h4>
+                                                            <ul class="meta_details">
+                                                                <li class="meta_item">
+                                                                    <span class="label">
+                                                                        <time>Next Start:</time>
+                                                                    </span>
+                                                                    <span class="value">
+                                                                        <time>25/5/2017</time>
+                                                                    </span>
+                                                                </li>
+                                                                <li class="meta_item">
+                                                                    <span class="label">
+                                                                        <time>From:</time>
+                                                                    </span>
+                                                                    <span class="value">
+                                                                        <i class="naira"></i>15,000
+                                                                    </span>
+                                                                </li>
+                                                                <li class="meta_item">
+                                                                    <span class="label" title="Fashion Design, Tayloring, Craft" data-toggle="tooltip">
+                                                                        Fashion Design, +2
+                                                                    </span>
+                                                                </li>
+                                                            </ul>
+                                                            <div class="control_item control_black card_control">
+                                                                <a href="#" title="Signify Interest">
+                                                                    <i class="fa fa-heart"></i>
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                        <div class="card_footer">
+                                                            <ul class="card_nav">
+                                                                <li class="meta_link">
+                                                                    <a href="tr_description.html" data-placement="top" title="Enrolled Students" data-toggle="tooltip">
+                                                                        <i class="fa fa-group"></i>
+                                                                        <span class="item_label">Enrolled</span>
+                                                                        <span class="item_count">28</span>
+                                                                    </a>
+                                                                </li>
+                                                                <li class="meta_link">
+                                                                    <a href="tr_enquires.html" data-placement="top" title="Discussions Topics" data-toggle="tooltip">
+                                                                        <i class="fa fa-comments"></i>
+                                                                        <span class="item_label">Discussions</span>
+                                                                        <span class="item_count">32</span>
+                                                                    </a>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                  </div>
+                                                </article>
+                                                <article class="tr_card card_hr">
+                                                    <div class="card_wrapper">
+                                                    <div class="card_image">
+                                                        <a href="tr_description.html">
+                                                            <img src="./img/banners/training_banner.jpg" alt="An intensive training in fashion designing.">
+                                                        </a>
+                                                    </div>
+                                                    <div class="card_details">
+                                                        <div class="card_info">
+                                                            <h4 class="card_title" title="An intensive training in fashion designing.">
+                                                                <a href="tr_description.html">
+                                                                An intensive training in fashion designing.
+                                                                </a>
+                                                            </h4>
+                                                            <ul class="meta_details">
+                                                                <li class="meta_item">
+                                                                    <span class="label">
+                                                                        <time>Next Start:</time>
+                                                                    </span>
+                                                                    <span class="value">
+                                                                        <time>25/5/2017</time>
+                                                                    </span>
+                                                                </li>
+                                                                <li class="meta_item">
+                                                                    <span class="label">
+                                                                        <time>From:</time>
+                                                                    </span>
+                                                                    <span class="value">
+                                                                        <i class="naira"></i>15,000
+                                                                    </span>
+                                                                </li>
+                                                                <li class="meta_item">
+                                                                    <span class="label" title="Fashion Design, Tayloring, Craft" data-toggle="tooltip">
+                                                                        Fashion Design, +2
+                                                                    </span>
+                                                                </li>
+                                                            </ul>
+                                                            <div class="control_item control_black card_control">
+                                                                <a href="#" title="Signify Interest">
+                                                                    <i class="fa fa-heart"></i>
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                        <div class="card_footer">
+                                                            <ul class="card_nav">
+                                                                <li class="meta_link">
+                                                                    <a href="tr_description.html" data-placement="top" title="Enrolled Students" data-toggle="tooltip">
+                                                                        <i class="fa fa-group"></i>
+                                                                        <span class="item_label">Enrolled</span>
+                                                                        <span class="item_count">28</span>
+                                                                    </a>
+                                                                </li>
+                                                                <li class="meta_link">
+                                                                    <a href="tr_enquires.html" data-placement="top" title="Discussions Topics" data-toggle="tooltip">
+                                                                        <i class="fa fa-comments"></i>
+                                                                        <span class="item_label">Discussions</span>
+                                                                        <span class="item_count">32</span>
+                                                                    </a>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                  </div>
+                                                </article>
+                                                <article class="tr_card card_hr">
+                                                    <div class="card_wrapper">
+                                                    <div class="card_image">
+                                                        <a href="tr_description.html">
+                                                            <img src="./img/banners/training_banner.jpg" alt="An intensive training in fashion designing.">
+                                                        </a>
+                                                    </div>
+                                                    <div class="card_details">
+                                                        <div class="card_info">
+                                                            <h4 class="card_title" title="An intensive training in fashion designing.">
+                                                                <a href="tr_description.html">
+                                                                An intensive training in fashion designing.
+                                                                </a>
+                                                            </h4>
+                                                            <ul class="meta_details">
+                                                                <li class="meta_item">
+                                                                    <span class="label">
+                                                                        <time>Next Start:</time>
+                                                                    </span>
+                                                                    <span class="value">
+                                                                        <time>25/5/2017</time>
+                                                                    </span>
+                                                                </li>
+                                                                <li class="meta_item">
+                                                                    <span class="label">
+                                                                        <time>From:</time>
+                                                                    </span>
+                                                                    <span class="value">
+                                                                        <i class="naira"></i>15,000
+                                                                    </span>
+                                                                </li>
+                                                                <li class="meta_item">
+                                                                    <span class="label" title="Fashion Design, Tayloring, Craft" data-toggle="tooltip">
+                                                                        Fashion Design, +2
+                                                                    </span>
+                                                                </li>
+                                                            </ul>
+                                                            <div class="control_item control_black card_control">
+                                                                <a href="#" title="Signify Interest">
+                                                                    <i class="fa fa-heart"></i>
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                        <div class="card_footer">
+                                                            <ul class="card_nav">
+                                                                <li class="meta_link">
+                                                                    <a href="tr_description.html" data-placement="top" title="Enrolled Students" data-toggle="tooltip">
+                                                                        <i class="fa fa-group"></i>
+                                                                        <span class="item_label">Enrolled</span>
+                                                                        <span class="item_count">28</span>
+                                                                    </a>
+                                                                </li>
+                                                                <li class="meta_link">
+                                                                    <a href="tr_enquires.html" data-placement="top" title="Discussions Topics" data-toggle="tooltip">
+                                                                        <i class="fa fa-comments"></i>
+                                                                        <span class="item_label">Discussions</span>
+                                                                        <span class="item_count">32</span>
+                                                                    </a>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                  </div>
+                                                </article>
+                                                <article class="tr_card card_hr">
+                                                    <div class="card_wrapper">
+                                                    <div class="card_image">
+                                                        <a href="tr_description.html">
+                                                            <img src="./img/banners/training_banner.jpg" alt="An intensive training in fashion designing.">
+                                                        </a>
+                                                    </div>
+                                                    <div class="card_details">
+                                                        <div class="card_info">
+                                                            <h4 class="card_title" title="An intensive training in fashion designing.">
+                                                                <a href="tr_description.html">
+                                                                An intensive training in fashion designing.
+                                                                </a>
+                                                            </h4>
+                                                            <ul class="meta_details">
+                                                                <li class="meta_item">
+                                                                    <span class="label">
+                                                                        <time>Next Start:</time>
+                                                                    </span>
+                                                                    <span class="value">
+                                                                        <time>25/5/2017</time>
+                                                                    </span>
+                                                                </li>
+                                                                <li class="meta_item">
+                                                                    <span class="label">
+                                                                        <time>From:</time>
+                                                                    </span>
+                                                                    <span class="value">
+                                                                        <i class="naira"></i>15,000
+                                                                    </span>
+                                                                </li>
+                                                                <li class="meta_item">
+                                                                    <span class="label" title="Fashion Design, Tayloring, Craft" data-toggle="tooltip">
+                                                                        Fashion Design, +2
+                                                                    </span>
+                                                                </li>
+                                                            </ul>
+                                                            <div class="control_item control_black card_control">
+                                                                <a href="#" title="Signify Interest">
+                                                                    <i class="fa fa-heart"></i>
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                        <div class="card_footer">
+                                                            <ul class="card_nav">
+                                                                <li class="meta_link">
+                                                                    <a href="tr_description.html" data-placement="top" title="Enrolled Students" data-toggle="tooltip">
+                                                                        <i class="fa fa-group"></i>
+                                                                        <span class="item_label">Enrolled</span>
+                                                                        <span class="item_count">28</span>
+                                                                    </a>
+                                                                </li>
+                                                                <li class="meta_link">
+                                                                    <a href="tr_enquires.html" data-placement="top" title="Discussions Topics" data-toggle="tooltip">
+                                                                        <i class="fa fa-comments"></i>
+                                                                        <span class="item_label">Discussions</span>
+                                                                        <span class="item_count">32</span>
+                                                                    </a>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                  </div>
+                                                </article>
+                                                <article class="tr_card card_hr">
+                                                    <div class="card_wrapper">
+                                                    <div class="card_image">
+                                                        <a href="tr_description.html">
+                                                            <img src="./img/banners/training_banner.jpg" alt="An intensive training in fashion designing.">
+                                                        </a>
+                                                    </div>
+                                                    <div class="card_details">
+                                                        <div class="card_info">
+                                                            <h4 class="card_title" title="An intensive training in fashion designing.">
+                                                                <a href="tr_description.html">
+                                                                An intensive training in fashion designing.
+                                                                </a>
+                                                            </h4>
+                                                            <ul class="meta_details">
+                                                                <li class="meta_item">
+                                                                    <span class="label">
+                                                                        <time>Next Start:</time>
+                                                                    </span>
+                                                                    <span class="value">
+                                                                        <time>25/5/2017</time>
+                                                                    </span>
+                                                                </li>
+                                                                <li class="meta_item">
+                                                                    <span class="label">
+                                                                        <time>From:</time>
+                                                                    </span>
+                                                                    <span class="value">
+                                                                        <i class="naira"></i>15,000
+                                                                    </span>
+                                                                </li>
+                                                                <li class="meta_item">
+                                                                    <span class="label" title="Fashion Design, Tayloring, Craft" data-toggle="tooltip">
+                                                                        Fashion Design, +2
+                                                                    </span>
+                                                                </li>
+                                                            </ul>
+                                                            <div class="control_item control_black card_control">
+                                                                <a href="#" title="Signify Interest">
+                                                                    <i class="fa fa-heart"></i>
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                        <div class="card_footer">
+                                                            <ul class="card_nav">
+                                                                <li class="meta_link">
+                                                                    <a href="tr_description.html" data-placement="top" title="Enrolled Students" data-toggle="tooltip">
+                                                                        <i class="fa fa-group"></i>
+                                                                        <span class="item_label">Enrolled</span>
+                                                                        <span class="item_count">28</span>
+                                                                    </a>
+                                                                </li>
+                                                                <li class="meta_link">
+                                                                    <a href="tr_enquires.html" data-placement="top" title="Discussions Topics" data-toggle="tooltip">
+                                                                        <i class="fa fa-comments"></i>
+                                                                        <span class="item_label">Discussions</span>
+                                                                        <span class="item_count">32</span>
+                                                                    </a>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                  </div>
+                                                </article>
+                                                <article class="tr_card card_hr">
+                                                    <div class="card_wrapper">
+                                                    <div class="card_image">
+                                                        <a href="tr_description.html">
+                                                            <img src="./img/banners/training_banner.jpg" alt="An intensive training in fashion designing.">
+                                                        </a>
+                                                    </div>
+                                                    <div class="card_details">
+                                                        <div class="card_info">
+                                                            <h4 class="card_title" title="An intensive training in fashion designing.">
+                                                                <a href="tr_description.html">
+                                                                An intensive training in fashion designing.
+                                                                </a>
+                                                            </h4>
+                                                            <ul class="meta_details">
+                                                                <li class="meta_item">
+                                                                    <span class="label">
+                                                                        <time>Next Start:</time>
+                                                                    </span>
+                                                                    <span class="value">
+                                                                        <time>25/5/2017</time>
+                                                                    </span>
+                                                                </li>
+                                                                <li class="meta_item">
+                                                                    <span class="label">
+                                                                        <time>From:</time>
+                                                                    </span>
+                                                                    <span class="value">
+                                                                        <i class="naira"></i>15,000
+                                                                    </span>
+                                                                </li>
+                                                                <li class="meta_item">
+                                                                    <span class="label" title="Fashion Design, Tayloring, Craft" data-toggle="tooltip">
+                                                                        Fashion Design, +2
+                                                                    </span>
+                                                                </li>
+                                                            </ul>
+                                                            <div class="control_item control_black card_control">
+                                                                <a href="#" title="Signify Interest">
+                                                                    <i class="fa fa-heart"></i>
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                        <div class="card_footer">
+                                                            <ul class="card_nav">
+                                                                <li class="meta_link">
+                                                                    <a href="tr_description.html" data-placement="top" title="Enrolled Students" data-toggle="tooltip">
+                                                                        <i class="fa fa-group"></i>
+                                                                        <span class="item_label">Enrolled</span>
+                                                                        <span class="item_count">28</span>
+                                                                    </a>
+                                                                </li>
+                                                                <li class="meta_link">
+                                                                    <a href="tr_enquires.html" data-placement="top" title="Discussions Topics" data-toggle="tooltip">
+                                                                        <i class="fa fa-comments"></i>
+                                                                        <span class="item_label">Discussions</span>
+                                                                        <span class="item_count">32</span>
+                                                                    </a>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                  </div>
+                                                </article>
+                                                <article class="tr_card card_hr">
+                                                    <div class="card_wrapper">
+                                                    <div class="card_image">
+                                                        <a href="tr_description.html">
+                                                            <img src="./img/banners/training_banner.jpg" alt="An intensive training in fashion designing.">
+                                                        </a>
+                                                    </div>
+                                                    <div class="card_details">
+                                                        <div class="card_info">
+                                                            <h4 class="card_title" title="An intensive training in fashion designing.">
+                                                                <a href="tr_description.html">
+                                                                An intensive training in fashion designing.
+                                                                </a>
+                                                            </h4>
+                                                            <ul class="meta_details">
+                                                                <li class="meta_item">
+                                                                    <span class="label">
+                                                                        <time>Next Start:</time>
+                                                                    </span>
+                                                                    <span class="value">
+                                                                        <time>25/5/2017</time>
+                                                                    </span>
+                                                                </li>
+                                                                <li class="meta_item">
+                                                                    <span class="label">
+                                                                        <time>From:</time>
+                                                                    </span>
+                                                                    <span class="value">
+                                                                        <i class="naira"></i>15,000
+                                                                    </span>
+                                                                </li>
+                                                                <li class="meta_item">
+                                                                    <span class="label" title="Fashion Design, Tayloring, Craft" data-toggle="tooltip">
+                                                                        Fashion Design, +2
+                                                                    </span>
+                                                                </li>
+                                                            </ul>
+                                                            <div class="control_item control_black card_control">
+                                                                <a href="#" title="Signify Interest">
+                                                                    <i class="fa fa-heart"></i>
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                        <div class="card_footer">
+                                                            <ul class="card_nav">
+                                                                <li class="meta_link">
+                                                                    <a href="tr_description.html" data-placement="top" title="Enrolled Students" data-toggle="tooltip">
+                                                                        <i class="fa fa-group"></i>
+                                                                        <span class="item_label">Enrolled</span>
+                                                                        <span class="item_count">28</span>
+                                                                    </a>
+                                                                </li>
+                                                                <li class="meta_link">
+                                                                    <a href="tr_enquires.html" data-placement="top" title="Discussions Topics" data-toggle="tooltip">
+                                                                        <i class="fa fa-comments"></i>
+                                                                        <span class="item_label">Discussions</span>
+                                                                        <span class="item_count">32</span>
+                                                                    </a>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                  </div>
+                                                </article>
+                                                <article class="tr_card card_hr">
+                                                    <div class="card_wrapper">
+                                                    <div class="card_image">
+                                                        <a href="tr_description.html">
+                                                            <img src="./img/banners/training_banner.jpg" alt="An intensive training in fashion designing.">
+                                                        </a>
+                                                    </div>
+                                                    <div class="card_details">
+                                                        <div class="card_info">
+                                                            <h4 class="card_title" title="An intensive training in fashion designing.">
+                                                                <a href="tr_description.html">
+                                                                An intensive training in fashion designing.
+                                                                </a>
+                                                            </h4>
+                                                            <ul class="meta_details">
+                                                                <li class="meta_item">
+                                                                    <span class="label">
+                                                                        <time>Next Start:</time>
+                                                                    </span>
+                                                                    <span class="value">
+                                                                        <time>25/5/2017</time>
+                                                                    </span>
+                                                                </li>
+                                                                <li class="meta_item">
+                                                                    <span class="label">
+                                                                        <time>From:</time>
+                                                                    </span>
+                                                                    <span class="value">
+                                                                        <i class="naira"></i>15,000
+                                                                    </span>
+                                                                </li>
+                                                                <li class="meta_item">
+                                                                    <span class="label" title="Fashion Design, Tayloring, Craft" data-toggle="tooltip">
+                                                                        Fashion Design, +2
+                                                                    </span>
+                                                                </li>
+                                                            </ul>
+                                                            <div class="control_item control_black card_control">
+                                                                <a href="#" title="Signify Interest">
+                                                                    <i class="fa fa-heart"></i>
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                        <div class="card_footer">
+                                                            <ul class="card_nav">
+                                                                <li class="meta_link">
+                                                                    <a href="tr_description.html" data-placement="top" title="Enrolled Students" data-toggle="tooltip">
+                                                                        <i class="fa fa-group"></i>
+                                                                        <span class="item_label">Enrolled</span>
+                                                                        <span class="item_count">28</span>
+                                                                    </a>
+                                                                </li>
+                                                                <li class="meta_link">
+                                                                    <a href="tr_enquires.html" data-placement="top" title="Discussions Topics" data-toggle="tooltip">
+                                                                        <i class="fa fa-comments"></i>
+                                                                        <span class="item_label">Discussions</span>
+                                                                        <span class="item_count">32</span>
+                                                                    </a>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                  </div>
+                                                </article>
+                                                <article class="tr_card card_hr">
+                                                    <div class="card_wrapper">
+                                                    <div class="card_image">
+                                                        <a href="tr_description.html">
+                                                            <img src="./img/banners/training_banner.jpg" alt="An intensive training in fashion designing.">
+                                                        </a>
+                                                    </div>
+                                                    <div class="card_details">
+                                                        <div class="card_info">
+                                                            <h4 class="card_title" title="An intensive training in fashion designing.">
+                                                                <a href="tr_description.html">
+                                                                An intensive training in fashion designing.
+                                                                </a>
+                                                            </h4>
+                                                            <ul class="meta_details">
+                                                                <li class="meta_item">
+                                                                    <span class="label">
+                                                                        <time>Next Start:</time>
+                                                                    </span>
+                                                                    <span class="value">
+                                                                        <time>25/5/2017</time>
+                                                                    </span>
+                                                                </li>
+                                                                <li class="meta_item">
+                                                                    <span class="label">
+                                                                        <time>From:</time>
+                                                                    </span>
+                                                                    <span class="value">
+                                                                        <i class="naira"></i>15,000
+                                                                    </span>
+                                                                </li>
+                                                                <li class="meta_item">
+                                                                    <span class="label" title="Fashion Design, Tayloring, Craft" data-toggle="tooltip">
+                                                                        Fashion Design, +2
+                                                                    </span>
+                                                                </li>
+                                                            </ul>
+                                                            <div class="control_item control_black card_control">
+                                                                <a href="#" title="Signify Interest">
+                                                                    <i class="fa fa-heart"></i>
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                        <div class="card_footer">
+                                                            <ul class="card_nav">
+                                                                <li class="meta_link">
+                                                                    <a href="tr_description.html" data-placement="top" title="Enrolled Students" data-toggle="tooltip">
+                                                                        <i class="fa fa-group"></i>
+                                                                        <span class="item_label">Enrolled</span>
+                                                                        <span class="item_count">28</span>
+                                                                    </a>
+                                                                </li>
+                                                                <li class="meta_link">
+                                                                    <a href="tr_enquires.html" data-placement="top" title="Discussions Topics" data-toggle="tooltip">
+                                                                        <i class="fa fa-comments"></i>
+                                                                        <span class="item_label">Discussions</span>
+                                                                        <span class="item_count">32</span>
+                                                                    </a>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                  </div>
+                                                </article>
+                                                <article class="tr_card card_hr">
+                                                    <div class="card_wrapper">
+                                                    <div class="card_image">
+                                                        <a href="tr_description.html">
+                                                            <img src="./img/banners/training_banner.jpg" alt="An intensive training in fashion designing.">
+                                                        </a>
+                                                    </div>
+                                                    <div class="card_details">
+                                                        <div class="card_info">
+                                                            <h4 class="card_title" title="An intensive training in fashion designing.">
+                                                                <a href="tr_description.html">
+                                                                An intensive training in fashion designing.
+                                                                </a>
+                                                            </h4>
+                                                            <ul class="meta_details">
+                                                                <li class="meta_item">
+                                                                    <span class="label">
+                                                                        <time>Next Start:</time>
+                                                                    </span>
+                                                                    <span class="value">
+                                                                        <time>25/5/2017</time>
+                                                                    </span>
+                                                                </li>
+                                                                <li class="meta_item">
+                                                                    <span class="label">
+                                                                        <time>From:</time>
+                                                                    </span>
+                                                                    <span class="value">
+                                                                        <i class="naira"></i>15,000
+                                                                    </span>
+                                                                </li>
+                                                                <li class="meta_item">
+                                                                    <span class="label" title="Fashion Design, Tayloring, Craft" data-toggle="tooltip">
+                                                                        Fashion Design, +2
+                                                                    </span>
+                                                                </li>
+                                                            </ul>
+                                                            <div class="control_item control_black card_control">
+                                                                <a href="#" title="Signify Interest">
+                                                                    <i class="fa fa-heart"></i>
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                        <div class="card_footer">
+                                                            <ul class="card_nav">
+                                                                <li class="meta_link">
+                                                                    <a href="tr_description.html" data-placement="top" title="Enrolled Students" data-toggle="tooltip">
+                                                                        <i class="fa fa-group"></i>
+                                                                        <span class="item_label">Enrolled</span>
+                                                                        <span class="item_count">28</span>
+                                                                    </a>
+                                                                </li>
+                                                                <li class="meta_link">
+                                                                    <a href="tr_enquires.html" data-placement="top" title="Discussions Topics" data-toggle="tooltip">
+                                                                        <i class="fa fa-comments"></i>
+                                                                        <span class="item_label">Discussions</span>
+                                                                        <span class="item_count">32</span>
+                                                                    </a>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                  </div>
+                                                </article>
+                                            </div>
+                                            <nav class="clearfix">
+                                                <ul class="pagination pagination-sm clearfix">
+                                                    <li class="disabled">
+                                                        <a href="#">
+                                                            <<
+                                                        </a>
+                                                    </li>
+                                                    <li class="active"><a href="#">1</a></li>
+                                                    <li><a href="#">2</a></li>
+                                                    <li><a href="#">3</a></li>
+                                                    <li class="">
+                                                        <a href="#" class="">
+                                                            >>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </nav>
+                                        </div>
+
+                                    </article>
+                                </div>
+                            </section>
+
+                        </div>
+                    </section>
+                    <aside class="split_nav">
+                        <article class="widget_box widget_lg">
+                            <div class="wrapper">
+                                <h4 class="widget_title font_regular color-grey">Search Trainings</h4>
+                                <div class="input-group search_bar">
+                                    <input type="search" placeholder="e.g Enterpreneurship" class="form-control">
+                                    <span class="input-group-btn">
+                                        <button class="btn-primary btn">
+                                            Search
+                                        </button>
+                                    </span>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="widget_box widget_lg add_widget">
+                            <a href="https://wwww.saedconnect.com" class="wrapper">
+                                <img src="./img/banners/join_saedconnect.png" alt="Join SAEDConnect">
+                            </a>
+                        </article>
+                        <article class="widget_box widget_lg add_widget">
+                            <a href="#" class="wrapper">
+                                <img src="./img/banners/qlik.png" alt="random_ad">
+                            </a>
+                        </article>
+                        <article class="widget_box widget_lg ">
+                            <div class="wrapper">
+                                <h4 class="widget_title font_regular color-grey">Related Trainings</h4>
+                                <div class="">
+                                    <article class="blog_thumb related_post_wrapper">
+                                        <a href="forum_post.html" class="">
+                                            <h4 class="post_title">
+                                                Training Name
+                                            </h4>
+                                            <div class="card_footer">
+                                                <div class="post_meta">
+                                                    <div class="meta_item" title="Comments">
+                                                        <span class="label">
+                                                            By:
+                                                        </span>
+                                                        <span class="value">
+                                                            The Training Center
+                                                        </span>
+                                                    </div>
+                                                    <div class="meta_item pull-right" title="Shares">
+                                                        <time datetime="0:0:12">12 Mins Ago</time>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </article>
+                                    
+                                    <article class="blog_thumb related_post_wrapper">
+                                        <a href="forum_post.html" class="">
+                                            <h4 class="post_title">
+                                                Training Name
+                                            </h4>
+                                            <div class="card_footer">
+                                                <div class="post_meta">
+                                                    <div class="meta_item" title="Comments">
+                                                        <span class="label">
+                                                            By:
+                                                        </span>
+                                                        <span class="value">
+                                                            The Training Center
+                                                        </span>
+                                                    </div>
+                                                    <div class="meta_item pull-right" title="Shares">
+                                                        <time datetime="0:0:12">12 Mins Ago</time>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </article>
+                                    <article class="blog_thumb related_post_wrapper">
+                                        <a href="forum_post.html" class="">
+                                            <h4 class="post_title">
+                                                Training Name
+                                            </h4>
+                                            <div class="card_footer">
+                                                <div class="post_meta">
+                                                    <div class="meta_item" title="Comments">
+                                                        <span class="label">
+                                                            By:
+                                                        </span>
+                                                        <span class="value">
+                                                            The Training Center
+                                                        </span>
+                                                    </div>
+                                                    <div class="meta_item pull-right" title="Shares">
+                                                        <time datetime="0:0:12">12 Mins Ago</time>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </article>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="widget_box widget_lg add_widget">
+                            <a href="#" class="wrapper">
+                                <img src="./img/banners/small_ad.png" alt="random_ad">
+                            </a>
+                        </article>
+                        
+                    </aside>
+                </div>
+            </div>
+        </section>
+        
+    </main>
+
+    <!-- Javascript starts here-->
+    <script src="js/jquery-2.1.4.js"></script>
+    <script src="js/base.min.js"></script>
+    <script src="js/icheck.min.js"></script>
+    <script src="js/site_nav.js"></script>
+    <script src="./js/datepicker.min.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('.date').datepicker({
+                format: "D d, M, yyyy",
+                multidate: false,
+                autoclose: true,
+            });
+        });
+    </script>
+    
+</body>
+
+</html>

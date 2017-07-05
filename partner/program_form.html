@@ -1,0 +1,569 @@
+<!doctype html>
+<html lang="en-US" class="no-js">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Post an Impact program  | SAED Partner </title>
+    <link rel="icon" href="../img/favicon.ico" type="image/x-icon">
+    <link href="../css/font-awesome.css" rel="stylesheet">
+    <link href="../css/select2.min.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="../css/datepicker.min.css">
+    <link href="../css/base.min.css" rel="stylesheet" type="text/css">
+    <link href="../css/style.css" rel="stylesheet" type="text/css">
+    <link href="../css/admin_area.css" rel="stylesheet" type="text/css">
+    <script src="../js/modernizr.js"></script> <!-- Modernizr -->
+</head>
+
+<body class="admin_user">
+
+    <div class="modal fade in" id="success_prompt">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                </div>
+                <div class="modal-body">
+                   <div class="content_header">
+                       <h4 class="title">Success</h4>
+                       <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                    <i class="fa fa-times"></i></button>
+                   </div>
+                    <div class="content-panel">
+                        <div class="grid_holder">
+                           <h2 class="title color-primary text-center">Intervention Saved!</h2>
+                             <p class="subtitle text-center">Your impact program has been created and saved. To publish for corps members, you need to add at least one package.</p>
+                            
+                            <section class="item_tiles">
+                                <article class="tile tile_plain">
+                                    <a href="prg_package_form.html" class="tile_wrapper">
+                                        <h4 class="tile-label color-primary">Add Packages now</h4>
+                                        <p>I want to Add packages to my program now.</p>
+                                    </a>
+                                </article>
+                                <article class="tile tile_plain">
+                                    <a href="part_programs.html" class="tile_wrapper">
+                                        <h4 class="tile-label color-primary">Add packages later</h4>
+                                        <p>I want to save this intervention and publish later.</p>
+                                    </a>
+                                </article>
+                            </section>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <header role="banner">
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+            <div class="container">
+                <div class="logo">
+                    <a href="index.html" class="logo-link">
+                        <span class="sr-only">NYSC SAEDConnect</span>
+                        <img src="../img/partner_logo.png" alt="SAED Partner">
+                    </a>
+                </div>
+
+                <nav class="sec-nav ">
+                    <ul class="account_info">
+                        <li class="dropdown accounts">
+                            <a href="#" data-toggle="dropdown" class="navbar_link_item dropdown-toggle">
+                            <span class="profile_img">
+                                <img src="../img/user_avis/3.jpg" alt="Ikenna David">
+                            </span>
+                            <span class="profile_name">Jane Doe</span>
+                            <i class="fa fa-chevron-circle-down"></i></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="user_profile.html"><i class="fa fa-user"></i>My Profile</a></li>
+                                <li><a href="../login.html"><i class="fa fa-power-off"></i>Log Out</a></li>
+                            </ul>
+                        </li>
+                        <li class="mail_box">
+                            <a href="mail_box.html" class="" data-title="Mailbox">
+                                <i class="fa fa-envelope"></i>
+                                <span class="badge">3
+                                </span>
+                            </a>
+                        </li>
+                        <li class="nav_trigger">
+                            <a class="primary-nav-trigger" title="Open Menu" href="#0" data-effect="st-effect-1">
+                                <span class="menu-icon"></span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <div class="user_info_banner">
+        <div class="container clearfix">
+            <h4 class="title">
+                Welcome,
+                <span class="value">Sule Zankara and Sons Cow and Milk making industry</span>
+            </h4>
+            <div class="float_item">
+                <span title="My Partner ID">
+                    <span class="label">Partner ID</span>
+                    <span class="value">#######</span>
+                </span>
+            </div>
+        </div>
+    </div>
+
+    <main class="sd-main-content admin_content">
+
+        <!--Insert offcanvas nav here-->
+        <nav class="st-menu">
+        </nav>
+
+        <div class="content_body">
+            <div class="container">
+
+                <!--Right Sidebar-->
+                <aside class="aside_content">
+                    <div class="content_wrapper">
+                       <div class="pane_widgets">
+                            <header class="pane_heading">
+                                <h2 class="pane_title">Where do you want to go?</h2>
+                            </header>
+                            <ul class="pane_options nav_links">
+                                <li class="nav_link_main ">
+                                    <div class="link_wrapper">
+                                        <a href="part_welcome.html" class="option_label">Welcome</a>
+                                        <i class="option_icon fa fa-info" title="Your welcome page to the saedconnect platform." data-toggle="tooltip" data-placement="bottom"></i>
+                                    </div>
+                                </li>
+                                <li class="nav_link_main">
+                                    <div class="link_wrapper">
+                                        <a href="str_partnership.html" class="option_label">Strategic/Program Support</a>
+                                        <i class="option_icon fa fa-info" title="Request to become a strategic or program partner." data-toggle="tooltip" data-placement="bottom"></i>
+                                    </div>
+                                </li>
+                                <li class="nav_link_main">
+                                    <div class="link_wrapper">
+                                        <a href="admin_memos.html" class="option_label">Admin Memos</a>
+                                        <i class="option_icon fa fa-info" title="Find all memos addressed to you from the SAED directorate" data-toggle="tooltip" data-placement="bottom"></i>
+                                    </div>
+                                </li>
+                                <li class="nav_link_main active">
+                                    <div class="link_wrapper">
+                                        <a href="#int_links" data-toggle="collapse" class="option_label">Interventions Manager</a>
+                                        <i class="option_icon fa fa-info" title="Manage your corps empowerment interventions" data-toggle="tooltip" data-placement="bottom"></i>
+                                    </div>
+                                    <div class="panel-collapse collapse" id="int_links">
+                                        <ul class="link_children">
+                                            <li><a href="about_blog.html">Empower Blog</a></li>
+                                            <li><a href="about_tr.html">Trainings & Events</a></li>
+                                            <li class="active"><a href="about_programs.html">Impact Programs</a></li>
+                                            <li><a href="about_product.html">Product Manager</a></li>
+                                            <li><a href="about_services.html">Services Manager</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="nav_link_main">
+                                    <div class="link_wrapper">
+                                        <a href="transact_mng.html" class="option_label">Transactions Manager</a>
+                                        <i class="option_icon fa fa-info" title="Manage your transaction record and spending" data-toggle="tooltip" data-placement="bottom"></i>
+                                    </div>
+                                </li>
+                                <li class="nav_link_main">
+                                    <div class="link_wrapper">
+                                        <a href="announcements.html" class="option_label">Announcements</a>
+                                        <i class="option_icon fa fa-info" title="Manage your transaction record and spending" data-toggle="tooltip" data-placement="bottom"></i>
+                                    </div>
+                                </li>
+                                <li class="nav_link_main ">
+                                    <div class="link_wrapper">
+                                        <a href="sub_feedback.html" class="option_label">Give Feedback</a>
+                                        <i class="option_icon fa fa-info" title="Manage your transaction record and spending" data-toggle="tooltip" data-placement="bottom"></i>
+                                    </div>
+                                </li>
+                                <li class="nav_link_main">
+                                    <div class="link_wrapper">
+                                        <a href="partner_faq.html" class="option_label">Partner FAQ</a>
+                                        <i class="option_icon fa fa-info" title="Manage your transaction record and spending" data-toggle="tooltip" data-placement="bottom"></i>
+                                    </div>
+                                </li>
+                                <li class="nav_link_main">
+                                    <div class="link_wrapper">
+                                        <a href="user_profile.html" class="option_label">My Profile Settings</a>
+                                        <i class="option_icon fa fa-info" title="Manage your transaction record and spending" data-toggle="tooltip" data-placement="bottom"></i>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>  
+                    </div>
+                </aside>
+
+                <article class="main_content">
+                    <div class="content_wrapper clearfix">
+
+                        <header class="pane_heading main_callout text-center">
+                            <h2 class="pane_title color-primary">Add new Impact Program </h2>
+                            <!--Use this to display the name of the training the user is editing-->
+                            <h4 class="subtitle hidden">Title of the program you are editing</h4>
+                        </header>
+
+                        <!--Main content view-->
+                        <section class="content_main">
+                            <div class="content_wrapper">
+
+                                <article class="content_preview">
+
+                                    <header class="">
+                                        <nav class="wizard_nav">
+                                            <div class="container">
+                                                <ul class="step_nav text-center">
+                                                    <li class="step_nav_item active">
+                                                        <a href="#">
+                                                            <i class="step_count"></i>
+                                                            <span class="wizard_text" title="About Training or Event">Basic Information</span>
+                                                        </a>
+                                                    </li>
+                                                    <li class="step_nav_item ">
+                                                        <a href="#">
+                                                            <i class="step_count"></i>
+                                                            <span class="wizard_text" title="Training Details">Details</span>
+                                                        </a>
+                                                    </li>
+                                                    <li class="step_nav_item ">
+                                                        <a href="#">
+                                                            <i class="step_count"></i>
+                                                            <span class="wizard_text" title="Accreditation information">Accreditation</span>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </nav>
+                                    </header>
+
+                                    <div class="content_inner">
+                                        <div class="step_form">
+
+                                            <div class="wizard_body">
+
+                                                <!--About Program-->
+                                                <section class="wiz_step step_active">
+                                                    <header class="wizard_heading">
+                                                        <h3 class="step_title title_large">Tell us about your Program</h3>
+                                                        <p class="help-block">Please provide basic information about what your program is about. Fields marked with <sup class="color-inverse">*</sup> are required.</p>
+                                                    </header>
+                                                    <div class="step_body">
+                                                        <form action="">
+
+                                                            <div class="form-group">
+                                                                <label class="control-label">
+                                                                    Program Title
+                                                                </label>
+                                                                <input type="text" class="form-grey form-control" placeholder="Title of program here.">
+                                                            </div>
+
+                                                            <div class="form-group">
+                                                                <label class="control-label">
+                                                                    Short Description / Tag line
+                                                                </label>
+                                                                <textarea rows="2" class="form-control"></textarea>
+                                                                <p class="help-block">Provide a short description or tag line (not more than 40 characters) for your program.</p>
+                                                            </div>
+
+                                                            <div class="form-group">
+                                                                <label class="control-label">Program type</label>
+                                                                <div class="multi_sel_item">
+                                                                    <div class="radio-inline control_item">
+                                                                        <label for="prg_loan">
+                                                                            <input type="radio" id="prg_loan" name="prg_type">
+                                                                            <span>Loan Finance</span>
+                                                                        </label>
+                                                                    </div>
+                                                                    <div class="radio-inline control_item">
+                                                                        <label for="prg_grant">
+                                                                            <input type="radio" id="prg_grant" name="prg_type" >
+                                                                            <span>Grant Finance</span>
+                                                                        </label>
+                                                                    </div>
+                                                                    <div class="radio-inline control_item">
+                                                                        <label for="prg_eqt">
+                                                                            <input type="radio" id="prg_eqt" name="prg_type" >
+                                                                            <span>Equity Finance</span>
+                                                                        </label>
+                                                                    </div>
+                                                                    <div class="radio-inline control_item">
+                                                                        <label for="prg_meo">
+                                                                            <input type="radio" id="prg_meo" name="prg_type" >
+                                                                            <span>Micro-enterprise opportunity</span>
+                                                                        </label>
+                                                                    </div>
+                                                                    <div class="radio-inline control_item">
+                                                                        <label for="prg_comp">
+                                                                            <input type="radio" id="prg_comp" name="prg_type" >
+                                                                            <span>Competition</span>
+                                                                        </label>
+                                                                    </div>
+                                                                    <div class="radio-inline control_item">
+                                                                        <label for="prg_sch">
+                                                                            <input type="radio" id="prg_sch" name="prg_type" >
+                                                                            <span>Scholarship</span>
+                                                                        </label>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
+                                                            <fieldset>
+                                                                <h4 class="form-title">Program categories</h4>
+                                                                <p class="help-block">Select at most 3 category. Click the <strong>+Add category</strong> to add another category</p>
+                                                                <div class="form-horizontal">
+                                                                    <div class="form-group col-sm-6">
+                                                                        <label class="control-label">Select Category</label>
+                                                                        <select class="form-control">
+                                                                            <option>Select a Category</option>
+                                                                            <option>Agriculture</option>
+                                                                            <option>Power & Energy</option>
+                                                                            <option>Health</option>
+                                                                            <option>Health</option>
+                                                                        </select>
+                                                                    </div>
+                                                                    <!--Show if category has a subcategory, and Load the subcategories of the selected category-->
+                                                                    <div class="form-group hidden col-sm-6">
+                                                                        <label class="control-label">Select Subcategory</label>
+                                                                        <select class="form-control">
+                                                                            <option>Fish farming</option>
+                                                                            <option>Snaile farming</option>
+                                                                            <option>Poultry farming</option>
+                                                                            <option>Cattle farming</option>
+                                                                            <option>Agro-Allied</option>
+                                                                        </select>
+                                                                    </div>
+                                                                </div>
+                                                                <a href="#" class="color-primary"><i class="fa fa-plus"></i>Add category</a>
+                                                                <div class="">
+                                                                    <!--Show the list of categories selected-->
+                                                                    <ul class="select_preview">
+                                                                        <li class="selected_item">
+                                                                            <div class="item_wrapper clearix">
+                                                                                <span class="item_dismiss">
+                                                                                    <i class="fa fa-times"></i>
+                                                                                </span>
+                                                                                <span class="item_label">
+                                                                                    <i class="item_main">Agriculture</i>
+                                                                                    <i class="item_sub">Fish Farming</i>
+                                                                                </span>
+                                                                            </div>
+                                                                        </li>
+                                                                        <!--category without a subcategory-->
+                                                                        <li class="selected_item">
+                                                                            <div class="item_wrapper clearix">
+                                                                                <span class="item_dismiss">
+                                                                                    <i class="fa fa-times"></i>
+                                                                                </span>
+                                                                                <span class="item_label">
+                                                                                    <i class="item_main">Power & Energy</i>
+                                                                                </span>
+                                                                            </div>
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>
+                                                            </fieldset>
+
+                                                            <fieldset>
+                                                                <h4 class="form-title ">Program Flyer / Banner</h4>
+
+                                                                <div class="form-group">
+                                                                    <label class="control-label">
+                                                                        Training banner Image <small>Recommended Dimensions: 640px by 320px </small>
+                                                                    </label>
+                                                                    <div class="media_uploader">
+                                                                        <div class="media_large media_item form-group">
+                                                                            <div class="media_thumb">
+                                                                              <!--Insert uploaded image here-->
+                                                                               <!--<img src="../img/banners/article_image.jpg" class="" alt="Blog post header">-->
+                                                                               <!--Show this if no image has been added as header image-->
+                                                                               <div class="img_uploader text-center">
+                                                                                    <div class="file_upload">
+                                                                                        <input type="file" name="file" id="item_image" class="inputfile" />
+                                                                                        <label for="item_image">
+                                                                                            <i class="icon icon-sm upload_img" title="Upload header image"></i>
+                                                                                        </label>
+                                                                                       <p>Select Image</p>
+                                                                                    </div>
+                                                                               </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </fieldset>
+
+                                                            <div class="action_btn text-center">
+                                                                <button type="button" class="btn btn-rounded btn-default">Cancel</button>
+                                                                <button type="submit" class="btn btn-rounded btn-primary">Next</button>
+                                                            </div>
+                                                        </form>
+                                                    </div>
+                                                </section>
+
+                                                <!--Program details -->
+                                                <section class="wiz_step step_active">
+                                                    <header class="wizard_heading">
+                                                        <h3 class="step_title title_large">Program Details</h3>
+                                                        <p class="help-block">Please provide a detailed background of your impact program</p>
+                                                    </header>
+                                                    <div class="step_body">
+                                                        <form action="">
+                                                            
+                                                            <div class="form-group">
+                                                                <label class="control-label">
+                                                                    Program Description
+                                                                </label>
+                                                                <textarea rows="10" class="form-control html_editor"></textarea>
+                                                                <p class="help-block">What is this program about, its goals and objectives?</p>
+                                                            </div>
+
+                                                            <div class="form-group">
+                                                                <label class="control-label">
+                                                                    Target Audience
+                                                                </label>
+                                                                <textarea rows="2" class="form-control"></textarea>
+                                                                <p class="help-block">Who is the program meant for?</p>
+                                                            </div>
+                                                            
+                                                            <div class="form-group">
+                                                                <label class="control-label">
+                                                                    Eligibility Criteria
+                                                                </label>
+                                                                <textarea rows="5" class="form-control html_editor"></textarea>
+                                                                <p class="help-block">What is required of prospective participant?</p>
+                                                            </div>
+
+                                                            <div class="form-group">
+                                                                <label class="control-label">
+                                                                    General application instructions
+                                                                </label>
+                                                                <textarea rows="2" class="form-control"></textarea>
+                                                                <p class="help-block">What does a potential applicant need to do, to apply for this intervention</p>
+                                                            </div>
+                                                            
+                                                            <div class="action_btn text-center">
+                                                                <button type="button" class="btn btn-rounded btn-default">
+                                                                    <i class="fa fa-angle-left"></i>Back
+                                                                </button>
+                                                                <button type="submit" class="btn btn-rounded btn-primary">
+                                                                    Next <i class="fa fa-angle-right"></i>
+                                                                </button>
+                                                            </div>
+                                                            
+
+                                                        </form>
+                                                    </div>
+                                                </section>
+
+                                                <!-- Accreditation -->
+                                                <section class="wiz_step step_active">
+                                                    <header class="wizard_heading">
+                                                        <h3 class="step_title title_large">Accreditation Information</h3>
+                                                        <p class="help-block">The SAED Administrator needs to assess your capacity to organize this impact program. Please provide all the necessary information required that will help us adequately assess your competence.</p>
+                                                    </header>
+                                                    <div class="step_body">
+                                                        <form action="">
+
+                                                            <div class="form-group">
+                                                                <label class="control-label">Have you organized this impact Program or any other before?</label>
+                                                                <div class="control_holder">
+                                                                    <div class="radio-inline">
+                                                                        <label for="tr_yes">
+                                                                            <input type="radio" id="tr_yes" name="tr_history">
+                                                                            <span>Yes, I have</span>
+                                                                        </label>
+                                                                    </div>
+                                                                    <div class="radio-inline">
+                                                                        <label for="tr_no">
+                                                                            <input type="radio" id="tr_no" name="tr_history">
+                                                                            <span>No, Its my first program</span>
+                                                                        </label>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="form-group">
+                                                                <label class="control-label">
+                                                                    Qualification
+                                                                </label>
+                                                                <textarea rows="7" class="form-control" placeholder="What qualifies you to organize this program?"></textarea>
+                                                                <p class="help-block">State all certification, or licence that you have on this program.</p>
+                                                            </div>
+
+                                                            <div class="form-group">
+                                                                <label class="control-label">
+                                                                    Tools / Resources</label>
+                                                                <textarea rows="10" class="form-control" placeholder="Highlight any equipment, personel or resources that you have."></textarea>
+                                                                <p class="help-block">State all tools/resources you possess that will enable you adequately organize this program?</p>
+                                                            </div>
+
+                                                            <div class="action_btn text-center">
+                                                                <button type="button" class="btn btn-rounded btn-default">
+                                                                    <i class="fa fa-angle-left"></i>Back
+                                                                </button>
+                                                                <button type="button" data-target="#success_prompt" data-backdrop="static" data-toggle="modal" class="btn btn-rounded btn-primary">
+                                                                    Save Details
+                                                                </button>
+                                                            </div>
+
+                                                        </form>
+                                                    </div>
+                                                </section>
+
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </article>
+                            </div>
+                        </section>
+
+                    </div>
+                </article>
+
+            </div>
+        </div>
+    </main>
+
+    <script src="../js/jquery-2.1.4.js"></script>
+    <script src="../js/base.min.js"></script>
+    <script src="../js/site_nav.js"></script>
+    <script src="../js/icheck.min.js"></script>
+    <script src="../js/tinymce/tinymce.min.js"></script>
+    <script src="../js/main.js"></script>
+    
+    <script>
+        $(document).ready(function(){            
+            tinymce.init({
+                selector: 'textarea.html_editor',
+                toolbar: 'undo redo | bold italic underline | bullist numlist table | link image',
+                menubar: '',
+                theme: 'modern',
+                statusbar: false,
+                plugins: ['advlist autolink lists link image charmap print preview anchor',
+                    'searchreplace visualblocks code fullscreen',
+                    'insertdatetime media table contextmenu paste code'
+                ],
+                content_css: '../css/style.css',
+                browser_spellcheck: true,
+                schema: 'html5',
+            });
+            
+            $('input').iCheck({
+                checkboxClass: 'icheckbox_minimal-green',
+                radioClass: 'iradio_minimal-green'
+            });
+            
+            $(".multiple_select").select2({
+                placeholder: "Select from list"
+            });
+        });
+    </script>
+
+</body>
+
+</html>

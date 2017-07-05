@@ -1,0 +1,414 @@
+<!doctype html>
+<html lang="en-US" class="no-js">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>My Timeline | SAEDConnect</title>
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+    <link href="css/font-awesome.css" rel="stylesheet">
+    <link href="css/base.min.css" rel="stylesheet" type="text/css">
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <link href="css/admin_area.css" rel="stylesheet" type="text/css">
+    <link href="css/full_layout.css" rel="stylesheet" type="text/css">
+    <script src="js/modernizr.js"></script> <!-- Modernizr -->
+</head>
+
+<body class="admin_user">
+
+    <header role="banner">
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+            <div class="container">
+                <div class="logo">
+                    <a href="index.html" class="logo-link">
+                        <span class="sr-only">NYSC SAEDConnect</span>
+                        <img src="img/logo_admin.png" alt="NYSC SAEDConnect">
+                    </a>
+                </div>
+                <div class="left_nav">
+                    <ul>
+                        <li class="">
+                            <a href="timeline.html" class="navbar_link_item">Timeline</a>
+                        </li>
+                        <li class="">
+                            <a href="coming_soon.html" class="navbar_link_item">What to expect</a>
+                        </li>
+                       <!--
+                        <li class="">
+                            <a href="articles_home.html" class="navbar_link_item">Blog</a>
+                        </li>
+                        <li class="">
+                            <a href="forum.html" class="navbar_link_item">Forum</a>
+                        </li>
+                        <li class="">
+                            <a href="venture_oven.html" class="navbar_link_item">Ventures</a>
+                        </li>
+                        <li class="">
+                            <a href="#" class="navbar_link_item">Gigs</a>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="navbar_link_item dropdown-toggle" data-toggle="dropdown">
+                                Directories
+                                <i class="fa fa-angle-down"></i>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a href="fn_trainings.html">Training and Events</a></li>
+                                <li><a href="fn_programs.html">Growth  Opportunities</a></li>
+                            </ul>
+                        </li>
+                        
+                        <li class="dropdown">
+                            <a href="#" class="navbar_link_item dropdown-toggle" data-toggle="dropdown">
+                                Others
+                                <i class="fa fa-angle-down"></i>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Announcements</a></li>
+                                <li><a href="help_center/help_center.html">Help Center</a></li>
+                            </ul>
+                        </li>
+                        -->
+                    </ul>
+                </div>             
+                <nav class="sec-nav ">
+                    <ul class="account_info">
+                        <li class="dropdown accounts">
+                            <a href="#" data-toggle="dropdown" class="navbar_link_item dropdown-toggle">
+                            <span class="profile_img">
+                                <img src="img/user_avis/3.jpg" alt="Ikenna David">
+                            </span>
+                            <span class="profile_name">Jane Doe</span>
+                            <i class="fa fa-chevron-circle-down"></i></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="corp_profile.html"><i class="fa fa-user"></i>Personal Profile</a></li>
+                                <li><a href="skil_profile.html"><i class="fa fa-gears"></i>Skills Profile</a></li>
+                                <li><a href="corp_trainings.html"><i class="fa fa-briefcase"></i>My Briefcase</a></li>
+                                <li><a href="#"><i class="fa fa-power-off"></i>Log Out</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav_trigger">
+                            <a class="primary-nav-trigger" title="Open Menu" href="#0" data-effect="st-effect-1">
+                                <span class="menu-icon"></span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+   <!-- work as ST-container-->
+    <main class="sd-main-content admin_content bg-white"> 
+       
+       <!--Insert offcanvas nav here--> 
+        <nav class="st-menu">
+        </nav>
+        <!--Work as st-content-pusher-->
+          
+           <!--Wrap site content-->
+            <section class="bg-grey-light section_area bg_cards_parallex" id="get-started">
+                <div class="container">
+                    <div class="col-xs-12 col-sm-12 col-md-10 col-md-offset-1 col-lg-10 col-lg-offset-1 bg-white cv_form">
+                        <div class="col-xs-12 col-md-8">
+                            <header class=" section_area_header">
+                                <h1>
+                                    Let's get started
+                                </h1>
+                            </header>
+                            <div class="">
+                                <form class="">
+                                    <div class="form-group clearfix">
+                                        <label class="control-label col-sm-4" for="name">Name:</label>
+                                        <div class="col-sm-8">
+                                            <input type="text" class="form-control" id="name" placeholder="Enter your full name" name="name">
+                                        </div>
+                                    </div>
+                                    <div class="form-group clearfix">
+                                        <label class="control-label col-sm-4" for="email">Email:</label>
+                                        <div class="col-sm-8">
+                                            <input type="email" class="form-control" id="email" placeholder="Enter your email address" name="email">
+                                        </div>
+                                    </div>
+                                    <div class="form-group clearfix">
+                                        <label class="control-label col-sm-4" for="phone">Phone Number:</label>
+                                        <div class="col-sm-8">
+                                            <input type="tel" class="form-control" id="phone" placeholder="(eg. 0801 234 5678)" name="phone">
+                                        </div>
+                                    </div>
+                                    <div class="form-group clearfix">
+                                        <label class="control-label col-sm-4" for="corp">Are you a serving Corp Member?</label>
+                                        <div class="col-sm-8">
+                                            <select class="form-control" id="corp">
+                                            <option>No</option>
+                                            <option>Yes</option>
+                                            </select>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group clearfix">
+                                        <label class="control-label col-sm-4" for="stateCode">Corp Member State Code:</label>
+                                        <div class="col-sm-8">
+                                            <input type="text" class="form-control" id="statecode" placeholder="(eg. FC/17A/0000)" name="stateCode" disabled>
+                                        </div>
+                                    </div>
+                                    <div class="form-group clearfix">
+                                        <label class="control-label col-sm-4" for="address">State of residence:</label>
+                                        <div class="col-sm-8">
+                                            <select class="form-control" id="state">
+                                                <option value="" selected="selected">- Select -</option>
+                                                <option value="Abuja FCT">Abuja FCT</option>
+                                                <option value="Abia">Abia</option>
+                                                <option value="Adamawa">Adamawa</option>
+                                                <option value="Akwa Ibom">Akwa Ibom</option>
+                                                <option value="Anambra">Anambra</option>
+                                                <option value="Bauchi">Bauchi</option>
+                                                <option value="Bayelsa">Bayelsa</option>
+                                                <option value="Benue">Benue</option>
+                                                <option value="Borno">Borno</option>
+                                                <option value="Cross River">Cross River</option>
+                                                <option value="Delta">Delta</option>
+                                                <option value="Ebonyi">Ebonyi</option>
+                                                <option value="Edo">Edo</option>
+                                                <option value="Ekiti">Ekiti</option>
+                                                <option value="Enugu">Enugu</option>
+                                                <option value="Gombe">Gombe</option>
+                                                <option value="Imo">Imo</option>
+                                                <option value="Jigawa">Jigawa</option>
+                                                <option value="Kaduna">Kaduna</option>
+                                                <option value="Kano">Kano</option>
+                                                <option value="Katsina">Katsina</option>
+                                                <option value="Kebbi">Kebbi</option>
+                                                <option value="Kogi">Kogi</option>
+                                                <option value="Kwara">Kwara</option>
+                                                <option value="Lagos">Lagos</option>
+                                                <option value="Nassarawa">Nassarawa</option>
+                                                <option value="Niger">Niger</option>
+                                                <option value="Ogun">Ogun</option>
+                                                <option value="Ondo">Ondo</option>
+                                                <option value="Osun">Osun</option>
+                                                <option value="Oyo">Oyo</option>
+                                                <option value="Plateau">Plateau</option>
+                                                <option value="Rivers">Rivers</option>
+                                                <option value="Sokoto">Sokoto</option>
+                                                <option value="Taraba">Taraba</option>
+                                                <option value="Yobe">Yobe</option>
+                                                <option value="Zamfara">Zamfara</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="form-group clearfix">
+                                        <label class="control-label col-sm-4" for="payment_type">How would you like to pay?</label>
+                                        <div class="col-sm-8">
+                                            <select class="form-control" id="payment_type">
+                                                <option>Bank Deposit</option>
+                                                <option>Credit Card</option>
+                                                <option>PayStack</option>
+                                            </select>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group pull-right clearfix">        
+                                        <div class="col-sm-12 ">
+                                            <button type="submit" class="btn btn-secondary btn-rounded" id="#submit">Submit</button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-md-4 pull-left payment">
+                            <article class="payment_options">
+                                <h2>
+                                    Payment Options
+                                </h2>
+                            
+                                <div class="row opt">
+                                    <p class="col-xs-3">
+                                        <img class="" src="img/icons/cv_icon/bank.png">
+                                    </p>
+                                    <div class="col-xs-9">
+                                        <h6>Bank Deposit</h6>
+                                        <div class="account_details">
+                                            <p class="bank_name">
+                                                Access Bank
+                                            </p>
+                                            <p class="acct_name">
+                                                John Doe
+                                            </p>
+                                            <p class="acct_number">
+                                                0123456789
+                                            </p>
+                                        </div>
+                                        <div class="account_details">
+                                            <p class="bank_name">
+                                                Guaranty Trust Bank
+                                            </p>
+                                            <p class="acct_name">
+                                                John Doe
+                                            </p>
+                                            <p class="acct_number">
+                                                0123456789
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row opt">
+                                    <p class="col-xs-3">
+                                        <img class="" src="img/icons/cv_icon/Credit-cards.ico">
+                                    </p>
+                                    <div class="col-xs-9">
+                                        <h6>Credit Card</h6>
+                                    </div>
+                                </div>
+                                <div class="row opt">
+                                    <p class="col-xs-3"><img class="" src="img/icons/cv_icon/payStack_logo.png"></p>
+                                    <div class="col-xs-9">
+                                        <h6>PayStack</h6>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="col-xs-12">
+                            <header class="section_area_cards">
+                                <p class="centered">
+                                    After payment, you will receive your order number. Send your order number to 08012345678 to confirm payment.
+                                </p>
+                            </header>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+    </main>
+    <!-- end of main content --><a href="#0" class="to-top">Top</a>
+    <footer role="content-info">
+        <section class="section-top clearfix">
+            <div class="col-md-7 left_half">
+                <div class="clearfix">
+                    <div class="col-md-6 col-sm-4 about_brand">
+                        <div class="content_wrapper">
+                            <div class="narrative">
+                                <p>
+                                    SAEDConnect exists to accelerate young graduates & students from school to rewarding work by connecting them to inspiration, knowledge, network, opportunities & support that can build their capacity to create value & start generating income for themselves.
+                                </p>
+                            </div>
+                            <div class="footer_logo">
+                                <a href="https://www.nyscsaed.com">
+                                    <img src="img/logo_inverse_shd.png" alt="SAEDConnect Logo">
+                                </a>
+                            </div>
+    
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-sm-4">
+                        <div class="content_wrapper">
+                            <h4>Quicklinks</h4>
+                            <ul class="footer_links column_links">
+                                <li><a href="timeline.html">Timeline</a></li>
+                                <li><a href="">Ventures</a></li>
+                                <li><a href="">Gigs</a></li>
+                                <li><a href="">Jobs</a></li>
+                                <li><a href="">The Leaders Forum</a></li>
+                                <li><a href="">The Empower Blog</a></li>
+                                <li><a href="">Training/Event Directory</a></li>
+                                <li><a href="">Opportunity Directory</a></li>
+                                <li><a href="http://partners.saedconnect.com/">Partner Portal</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-5 right_half">
+                <div class="footer_block learn_block">
+                   <img src="img/banners/learn_fb.jpg" alt="Learn">
+                    <a href="./" class="content_wrapper">
+                        <span>Learn & Develop yourself</span>
+                    </a>
+                </div>
+                <div class="footer_block interact_block">
+                   <img src="img/banners/interact_fb.jpg" alt="Interact">
+                    <a href="./" class="content_wrapper">
+                        <span>Discover Income & Growth Opportunities</span>
+                    </a>
+                </div>
+                <div class="footer_block opportunities_block">
+                   <img src="img/banners/opportunities_fb.jpg" alt="Opportunities">
+                    <a href="./" class="content_wrapper">
+                        <span>Engage, Grow & Be Discovered</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <section class="section-bottom clearfix">
+            <div class="container clearfix">
+              <div class="col-md-4 col-sm-6 clearfix">
+                    <ul class="social_links">
+                        <li><a href="https://www.facebook.com/saedconnect" target="_blank" class="social_link social_link_fb">
+                           <i class="fa fa-facebook"></i></a>
+                        </li>
+                        <li><a href="https://www.twitter.com/saedconnect" target="_blank" class="social_link social_link_tw">
+                           <i class="fa fa-twitter"></i></a>
+                        </li>
+                        <li><a href="https://www.instagram.com/saedconnect" target="_blank" class="social_link social_link_ig">
+                           <i class="fa fa-instagram"></i></a>
+                        </li>
+                        <li><a href="mailto:hello@saedconnect.com" target="_blank" class="social_link social_link_mail">
+                           <i class="fa fa-envelope"></i></a>
+                        </li>
+                   </ul>
+              </div>
+               <div class="col-md-4 col-sm-6 clearfix">
+                    <div class="footer_misc clearfix">
+                        <ul class="misc_nav">
+                            <li><a href="terms.html">Terms & Conditions</a></li>
+                            <li><a href="privacy.html">Privacy Policy</a></li>
+                        </ul>
+                    </div>
+                    <div class="mkrt_badge">
+                        <a href="http://vmlearn.com">Powered by <span>VMLearn</span></a>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 copyright">
+                   <div class="content_wrapper">
+                        <span>Copyright &copy; SAEDConnect 2017</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </footer>
+
+    <!-- Javascript starts here-->
+    <script src="js/jquery-2.1.4.js"></script>
+    <script src="js/base.min.js"></script>
+    <script src="js/icheck.min.js"></script>
+    <script src="js/site_nav.js"></script>
+    <script src="./js/datepicker.min.js"></script>
+    <script src="js/main.js"></script>
+    
+    <script>
+        
+        var $stateCode = $("#statecode");
+        
+        $("#corp" ).change(function(){
+            
+            if($("#corp" ).val() == "Yes"){
+                $("#statecode").prop( "disabled", false );
+            }else{
+                $("#statecode").prop( "disabled", true );
+                $("#statecode").val( "");
+            }
+
+        });
+        
+        $("#submit").click(function(){
+            if($("#payment_type").val() == "Credit Card"){
+                console.log("Trigger Modal")
+            }
+        });
+        
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,902 @@
+<!doctype html>
+<html lang="en-US" class="no-js">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Manage State Directorate | SAED Admin </title>
+    <link rel="icon" href="../img/favicon.ico" type="image/x-icon">
+    <link href="../css/font-awesome.css" rel="stylesheet">
+    <link href="../css/select2.min.css" rel="stylesheet" type="text/css">
+    <link href="../css/base.min.css" rel="stylesheet" type="text/css">
+    <link href="../css/style.css" rel="stylesheet" type="text/css">
+    <link href="../css/admin_area.css" rel="stylesheet" type="text/css">
+    <script src="../js/modernizr.js"></script> <!-- Modernizr -->
+</head>
+
+<body class="admin_user">
+   
+    <header role="banner">
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+            <div class="container">
+                <div class="logo">
+                    <a href="index.html" class="logo-link">
+                        <span class="sr-only">NYSC SAEDConnect</span>
+                        <img src="../img/logo_admin.png" alt="NYSC SAEDConnect">
+                    </a>
+                </div>
+                                
+                <nav class="sec-nav ">
+                    <ul class="account_info">
+                        <li class="dropdown accounts">
+                            <a href="#" data-toggle="dropdown" class="navbar_link_item dropdown-toggle">
+                            <span class="profile_img">
+                                <img src="../img/user_avis/3.jpg" alt="Ikenna David">
+                            </span>
+                            <span class="profile_name">Jane Doe</span>
+                            <i class="fa fa-chevron-circle-down"></i></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="user_profile.html"><i class="fa fa-user"></i>My Profile</a></li>
+                                <li><a href="../login.html"><i class="fa fa-power-off"></i>Log Out</a></li>
+                            </ul>
+                        </li>
+                        <li class="mail_box">
+                            <a href="mail_box.html" class="" data-title="Mailbox">
+                                <i class="fa fa-envelope"></i>
+                                <span class="badge">3
+                                </span>
+                            </a>
+                        </li>
+                        <li class="nav_trigger">
+                            <a class="primary-nav-trigger" title="Open Menu" href="#0" data-effect="st-effect-1">
+                                <span class="menu-icon"></span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+        
+    <main class="sd-main-content admin_content">  
+       <!--Insert offcanvas nav here--> 
+        <nav class="st-menu">
+        </nav>              
+        <div class="content_body">
+            <div class="container">
+               
+                <!--Right Sidebar-->
+                <aside class="aside_content">
+                    <div class="content_wrapper">
+                        <div class="pane_widgets">
+                            <header class="pane_heading">
+                                <h2 class="pane_title">Where do you want to go?</h2>
+                            </header>
+                            <ul class="pane_options nav_links">
+                                <li class="nav_link_main">
+                                    <div class="link_wrapper">
+                                        <a href="dashboard.html" class="option_label">Dashboard</a>
+                                        <i class="option_icon fa fa-info" title="Moderate posts make by SAED Partners" data-toggle="tooltip" data-placement="bottom"></i>
+                                    </div>
+                                </li>
+                                <li class="nav_link_main active">
+                                    <div class="link_wrapper">
+                                        <a href="super_admin.html" class="option_label">Platform Management</a>
+                                        <i class="option_icon fa fa-info" title="Manage posts submited by saed partners" data-toggle="tooltip" data-placement="bottom"></i>
+                                    </div>
+                                </li>
+                                <li class="nav_link_main">
+                                    <div class="link_wrapper">
+                                        <a href="#memo_links" data-toggle="collapse" class="option_label">My Memos</a>
+                                        <i class="option_icon fa fa-info" title="Manage your corps empowerment interventions" data-toggle="tooltip" data-placement="bottom"></i>
+                                    </div>
+                                    <div class="panel-collapse collapse" id="memo_links">
+                                        <ul class="link_children">
+                                            <li><a href="adm_memo.html">All Memos <span class="badge badge-default">12</span></a></li>
+                                            <li><a href="adm_admin_resp.html">Awaiting my Response <span class="badge badge-default">10</span></a></li>
+                                            <li><a href="adm_part_resp.html">Awaiting Recipient's Response<span class="badge badge-default">2</span></a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="nav_link_main">
+                                    <div class="link_wrapper">
+                                        <a href="str_pat_mng.html" class="option_label">Strategic Proposals</a>
+                                        <i class="option_icon fa fa-info" title="Manage proposals to become strategic / Program partners" data-toggle="tooltip" data-placement="bottom"></i>
+                                    </div>
+                                </li>
+                                <li class="nav_link_main">
+                                    <div class="link_wrapper">
+                                        <a href="partner_mngt.html" class="option_label">Partner Manager</a>
+                                        <i class="option_icon fa fa-info" title="Manage registered partners in your state" data-toggle="tooltip" data-placement="bottom"></i>
+                                    </div>
+                                </li>
+                                <li class="nav_link_main ">
+                                    <div class="link_wrapper">
+                                        <a href="#act_links" data-toggle="collapse" class="option_label">Intervention Manager</a>
+                                        <i class="option_icon fa fa-info" title="Manage your corps empowerment interventions" data-toggle="tooltip" data-placement="bottom"></i>
+                                    </div>
+                                    <div class="panel-collapse collapse" id="act_links">
+                                        <ul class="link_children">
+                                            <li><a href="activity_mng_home.html">Interventions Monitor</a></li>
+                                            <li><a href="tr_request.html">Trainings & Events</a></li>
+                                            <li class="active"><a href="programs_updates.html">Impact Programs</a></li>
+                                            <li><a href="product_updates.html">Product Offers</a></li>
+                                            <li><a href="services_updates.html">Service Offers</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="nav_link_main">
+                                    <div class="link_wrapper">
+                                        <a href="corp_members.html" class="option_label">Corp Members Monitor</a>
+                                        <i class="option_icon fa fa-info" title="Monitor your Corps members engagement with the platform." data-toggle="tooltip" data-placement="bottom"></i>
+                                    </div>
+                                </li>
+                                <li class="nav_link_main">
+                                    <div class="link_wrapper">
+                                        <a href="adm_announcements.html" class="option_label">Announcements</a>
+                                        <i class="option_icon fa fa-info" title="Post announcements to corps members and partners in your state" data-toggle="tooltip" data-placement="bottom"></i>
+                                    </div>
+                                </li>
+                                <li class="nav_link_main">
+                                    <div class="link_wrapper">
+                                        <a href="mng_feedbacks.html" class="option_label">Complaints/Feedbacks</a>
+                                        <i class="option_icon fa fa-info" title="View user feedbacks, complaints or Enquiries" data-toggle="tooltip" data-placement="bottom"></i>
+                                    </div>
+                                </li>
+                                <li class="nav_link_main">
+                                    <div class="link_wrapper">
+                                        <a href="user_profile.html" class="option_label">My Profile Settings</a>
+                                        <i class="option_icon fa fa-info" title="Manage your sign in details" data-toggle="tooltip" data-placement="bottom"></i>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </aside>
+
+                <article class="main_content">
+                    <div class="content_wrapper clearfix">
+                         
+                        <aside class="content_aside">
+                            <span class="panel_handle">Filter</span>
+                            <div class="content_wrapper">
+                                <header class="pane_heading">
+                                    <div class="centered">
+                                        <i class="title_icon">
+                                            <img src="../img/icons/help_black.png" alt="Help Center">
+                                        </i>
+                                        <h2 class="pane_title color-primary">Platform Mgmt</h2>
+                                    </div>
+                                </header>
+                                <div class="section_ctx_menu">
+                                    <ul class="ctx_menu">
+                                        <li><a href="super_admin.html">Super Admin</a></li>
+                                        <li><a href="manage_batches.html">Nysc Batch Management</a></li>
+                                        <li><a href="config_states.html">State Management</a>
+                                        </li>
+                                        <li><a href="mng_institutions.html">NYSC Institutions</a></li>
+                                        <li>
+                                            <a href="mng_channels.html">SAED Channels</a>
+                                        </li>
+                                        <li>
+                                            <a href="mng_categories.html">Platform Categories</a>
+                                        </li>
+                                        <li>
+                                            <a href="manage_features.html">Platform Features</a>
+                                        </li>
+                                        <li>
+                                            <a href="config_features.html">Feature Mapping</a>
+                                        </li>
+                                        <li class="active">
+                                            <a href="mng_directorate.html">SAED DIrectorate</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </aside> 
+                        
+                        <!--Main content view-->
+                        <section class="content_main">
+                            <div class="content_wrapper">
+                               <!--See a list of all states here-->
+                                <article class="content_preview ">                                    
+                                    <header class="context_banner ">
+                                        <div class="item_wrapper">
+                                            <div class="banner_content">
+                                                <h4 class="title color-primary">
+                                                   SAED directorates
+                                                </h4>
+                                                <p class="subtitle">Monitor the adoption and use of the platform by corp members</p>
+                                            </div>
+                                            <div class="banner_cto">
+                                                <a href="#" class="btn btn-sm btn-rounded btn-primary">
+                                                    <i class="fa fa-plus"></i> New Directorate 
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </header>
+                                
+                                    <div class="default_content hidden">
+                                       <div class="def_wrapper">
+                                           <div class="intro-text centered">
+                                            <div class="def_img">
+                                                <img src="../img/icons/icon_empty.png" alt="Manage Help Center">
+                                            </div>
+                                            <h1 class="title-text">This Place looks dry</h1>
+                                            <p class="subtitle color-primary">Click the 'add' button to add a Directorate</p>
+                                            <button class="btn btn-primary btn-rounded">
+                                                <i class="fa fa-plus"></i> Add 
+                                            </button>
+                                        </div>
+                                       </div>
+                                    </div>
+                                    <div class="content_inner ">
+                                        <p>Add and view SAED Directorates of all types across the country</p>
+                                        <div class="table data-table">
+                                            <table class="table table-hover">
+                                                <thead>
+                                                    <tr>
+                                                        <th>Name</th>
+                                                        <th>State</th>
+                                                        <th>Type</th>
+                                                        <th>Email</th>
+                                                        <th><i class="fa fa-ellipsis-v"></i></th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <!-- List all states, no need for pagination -->
+                                                    <tr>
+                                                        <td class="">
+                                                            <span>Abuja Directorate</span>
+                                                        </td>
+                                                        <td><span>FCT</span></td>
+                                                        <td><span>State</span></td>
+                                                        <td><span>abujafct@nyscsaed.com</span></td>
+                                                        <td>
+                                                            <div class="dropdown">
+                                                                <button type="button" data-toggle="dropdown" class="btn btn-card btn-sm dropdown-toggle">
+                                                                <i class="fa fa-ellipsis-v"></i>
+                                                                </button>
+                                                                <ul class="dropdown-menu">
+                                                                   <!--Use the state creation form-->
+                                                                    <li><a href="#">Edit </a></li>
+                                                                    <li><a href="#">Configure</a></li>
+                                                                    <li><a href="#delete">Delete </a></li>
+                                                                </ul>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="">
+                                                            <span>Lagos</span>
+                                                        </td>
+                                                        <td><span>Lagos</span></td>
+                                                        <td><span>State</span></td>
+                                                        <td><span>lagos@nyscsaed.com</span></td>
+                                                        <td>
+                                                            <div class="dropdown">
+                                                                <button type="button" data-toggle="dropdown" class="btn btn-card btn-sm dropdown-toggle">
+                                                                <i class="fa fa-ellipsis-v"></i>
+                                                                </button>
+                                                                <ul class="dropdown-menu">
+                                                                   <!--Use the state creation form-->
+                                                                    <li><a href="#">Edit </a></li>
+                                                                    <li><a href="#">Configure</a></li>
+                                                                    <li><a href="#delete">Delete </a></li>
+                                                                </ul>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="">
+                                                            <span>National Directorate</span>
+                                                        </td>
+                                                        <td><span>All States</span></td>
+                                                        <td><span>National</span></td>
+                                                        <td><span>info@nyscsaed.com</span></td>
+                                                        <td>
+                                                            <div class="dropdown">
+                                                                <button type="button" data-toggle="dropdown" class="btn btn-card btn-sm dropdown-toggle">
+                                                                <i class="fa fa-ellipsis-v"></i>
+                                                                </button>
+                                                                <ul class="dropdown-menu">
+                                                                   <!--Use the state creation form-->
+                                                                    <li><a href="#">Edit </a></li>
+                                                                    <li><a href="#">Configure</a></li>
+                                                                    <li><a href="#delete">Delete </a></li>
+                                                                </ul>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="">
+                                                            <span>South-West Directorate</span>
+                                                        </td>
+                                                        <td><span>Lagos, Osun, Ogun, Ondo, Ekiti</span></td>
+                                                        <td><span>Regional</span></td>
+                                                        <td><span>southwest@nyscsaed.com</span></td>
+
+                                                        <td>
+                                                            <div class="dropdown">
+                                                                <button type="button" data-toggle="dropdown" class="btn btn-card btn-sm dropdown-toggle">
+                                                                <i class="fa fa-ellipsis-v"></i>
+                                                                </button>
+                                                                <ul class="dropdown-menu">
+                                                                   <!--Use the state creation form-->
+                                                                    <li><a href="#">Edit </a></li>
+                                                                    <li><a href="#">Configure</a></li>
+                                                                    <li><a href="#delete">Delete </a></li>
+                                                                </ul>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="">
+                                                            <span>Ibadan</span>
+                                                        </td>
+                                                        <td><span>Oyo</span></td>
+                                                        <td><span>State</span></td>
+                                                        <td><span>oyo@nyscsaed.com</span></td>
+                                                        <td>
+                                                            <div class="dropdown">
+                                                                <button type="button" data-toggle="dropdown" class="btn btn-card btn-sm dropdown-toggle">
+                                                                <i class="fa fa-ellipsis-v"></i>
+                                                                </button>
+                                                                <ul class="dropdown-menu">
+                                                                   <!--Use the state creation form-->
+                                                                    <li><a href="#">Edit Directorate</a></li>
+                                                                    <li><a href="#">Configure</a></li>
+                                                                    <li><a href="#delete">Delete </a></li>
+                                                                </ul>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="">
+                                                            <span>North-East</span>
+                                                        </td>
+                                                        <td><span>Borno, Jigawa, Gombe, Adamawa</span></td>
+                                                        <td><span>Regional</span></td>
+                                                        <td><span>northeast@nyscsaed.com</span></td>
+                                                        <td>
+                                                            <div class="dropdown">
+                                                                <button type="button" data-toggle="dropdown" class="btn btn-card btn-sm dropdown-toggle">
+                                                                <i class="fa fa-ellipsis-v"></i>
+                                                                </button>
+                                                                <ul class="dropdown-menu">
+                                                                   <!--Use the state creation form-->
+                                                                    <li><a href="#">Edit </a></li>
+                                                                    <li><a href="#">Configure</a></li>
+                                                                    <li><a href="#delete">Delete </a></li>
+                                                                </ul>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                            <nav class="clearfix">
+                                                <ul class="pagination pagination-sm clearfix">
+                                                    <li class="disabled">
+                                                        <a href="#">
+                                                            <<
+                                                        </a>
+                                                    </li>
+                                                    <li class="active"><a href="#">1</a></li>
+                                                    <li><a href="#">2</a></li>
+                                                    <li><a href="#">3</a></li>
+                                                    <li class="">
+                                                        <a href="#" class="">
+                                                            >>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </nav>
+                                        </div>
+                                                             
+                                    </div>
+                                </article>
+                                
+                                <!--Create / Edit Directorate-->
+                                <article class="content_create hidden">
+                                    <header class="content_header clearfix">
+                                        <h4 class="title"> Create / Edit Directorate </h4>
+                                    </header>
+                                    <div class="content_inner ">
+                                       <p>Fields marked <strong class="color-inverse">*</strong> are required</p>
+                                        <form action="">
+                                            <div class="form-group">
+                                                <label class="control-label required color-primary">
+                                                    Name
+                                                </label>
+                                                <input type="text" autofocus placeholder="Abuja Directorate" class=" form-control">
+                                            </div>
+
+                                            <div class="form-group">
+                                                <label class="control-label required color-primary">Email Address</label>
+                                                <div class="input-group">
+                                                    <input type="email" class="form-control" autofocus placeholder="abuja">
+                                                    <span class="input-group-addon">
+                                                        @saedconnect.com
+                                                    </span>
+                                                </div>
+                                            </div>
+                                               
+                                            <div class="form-group">
+                                                <label class="control-label required color-primary">Designated State</label>
+                                                <div class="dir_state_control">
+                                                    <div class="state_dir ">
+                                                        <select class="form-control">
+                                                            <option>Abia</option>
+                                                            <option>Adamawa</option>
+                                                            <option>Anambra</option>
+                                                            <option>Akwa Ibom</option>
+                                                            <option>FCT</option>
+                                                            <option>Lagos</option>
+                                                            <option>Oyo</option>
+                                                            <option>Kano</option>
+                                                            <option>Kaduna</option>
+                                                            <option>Rivers</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="national_dir hidden">
+                                                        <input type="text" value="All States" disabled class="form-control">
+                                                    </div>
+                                                    <div class="regional_dir hidden">
+                                                        <div class="multi_sel_item">
+                                                            <label class="checkbox-inline control_item" id="state_fct">
+                                                                <input type="checkbox" name="des_state" id="state_fct">
+                                                                <span>FCT</span>
+                                                            </label>
+                                                            <label class="checkbox-inline control_item" id="state_lag">
+                                                                <input type="checkbox" name="des_state" id="state_lag">
+                                                                <span>Lagos</span>
+                                                            </label>
+                                                            <label class="checkbox-inline control_item" id="state_kd">
+                                                                <input type="checkbox" name="des_state" id="state_kd">
+                                                                <span>Kaduna</span>
+                                                            </label>
+                                                            <label class="checkbox-inline control_item" id="state_kn">
+                                                                <input type="checkbox" name="des_state" id="state_kn">
+                                                                <span>Kano</span>
+                                                            </label>
+                                                            <label class="checkbox-inline control_item" id="state_skt">
+                                                                <input type="checkbox" name="des_state" id="state_skt">
+                                                                <span>Sokoto</span>
+                                                            </label>
+                                                            <label class="checkbox-inline control_item" id="state_anb">
+                                                                <input type="checkbox" name="des_state" id="state_anb">
+                                                                <span>Anambra</span>
+                                                            </label>
+                                                            <label class="checkbox-inline control_item" id="state_ben">
+                                                                <input type="checkbox" name="des_state" id="state_ben">
+                                                                <span>Benue</span>
+                                                            </label>
+                                                            <label class="checkbox-inline control_item" id="state_oyo">
+                                                                <input type="checkbox" name="des_state" id="state_oyo">
+                                                                <span>Oyo</span>
+                                                            </label>
+                                                            <label class="checkbox-inline control_item" id="state_og">
+                                                                <input type="checkbox" name="des_state" id="state_og">
+                                                                <span>Ogun</span>
+                                                            </label>
+                                                            <label class="checkbox-inline control_item" id="state_ab">
+                                                                <input type="checkbox" name="des_state" id="state_ab">
+                                                                <span>Abia</span>
+                                                            </label>
+                                                            <label class="checkbox-inline control_item" id="state_en">
+                                                                <input type="checkbox" name="des_state" id="state_en">
+                                                                <span>Enugu</span>
+                                                            </label>
+                                                            <label class="checkbox-inline control_item" id="state_del">
+                                                                <input type="checkbox" name="des_state" id="state_del">
+                                                                <span>Delta</span>
+                                                            </label>
+                                                            <label class="checkbox-inline control_item" id="state_bor">
+                                                                <input type="checkbox" name="des_state" id="state_bor">
+                                                                <span>Borno</span>
+                                                            </label>
+                                                            <label class="checkbox-inline control_item" id="state_im">
+                                                                <input type="checkbox" name="des_state" id="state_im">
+                                                                <span>Imo</span>
+                                                            </label>
+                                                            <label class="checkbox-inline control_item" id="state_kw">
+                                                                <input type="checkbox" name="des_state" id="state_kw">
+                                                                <span>Kwara</span>
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            
+                                            <div class="form-group">
+                                                <label class="control-label required color-primary">
+                                                    Portfolio
+                                                </label>
+                                                <select class="form-control multiple_select">
+                                                    <option>Trainer</option>
+                                                    <option>National Directorate</option>
+                                                    <option>Regional Directorate</option>
+                                                    <option>State Directorate</option>
+                                                    <option>Empowerment Partner</option>
+                                                    <option>Mentor</option>
+                                                    <option>Contributor</option>
+                                                    <option>Skill Center</option>
+                                                </select>
+                                            </div>
+                                            
+                                            <div class="action_btn text-center">
+                                                <button type="submit" class="btn btn-primary btn-rounded">
+                                                Create Directorate</button>
+                                                <button type="submit" class="btn btn-primary btn-rounded">
+                                                Configure Privileges</button>
+                                                 <button type="button" class="btn btn-default btn-rounded">
+                                                Cancel</button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </article>
+                                
+                                <!--To configure directorate features and privileges-->
+                                <article class="content_create hidden">
+                                    <header class="content_header clearfix">
+                                        <h4 class="title">Configure User Features & Privileges</h4>
+                                        <div class="dropdown">
+                                            <a href="#">
+                                                x Cancel
+                                            </a>
+                                        </div>
+                                    </header>
+                                    <div class="content_inner ">
+                                       <div class="wizard wizard_vertical">
+                                          <!--Add class: step_active to any wizard step that is active, and change it to 'step_completed' when the step has been completed Never add both classes together. By default, step 1 should be active-->
+                                          <!--step_completed-->
+                                           <div class="wiz_step step_active">
+                                               <div class="step_header">
+                                                   <div class="step_details">
+                                                       <h2 class="step_title">Step 1:</h2>
+                                                       <p class="step_subtitle">Select all the features this user can access</p>
+                                                   </div>
+                                                   <div class="step_control">
+                                                       <a href="#" class="btn btn-sm btn-grey-light">
+                                                           Edit
+                                                       </a>
+                                                   </div>
+                                               </div>
+                                               <div class="step_body">
+                                                  <form action="">
+                                                   <ul class="card_list">
+                                                        <li class="selected_item">
+                                                            <div class="item_wrapper clearix">
+                                                                <label for="priv_1" class="control-label">
+                                                                <span class="item_label">Feature Name</span>
+                                                                <input type="checkbox" id="priv_1">
+                                                                </label>
+                                                            </div>
+                                                        </li>
+                                                        <li class="selected_item">
+                                                            <div class="item_wrapper clearix">
+                                                                <label for="priv_2" class="control-label">
+                                                                <span class="item_label">Feature Name</span>
+                                                                <input type="checkbox" id="priv_2">
+                                                            </label>
+                                                            </div>
+                                                        </li>
+                                                        <li class="selected_item">
+                                                            <div class="item_wrapper clearix">
+                                                                <label for="priv_3" class="control-label">
+                                                                <span class="item_label">Feature Name</span>
+                                                                <input type="checkbox" id="priv_3">
+                                                            </label>
+                                                            </div>
+                                                        </li>
+                                                        <li class="selected_item">
+                                                            <div class="item_wrapper clearix">
+                                                                <label for="priv_4" class="control-label">
+                                                                <span class="item_label">Feature Name</span>
+                                                                <input type="checkbox" id="priv_4">
+                                                                </label>
+                                                            </div>
+                                                        </li>
+                                                        <li class="selected_item">
+                                                            <div class="item_wrapper clearix">
+                                                                <label for="priv_5" class="control-label">
+                                                                <span class="item_label">Feature Name</span>
+                                                                <input type="checkbox" id="priv_5">
+                                                            </label>
+                                                            </div>
+                                                        </li>
+                                                        <li class="selected_item">
+                                                            <div class="item_wrapper clearix">
+                                                                <label for="priv_6" class="control-label">
+                                                                <span class="item_label">Feature Name</span>
+                                                                <input type="checkbox" id="priv_6">
+                                                            </label>
+                                                            </div>
+                                                        </li>
+                                                        <li class="selected_item">
+                                                            <div class="item_wrapper clearix">
+                                                                <label for="priv_7" class="control-label">
+                                                                <span class="item_label">Feature Name</span>
+                                                                <input type="checkbox" id="priv_7">
+                                                                </label>
+                                                            </div>
+                                                        </li>
+                                                        <li class="selected_item">
+                                                            <div class="item_wrapper clearix">
+                                                                <label for="priv_8" class="control-label">
+                                                                <span class="item_label">Feature Name</span>
+                                                                <input type="checkbox" id="priv_8">
+                                                            </label>
+                                                            </div>
+                                                        </li>
+                                                        <li class="selected_item">
+                                                            <div class="item_wrapper clearix">
+                                                                <label for="priv_9" class="control-label">
+                                                                <span class="item_label">Feature Name</span>
+                                                                <input type="checkbox" id="priv_9">
+                                                            </label>
+                                                            </div>
+                                                        </li>
+                                                    </ul>
+                                                    <div class="action_btn text-center">
+                                                        <button type="button" class="btn btn-black btn-rounded">
+                                                            Next <i class="fa fa-arrow-down"></i>
+                                                        </button>
+                                                    </div>
+                                                    </form>
+                                               </div>
+                                           </div>
+                                           <!-- add: step_active to make this active, and this: 'step_completed' when completed -->
+                                           <!--step_active-->
+                                           <div class="wiz_step ">
+                                               <div class="step_header">
+                                                   <div class="step_details">
+                                                       <h2 class="step_title">Step 2:</h2>
+                                                       <p class="step_subtitle">Click the <i class="fa fa-gear"></i> to configure privileges for any of the user feature</p>
+                                                   </div>
+                                                   <div class="step_control">
+                                                       <a href="#" class="btn btn-sm btn-grey-light">
+                                                           Edit
+                                                       </a>
+                                                   </div>
+                                               </div>
+                                               <div class="step_body">
+                                                   <div class="table data-table">
+                                                        <table class="table">
+                                                            <thead>
+                                                                <tr>
+                                                                    <th>Feature & Privileges</th>
+                                                                    <th>Configure</th>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td>
+                                                                        <h4 class="pane_title color-primary">Forum</h4>
+                                                                        <div class="user_selection ">
+                                                                           <div class="default_text">
+                                                                               <p>Click the <i class="fa fa-gear fa-2x"></i> icon to configure privileges for this feature</p>
+                                                                           </div>
+                                                                            <ul class="card_list hidden">
+                                                                            </ul>
+                                                                        </div>
+                                                                        
+                                                                    </td>
+                                                                    <td>
+                                                                        <div class="tab_control">
+                                                                            <a href="#config_feature" data-toggle="modal" data-backdrop="static">
+                                                                                <i class="fa fa-gear fa-2x"></i>
+                                                                            </a>
+                                                                        </div>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>
+                                                                        <h4 class="pane_title color-primary">Article Management</h4>
+                                                                        <div class="user_selection ">
+                                                                           <div class="default_text hidden">
+                                                                               <p>Click the <i class="fa fa-gear fa-2x"></i> icon to configure privileges for this feature</p>
+                                                                           </div>
+                                                                            <ul class="card_list ">
+                                                                                <li class="selected_item">
+                                                                                    <div class="item_wrapper clearix">
+                                                                                        <span class="item_label">Create Post</span>
+                                                                                        <span class="item_dismiss">
+                                                                                            <a href="#" class="">
+                                                                                                <i class="fa fa-times"></i>
+                                                                                            </a>
+                                                                                        </span>
+                                                                                    </div>
+                                                                                </li>
+                                                                                <li class="selected_item">
+                                                                                    <div class="item_wrapper clearix">
+                                                                                        <span class="item_label">Delete Post</span>
+                                                                                        <span class="item_dismiss">
+                                                                                            <a href="#" class="">
+                                                                                                <i class="fa fa-times"></i>
+                                                                                            </a>
+                                                                                        </span>
+                                                                                    </div>
+                                                                                </li>
+                                                                                <li class="selected_item">
+                                                                                    <div class="item_wrapper clearix">
+                                                                                        <span class="item_label">Block Users</span>
+                                                                                        <span class="item_dismiss">
+                                                                                            <a href="#" class="">
+                                                                                                <i class="fa fa-times"></i>
+                                                                                            </a>
+                                                                                        </span>
+                                                                                    </div>
+                                                                                </li>
+                                                                                <li class="selected_item">
+                                                                                    <div class="item_wrapper clearix">
+                                                                                        <span class="item_label">Post Comment</span>
+                                                                                        <span class="item_dismiss">
+                                                                                            <a href="#" class="">
+                                                                                                <i class="fa fa-times"></i>
+                                                                                            </a>
+                                                                                        </span>
+                                                                                    </div>
+                                                                                </li>
+                                                                                <li class="selected_item">
+                                                                                    <div class="item_wrapper clearix">
+                                                                                        <span class="item_label">Create Post</span>
+                                                                                        <span class="item_dismiss">
+                                                                                            <a href="#" class="">
+                                                                                                <i class="fa fa-times"></i>
+                                                                                            </a>
+                                                                                        </span>
+                                                                                    </div>
+                                                                                </li>
+                                                                                <li class="selected_item">
+                                                                                    <div class="item_wrapper clearix">
+                                                                                        <span class="item_label">Delete Post</span>
+                                                                                        <span class="item_dismiss">
+                                                                                            <a href="#" class="">
+                                                                                                <i class="fa fa-times"></i>
+                                                                                            </a>
+                                                                                        </span>
+                                                                                    </div>
+                                                                                </li>
+                                                                            </ul>
+                                                                        </div>
+                                                                        
+                                                                    </td>
+                                                                    <td>
+                                                                        <div class="tab_control">
+                                                                            <a href="#config_feature" data-toggle="modal" data-backdrop="static">
+                                                                                <i class="fa fa-gear fa-2x"></i>
+                                                                            </a>
+                                                                        </div>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>
+                                                                        <h4 class="pane_title color-primary">Article Management</h4>
+                                                                        <div class="user_selection ">
+                                                                           <div class="default_text hidden">
+                                                                               <p>Click the <i class="fa fa-gear fa-2x"></i> icon to configure privileges for this feature</p>
+                                                                           </div>
+                                                                            <ul class="card_list ">
+                                                                                <li class="selected_item">
+                                                                                    <div class="item_wrapper clearix">
+                                                                                        <span class="item_label">Create Post</span>
+                                                                                        <span class="item_dismiss">
+                                                                                            <a href="#" class="">
+                                                                                                <i class="fa fa-times"></i>
+                                                                                            </a>
+                                                                                        </span>
+                                                                                    </div>
+                                                                                </li>
+                                                                                <li class="selected_item">
+                                                                                    <div class="item_wrapper clearix">
+                                                                                        <span class="item_label">Delete Post</span>
+                                                                                        <span class="item_dismiss">
+                                                                                            <a href="#" class="">
+                                                                                                <i class="fa fa-times"></i>
+                                                                                            </a>
+                                                                                        </span>
+                                                                                    </div>
+                                                                                </li>
+                                                                                <li class="selected_item">
+                                                                                    <div class="item_wrapper clearix">
+                                                                                        <span class="item_label">Block Users</span>
+                                                                                        <span class="item_dismiss">
+                                                                                            <a href="#" class="">
+                                                                                                <i class="fa fa-times"></i>
+                                                                                            </a>
+                                                                                        </span>
+                                                                                    </div>
+                                                                                </li>
+                                                                                <li class="selected_item">
+                                                                                    <div class="item_wrapper clearix">
+                                                                                        <span class="item_label">Post Comment</span>
+                                                                                        <span class="item_dismiss">
+                                                                                            <a href="#" class="">
+                                                                                                <i class="fa fa-times"></i>
+                                                                                            </a>
+                                                                                        </span>
+                                                                                    </div>
+                                                                                </li>
+                                                                                <li class="selected_item">
+                                                                                    <div class="item_wrapper clearix">
+                                                                                        <span class="item_label">Create Post</span>
+                                                                                        <span class="item_dismiss">
+                                                                                            <a href="#" class="">
+                                                                                                <i class="fa fa-times"></i>
+                                                                                            </a>
+                                                                                        </span>
+                                                                                    </div>
+                                                                                </li>
+                                                                                <li class="selected_item">
+                                                                                    <div class="item_wrapper clearix">
+                                                                                        <span class="item_label">Delete Post</span>
+                                                                                        <span class="item_dismiss">
+                                                                                            <a href="#" class="">
+                                                                                                <i class="fa fa-times"></i>
+                                                                                            </a>
+                                                                                        </span>
+                                                                                    </div>
+                                                                                </li>
+                                                                            </ul>
+                                                                        </div>
+                                                                    </td>
+                                                                    <td>
+                                                                        <div class="tab_control">
+                                                                            <a href="#config_feature" data-toggle="modal" data-backdrop="static">
+                                                                                <i class="fa fa-gear fa-2x"></i>
+                                                                            </a>
+                                                                        </div>
+                                                                    </td>
+                                                                </tr>
+                                                            </tbody>
+                                                       </table>
+                                                   </div>
+                                                   <!--Return to the list of all partners when you complete user configuration. -->
+                                                   <div class="action_btn text-center">
+                                                        <button type="submit" class="btn btn-primary btn-rounded">
+                                                        Done</button>
+                                                    </div>
+                                               </div>
+                                           </div>
+                                       </div>
+                                    </div>
+                                </article>
+                                
+                            </div>
+                        </section>
+                        
+                    </div>
+                </article>
+                
+            </div>
+        </div>
+    </main>
+
+    <!-- Javascript starts here-->
+    <script src="../js/jquery-2.1.4.js"></script>
+    <script src="../js/base.min.js"></script>
+    <script src="../js/site_nav.js"></script>
+    <script src="../js/select2.full.min.js"></script>
+    <script src="../js/icheck.min.js"></script>
+    <script src="../js/main.js"></script>
+    
+    <script>
+        $(document).ready(function(){
+          $('input').iCheck({
+            checkboxClass: 'icheckbox_minimal-green',
+            radioClass: 'iradio_minimal-green'
+          });
+        });
+        
+        $(".multiple_select").select2({
+            placeholder: "Select an option"
+        });
+    </script>
+    
+</body>
+
+</html>

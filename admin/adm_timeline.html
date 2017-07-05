@@ -1,0 +1,1160 @@
+<!doctype html>
+<html lang="en-US" class="no-js">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Post to Timeline | SAED Admin</title>
+    <link rel="icon" href="../img/favicon.ico" type="image/x-icon">
+    <link href="../css/font-awesome.css" rel="stylesheet">
+    <link href="../css/base.min.css" rel="stylesheet" type="text/css">
+    <link href="../css/style.css" rel="stylesheet" type="text/css">
+    <link href="../css/admin_area.css" rel="stylesheet" type="text/css">
+    <script src="../js/modernizr.js"></script> <!-- Modernizr -->
+</head>
+
+<body class="admin_user">
+                
+    <div class="modal fade in" id="post_states">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                </div>
+                <div class="modal-body">
+                   <div class="content_header">
+                       <h4 class="title">Post to States</h4>
+                       <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                    <i class="fa fa-times"></i></button>
+                   </div>
+                    <div class="content-panel">
+                        <div class="grid_holder">
+                           <h3 class="title color-primary">Select the states you want to post.</h3>
+                            <p class="subtitle">Only corps members in the states you select will be able to see this post.</p>
+                            
+                            <div class="step_form">
+                                <div class="multi_sel_item">
+                                    <label class="checkbox-inline control_item" for="user_all">
+                                        <input type="checkbox" checked id="user_all">
+                                        <span>All states</span>
+                                    </label>
+                                    <label class="checkbox-inline control_item">
+                                        <input type="checkbox">
+                                        <span>State Name</span>
+                                    </label>
+                                    <label class="checkbox-inline control_item">
+                                        <input type="checkbox">
+                                        <span>State Name</span>
+                                    </label>
+                                    <label class="checkbox-inline control_item">
+                                        <input type="checkbox">
+                                        <span>State Name</span>
+                                    </label>
+                                    <label class="checkbox-inline control_item">
+                                        <input type="checkbox">
+                                        <span>State Name</span>
+                                    </label>
+                                    <label class="checkbox-inline control_item">
+                                        <input type="checkbox">
+                                        <span>State Name</span>
+                                    </label>
+                                    <label class="checkbox-inline control_item">
+                                        <input type="checkbox">
+                                        <span>State Name</span>
+                                    </label>
+                                    <label class="checkbox-inline control_item">
+                                        <input type="checkbox">
+                                        <span>State Name</span>
+                                    </label>
+                                    <label class="checkbox-inline control_item">
+                                        <input type="checkbox">
+                                        <span>State Name</span>
+                                    </label>
+                                    <label class="checkbox-inline control_item">
+                                        <input type="checkbox">
+                                        <span>State Name</span>
+                                    </label>
+                                    <label class="checkbox-inline control_item">
+                                        <input type="checkbox">
+                                        <span>State Name</span>
+                                    </label>
+                                    <label class="checkbox-inline control_item">
+                                        <input type="checkbox">
+                                        <span>State Name</span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default btn-rounded" data-dismiss="modal">Cancel</button>
+                    <button type="button" class="btn btn-primary btn-rounded">Confirm</button>
+                </div>
+            </div>
+        </div>
+    </div>
+        
+    <div class="modal fade in" id="post_link">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                </div>
+                <div class="modal-body">
+                   <div class="content_header">
+                       <h4 class="title">Share a link</h4>
+                       <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                    <i class="fa fa-times"></i></button>
+                   </div>
+                    <div class="content-panel">
+                        <div class="grid_holder">
+                           <h3 class="title color-primary">Share an external link</h3>
+                            <p class="subtitle">Paste your link in the field provided below..</p>
+                            
+                            <div class="step_form">
+                                <form action="">
+                                    <div class="form-group">
+                                        <label>Paste link here</label>
+                                        <input type="url" class="form-control" placeholder="https://mylink.com/blah_blah">
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Link Caption</label>
+                                        <textarea class="form-control" placeholder="Optional description of this link."></textarea>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default btn-rounded" data-dismiss="modal">Cancel</button>
+                    <button type="button" class="btn btn-primary btn-rounded">Done</button>
+                </div>
+            </div>
+        </div>
+    </div>
+         
+    <header role="banner">
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+            <div class="container">
+                <div class="logo">
+                    <a href="index.html" class="logo-link">
+                        <span class="sr-only">NYSC SAEDConnect</span>
+                        <img src="../img/admin_logo.png" alt="SAED Partner">
+                    </a>
+                </div>
+                                                
+                <nav class="sec-nav ">
+                    <ul class="account_info">
+                        <li class="dropdown accounts">
+                            <a href="#" data-toggle="dropdown" class="navbar_link_item dropdown-toggle">
+                            <span class="profile_img">
+                                <img src="../img/user_avis/3.jpg" alt="Ikenna David">
+                            </span>
+                            <span class="profile_name">Jane Doe</span>
+                            <i class="fa fa-chevron-circle-down"></i></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="user_profile.html"><i class="fa fa-user"></i>My Profile</a></li>
+                                <li><a href="../login.html"><i class="fa fa-power-off"></i>Log Out</a></li>
+                            </ul>
+                        </li>
+                        <li class="mail_box">
+                            <a href="mail_box.html" class="" data-title="Mailbox">
+                                <i class="fa fa-envelope"></i>
+                                <span class="badge">3
+                                </span>
+                            </a>
+                        </li>
+                        <li class="nav_trigger">
+                            <a class="primary-nav-trigger" title="Open Menu" href="#0" data-effect="st-effect-1">
+                                <span class="menu-icon"></span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+        
+   <!-- work as ST-container-->
+    <main class="sd-main-content admin_content"> 
+       
+       <!--Insert offcanvas nav here--> 
+        <nav class="st-menu">
+        </nav>
+                         
+        <!--Work as st-content-pusher-->
+        <div class="content_body">
+           <!--Wrap site content-->
+            <div class="container">
+                
+                <!--Right Sidebar-->
+                <aside class="aside_content">
+                    <div class="content_wrapper">
+                       <div class="pane_widgets">
+                            <header class="pane_heading">
+                                <h2 class="pane_title">Where do you want to go?</h2>
+                            </header>
+                            <ul class="pane_options nav_links">
+                                <li class="nav_link_main active">
+                                    <div class="link_wrapper">
+                                        <a href="dashboard.html" class="option_label">Dashboard</a>
+                                        <i class="option_icon fa fa-info" title="Moderate posts make by SAED Partners" data-toggle="tooltip" data-placement="bottom"></i>
+                                    </div>
+                                </li>
+                                <li class="nav_link_main">
+                                    <div class="link_wrapper">
+                                        <a href="adm_timeline.html" class="option_label">Post to Timeline</a>
+                                        <i class="option_icon fa fa-info" title="Post to the general corps community" data-toggle="tooltip" data-placement="bottom"></i>
+                                    </div>
+                                </li>
+                                <li class="nav_link_main">
+                                    <div class="link_wrapper">
+                                        <a href="partner_app_home.html" class="option_label">Platform Management</a>
+                                        <i class="option_icon fa fa-info" title="Manage posts submited by saed partners" data-toggle="tooltip" data-placement="bottom"></i>
+                                    </div>
+                                </li>
+                                <li class="nav_link_main">
+                                    <div class="link_wrapper">
+                                        <a href="#memo_links" data-toggle="collapse" class="option_label">My Memos</a>
+                                        <i class="option_icon fa fa-info" title="Manage your corps empowerment interventions" data-toggle="tooltip" data-placement="bottom"></i>
+                                    </div>
+                                    <div class="panel-collapse collapse" id="memo_links">
+                                        <ul class="link_children">
+                                            <li><a href="adm_memo.html">All Memos <span class="badge badge-default">12</span></a></li>
+                                            <li><a href="adm_admin_resp.html">Awaiting my Response <span class="badge badge-default">10</span></a></li>
+                                            <li><a href="adm_part_resp.html">Awaiting Recipient's Response<span class="badge badge-default">2</span></a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="nav_link_main">
+                                    <div class="link_wrapper">
+                                        <a href="str_pat_mng.html" class="option_label">Strategic Proposals</a>
+                                        <i class="option_icon fa fa-info" title="Manage proposals to become strategic / Program partners" data-toggle="tooltip" data-placement="bottom"></i>
+                                    </div>
+                                </li>
+                                <li class="nav_link_main">
+                                    <div class="link_wrapper">
+                                        <a href="partner_mngt.html" class="option_label">Partner Manager</a>
+                                        <i class="option_icon fa fa-info" title="Manage registered partners in your state" data-toggle="tooltip" data-placement="bottom"></i>
+                                    </div>
+                                </li>
+                                <li class="nav_link_main">
+                                    <div class="link_wrapper">
+                                        <a href="#act_links" data-toggle="collapse" class="option_label">Intervention Manager</a>
+                                        <i class="option_icon fa fa-info" title="Manage your corps empowerment interventions" data-toggle="tooltip" data-placement="bottom"></i>
+                                    </div>
+                                    <div class="panel-collapse collapse" id="act_links">
+                                        <ul class="link_children">
+                                            <li><a href="activity_mng_home.html">Interventions Monitor</a></li>
+                                            <li><a href="articles_update.html">Empowerment Articles</a></li>
+                                            <li><a href="tr_request.html">Trainings & Events</a></li>
+                                            <li><a href="programs_updates.html">Impact Programs</a></li>
+                                            <li><a href="product_updates.html">Product Offers</a></li>
+                                            <li><a href="services_updates.html">Service Offers</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="nav_link_main">
+                                    <div class="link_wrapper">
+                                        <a href="corp_members.html" class="option_label">Corp Members Monitor</a>
+                                        <i class="option_icon fa fa-info" title="Monitor your Corps members engagement with the platform." data-toggle="tooltip" data-placement="bottom"></i>
+                                    </div>
+                                </li>
+                                <li class="nav_link_main">
+                                    <div class="link_wrapper">
+                                        <a href="adm_announcements.html" class="option_label">Announcements</a>
+                                        <i class="option_icon fa fa-info" title="Post announcements to corps members and partners in your state" data-toggle="tooltip" data-placement="bottom"></i>
+                                    </div>
+                                </li>
+                                <li class="nav_link_main">
+                                    <div class="link_wrapper">
+                                        <a href="mng_feedbacks.html" class="option_label">Complaints/Feedbacks</a>
+                                        <i class="option_icon fa fa-info" title="View user feedbacks, complaints or Enquiries" data-toggle="tooltip" data-placement="bottom"></i>
+                                    </div>
+                                </li>
+                                <li class="nav_link_main">
+                                    <div class="link_wrapper">
+                                        <a href="user_profile.html" class="option_label">My Profile Settings</a>
+                                        <i class="option_icon fa fa-info" title="Manage your sign in details" data-toggle="tooltip" data-placement="bottom"></i>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div> 
+                    </div>
+                </aside>
+
+                <section class="main_content">
+                    <div class="content_wrapper clearfix">
+                       
+                        <!--Left Contextual Menubar-->
+                        <aside class="content_aside">
+                            <span class="panel_handle">Filter</span>
+                            <div class="content_wrapper">
+                                <header class="pane_heading">
+                                    <div class="centered">
+                                        <i class="title_icon">
+                                            <img src="../img/icons/help_black.png" alt="Platform Management">
+                                        </i>
+                                        <h2 class="pane_title color-primary">Post to Timeline</h2>
+                                    </div>
+                                </header>
+                                   
+                                <div class="content_header header_primary">
+                                    <h4 class="title">See updates from this category</h4>
+                                </div>
+                                <div class="side_controls">
+                                    <div class="pane_widgets">
+                                        <ul class="pane_options nav_links">
+                                           <li class="nav_link_main">
+                                                <div class="link_wrapper">
+                                                    <a href="#" class="option_label">General</a>
+                                                    <i class="option_icon fa fa-info" title="Show only articles" data-toggle="tooltip" data-placement="bottom"></i>
+                                                </div>
+                                            </li>
+                                            <li class="nav_link_main">
+                                                <div class="link_wrapper">
+                                                    <a href="#" class="option_label">Articles</a>
+                                                    <i class="option_icon fa fa-info" title="Show only articles" data-toggle="tooltip" data-placement="bottom"></i>
+                                                </div>
+                                            </li>
+                                            <li class="nav_link_main">
+                                                <div class="link_wrapper">
+                                                    <a href="#" class="option_label">Programs</a>
+                                                    <i class="option_icon fa fa-info" title="Show only Programs" data-toggle="tooltip" data-placement="bottom"></i>
+                                                </div>
+                                            </li>
+                                            <li class="nav_link_main">
+                                                <div class="link_wrapper">
+                                                    <a href="#" class="option_label">Empower Blog</a>
+                                                    <i class="option_icon fa fa-info" title="Show only Programs" data-toggle="tooltip" data-placement="bottom"></i>
+                                                </div>
+                                            </li>
+                                            <li class="nav_link_main">
+                                                <div class="link_wrapper">
+                                                    <a href="#" class="option_label">Inspiration</a>
+                                                    <i class="option_icon fa fa-info" title="Show only Programs" data-toggle="tooltip" data-placement="bottom"></i>
+                                                </div>
+                                            </li>
+                                            <li class="nav_link_main">
+                                                <div class="link_wrapper">
+                                                    <a href="#" class="option_label">Links</a>
+                                                    <i class="option_icon fa fa-info" title="Show only Jobs" data-toggle="tooltip" data-placement="bottom"></i>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>                                  
+                                </div>
+                            </div>
+                        </aside> 
+
+                        <!--Main content view-->
+                        <article class="content_main timeline_container">
+                            <div class="content_wrapper">
+                                <article class="content_preview ">
+                                    <div class="content_inner">
+                                        <div class="update_prompt">
+                                          <a href="#"><span>25 New Updates</span></a>
+                                        </div>
+
+                                        <article class="post_card post_new">
+                                           <form class="card_wrapper">
+                                               <div class="post_card_header">
+                                                   <div class="post_addons">
+                                                       <div class="addon file_upload">
+                                                           <a href="#" class="addon_wrapper">
+                                                            <input type="file" name="file" id="item_image" class="inputfile" />
+                                                            <label for="item_image">
+                                                                <i class="fa fa-image"></i>
+                                                                Image
+                                                            </label>
+                                                           </a>
+                                                        </div>
+                                                        <div class="addon">
+                                                            <a href="#post_link" data-toggle="modal" class="addon_wrapper">
+                                                                <i class="fa fa-play"></i>
+                                                                Video
+                                                            </a>
+                                                        </div>
+                                                        <div class="addon">
+                                                            <a href="#post_link" data-toggle="modal" class="addon_wrapper">
+                                                                <i class="fa fa-link"></i>
+                                                                Link
+                                                            </a>
+                                                        </div>
+                                                   </div>
+                                               </div>
+                                               <div class="post_card_body">
+                                                   <textarea rows="5" class="form-control" id="post_input" placeholder="Create a new post..."></textarea>
+                                                   <div class="sub_item_tray show_tray">
+                                                        <h4 class="opt_label font_bold">Select a Category:</h4>
+                                                        <div class="select_grid select_radio">
+                                                           <div class="my_selector active">
+                                                                <label for="pst_general" class="control-wrapper radio-inline">
+                                                                    <input type="radio" class="select_control" checked name="pst_type" id="pst_general">
+                                                                    <span class="c_label">General</span>
+                                                                </label>
+                                                            </div>
+                                                            <div class="my_selector">
+                                                                <label for="pst_training" class="control-wrapper radio-inline">
+                                                                    <input type="radio" class="select_control" name="pst_type" id="pst_training">
+                                                                    <span class="c_label">Training</span>
+                                                                </label>
+                                                            </div>
+                                                            <div class="my_selector">
+                                                                <label for="pst_article" class="control-wrapper radio-inline">
+                                                                    <input type="radio" class="select_control" name="pst_type" id="pst_article">
+                                                                    <span class="c_label">Article</span>
+                                                                </label>
+                                                            </div>
+                                                            <div class="my_selector">
+                                                                <label for="pst_inspire" class="control-wrapper radio-inline">
+                                                                    <input type="radio" class="select_control" name="pst_type" id="pst_inspire">
+                                                                    <span class="c_label">Inspiration</span>
+                                                                </label>
+                                                            </div>
+                                                            <div class="my_selector">
+                                                                <label for="pst_program" class="control-wrapper radio-inline">
+                                                                    <input type="radio" class="select_control" name="pst_type" id="pst_program">
+                                                                    <span class="c_label">Program</span>
+                                                                </label>
+                                                            </div>
+                                                            <div class="my_selector">
+                                                                <label for="pst_exhibit" class="control-wrapper radio-inline">
+                                                                    <input type="radio" class="select_control" name="pst_type" id="pst_exhibit">
+                                                                    <span class="c_label">Exhibition</span>
+                                                                </label>
+                                                            </div>
+                                                       </div>
+                                                       
+                                                      <!--List the selected states or forums here-->
+                                                       <div class="select_preview ">
+                                                            <h4 class="opt_label font_bold">Make Visible to:</h4>
+                                                            <article class="selected_item">
+                                                                <div class="item_wrapper clearix">
+                                                                    <span class="item_dismiss">
+                                                                        <i class="fa fa-times"></i>
+                                                                    </span>
+                                                                    <span class="item_label">
+                                                                        <i class="item_main">Rivers</i>
+                                                                    </span>
+                                                                </div>
+                                                            </article>
+                                                            <article class="selected_item">
+                                                                <div class="item_wrapper clearix">
+                                                                    <span class="item_dismiss">
+                                                                        <i class="fa fa-times"></i>
+                                                                    </span>
+                                                                    <span class="item_label">
+                                                                        <i class="item_main">Lagos</i>
+                                                                    </span>
+                                                                </div>
+                                                            </article>
+                                                        </div>
+                                                   </div>
+                                               </div>
+                                               <div class="post_card_footer clearfix">
+                                                   <div class="post_actions pull-right">
+                                                       <div class="dropdown post_audience">
+                                                           <button class="btn btn-sm btn-rounded btn-grey-light dropdown-toggle" data-toggle="dropdown" >
+                                                               post to...
+                                                               <i class="fa fa-caret-down"></i>
+                                                           </button>
+                                                           <button class="btn btn-sm btn-rounded btn-primary">Post</button>
+                                                           <!--Select a user channel to post to-->
+                                                           <ul class="dropdown-menu aud_option">
+                                                                <h4 class="opt_label font_regular text-center color-primary">Who should see this?</h4>
+                                                               <li class="opt_list_item selected">
+                                                                  <a href="#" class="wrapper">
+                                                                       <div class="opt_icon">
+                                                                           <i class="fa fa-list-alt"></i>
+                                                                       </div>
+                                                                       <div class="opt_info">
+                                                                           <h5 class="title">All</h5>
+                                                                           <p>Post to all corps members</p>
+                                                                       </div>
+                                                                   </a>
+                                                               </li>
+                                                               <li class="opt_list_item">
+                                                                  <a href="#post_states" data-toggle="modal" class="wrapper">
+                                                                       <div class="opt_icon">
+                                                                           <i class="fa fa-map-marker"></i>
+                                                                       </div>
+                                                                       <div class="opt_info">
+                                                                           <h5 class="title">Specific States</h5>
+                                                                           <p>Post only to some select states</p>
+                                                                       </div>
+                                                                   </a>
+                                                               </li>
+                                                               <li class="opt_list_item hidden">
+                                                                  <a href="#post_forums" data-toggle="modal" class="wrapper">
+                                                                       <div class="opt_icon">
+                                                                           <i class="fa fa-comments"></i>
+                                                                       </div>
+                                                                       <div class="opt_info">
+                                                                           <h5 class="title">Forum</h5>
+                                                                           <p>Post only to specific forums</p>
+                                                                       </div>
+                                                                   </a>
+                                                               </li>
+                                                           </ul>
+                                                       </div>
+                                                   </div>
+                                               </div>
+                                           </form>
+                                       </article>
+
+                                        <article class="post_card">
+                                           <div class="card_wrapper">
+                                                <div class="post_card_header">
+                                                   <div class="post_heading">
+                                                        <h5 class="opt_label">Empower Blog</h5>
+                                                        <div class="dropdown pull-right">
+                                                            <a href="#" class="dropdown-toggle color-grey" data-toggle="dropdown">
+                                                                <i class="fa fa-chevron-down"></i>
+                                                            </a>
+                                                            <ul class="dropdown-menu">
+                                                                <li><a href="#">Withdraw Post</a></li>
+                                                            </ul>
+                                                        </div>
+                                                   </div>
+                                               </div>
+                                                <div class="post_media">
+                                                   <a href="#">
+                                                       <img src="../img/banners/tm_card_img.jpg" alt="">
+                                                   </a>
+                                                </div>
+                                                <div class="post_card_body">
+                                                   <div class="post_content content_article">
+                                                       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam, blanditiis, rerum. Nisi, libero? Doloremque ratione ex nulla repudiandae explicabo, recusandae corporis voluptatum saepe enim cupiditate accusantium eveniet labore aspernatur, neque.</p>
+                                                        <div class="foot_notes clearfix">
+                                                            <p>Filed under: <span class="post_categories">Empower Blog</span></p>
+                                                        </div>
+                                                   </div>
+                                                </div>
+                                                <div class="post_card_footer clearfix">
+                                                    <div class="post_meta">
+                                                        <span class="meta_item">
+                                                            <i class="icon comments"></i>
+                                                            <a href="#">Comment</a>
+                                                        </span>
+                                                        <span class="meta_item post_like">
+                                                            <i class="icon favourite"></i>
+                                                            <a href="#">Like</a>
+                                                        </span>
+                                                        <span class="meta_item post_share">
+                                                            <i class="icon shares"></i>
+                                                            <a href="#">Share</a>
+                                                        </span>
+                                                    </div>
+                                                    <div class="card_comments">
+                                                        <button type="button" class="btn btn-block btn-grey">
+                                                            Add a comment
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                           </div>
+                                        </article>
+
+                                        <article class="post_card">
+                                           <div class="card_wrapper">
+                                               <div class="post_card_header">
+                                                   <div class="post_heading">
+                                                        <h5 class="opt_label">Training</h5>
+                                                        <div class="dropdown pull-right">
+                                                            <a href="#" class="dropdown-toggle color-grey" data-toggle="dropdown">
+                                                                <i class="fa fa-chevron-down"></i>
+                                                            </a>
+                                                            <ul class="dropdown-menu">
+                                                                <li><a href="#">Withdraw Post</a></li>
+                                                            </ul>
+                                                        </div>
+                                                   </div>
+                                               </div>
+                                               <div class="post_card_body">
+                                                   <div class="post_content">
+                                                       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam, blanditiis, rerum. Nisi, libero? Doloremque ratione. dolor sit amet, consectetur adipisicing elit. Quam, blanditiis, rerum.</p>
+                                                       <div class="foot_notes clearfix">
+                                                            <p>Filed under: <span class="post_categories">Trainings & Events</span></p>
+                                                        </div>
+                                                   </div>
+                                               </div>
+                                               <div class="post_card_footer clearfix">
+                                                   <div class="post_meta">
+                                                        <span class="meta_item">
+                                                            <i class="icon comments"></i>
+                                                            <a href="#">Comments</a>
+                                                        </span>
+                                                        <span class="meta_item post_like">
+                                                            <i class="icon favourite"></i>
+                                                            <a href="#">Likes</a>
+                                                        </span>
+                                                        <span class="meta_item post_share">
+                                                            <i class="icon shares"></i>
+                                                            <a href="#">10 Shares</a>
+                                                        </span>
+                                                    </div>
+                                                    <div class="card_comments">
+                                                        <button type="button" class="btn btn-block btn-grey">
+                                                            Add a comment
+                                                        </button>
+                                                    </div>
+                                               </div>
+                                           </div>
+                                       </article>
+
+                                        <article class="post_card">
+                                           <div class="card_wrapper">
+                                               <div class="post_card_header">
+                                                  <div class="post_heading">
+                                                        <h5 class="opt_label">Inspiration</h5>
+                                                        <div class="dropdown pull-right">
+                                                            <a href="#" class="dropdown-toggle color-grey" data-toggle="dropdown">
+                                                                <i class="fa fa-chevron-down"></i>
+                                                            </a>
+                                                            <ul class="dropdown-menu">
+                                                                <li><a href="#">Withdraw Post</a></li>
+                                                            </ul>
+                                                        </div>
+                                                   </div>
+                                               </div>
+                                                <div class="post_media embed-responsive embed-responsive-16by9">
+                                                    <video controls class="embed-responsive-item" preload="metadata">
+                                                        <source src="../img/media_assets/sample_video.MP4" type="video/mp4">
+                                                        <p>Video can not be played on this prowser, please update your browser or open with another browser.</p>
+                                                    </video>
+                                                </div>
+                                               <div class="post_card_body">
+                                                    <div class="post_content ">
+                                                       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam, blanditiis, rerum. Nisi, libero? Doloremque ratione.</p>
+                                                       <div class="foot_notes clearfix">
+                                                            <p>Filed under: <span class="post_categories">Inspiration</span></p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                               <div class="post_card_footer clearfix">
+                                                   <div class="post_meta">
+                                                        <span class="meta_item">
+                                                            <i class="icon comments"></i>
+                                                            <a href="#">1 Comment</a>
+                                                        </span>
+                                                        <span class="meta_item post_like">
+                                                            <i class="icon favourite"></i>
+                                                            <a href="#">Like</a>
+                                                        </span>
+                                                        <span class="meta_item post_share">
+                                                            <i class="icon shares"></i>
+                                                            <a href="#">Shares</a>
+                                                        </span>
+                                                    </div>
+                                                    <div class="card_comments">
+                                                        <button type="button" class="btn btn-block btn-grey">
+                                                            Add a comment
+                                                        </button>
+                                                    </div>
+                                               </div>
+                                           </div>
+                                       </article>
+                                        
+                                        <article class="post_card">
+                                           <div class="card_wrapper">
+                                               <div class="post_card_header">
+                                                  <div class="post_heading">
+                                                        <h5 class="opt_label">Exhibition</h5>
+                                                        <div class="dropdown pull-right">
+                                                            <a href="#" class="dropdown-toggle color-grey" data-toggle="dropdown">
+                                                                <i class="fa fa-chevron-down"></i>
+                                                            </a>
+                                                            <ul class="dropdown-menu">
+                                                                <li><a href="#">Withdraw Post</a></li>
+                                                            </ul>
+                                                        </div>
+                                                   </div>
+                                               </div>
+                                                <div class="post_media embed-responsive embed-responsive-16by9">
+                                                   <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/4PggfbzJcvA" frameborder="0" allowfullscreen></iframe>
+                                                </div>
+                                               <div class="post_card_body">
+                                                    <div class="post_content ">
+                                                       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam, blanditiis, rerum. Nisi, libero? Doloremque ratione.</p>
+                                                       <div class="foot_notes clearfix">
+                                                            <p>Filed under: <span class="post_categories">Inspiration</span></p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                               <div class="post_card_footer clearfix">
+                                                   <div class="post_meta">
+                                                        <span class="meta_item">
+                                                            <i class="icon comments"></i>
+                                                            <a href="#">1 Comment</a>
+                                                        </span>
+                                                        <span class="meta_item post_like">
+                                                            <i class="icon favourite"></i>
+                                                            <a href="#">Like</a>
+                                                        </span>
+                                                        <span class="meta_item post_share">
+                                                            <i class="icon shares"></i>
+                                                            <a href="#">Shares</a>
+                                                        </span>
+                                                    </div>
+                                                    <div class="card_comments">
+                                                        <button type="button" class="btn btn-block btn-grey">
+                                                            Add a comment
+                                                        </button>
+                                                    </div>
+                                               </div>
+                                           </div>
+                                       </article>
+
+                                        <article class="post_card">
+                                           <div class="card_wrapper">
+                                               <div class="post_card_header">
+                                                    <div class="post_heading">
+                                                        <h5 class="opt_label">Impact Programs</h5>
+                                                        <div class="dropdown pull-right">
+                                                            <a href="#" class="dropdown-toggle color-grey" data-toggle="dropdown">
+                                                                <i class="fa fa-chevron-down"></i>
+                                                            </a>
+                                                            <ul class="dropdown-menu">
+                                                                <li><a href="#">Withdraw Post</a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                               </div>
+                                               <div class="post_card_body">
+                                                   <div class="post_content">
+                                                       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam, blanditiis, rerum. Nisi, libero? Doloremque ratione.</p>
+                                                       <div class="foot_notes clearfix">
+                                                            <p>Filed under: <span class="post_categories">Impact programs</span></p>
+                                                        </div>
+                                                   </div>
+                                               </div>
+                                               <div class="post_card_footer clearfix">
+                                                   <div class="post_meta">
+                                                        <span class="meta_item">
+                                                            <i class="icon comments"></i>
+                                                            <a href="#">25 Comments</a>
+                                                        </span>
+                                                        <span class="meta_item post_like">
+                                                            <i class="icon favourite"></i>
+                                                            <a href="#">23 Likes</a>
+                                                        </span>
+                                                        <span class="meta_item post_share">
+                                                            <i class="icon shares"></i>
+                                                            <a href="#">13 Shares</a>
+                                                        </span>
+                                                    </div>
+                                                    <div class="card_comments">
+                                                        <button type="button" class="btn btn-block btn-grey">
+                                                            Add a comment
+                                                        </button>
+                                                    </div>
+                                               </div>
+                                           </div>
+                                       </article>
+                                        
+                                        <article class="post_card ">
+                                           <div class="card_wrapper">
+                                               <div class="post_card_header">
+                                                    <div class="post_heading">
+                                                        <h5 class="opt_label">Inspiration</h5>
+                                                        <div class="dropdown pull-right">
+                                                            <a href="#" class="dropdown-toggle color-grey" data-toggle="dropdown">
+                                                                <i class="fa fa-chevron-down"></i>
+                                                            </a>
+                                                            <ul class="dropdown-menu">
+                                                                <li><a href="#">Withdraw Post</a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                               </div>
+                                               <div class="post_card_body">
+                                                   <div class="post_content floated_img">
+                                                        <div class="post_media">
+                                                            <audio controls class="main_player">
+                                                                <source src="../img/media_assets/sample_audio.mp3" type="audio/mpeg">
+                                                                <p>An error occured while trying to play the file. Please retry or open in another browser</p>
+                                                            </audio>
+                                                            <svg version="1.1" class="cust_player " viewBox="0 0 186.7 186.7" xml:space="preserve">
+                                                                <g>
+                                                                    <path style="fill:#00411E;" d="M182.7,186.7H4c-2.2,0-4-1.8-4-4V4c0-2.2,1.8-4,4-4h178.7c2.2,0,4,1.8,4,4v178.7
+                                                                        C186.7,184.9,184.9,186.7,182.7,186.7z"/>
+                                                                    <path style="fill:#737A00;" d="M118.8,88.8c1.5-4.4,3.1-8.8,4.6-13.3c0.7-2.2,1.3-4.6,4.1-4.7c2.9-0.1,3.5,2.4,4.5,4.4
+                                                                        c2.1,4.6,4.1,9.2,6.1,13.8c0.8,1.7,1.2,3.8,3.8,3.3c2.5-0.4,5.3,1.2,7.1-2.5c2.4-4.9,7.7-6.5,12.6-4.9c4.5,1.5,7.6,6.1,7.3,10.8
+                                                                        c-0.4,5.1-4.1,9.2-9.3,10c-3.8,0.6-7.1-0.6-9.4-3.6c-1.7-2.3-3.6-2.6-6.1-2.6c-11.1,0-8.5,1.4-13.1-8.5c-0.8-1.8-1.7-3.6-2.9-6.3
+                                                                        c-2.3,6.7-4.2,12.4-6.2,18.2c-0.4,1.1-0.8,2.1-1.1,3.2c-0.6,2.1-1.8,3.3-4,3.2c-2.4-0.1-3.2-1.8-3.5-3.8
+                                                                        c-1.3-7.7-2.6-15.4-3.8-23.1c-1.5-9.3-3.1-18.6-5.3-27.9c-0.8,7-1.5,13.9-2.3,20.9c-2.2,21.3-4.4,42.5-6.7,63.8
+                                                                        c-0.8,7.3-1.5,14.5-2.2,21.8c-0.2,2.4-1.1,4.4-3.7,4.4c-2.9,0-3.6-2.2-3.9-4.7c-1.3-11.7-2.6-23.5-4-35.2
+                                                                        c-1.8-15.6-3.5-31.2-5.9-46.8c-1.3,9.5-2.6,18.9-3.9,28.4c-0.4,3.2-1,6.5-1.4,9.7c-0.3,2.4-1.2,4.2-3.8,4.3c-2.5,0.1-3.3-1.9-3.8-4
+                                                                        c-2.3-9.8-4.6-19.6-6.9-29.4c-0.2-0.8-0.5-1.7-1-3.3c-1.9,4.2-3.7,7.7-5.2,11.3c-1.1,2.7-2.8,4-5.8,3.7c-1.6-0.2-3.3,0.1-4.9,0
+                                                                        c-1.9-0.1-3.2,0.4-4.4,2.1c-3.1,4.1-8,5.3-12.4,3.5c-4.1-1.7-7-6.2-6.7-10.4c0.3-4.9,3.6-8.7,8.4-9.9c4.7-1.1,9.3,0.8,11.6,5.5
+                                                                        c1.4,2.7,3.4,1.9,5.4,2.1c2.1,0.3,2.8-1,3.5-2.6c2.6-5.7,5.2-11.4,7.8-17.2c0.8-1.8,1.8-3.5,4-3.4c2.4,0.1,3.2,2,3.7,4.1
+                                                                        c1.7,7.5,3.5,14.9,5.9,22.4c0.7-4.5,1.4-9.1,2-13.6c1.6-11.3,3.1-22.7,4.6-34c0.3-2.6,0.8-4.9,4-4.8c3,0.1,3.4,2.4,3.6,4.8
+                                                                        c2.8,24.7,5.6,49.5,8.4,74.2c0,0.3,0.2,0.6,0.6,1.5c1.3-2.8,1.2-5.4,1.5-7.8c2.8-26.3,5.5-52.5,8.2-78.8c0.4-3.8,0.7-7.5,1-11.3
+                                                                        c0.2-2.3,0.8-4.3,3.6-4.4c2.7-0.1,3.6,1.6,4,4.1c3.5,21.1,7.1,42.1,10.7,63.2C118.2,88.7,118.5,88.7,118.8,88.8z"/>
+                                                                    <circle style="opacity:0.91;fill:#011E0D;" cx="86.5" cy="90.2" r="32.1"/>
+                                                                </g>
+                                                                <polygon class="play" style="fill:#FFFFFF;" points="78,75.6 103.5,90.3 78,105 "/>
+                                                                <path class="pause" style="fill:#FFFFFF;" d="M99,102.7H74v-25h25V102.7z M88.5,77.6h-4v25h4V77.6z"/>
+                                                            </svg>
+
+                                                        </div>
+                                                        <div class="post_details">
+                                                           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam, blanditiis, rerum. Nisi, libero? Doloremque ratione. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam, blanditiis, rerum. Nisi, libero? Doloremque ratione.</p>
+                                                           <div class="foot_notes clearfix">
+                                                                <p>Filed under: <span class="post_categories">Inspiration</span></p>
+                                                            </div>
+                                                        </div>
+                                                   </div>
+                                               </div>
+                                               <div class="post_card_footer clearfix">
+                                                   <div class="post_meta">
+                                                        <span class="meta_item">
+                                                            <i class="icon comments"></i>
+                                                            <a href="#">25 Comments</a>
+                                                        </span>
+                                                        <span class="meta_item post_like">
+                                                            <i class="icon favourite"></i>
+                                                            <a href="#">23 Likes</a>
+                                                        </span>
+                                                        <span class="meta_item post_share">
+                                                            <i class="icon shares"></i>
+                                                            <a href="#">13 Shares</a>
+                                                        </span>
+                                                    </div>
+                                                    <div class="card_comments">
+                                                        <button type="button" class="btn btn-block btn-grey">
+                                                            Add a comment
+                                                        </button>
+                                                    </div>
+                                               </div>
+                                           </div>
+                                       </article>
+
+                                        <article class="post_card">
+                                           <div class="card_wrapper">
+                                               <div class="post_card_header">
+                                                   <div class="post_heading">
+                                                        <h5 class="opt_label">Impact Programs</h5>
+                                                        <div class="dropdown pull-right">
+                                                            <a href="#" class="dropdown-toggle color-grey" data-toggle="dropdown">
+                                                                <i class="fa fa-chevron-down"></i>
+                                                            </a>
+                                                            <ul class="dropdown-menu">
+                                                                <li><a href="#">Withdraw Post</a></li>
+                                                            </ul>
+                                                        </div>
+                                                   </div>
+                                               </div>
+                                                <div class="post_media">
+                                                   <a href="#">
+                                                       <img src="../img/banners/article_image.jpg" alt="">
+                                                   </a>
+                                               </div>
+                                               <div class="post_card_body">
+                                                   <div class="post_content">
+                                                       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam, blanditiis, rerum. Nisi, libero? Doloremque ratione ex nulla repudiandae explicabo, recusandae corporis voluptatum saepe enim cupiditate accusantium eveniet labore aspernatur, neque.</p>
+                                                       <div class="foot_notes clearfix">
+                                                            <p>Filed under: <span class="post_categories">Motivation</span></p>
+                                                        </div>
+                                                   </div>
+                                               </div>
+                                               <div class="post_card_footer clearfix">
+                                                   <div class="post_meta">
+                                                        <span class="meta_item">
+                                                            <i class="icon comments"></i>
+                                                            <a href="#">5 Comments</a>
+                                                        </span>
+                                                        <span class="meta_item post_like">
+                                                            <i class="icon favourite"></i>
+                                                            <a href="#">13 Likes</a>
+                                                        </span>
+                                                        <span class="meta_item post_share">
+                                                            <i class="icon shares"></i>
+                                                            <a href="#">1 Shares</a>
+                                                        </span>
+                                                    </div>
+                                                    <div class="card_comments">
+                                                        <button type="button" class="btn btn-block btn-grey">
+                                                            Add a comment
+                                                        </button>
+                                                    </div>
+                                               </div>
+                                           </div>
+                                       </article>
+                                       
+                                        <article class="post_card">
+                                           <div class="card_wrapper">
+                                                <div class="post_card_header">
+                                                   <div class="post_heading">
+                                                        <h5 class="opt_label">Empower Blog</h5>
+                                                        <div class="dropdown pull-right">
+                                                            <a href="#" class="dropdown-toggle color-grey" data-toggle="dropdown">
+                                                                <i class="fa fa-chevron-down"></i>
+                                                            </a>
+                                                            <ul class="dropdown-menu">
+                                                                <li><a href="#">Withdraw Post</a></li>
+                                                            </ul>
+                                                        </div>
+                                                   </div>
+                                               </div>
+                                                <div class="post_media">
+                                                   <a href="#">
+                                                       <img src="../img/banners/tm_card_img.jpg" alt="">
+                                                   </a>
+                                                </div>
+                                                <div class="post_card_body">
+                                                   <div class="post_content content_article">
+                                                       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam, blanditiis, rerum. Nisi, libero? Doloremque ratione ex nulla repudiandae explicabo, recusandae corporis voluptatum saepe enim cupiditate accusantium eveniet labore aspernatur, neque.</p>
+                                                        <div class="foot_notes clearfix">
+                                                            <p>Filed under: <span class="post_categories">Empower Blog</span></p>
+                                                        </div>
+                                                   </div>
+                                                </div>
+                                                <div class="post_card_footer clearfix">
+                                                    <div class="post_meta">
+                                                        <span class="meta_item">
+                                                            <i class="icon comments"></i>
+                                                            <a href="#">Comment</a>
+                                                        </span>
+                                                        <span class="meta_item post_like">
+                                                            <i class="icon favourite"></i>
+                                                            <a href="#">Like</a>
+                                                        </span>
+                                                        <span class="meta_item post_share">
+                                                            <i class="icon shares"></i>
+                                                            <a href="#">Share</a>
+                                                        </span>
+                                                    </div>
+                                                    <div class="card_comments">
+                                                        <button type="button" class="btn btn-block btn-grey">
+                                                            Add a comment
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                           </div>
+                                        </article>
+
+                                        <article class="post_card">
+                                           <div class="card_wrapper">
+                                               <div class="post_card_header">
+                                                   <div class="post_heading">
+                                                        <h5 class="opt_label">Training</h5>
+                                                        <div class="dropdown pull-right">
+                                                            <a href="#" class="dropdown-toggle color-grey" data-toggle="dropdown">
+                                                                <i class="fa fa-chevron-down"></i>
+                                                            </a>
+                                                            <ul class="dropdown-menu">
+                                                                <li><a href="#">Withdraw Post</a></li>
+                                                            </ul>
+                                                        </div>
+                                                   </div>
+                                               </div>
+                                               <div class="post_card_body">
+                                                   <div class="post_content">
+                                                       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam, blanditiis, rerum. Nisi, libero? Doloremque ratione. dolor sit amet, consectetur adipisicing elit. Quam, blanditiis, rerum.</p>
+                                                       <div class="foot_notes clearfix">
+                                                            <p>Filed under: <span class="post_categories">Trainings & Events</span></p>
+                                                        </div>
+                                                   </div>
+                                               </div>
+                                               <div class="post_card_footer clearfix">
+                                                   <div class="post_meta">
+                                                        <span class="meta_item">
+                                                            <i class="icon comments"></i>
+                                                            <a href="#">Comments</a>
+                                                        </span>
+                                                        <span class="meta_item post_like">
+                                                            <i class="icon favourite"></i>
+                                                            <a href="#">Likes</a>
+                                                        </span>
+                                                        <span class="meta_item post_share">
+                                                            <i class="icon shares"></i>
+                                                            <a href="#">10 Shares</a>
+                                                        </span>
+                                                    </div>
+                                                    <div class="card_comments">
+                                                        <button type="button" class="btn btn-block btn-grey">
+                                                            Add a comment
+                                                        </button>
+                                                    </div>
+                                               </div>
+                                           </div>
+                                       </article>
+
+                                        <article class="post_card">
+                                           <div class="card_wrapper">
+                                               <div class="post_card_header">
+                                                  <div class="post_heading">
+                                                        <h5 class="opt_label">Inspiration</h5>
+                                                        <div class="dropdown pull-right">
+                                                            <a href="#" class="dropdown-toggle color-grey" data-toggle="dropdown">
+                                                                <i class="fa fa-chevron-down"></i>
+                                                            </a>
+                                                            <ul class="dropdown-menu">
+                                                                <li><a href="#">Withdraw Post</a></li>
+                                                            </ul>
+                                                        </div>
+                                                   </div>
+                                               </div>
+                                                <div class="post_media embed-responsive embed-responsive-16by9">
+                                                    <video controls class="embed-responsive-item" preload="metadata">
+                                                        <source src="../img/media_assets/sample_video.MP4" type="video/mp4">
+                                                        <p>Video can not be played on this prowser, please update your browser or open with another browser.</p>
+                                                    </video>
+                                                </div>
+                                               <div class="post_card_body">
+                                                    <div class="post_content ">
+                                                       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam, blanditiis, rerum. Nisi, libero? Doloremque ratione.</p>
+                                                       <div class="foot_notes clearfix">
+                                                            <p>Filed under: <span class="post_categories">Inspiration</span></p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                               <div class="post_card_footer clearfix">
+                                                   <div class="post_meta">
+                                                        <span class="meta_item">
+                                                            <i class="icon comments"></i>
+                                                            <a href="#">1 Comment</a>
+                                                        </span>
+                                                        <span class="meta_item post_like">
+                                                            <i class="icon favourite"></i>
+                                                            <a href="#">Like</a>
+                                                        </span>
+                                                        <span class="meta_item post_share">
+                                                            <i class="icon shares"></i>
+                                                            <a href="#">Shares</a>
+                                                        </span>
+                                                    </div>
+                                                    <div class="card_comments">
+                                                        <button type="button" class="btn btn-block btn-grey">
+                                                            Add a comment
+                                                        </button>
+                                                    </div>
+                                               </div>
+                                           </div>
+                                       </article>
+                                       
+                                       <article class="post_card ">
+                                           <div class="card_wrapper">
+                                               <div class="post_card_header">
+                                                    <div class="post_heading">
+                                                        <h5 class="opt_label">Inspiration</h5>
+                                                        <div class="dropdown pull-right">
+                                                            <a href="#" class="dropdown-toggle color-grey" data-toggle="dropdown">
+                                                                <i class="fa fa-chevron-down"></i>
+                                                            </a>
+                                                            <ul class="dropdown-menu">
+                                                                <li><a href="#">Withdraw Post</a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                               </div>
+                                               <div class="post_card_body">
+                                                   <div class="post_content floated_img">
+                                                        <div class="post_media">
+                                                            <audio controls class="main_player">
+                                                                <source src="../img/media_assets/sample_audio_2.mp3" type="audio/mpeg">
+                                                                <p>An error occured while trying to play the file. Please retry or open in another browser</p>
+                                                            </audio>
+                                                            <svg version="1.1" class="cust_player " viewBox="0 0 186.7 186.7" xml:space="preserve">
+                                                                <g>
+                                                                    <path style="fill:#00411E;" d="M182.7,186.7H4c-2.2,0-4-1.8-4-4V4c0-2.2,1.8-4,4-4h178.7c2.2,0,4,1.8,4,4v178.7
+                                                                        C186.7,184.9,184.9,186.7,182.7,186.7z"/>
+                                                                    <path style="fill:#737A00;" d="M118.8,88.8c1.5-4.4,3.1-8.8,4.6-13.3c0.7-2.2,1.3-4.6,4.1-4.7c2.9-0.1,3.5,2.4,4.5,4.4
+                                                                        c2.1,4.6,4.1,9.2,6.1,13.8c0.8,1.7,1.2,3.8,3.8,3.3c2.5-0.4,5.3,1.2,7.1-2.5c2.4-4.9,7.7-6.5,12.6-4.9c4.5,1.5,7.6,6.1,7.3,10.8
+                                                                        c-0.4,5.1-4.1,9.2-9.3,10c-3.8,0.6-7.1-0.6-9.4-3.6c-1.7-2.3-3.6-2.6-6.1-2.6c-11.1,0-8.5,1.4-13.1-8.5c-0.8-1.8-1.7-3.6-2.9-6.3
+                                                                        c-2.3,6.7-4.2,12.4-6.2,18.2c-0.4,1.1-0.8,2.1-1.1,3.2c-0.6,2.1-1.8,3.3-4,3.2c-2.4-0.1-3.2-1.8-3.5-3.8
+                                                                        c-1.3-7.7-2.6-15.4-3.8-23.1c-1.5-9.3-3.1-18.6-5.3-27.9c-0.8,7-1.5,13.9-2.3,20.9c-2.2,21.3-4.4,42.5-6.7,63.8
+                                                                        c-0.8,7.3-1.5,14.5-2.2,21.8c-0.2,2.4-1.1,4.4-3.7,4.4c-2.9,0-3.6-2.2-3.9-4.7c-1.3-11.7-2.6-23.5-4-35.2
+                                                                        c-1.8-15.6-3.5-31.2-5.9-46.8c-1.3,9.5-2.6,18.9-3.9,28.4c-0.4,3.2-1,6.5-1.4,9.7c-0.3,2.4-1.2,4.2-3.8,4.3c-2.5,0.1-3.3-1.9-3.8-4
+                                                                        c-2.3-9.8-4.6-19.6-6.9-29.4c-0.2-0.8-0.5-1.7-1-3.3c-1.9,4.2-3.7,7.7-5.2,11.3c-1.1,2.7-2.8,4-5.8,3.7c-1.6-0.2-3.3,0.1-4.9,0
+                                                                        c-1.9-0.1-3.2,0.4-4.4,2.1c-3.1,4.1-8,5.3-12.4,3.5c-4.1-1.7-7-6.2-6.7-10.4c0.3-4.9,3.6-8.7,8.4-9.9c4.7-1.1,9.3,0.8,11.6,5.5
+                                                                        c1.4,2.7,3.4,1.9,5.4,2.1c2.1,0.3,2.8-1,3.5-2.6c2.6-5.7,5.2-11.4,7.8-17.2c0.8-1.8,1.8-3.5,4-3.4c2.4,0.1,3.2,2,3.7,4.1
+                                                                        c1.7,7.5,3.5,14.9,5.9,22.4c0.7-4.5,1.4-9.1,2-13.6c1.6-11.3,3.1-22.7,4.6-34c0.3-2.6,0.8-4.9,4-4.8c3,0.1,3.4,2.4,3.6,4.8
+                                                                        c2.8,24.7,5.6,49.5,8.4,74.2c0,0.3,0.2,0.6,0.6,1.5c1.3-2.8,1.2-5.4,1.5-7.8c2.8-26.3,5.5-52.5,8.2-78.8c0.4-3.8,0.7-7.5,1-11.3
+                                                                        c0.2-2.3,0.8-4.3,3.6-4.4c2.7-0.1,3.6,1.6,4,4.1c3.5,21.1,7.1,42.1,10.7,63.2C118.2,88.7,118.5,88.7,118.8,88.8z"/>
+                                                                    <circle style="opacity:0.91;fill:#011E0D;" cx="86.5" cy="90.2" r="32.1"/>
+                                                                </g>
+                                                                <polygon class="play" style="fill:#FFFFFF;" points="78,75.6 103.5,90.3 78,105 "/>
+                                                                <path class="pause" style="fill:#FFFFFF;" d="M99,102.7H74v-25h25V102.7z M88.5,77.6h-4v25h4V77.6z"/>
+                                                            </svg>
+
+                                                        </div>
+                                                        <div class="post_details">
+                                                           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam, blanditiis, rerum. Nisi, libero? Doloremque ratione. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam, blanditiis, rerum. Nisi, libero? Doloremque ratione.</p>
+                                                           <div class="foot_notes clearfix">
+                                                                <p>Filed under: <span class="post_categories">Inspiration</span></p>
+                                                            </div>
+                                                        </div>
+                                                   </div>
+                                               </div>
+                                               <div class="post_card_footer clearfix">
+                                                   <div class="post_meta">
+                                                        <span class="meta_item">
+                                                            <i class="icon comments"></i>
+                                                            <a href="#">25 Comments</a>
+                                                        </span>
+                                                        <span class="meta_item post_like">
+                                                            <i class="icon favourite"></i>
+                                                            <a href="#">23 Likes</a>
+                                                        </span>
+                                                        <span class="meta_item post_share">
+                                                            <i class="icon shares"></i>
+                                                            <a href="#">13 Shares</a>
+                                                        </span>
+                                                    </div>
+                                                    <div class="card_comments">
+                                                        <button type="button" class="btn btn-block btn-grey">
+                                                            Add a comment
+                                                        </button>
+                                                    </div>
+                                               </div>
+                                           </div>
+                                       </article>
+
+                                    </div>
+                                </article>
+
+                            </div>
+                        </article>
+
+                    </div>
+                </section>
+
+            </div>
+        </div>
+        
+        
+    </main>
+
+    <!-- Javascript starts here-->
+    <script src="../js/jquery-2.1.4.js"></script>
+    <script src="../js/base.min.js"></script>
+    <script src="../js/icheck.min.js"></script>
+    <script src="../js/site_nav.js"></script>
+    <script src="../js/main.js"></script>
+    
+    <script>        
+        $(function() {
+            var input_field = $('#post_input'),
+                obj_tray = $('.sub_item_tray'),
+                show_btn = $('.show_tray');
+
+            obj_tray.hide();
+
+            input_field.on("input", function (event) {
+               var text_value = $(event.target).val;
+                
+               if(text_value != "" && text_value != null) {
+                   obj_tray.show(400);
+               }
+            });
+        });
+            
+    </script>
+</body>
+
+</html>
