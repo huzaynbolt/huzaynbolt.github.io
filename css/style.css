@@ -1283,38 +1283,32 @@ select.form-control:focus {
 }
 /* line 861, ../sass/partials/_base.scss */
 .post_heading .user_avi, .comment_author .user_avi {
-  /* Tablets and phablets */
+  width: 32px;
+  height: 32px;
 }
-@media only screen and (min-width: 800px) {
-  /* line 861, ../sass/partials/_base.scss */
-  .post_heading .user_avi, .comment_author .user_avi {
-    width: 32px;
-    height: 32px;
-  }
-}
-/* line 867, ../sass/partials/_base.scss */
+/* line 865, ../sass/partials/_base.scss */
 .user_avi.avi_circle img {
   -moz-border-radius: 50%;
   -webkit-border-radius: 50%;
   border-radius: 50%;
 }
-/* line 871, ../sass/partials/_base.scss */
+/* line 869, ../sass/partials/_base.scss */
 .user_avi.bordered {
   border-color: #FFFFFF;
   border-width: 6px;
   border-style: solid;
 }
-/* line 877, ../sass/partials/_base.scss */
+/* line 875, ../sass/partials/_base.scss */
 .user_avi.avi_sm {
   width: 32px;
   height: 32px;
 }
-/* line 881, ../sass/partials/_base.scss */
+/* line 879, ../sass/partials/_base.scss */
 .user_avi.avi_md {
   width: 48px;
   height: 48px;
 }
-/* line 885, ../sass/partials/_base.scss */
+/* line 883, ../sass/partials/_base.scss */
 .user_avi.avi_lg {
   width: 64px;
   height: 64px;
@@ -1322,29 +1316,29 @@ select.form-control:focus {
   border-width: 3px;
 }
 
-/* line 893, ../sass/partials/_base.scss */
+/* line 891, ../sass/partials/_base.scss */
 .post_author {
   position: relative;
   display: flex;
   align-items: center;
 }
-/* line 898, ../sass/partials/_base.scss */
+/* line 896, ../sass/partials/_base.scss */
 .post_author a {
   color: inherit;
 }
-/* line 901, ../sass/partials/_base.scss */
+/* line 899, ../sass/partials/_base.scss */
 .post_author .user_info {
   width: 100%;
   padding-left: 10px;
 }
 
 /* Basic Upload */
-/* line 908, ../sass/partials/_base.scss */
+/* line 906, ../sass/partials/_base.scss */
 .file_upload {
   /* style 6 */
   /* Button Look */
 }
-/* line 909, ../sass/partials/_base.scss */
+/* line 907, ../sass/partials/_base.scss */
 .file_upload .inputfile {
   width: 0.1px;
   height: 0.1px;
@@ -1353,7 +1347,7 @@ select.form-control:focus {
   position: absolute;
   z-index: -1;
 }
-/* line 917, ../sass/partials/_base.scss */
+/* line 915, ../sass/partials/_base.scss */
 .file_upload .inputfile + label {
   color: #FFFFFF;
   cursor: pointer;
@@ -1366,28 +1360,28 @@ select.form-control:focus {
   -webkit-transition: background-color 0.3s ease-in-out;
   transition: background-color 0.3s ease-in-out;
 }
-/* line 926, ../sass/partials/_base.scss */
+/* line 924, ../sass/partials/_base.scss */
 .media_thumb .file_upload .inputfile + label {
   padding: 6px;
 }
-/* line 930, ../sass/partials/_base.scss */
+/* line 928, ../sass/partials/_base.scss */
 .img_uploader .file_upload .inputfile + label {
   background-color: transparent;
 }
-/* line 935, ../sass/partials/_base.scss */
+/* line 933, ../sass/partials/_base.scss */
 .file_upload .inputfile:focus {
   outline: 1px dotted #FDC00F;
   outline: -webkit-focus-ring-color auto 5px;
 }
-/* line 940, ../sass/partials/_base.scss */
+/* line 938, ../sass/partials/_base.scss */
 .file_upload .inputfile:focus + label, .file_upload .inputfile + label:hover {
   background-color: #303030;
 }
-/* line 943, ../sass/partials/_base.scss */
+/* line 941, ../sass/partials/_base.scss */
 .img_uploader .file_upload .inputfile:focus + label, .img_uploader .file_upload .inputfile + label:hover {
   background-color: #D0D8DB;
 }
-/* line 950, ../sass/partials/_base.scss */
+/* line 948, ../sass/partials/_base.scss */
 .file_upload .file_control + label {
   background-color: #f5f5f5;
   border-radius: 4px 15px 15px 4px;
@@ -1397,13 +1391,13 @@ select.form-control:focus {
   width: 100%;
   border: 1px solid #D0D8DB;
 }
-/* line 960, ../sass/partials/_base.scss */
+/* line 958, ../sass/partials/_base.scss */
 .file_upload .file_control:focus + label,
 .file_upload .file_control + label:hover {
   border-color: #128A4B;
   background-color: #FFFFFF;
 }
-/* line 966, ../sass/partials/_base.scss */
+/* line 964, ../sass/partials/_base.scss */
 .file_upload .file_control + label span {
   display: inline-block;
   overflow: hidden;
@@ -1414,7 +1408,7 @@ select.form-control:focus {
   padding: 3px 10px;
   vertical-align: middle;
 }
-/* line 975, ../sass/partials/_base.scss */
+/* line 973, ../sass/partials/_base.scss */
 .file_upload .file_control + label strong {
   color: #FFFFFF;
   background-color: #128A4B;
@@ -1424,13 +1418,13 @@ select.form-control:focus {
   padding: 5px 15px;
   float: right;
 }
-/* line 986, ../sass/partials/_base.scss */
+/* line 984, ../sass/partials/_base.scss */
 .file_upload .file_control:focus + label strong,
 .file_upload .file_control + label:hover strong {
   background-color: #13542A;
 }
 
-/* line 992, ../sass/partials/_base.scss */
+/* line 990, ../sass/partials/_base.scss */
 .upload_btn {
   opacity: 1;
   background-color: rgba(53, 53, 53, 0.4);
@@ -1441,13 +1435,13 @@ select.form-control:focus {
   cursor: pointer;
   z-index: 200;
 }
-/* line 1002, ../sass/partials/_base.scss */
+/* line 1000, ../sass/partials/_base.scss */
 .upload_btn:hover {
   background-color: rgba(255, 255, 255, 0.4);
   color: #353535;
 }
 
-/* line 1008, ../sass/partials/_base.scss */
+/* line 1006, ../sass/partials/_base.scss */
 .img_uploader {
   position: absolute;
   top: 0;
@@ -1462,19 +1456,19 @@ select.form-control:focus {
   -webkit-transform: translateY(-50%);
   transform: translateY(-50%);
 }
-/* line 1015, ../sass/partials/_base.scss */
+/* line 1013, ../sass/partials/_base.scss */
 .img_uploader p {
   padding: 10px 0;
   /* Tablets and phablets */
 }
-/* line 1018, ../sass/partials/_base.scss */
+/* line 1016, ../sass/partials/_base.scss */
 .media_thumb .img_uploader p {
   color: #848484;
   font-size: 1em;
   padding: 0;
 }
 @media only screen and (min-width: 800px) {
-  /* line 1015, ../sass/partials/_base.scss */
+  /* line 1013, ../sass/partials/_base.scss */
   .img_uploader p {
     font-size: 18px;
   }
@@ -4340,7 +4334,7 @@ header[role="banner"] {
   width: 100%;
   position: relative;
   letter-spacing: 1.25px;
-  z-index: 999;
+  z-index: 90;
   /* Tablets and phablets */
 }
 @media only screen and (min-width: 800px) {

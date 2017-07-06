@@ -1,49 +1,50 @@
-/* instantiate markDown editor for general posts */
-var simplemde = new SimpleMDE({ 
-    element: $("#post_input")[0],
-    placeholder: "What's up?",
-    toolbar: false,
-    status: false,
-    spellChecker: true,
-});
-
-/* instantiate markDown editor for buy/hire posts */
-var simplemde = new SimpleMDE({ 
-    element: $("#request_input")[0],
-    placeholder: "Kindly provide information on what you want to buy/hire",
-    toolbar: false,
-    status: false,
-    spellChecker: true,
-});
-
-/* instantiate markDown editor for sell posts */
-var simplemde = new SimpleMDE({ 
-    element: $("#sell_input")[0],
-    placeholder: "What do you want to sell",
-    toolbar: false,
-    status: false,
-    spellChecker: true,
-});
-
-/* instantiate markDown editor for question posts */
-var simplemde = new SimpleMDE({ 
-    element: $("#question_input")[0],
-    placeholder: "What is your question?",
-    toolbar: false,
-    status: false,
-    spellChecker: true,
-});
-
-/* instantiate markDown editor for portfolio posts */
-var simplemde = new SimpleMDE({ 
-    element: $("#portfolio_input")[0],
-    placeholder: "Tell us about the project",
-    toolbar: false,
-    status: false,
-    spellChecker: true,
-});
-
 $(function() {
+
+    /* instantiate markDown editor for general posts */
+    var simplemde = new SimpleMDE({ 
+        element: $("#post_input")[0],
+        placeholder: "What's up?",
+        toolbar: false,
+        status: false,
+        spellChecker: true,
+    });
+
+    /* instantiate markDown editor for buy/hire posts */
+    var simplemde = new SimpleMDE({ 
+        element: $("#request_input")[0],
+        placeholder: "Kindly provide information on what you want to buy/hire",
+        toolbar: false,
+        status: false,
+        spellChecker: true,
+    });
+
+    /* instantiate markDown editor for sell posts */
+    var simplemde = new SimpleMDE({ 
+        element: $("#sell_input")[0],
+        placeholder: "What do you want to sell",
+        toolbar: false,
+        status: false,
+        spellChecker: true,
+    });
+
+    /* instantiate markDown editor for question posts */
+    var simplemde = new SimpleMDE({ 
+        element: $("#question_input")[0],
+        placeholder: "What is your question?",
+        toolbar: false,
+        status: false,
+        spellChecker: true,
+    });
+
+    /* instantiate markDown editor for portfolio posts */
+    var simplemde = new SimpleMDE({ 
+        element: $("#portfolio_input")[0],
+        placeholder: "Tell us about the project",
+        toolbar: false,
+        status: false,
+        spellChecker: true,
+    });
+
 
     /*Collapse and expand post widget*/
     var input_field = $('.post_input_widget'),
@@ -80,14 +81,12 @@ $(function() {
     open_subcats.on('click', function(e){
         if(!(mother_panel.hasClass("is_opened"))) {
             $(this).parents(".modal-body").addClass("is_opened");
-            $(this).siblings(".list_children").removeClass("is_hidden");
         }
     });
 
     go_back.on('click', function() {
         if(mother_panel.hasClass("is_opened")) {
             mother_panel.removeClass("is_opened");
-            $(".list_children").addClass("is_hidden");
         }
     });
 

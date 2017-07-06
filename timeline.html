@@ -10,8 +10,8 @@
     <title>My Timeline | SAEDConnect</title>
     <link rel="icon" href="img/favicon.ico" type="image/x-icon">
     <link href="css/font-awesome.css" rel="stylesheet">
-    <link href="css/base.min.css" rel="stylesheet" type="text/css">
     <link href="css/simplemde.min.css" rel="stylesheet" type="text/css">
+    <link href="css/base.min.css" rel="stylesheet" type="text/css">
     <link href="css/timeline.css" rel="stylesheet" type="text/css">
     <script src="js/modernizr.js"></script>
     <!-- Modernizr -->
@@ -23,13 +23,14 @@
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
+                   <h4 class="modal-title">Add Media to comment</h4>
                     <button type="button" class="close_dialog" data-dismiss="modal" aria-hidden="true">
                     </button>
                 </div>
                 <div class="modal-body">
                     <div class="content-panel">
                         <div class="media_upload_dialog">
-                            <h4 class="modal-title">Upload Media</h4>
+                            <p class="Subtitle">Select a media object type to upload</p>
                             <div class="select_grid select_radio">
                                 <div class="my_selector  file_upload">
                                     <label for="md_image" class="control-wrapper">
@@ -436,8 +437,8 @@
                 </a>
             </li>
             <li class="link_nav">
-                <a href="#more">
-                    <span class="navIcon">
+                <a href="#more" class="more_nav">
+                    <span class="navIcon color-secondary">
                         <i class="fa fa-th"></i>
                     </span>
                     <span class="link_title">More</span>
@@ -451,15 +452,15 @@
 
         <!--Insert offcanvas nav here-->
         <nav class="st-menu">
-            <h4 class="menu_title">Main Menu</h4>
+            <h4 class="sr-only">Main Menu</h4>
         </nav>
 
         <!--Wrap site content-->
         <div class="timeline_container">
            
-            <aside class="nav_sidebar">
+            <aside class="nav_timeline">
                 <div class="content_wrapper">
-                    <h4 class="sr-only">Menu</h4>
+                    <h4 class="menu_title">Menu</h4>
 
                     <nav class="nav_block main_nav">
                         <ul class="has_icon">
@@ -797,10 +798,10 @@
                                                                </span>
                                                                <span class="sel_label title_text color-primary">
                                                                    <!--Change the text of the selector to the user selection-->
-                                                                    <a href="#request_type" class="hidden" data-backdrop="static" data-toggle="modal">
+                                                                    <a href="#request_type" data-backdrop="static" data-toggle="modal">
                                                                         <span class="log_crumb">Select an option</span>
                                                                     </a>
-                                                                    <a href="#request_type" data-backdrop="static" data-toggle="modal">
+                                                                    <a href="#request_type" class="hidden" data-backdrop="static" data-toggle="modal">
                                                                         <span class="log_crumb">Product</span>
                                                                         <span class="log_crumb">Electronics</span>
                                                                     </a>
@@ -861,24 +862,27 @@
                                             <article class="tab-pane fade in" id="question">
                                                 <form class="post_input_widget ">
                                                     <div class="post_content">
-                                                       <div class="post_input font_bold form-group">
+                                                        <div class="form-group post_input font_bold">
                                                            <div class="user_avi avi_sm avi_circle">
                                                                 <img src="img/user_avis/3.jpg" alt="Ikenna David">
                                                             </div>
                                                             <textarea class="form-control" rows="5" id="question_input" placeholder="What is your question?"></textarea>
-                                                            <div class="media_control">
-                                                                <a href="#attach_media" data-toggle="modal" class="action_botton media_upload_trigger">
-                                                                    <div class="icon_container">
-                                                                        <i class="icon attachment"></i>
-                                                                    </div>
-                                                                </a>
-                                                            </div>
                                                         </div>
+                                                       
                                                         <div class="form-group">
                                                             <a href="#more_info" class="btn-link" data-toggle="collapse">Add more information</a>
                                                         </div>
                                                         <div class="panel-collapse collapse" id="more_info">
-                                                            <textarea rows="4" class="form-control" placeholder="Provide more information about your question"></textarea>
+                                                            <div class="post_input form-group">
+                                                                <textarea class="form-control" rows="5" placeholder="More details"></textarea>
+                                                                <div class="media_control">
+                                                                    <a href="#attach_media" data-toggle="modal" class="action_botton media_upload_trigger">
+                                                                        <div class="icon_container">
+                                                                            <i class="icon attachment"></i>
+                                                                        </div>
+                                                                    </a>
+                                                                </div>
+                                                            </div>
                                                         </div>
                                                     </div>
                                                     <!--Only show this pane when a user tries to upload an image to the timeline.-->
@@ -979,7 +983,7 @@
                                                                 <time datetime="25-6-2016">2 days</time>
                                                             </p>
                                                         </div>
-                                                        <a href="conversation_view.html" class="title_text">Conversation title here</a>
+                                                        <span class="title_text">Admin</span>
                                                     </div>
                                                 </div>
                                                 <div class="sub_menu dropdown pull-right">
@@ -1002,6 +1006,18 @@
                                                 <span class="status_wrap">
                                                 </span>
                                             </div>
+                                        </div>
+                                        <div class="post_meta_info">
+                                            <p class="meta">
+                                                <span class="meta_item">
+                                                    <strong class="meta_label font_bold">Filed under:</strong>
+                                                    <span class="meta_value"><a href="conversations.html">Discussions</a></span>
+                                                </span>
+                                                <span class="meta_item">
+                                                    <strong class="meta_label font_bold">In:</strong>
+                                                    <span class="meta_value"><a href="conversation_page.html">Conversation Title here</a></span>
+                                                </span>
+                                            </p>
                                         </div>
                                         <div class="post_media">
                                             <a href="timeline_comments.html">
@@ -1059,7 +1075,133 @@
                                             <article class="post_comment">
                                                 <div class="content_wrap">
                                                     <div class="comment_author">
-                                                        <a href="user_profile.html" target="_blank" title="View Profile" class="user_avi avi_sm avi_circle">
+                                                        <a href="user_profile.html" target="_blank" title="View Profile" class="user_avi avi_circle">
+                                                            <img src="img/user_avis/1.jpg" alt="Cennet Alkan">
+                                                        </a>
+                                                    </div>
+                                                    <div class="comment_inner">
+                                                        <div class="comment_heading">
+                                                            <h4 class="profile_title">
+                                                                <a href="user_profile.html" class="title_text">Cennet Alkan</a>
+                                                            </h4>
+                                                            <p class="post_time">
+                                                                <time datetime="25-6-2017" class="timestamp">23 hrs</time>
+                                                            </p>
+                                                        </div>
+                                                        <div class="post_content">
+                                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus a quas numquam totam fugiat harum facilis minima tempore rem.</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </article>
+                                        </div>
+                                    </div>
+                                </article>
+                                
+                                <!--A Question without more details-->
+                                <article class="post_card has_comment ">
+                                    <div class="card_wrapper">
+                                        <div class="post_card_header">
+                                            <div class="post_heading">
+                                                <div class="post_author">
+                                                    <div class="user_avartar">
+                                                        <a href="" class="user_avi avi_circle">
+                                                            <img src="./img/user_avis/2.jpg" alt="Adedire Oluwaseun">
+                                                        </a>
+                                                    </div>
+                                                    <div class="user_info">
+                                                        <div class="profile_title">
+                                                            <a href="user_profile.html" class="title_text">Adedire Oluwaseun</a>
+                                                            <p class="post_time" title="1 month ago">
+                                                                <time datetime="25-6-2017">4 Days ago</time>
+                                                            </p>
+                                                        </div>
+                                                        <!--Portfolio Skill area-->
+                                                        <span class="title_text">User</span>
+                                                    </div>
+                                                </div>
+                                                <div class="sub_menu dropdown pull-right">
+                                                    <a href="timeline_comments.html">
+                                                        <i class="fa fa-external-link"></i>
+                                                    </a>
+                                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                                                        <i class="fa fa-angle-down"></i>
+                                                    </a>
+                                                    <ul class="dropdown-menu dropdown-right">
+                                                        <li><a href="#">Save post</a></li>
+                                                        <li><a href="#">Report post</a></li>
+                                                        <li><a href="#">Delete post</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="post_meta_info">
+                                            <p class="meta">
+                                                <span class="meta_item">
+                                                    <strong class="meta_label font_bold">Filed under:</strong>
+                                                    <span class="meta_value"><a href="questions.html">Questions</a></span>
+                                                </span>
+                                            </p>
+                                        </div>
+                                        <div class="post_media hidden">
+                                            <a href="timeline_comments.html">
+                                                <img src="img/banners/Shoemaker.jpg" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="post_card_body">
+                                            <div class="post_content">
+                                               <h3 class="post_title font_bold">
+                                                   <a href="timeline_comments.html">
+                                                       How can I attract investors for my shoe-making venture?
+                                                   </a>
+                                               </h3>
+                                            </div>
+                                            <div class="post_actionlist">
+                                                <article class="action_item">
+                                                    <a href="timeline_comments.html" class="action_botton">
+                                                        <div class="action_botton_container" title="Comment">
+                                                            <div class="icon_container">
+                                                                <i class="icon comments"></i>
+                                                            </div>
+                                                            <div class="icon_text">
+                                                                <span class="action_count">25</span>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </article>
+                                                <div class="pull-right">
+                                                    <article class="action_item">
+                                                        <button type="button" class="action_botton">
+                                                            <div class="action_botton_container" title="Like">
+                                                                <div class="icon_container">
+                                                                    <i class="icon favourite"></i>
+                                                                </div>
+                                                                <div class="icon_text">
+                                                                    <span class="action_count">23</span>
+                                                                </div>
+                                                            </div>
+                                                        </button>
+                                                    </article>
+                                                    <article class="action_item">
+                                                        <button type="button" class="action_botton">
+                                                            <div class="action_botton_container" title="Share">
+                                                                <div class="icon_container">
+                                                                    <i class="icon shares"></i>
+                                                                </div>
+                                                                <div class="icon_text">
+                                                                    <span class="action_count">12</span>
+                                                                </div>
+                                                            </div>
+                                                        </button>
+                                                    </article>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="post_replies clearfix">
+                                            <article class="post_comment">
+                                                <div class="content_wrap">
+                                                    <div class="comment_author">
+                                                        <a href="user_profile.html" target="_blank" title="View Profile" class="user_avi avi_circle">
                                                             <img src="img/user_avis/1.jpg" alt="Cennet Alkan">
                                                         </a>
                                                     </div>
@@ -1084,18 +1226,15 @@
                                 
                                 <article class="post_card sponsored">
                                     <div class="card_wrapper">
+                                        <div class="post_media">
+                                            <a href="#sponsor_url">
+                                                <img src="img/banners/training_banner.jpg" alt="">
+                                            </a>
+                                        </div>
                                         <div class="post_card_body">
-                                            <div class="post_media">
-                                                <a href="#sponsor_url">
-                                                    <img src="img/banners/training_banner.jpg" alt="">
-                                                </a>
-                                            </div>
                                             <div class="post_content">
-                                                <h3 class="post_title font_regular">Title of sponsored post goes here</h3>
+                                                <h3 class="post_title font_regular"><a href="#sponsored_url">Title of sponsored post goes here</a></h3>
                                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut, quae, unde. Voluptatum asperiores at ex tenetur iure aperiam corporis cupiditate soluta fugiat illum culpa, dolores dolorem laboriosam maiores assumenda vel.</p>
-                                                <a href="#sponsor_url" class="btn btn-sm btn-grey">
-                                                    learn More
-                                                </a>
                                             </div>
                                             <div class="post_actionlist">
                                                 <article class="action_item">
@@ -1142,7 +1281,7 @@
                                             <article class="post_comment">
                                                 <div class="content_wrap">
                                                     <div class="comment_author">
-                                                        <a href="user_profile.html" target="_blank" title="View Profile" class="user_avi avi_sm avi_circle">
+                                                        <a href="user_profile.html" target="_blank" title="View Profile" class="user_avi avi_circle">
                                                             <img src="img/user_avis/1.jpg" alt="Cennet Alkan">
                                                         </a>
                                                     </div>
@@ -1172,7 +1311,7 @@
                                             <div class="post_heading">
                                                 <div class="post_author">
                                                     <div class="user_avartar">
-                                                        <a href="" class="user_avi avi_sm avi_circle">
+                                                        <a href="" class="user_avi avi_circle">
                                                             <img src="./img/user_avis/2.jpg" alt="Segun Araromi">
                                                         </a>
                                                     </div>
@@ -1183,7 +1322,7 @@
                                                                 <time datetime="25-6-2017">2 Days</time>
                                                             </p>
                                                         </div>
-                                                        <a href="conversation_view.html" class="title_text">Service</a>
+                                                        <span class="title_text">Partner</span>
                                                     </div>
                                                 </div>
                                                 <div class="sub_menu dropdown pull-right">
@@ -1206,6 +1345,14 @@
                                                 <span class="status_wrap">
                                                 </span>
                                             </div>
+                                        </div>
+                                        <div class="post_meta_info">
+                                            <p class="meta">
+                                                <span class="meta_item">
+                                                    <strong class="meta_label font_bold">Filed under:</strong>
+                                                    <span class="meta_value"><a href="market.html">Market</a></span>
+                                                </span>
+                                            </p>
                                         </div>
                                         <div class="post_media">
                                             <a href="timeline_comments.html">
@@ -1280,7 +1427,7 @@
                                             <article class="post_comment">
                                                 <div class="content_wrap">
                                                     <div class="comment_author">
-                                                        <a href="user_profile.html" target="_blank" title="View Profile" class="user_avi avi_sm avi_circle">
+                                                        <a href="user_profile.html" target="_blank" title="View Profile" class="user_avi avi_circle">
                                                             <img src="img/user_avis/1.jpg" alt="Cennet Alkan">
                                                         </a>
                                                     </div>
@@ -1320,7 +1467,7 @@
                                                                 <time datetime="25-6-2016">4 days</time>
                                                             </p>
                                                         </div>
-                                                        <a href="conversation_view.html" class="title_text">General</a>
+                                                        <span class="title_text">Partner</span>
                                                     </div>
                                                 </div>
                                                 <div class="sub_menu dropdown pull-right">
@@ -1342,6 +1489,18 @@
                                                 <span class="status_wrap">
                                                 </span>
                                             </div>
+                                        </div>
+                                        <div class="post_meta_info">
+                                            <p class="meta">
+                                                <span class="meta_item">
+                                                    <strong class="meta_label font_bold">Filed under:</strong>
+                                                    <span class="meta_value"><a href="timeline.html">Post</a></span>
+                                                </span>
+                                                <span class="meta_item">
+                                                    <strong class="meta_label font_bold">In:</strong>
+                                                    <span class="meta_value"><a href="timeline.html">General</a></span>
+                                                </span>
+                                            </p>
                                         </div>
                                         <div class="post_media embed-responsive embed-responsive-16by9">
                                             <video controls class="embed-responsive-item" preload="metadata">
@@ -1398,7 +1557,7 @@
                                             <article class="post_comment">
                                                 <div class="content_wrap">
                                                     <div class="comment_author">
-                                                        <a href="user_profile.html" target="_blank" title="View Profile" class="user_avi avi_sm avi_circle">
+                                                        <a href="user_profile.html" target="_blank" title="View Profile" class="user_avi avi_circle">
                                                             <img src="img/user_avis/2.jpg" alt="Cennet Alkan">
                                                         </a>
                                                     </div>
@@ -1438,7 +1597,7 @@
                                                                 <time datetime="25-6-2016">25th June, 2016</time>
                                                             </p>
                                                         </div>
-                                                        <a href="conversation_view.html" class="title_text">Conversation Title here</a>
+                                                        <span class="title_text">Conversation Title here</span>
                                                     </div>
                                                 </div>
                                                 <div class="sub_menu dropdown pull-right">
@@ -1449,7 +1608,6 @@
                                                         <i class="fa fa-angle-down"></i>
                                                     </a>
                                                     <ul class="dropdown-menu dropdown-right">
-                                                        <li><a href="#">Pin post</a></li>
                                                         <li><a href="#">Save post</a></li>
                                                         <li><a href="#">Report post</a></li>
                                                         <li><a href="#">Delete post</a></li>
@@ -1461,6 +1619,18 @@
                                                 <span class="status_wrap">
                                                 </span>
                                             </div>
+                                        </div>
+                                        <div class="post_meta_info">
+                                            <p class="meta">
+                                                <span class="meta_item">
+                                                    <strong class="meta_label font_bold">Filed under:</strong>
+                                                    <span class="meta_value"><a href="conversations.html">Discussion</a></span>
+                                                </span>
+                                                <span class="meta_item">
+                                                    <strong class="meta_label font_bold">In:</strong>
+                                                    <span class="meta_value"><a href="conversation_page.html">Conversation title</a></span>
+                                                </span>
+                                            </p>
                                         </div>
                                         <div class="post_media embed-responsive embed-responsive-16by9">
                                             <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/4PggfbzJcvA" frameborder="0" allowfullscreen></iframe>
@@ -1514,7 +1684,7 @@
                                             <article class="post_comment">
                                                 <div class="content_wrap">
                                                     <div class="comment_author">
-                                                        <a href="user_profile.html" target="_blank" title="View Profile" class="user_avi avi_sm avi_circle">
+                                                        <a href="user_profile.html" target="_blank" title="View Profile" class="user_avi avi_circle">
                                                             <img src="img/user_avis/1.jpg" alt="Cennet Alkan">
                                                         </a>
                                                     </div>
@@ -1539,18 +1709,15 @@
                                 
                                 <article class="post_card sponsored">
                                     <div class="card_wrapper">
+                                        <div class="post_media">
+                                            <a href="#sponsor_url">
+                                                <img src="img/banners/partners_banner.jpg" alt="">
+                                            </a>
+                                        </div>
                                         <div class="post_card_body">
-                                            <div class="post_media">
-                                                <a href="#sponsor_url">
-                                                    <img src="img/banners/partners_banner.jpg" alt="">
-                                                </a>
-                                            </div>
                                             <div class="post_content">
-                                               <h3 class="post_title font_regular">Title of sponsored post goes here</h3>
+                                               <h3 class="post_title font_regular"><a href="#sponsored_url">Title of sponsored post goes here</a></h3>
                                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut, quae, unde. Voluptatum asperiores at ex tenetur iure aperiam corporis cupiditate soluta fugiat illum culpa, dolores dolorem laboriosam maiores assumenda vel.</p>
-                                                <a href="#sponsor_url" class="btn btn-sm btn-grey">
-                                                    learn More
-                                                </a>
                                             </div>
                                             <div class="post_actionlist">
                                                 <article class="action_item">
@@ -1597,7 +1764,7 @@
                                             <article class="post_comment">
                                                 <div class="content_wrap">
                                                     <div class="comment_author">
-                                                        <a href="user_profile.html" target="_blank" title="View Profile" class="user_avi avi_sm avi_circle">
+                                                        <a href="user_profile.html" target="_blank" title="View Profile" class="user_avi avi_circle">
                                                             <img src="img/user_avis/1.jpg" alt="Cennet Alkan">
                                                         </a>
                                                     </div>
@@ -1627,8 +1794,8 @@
                                             <div class="post_heading">
                                                 <div class="post_author">
                                                     <div class="user_avartar">
-                                                        <a href="" class="user_avi avi_sm avi_circle">
-                                                            <img src="./img/user_avis/2.jpg" alt="Segun Araromi">
+                                                        <a href="" class="user_avi avi_circle">
+                                                            <img src="./img/user_avis/2.jpg" alt="Adedire Oluwaseun">
                                                         </a>
                                                     </div>
                                                     <div class="user_info">
@@ -1639,7 +1806,7 @@
                                                             </p>
                                                         </div>
                                                         <!--Portfolio Skill area-->
-                                                        <a href="conversation_view.html" class="title_text">Entrepreneurship</a>
+                                                        <span class="title_text">Corps Member</span>
                                                     </div>
                                                 </div>
                                                 <div class="sub_menu dropdown pull-right">
@@ -1657,6 +1824,19 @@
                                                 </div>
                                             </div>
                                         </div>
+                                        <div class="post_meta_info">
+                                            <p class="meta">
+                                                <span class="meta_item">
+                                                    <strong class="meta_label font_bold">Filed under:</strong>
+                                                    <span class="meta_value"><a href="questions.html">Questions</a></span>
+                                                </span>
+                                            </p>
+                                        </div>
+                                        <div class="post_media">
+                                            <a href="timeline_comments.html">
+                                                <img src="img/banners/Shoemaker.jpg" alt="">
+                                            </a>
+                                        </div>
                                         <div class="post_card_body">
                                             <div class="post_content">
                                                <h3 class="post_title font_bold">
@@ -1665,11 +1845,6 @@
                                                    </a>
                                                </h3>
                                                 <p>My name is Seun currently serving in abuja. I just learn shoe-making and I am interested in growing it to a proper business. I will like to the things I can do to attract investors to invest in my business. Here is a picture of my tools.</p>
-                                            </div>
-                                            <div class="post_media">
-                                                <a href="timeline_comments.html">
-                                                    <img src="img/banners/Shoemaker.jpg" alt="">
-                                                </a>
                                             </div>
                                             <div class="post_actionlist">
                                                 <article class="action_item">
@@ -1716,7 +1891,7 @@
                                             <article class="post_comment">
                                                 <div class="content_wrap">
                                                     <div class="comment_author">
-                                                        <a href="user_profile.html" target="_blank" title="View Profile" class="user_avi avi_sm avi_circle">
+                                                        <a href="user_profile.html" target="_blank" title="View Profile" class="user_avi avi_circle">
                                                             <img src="img/user_avis/1.jpg" alt="Cennet Alkan">
                                                         </a>
                                                     </div>
@@ -1745,7 +1920,7 @@
                                             <div class="post_heading">
                                                 <div class="post_author">
                                                     <div class="user_avartar">
-                                                        <a href="" class="user_avi avi_sm avi_circle">
+                                                        <a href="" class="user_avi avi_circle">
                                                             <img src="./img/icons/employability.png" alt="The Training Center">
                                                         </a>
                                                     </div>
@@ -1756,7 +1931,7 @@
                                                                 <time datetime="25-6-2017">1 month</time>
                                                             </p>
                                                         </div>
-                                                        <a href="conversation_view.html" class="title_text">General</a>
+                                                        <span class="title_text">Admin</span>
                                                     </div>
                                                 </div>
                                                 <div class="sub_menu dropdown pull-right">
@@ -1779,6 +1954,18 @@
                                                 <span class="status_wrap">
                                                 </span>
                                             </div>
+                                        </div>
+                                        <div class="post_meta_info">
+                                            <p class="meta">
+                                                <span class="meta_item">
+                                                    <strong class="meta_label font_bold">Filed under:</strong>
+                                                    <span class="meta_value"><a href="conversations.html">Discussion</a></span>
+                                                </span>
+                                                <span class="meta_item">
+                                                    <strong class="meta_label font_bold">In:</strong>
+                                                    <span class="meta_value"><a href="conversation_page.html">Conversation title</a></span>
+                                                </span>
+                                            </p>
                                         </div>
                                         <div class="post_card_body">
                                             <div class="post_content floated_img">
@@ -1859,7 +2046,7 @@
                                             <article class="post_comment">
                                                 <div class="content_wrap">
                                                     <div class="comment_author">
-                                                        <a href="user_profile.html" target="_blank" title="View Profile" class="user_avi avi_sm avi_circle">
+                                                        <a href="user_profile.html" target="_blank" title="View Profile" class="user_avi avi_circle">
                                                             <img src="img/user_avis/1.jpg" alt="Cennet Alkan">
                                                         </a>
                                                     </div>
@@ -1889,7 +2076,7 @@
                                             <div class="post_heading">
                                                 <div class="post_author">
                                                     <div class="user_avartar">
-                                                        <a href="" class="user_avi avi_sm avi_circle">
+                                                        <a href="" class="user_avi avi_circle">
                                                             <img src="./img/user_avis/2.jpg" alt="Segun Araromi">
                                                         </a>
                                                     </div>
@@ -1924,14 +2111,26 @@
                                                 </span>
                                             </div>
                                         </div>
+                                        <div class="post_meta_info">
+                                            <p class="meta">
+                                                <span class="meta_item">
+                                                    <strong class="meta_label font_bold">Filed under:</strong>
+                                                    <span class="meta_value"><a href="portfolio.html">Portfolio</a></span>
+                                                </span>
+                                                <span class="meta_item">
+                                                    <strong class="meta_label font_bold">In:</strong>
+                                                    <span class="meta_value"><a href="#">Skill Area</a></span>
+                                                </span>
+                                            </p>
+                                        </div>
+                                        <div class="post_media">
+                                            <a href="timeline_comments.html">
+                                                <img src="img/banners/portfolio.jpg" alt="">
+                                            </a>
+                                        </div>
                                         <div class="post_card_body">
                                             <div class="post_content">
-                                                <p>Here is an image of my most recent carpentry work. It is a collapsible table that can also be detached when moving from one place to another. It is fastened to the wall by 2 metal hings.</p>
-                                            </div>
-                                            <div class="post_media">
-                                                <a href="timeline_comments.html">
-                                                    <img src="img/banners/portfolio.jpg" alt="">
-                                                </a>
+                                                <p>Here is an image of my most recent carpentry work. It is a collapsible table that can also be detached when moving from one place to another. It is fastened to the wall by 2 metal hinges.</p>
                                             </div>
                                             <div class="post_actionlist">
                                                 <article class="action_item">
@@ -1995,7 +2194,7 @@
                                             <article class="post_comment">
                                                 <div class="content_wrap">
                                                     <div class="comment_author">
-                                                        <a href="user_profile.html" target="_blank" title="View Profile" class="user_avi avi_sm avi_circle">
+                                                        <a href="user_profile.html" target="_blank" title="View Profile" class="user_avi avi_circle">
                                                             <img src="img/user_avis/1.jpg" alt="Cennet Alkan">
                                                         </a>
                                                     </div>

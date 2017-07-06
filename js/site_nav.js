@@ -76,7 +76,6 @@ $(function() {
     });
 
     /*Verification Alert*/
-
     var need_verify = $('a.req_verified'),
         dismiss_alert = $('.dismiss_btn'),
         verify_alert = $('.floating_alert');
@@ -88,5 +87,18 @@ $(function() {
     need_verify.on('click', function(e) {
         e.preventDefault();
         verify_alert.addClass('is_visible');
+    });
+
+    /*Responsive Timeline Main nav script*/
+    $(function() {
+       var  sidebar = $('.nav_timeline'),
+            sidebarTrigger = $('.more_nav');
+            
+        //open/close primary navigation
+        sidebarTrigger.on('click', function(event){
+            event.preventDefault();
+            $([sidebar]).toggleClass('nav_is_visible');
+            $('body').toggleClass('overflow-hidden');
+        });
     });
 });
