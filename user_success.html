@@ -43,7 +43,7 @@
                     <li class="nav_item"><a href="#" class="nav_link_item">States</a></li>
                     <li class="nav_item "><a href=" # " class="nav_link_item ">Media Center</a></li>
                     <li class="nav_item "><a href="# " class="nav_link_item ">Resources</a></li>
-                    <li class="nav_item font__bold"><a href="#" class="nav_link_item ">Olawale Adeyemi</a></li>
+                    <li class="nav_item font__bold"><a href="#" class="nav_link_item user"></a></li>
                 </ul>
             </div>
         </div>
@@ -54,7 +54,7 @@
             <div class="container">
                 <article class="info_pane">
                     <div class="pane_wrapper">
-                        <h3 class="">Welcome, <span>Olawale Adeyemi</span></h3>
+                        <h3 class="">Welcome, <span class="user"></span></h3>
                         <span class="divider bg-secondary"></span>
                         
                         <p class="subtitle">Your account has been created successfully, and has been confirmed.</p>
@@ -62,7 +62,7 @@
 
                         <div class="pane_call_out">
                             <div class="more__btn">
-                                <a href="registerBiz_home.html" class="btn btn-secondary">Continue Registration</a>
+                                <a href="login.html" class="btn btn-secondary">Proceed to login</a>
                                 <a href="index.html" class="btn btn-default">Go Home</a>
                             </div>
                         </div>
@@ -77,6 +77,20 @@
 	<script src="js/jquery-2.1.4.js "></script>
     <script src="js/base.min.js "></script>
     <script src="js/main.js "></script>
-	
+     <script src="js/jstorage.js "></script>
+
+     <script>
+         (function(){
+             if($.jStorage.get("activeUser")){
+                 var currentUser = $.jStorage.get('currentuser');
+                 $(".user").text(currentUser.name);
+             }
+             else{
+                 location.href='login.html';
+             }
+
+
+         })();
+     </script>
 </body>
 </html>
