@@ -139,10 +139,11 @@
     }
 
     function sendEmail(email){
-        let url = "http://rest.paytithe.co/v1/users/sendVerificationEmail?email="+email+"&confirmationWebHook=http://127.0.0.1:81/osic/user_success.html&asOsic=true";
+        var confirm_url =window.location.origin + "/" + user_success.html;
+        let url = "http://rest.paytithe.co/v1/users/sendVerificationEmail?email="+email+"&confirmationWebHook="+ confirm_url +"&asOsic=true";
         $.post(url,function(resp){
             console.log(resp);
-            setTimeout(function(){ location.href="confirm_email.html"},3000)
+            setTimeout(function(){ location.href="/confirm_email.html"},3000)
 
         })
     }
