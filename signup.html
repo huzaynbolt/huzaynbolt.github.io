@@ -140,7 +140,7 @@
 
     function sendEmail(email){
         var confirm_url =window.location.origin + "/user_success.html";
-        let url = "http://rest.paytithe.co/v1/users/sendVerificationEmail?email="+email+"&confirmationWebHook="+ confirm_url +"&asOsic=true";
+        let url = "https://rest.paytithe.co/v1/users/sendVerificationEmail?email="+email+"&confirmationWebHook="+ confirm_url +"&asOsic=true";
         $.post(url,function(resp){
             console.log(resp);
             setTimeout(function(){ location.href="/confirm_email.html"},3000)
