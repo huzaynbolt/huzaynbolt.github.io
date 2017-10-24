@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en" class="no-js">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="./img/favicon.ico" type="image/x-icon">
+    <title>Registration | NIPC</title>
+    <link href="css/font-awesome.css" rel="stylesheet">
+    <link href="css/base.min.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Resource style -->
+    <script src="js/modernizr.js"></script>
+    <!-- Modernizr -->
+</head>
+
+<body class="">
+
+     <header role="banner" class="nav_header">
+        <div class="container">
+            <div class="logo">
+                <a href="/" class="logo-link">
+                    <img src="img/logo.png" alt="Invest in Nigeria">
+                </a>
+            </div>
+
+            <div class="nav_trigger">
+                <a class="primary-nav-trigger" href="#0">
+                    <span class="menu-icon"></span>
+                    <span class="menu-text">Menu</span>
+                </a>
+                <!--vm-primary-nav-trigger -->
+            </div>
+            <div class="primary_nav">
+                <ul class="menu_nav">
+                    <li class="nav_item"><a href="#" class="nav_link_item">Why Nigeria</a></li>
+                    <li class="nav_item"><a href="#" class="nav_link_item">Setting Up</a></li>
+                    <li class="nav_item"><a href="#" class="nav_link_item">Priority Sectors</a></li>
+                    <li class="nav_item"><a href="#" class="nav_link_item">States</a></li>
+                    <li class="nav_item "><a href="#" class="nav_link_item ">Media Center</a></li>
+                    <li class="nav_item "><a href="#" class="nav_link_item ">Resources</a></li>
+                    <li class="nav_item font__bold"><a href="#" class="nav_link_item user" ></a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+	<main class="main_content_area">
+	    <section class="hero_area feedback_hero">
+            <div class="container">
+                <article class="info_pane">
+                    <div class="pane_wrapper">
+                        <h3 class="">Welcome, <span class="user"></span></h3>
+                        <span class="divider bg-secondary"></span>
+                        
+                        <p class="subtitle">A verification mail has been sent to your email.</p>
+                        <p>Click the link to verify your account .</p>
+
+                        <div class="pane_call_out">
+                            <div class="more__btn">
+                                <a href="index.html" class="btn btn-default">Go Home</a>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+            <div class="altBg bg_city"></div>
+        </section>
+	</main>
+	
+	
+	<script src="js/jquery-2.1.4.js "></script>
+    <script src="js/base.min.js "></script>
+    <script src="js/main.js "></script>
+     <script src="js/jstorage.js "></script>
+
+	<script>
+        (function(){
+            var currentUser = $.jStorage.get('currentuser');
+            $(".user").text(currentUser.name);
+
+        })();
+    </script>
+</body>
+</html>

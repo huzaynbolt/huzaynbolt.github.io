@@ -1,0 +1,362 @@
+// antialiasing mode font rendering
+html * {
+    @include font-smoothing;
+}
+
+html {
+    font-size: 62.5%;
+    height: 100%;
+}
+
+* {
+    margin: 0; 
+    padding:0;
+}
+
+*,
+*:after,
+*:before {
+    @include bx_s;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+body {
+    font-family: $font_regular;
+    color: $color_text;
+    fill: $color_text;
+    font-size: 12px;
+    word-spacing: .5px;
+    letter-spacing: .1em;
+    height: 100%;
+    line-height: 1.45;
+    font-weight: 400;
+    position: relative;
+    padding-top: $header_height;
+    ul,
+    ol {
+        padding: 0;
+        margin: 0;
+    }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: $font_bold;
+    font-weight: normal;
+    margin: 0;
+}
+
+h1 {
+    font-size: 2.2em;
+}
+
+h2 {
+    font-size: 2em;
+}
+
+h3 {
+    font-size: 1.8em;
+}
+
+h4 {
+    font-size: 1.6em;
+}
+
+h5 {
+    font-size: 1.4em;
+}
+
+h6 {
+    font-size: 1.2em;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+ul, ol {
+    display: block;
+    list-style: none;
+}
+
+.divider {
+    display: inline-block;
+    height: 2px;
+    width: 100px;
+    margin: .5em auto 1em;
+    background-color: $border_grey;
+}
+
+.centered {
+    float: none;
+    margin: 0 auto;
+    display: table;
+    text-align: center;
+}
+
+.narrow_container {
+    position: relative;
+    z-index: 4;
+    max-width: 960px;
+    margin: auto;
+}
+
+.input-group-addon {
+    background: $brand_black;
+    color: $color_white;
+    font-family: $font_regular;
+    font-size: .923em;
+    padding: 6px 15px;
+    .checkbox-inline {
+        padding-left: 0;
+        margin: 0;
+    }
+}
+
+.input-group-btn {
+    font-size: 1em;
+    .btn {
+        vertical-align: top;
+    }
+}
+
+.input-group+.input-group {
+    margin-top: 1em;
+}
+
+
+/* Form Elements */
+
+.form-horizontal {
+    @include clearfix;
+    margin-bottom: 20px;
+    clear: both;
+}
+
+fieldset {
+    + fieldset {
+        padding-top: 30px;
+        margin-top: 20px;
+        border-top: 1px solid $border_grey_light;
+    }
+}
+
+.slim_form {
+    max-width: 450px;
+    &.is_centered {
+        margin: auto;
+    }
+}
+
+.form-group {
+    margin-bottom: 20px;
+    &[class*="col-"] {
+        .control-label {
+            margin-bottom: 10px;
+        }
+
+        @include MQ(SM) {
+            margin:0;
+
+            &:first-of-type{
+                padding-right: 7.5px;
+                padding-left: 0;
+            }
+
+            &:last-of-type {
+                padding-left: 7.5px;
+                padding-right: 0;
+            }  
+        }
+    }
+}
+
+.form_title {
+    font-size: 14px;
+    margin-bottom: 5px;
+
+    fieldset > & {
+        font-size: 16px;
+        text-transform: uppercase;
+        padding-bottom: 5px;
+        margin-bottom: 15px;
+        border-bottom: 1px solid $border_grey;
+    }
+}
+
+.help-block {
+    font-size: 12px;
+    color: $border_grey_dark;
+    font-style: italic;
+}
+
+.required {
+    &::before {
+        content: "*";
+        font-size: 1.125em;
+        padding-left: 5px;
+        color: $brand_accent;
+    }
+}
+
+.bracketed {
+    font-family: $font_regular;
+    font-size: .85em;
+    text-transform: none;
+    &::before,
+    &::after {
+        padding: 0 2px;
+    }
+    &::before {
+        content: "(";
+    }
+    &::after {
+        content: ")";
+    }
+}
+
+.radio, .checkbox, .radio-inline, .checkbox-inline {
+    .control-label {
+        font-family: $font_bold;
+    }
+}
+
+.form-control {
+    padding: 8px 10px;
+    font-size: 1em;
+    line-height: normal;
+    margin: 0;
+    outline: 0;
+    overflow: hidden;
+    text-indent: .01px;
+    @include appearance(none);
+    @include box-shadow(0 0 0, transparent);
+    &:focus {
+        outline: 0;
+    }
+}
+
+select.form-control {
+    background: white url(../img/arrow-down.png) right center no-repeat;
+    &:focus {
+        outline: none;
+    }
+}
+
+.color-primary {
+    color: $brand_primary !important;
+    fill: $brand_primary;
+}
+
+.color-secondary {
+    color: $brand_accent !important;
+    fill: $brand_accent;
+}
+
+.color-white {
+    color: $color_white !important;
+    fill: $color_white;
+}
+
+.color-grey {
+    color: $color_grey_dark !important;
+}
+
+.bg-primary {
+    background-color: $brand_primary !important;
+}
+
+.bg-secondary {
+    background-color: $brand_accent !important;
+}
+
+.bg-white {
+    background-color: white !important;
+}
+
+.bg-off-white {
+    background-color: $color-white !important;
+}
+
+.bg-grey {
+    background-color: $border_grey_light !important;
+}
+
+.bg-black {
+    background-color: $brand_black !important;
+}
+
+.font__regular {
+    font-family: $font_regular !important;
+}
+
+.font__bold {
+    font-family: $font_bold !important;
+}
+
+.text__caps {
+    text-transform: uppercase !important;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-right {
+    text-align: right;
+}
+
+
+/* SVG Icon systems */
+
+.cust_icon {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    overflow: hidden;
+    vertical-align: middle;
+    fill: inherit;
+    @include transition(all .6s ease);
+    img,
+    svg {
+        display: block;
+        width: 100%;
+    }
+    &.icon_xs {
+        width: 16px;
+        height: 16px;
+    }
+    &.icon_md {
+        width: 30px;
+        height: 30px;
+    }
+    &.icon_lg {
+        width: 48px;
+        height: 48px;
+    }
+    .dc__line & {
+        width: 55px;
+        height: auto;
+    }
+}
+
+.currency {
+  &::after {
+    color: inherit;
+    font-style: normal;
+    padding-right: 2.5px;
+  }
+}
+
+.naira::after {
+    content: "\20A6";
+}

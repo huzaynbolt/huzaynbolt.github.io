@@ -1,0 +1,251 @@
+<!doctype html>
+<html lang="en" class="no-js">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="./img/favicon.ico" type="image/x-icon">
+    <title>Tax Clearance - Tax History | NIPC</title>
+    <link href="css/font-awesome.css" rel="stylesheet">
+    <link href="css/base.min.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Resource style -->
+    <script src="js/modernizr.js"></script>
+    <link rel="stylesheet" href="css/sweetalert.css">
+    <!-- Modernizr -->
+</head>
+
+<body class=" bg-off-white">
+
+    <header role="banner" class="nav_header">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html" class="logo-link">
+                    <img src="img/logo.png" alt="Invest in Nigeria">
+                </a>
+            </div>
+
+            <div class="nav_trigger">
+                <a class="primary-nav-trigger" href="#0">
+                    <span class="menu-icon"></span>
+                    <span class="menu-text">Menu</span>
+                </a>
+                <!--vm-primary-nav-trigger -->
+            </div>
+            <div class="primary_nav">
+                <ul class="menu_nav">
+                    <li class="nav_item"><a href="#" class="nav_link_item">Why Nigeria</a></li>
+                    <li class="nav_item"><a href="#" class="nav_link_item">Setting Up</a></li>
+                    <li class="nav_item"><a href="#" class="nav_link_item">Priority Sectors</a></li>
+                    <li class="nav_item"><a href="#" class="nav_link_item">States</a></li>
+                    <li class="nav_item "><a href=" # " class="nav_link_item ">Media Center</a></li>
+                    <li class="nav_item "><a href="# " class="nav_link_item ">Resources</a></li>
+                    <li class="nav_item font__bold"><a href="#" class="nav_link_item user"></a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <main class="main_content_area ">
+        <section class="hero_area main_hero">
+            <div class="container ">
+                <div class="intro_msg is__centered color-white">
+                    <h1 class="intro__title">Stamp Duty Certificate</h1>
+                    
+                    <ul class="action_steps">
+                        <!--Add the class "step__done" to a submitted step-->
+                        <li class="step__item step__done">
+                            <a href="#tax_form.html">
+                                <span class="step__count"></span>
+                                <span class="step__label">Application</span>
+                            </a>
+                        </li>
+                        <li class="step__item step__active">
+                            <a href="#tax_form_2.html">
+                                <span class="step__count"></span>
+                                <span class="step__label">Tax History</span>
+                            </a>
+                        </li>
+                        <li class="step__item">
+                            <a href="#tax_form_3.html">
+                                <span class="step__count"></span>
+                                <span class="step__label">Submit Documents</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section class="with_panel">
+            <div class="narrow_container">
+                <div class="floating__panel">
+                    <div class="panel__wrapper">
+                        <section class="wizard">
+                           <div class=" wizard_body">
+                               <article class="wizard_step step_form">
+                                   <header class="step_heading">
+                                        <h4 class="title">Tax History</h4>
+                                    </header>
+                                    <div class="step_body">
+                                        <form action="">
+                                            <fieldset>
+                                                   <div class="form-group">
+                                                        <label class="control-label">Has the Company paid all assessments raised up to the immediate previous Year of Assessment?</label>    
+                                                        <div class="">
+                                                            <label for="cmtaxed" class="radio-inline">
+                                                               <input type="radio" name="pmtHist" id="cmtaxed">
+                                                               <span class="control-label">Yes</span>
+                                                            </label>
+                                                            <label for="cmnotTaxed" class="radio-inline">
+                                                               <input type="radio" name="pmtHist" id="cmnotTaxed">
+                                                               <span class="control-label">No</span>
+                                                            </label>
+                                                        </div>
+                                                    </div>
+
+                                                   <div class="form-group">
+                                                       <label class="control-label">If ‘No’ State the amount outstanding and the Year (s) affected.</label>
+                                                       <textarea id="outstand" rows="2" class="form-control" placeholder=""></textarea>
+                                                   </div>
+                                                   
+                                                   <div class="form-group">
+                                                        <label class="control-label">Any special arrangement made with the Revenue to liquidate the amount outstanding?</label>    
+                                                        <div class="">
+                                                            <label for="taxARY" class="radio-inline">
+                                                               <input type="radio" name="argType" id="taxARY">
+                                                               <span class="control-label">Yes</span>
+                                                            </label>
+                                                            <label for="TaxARN" class="radio-inline">
+                                                               <input type="radio" name="argType" id="TaxARN">
+                                                               <span class="control-label">No</span>
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                    
+                                                    <div class="form-group">
+                                                       <label class="control-label">If ‘Yes, state the type of arrangement and support with copy approval letter.</label>
+                                                       <textarea id="arrange" rows="2" class="form-control" placeholder=""></textarea>
+                                                   </div>
+                                                      
+                                                    <div class="form-group">
+                                                       <label class="control-label">Any other relevant information.</label>
+                                                       <textarea id="otherInfo" rows="5" class="form-control" placeholder=""></textarea>
+                                                   </div>
+                                            </fieldset>
+                                            
+                                            <fieldset>
+                                                <div class="form-group">
+                                                   <label class="control-label">Name of Principal Officer</label>
+                                                   <input id="fullName" type="text" class="form-control" placeholder="Enter full name">
+                                               </div>
+                                               <div class="form-horizontal">
+                                                   <div class="form-group col-sm-6">
+                                                       <label class="control-label">Designation:</label>
+                                                       <input id="designation" type="text" class="form-control" placeholder="Enter designatio">
+                                                   </div>
+                                                    <div class="form-group col-sm-6">
+                                                       <label class="control-label">Application Date</label>
+                                                       <input id="date" type="date" class="form-control" placeholder="Enter date">
+                                                   </div>
+                                               </div>
+                                               <div class="form-group media_uploader">
+                                                    <div class="media_thumb">
+                                                      <!--Insert uploaded image here-->
+                                                       <!--<img src="../img/banners/article_image.jpg" class="" alt="Blog post header">-->
+                                                       <!--Show this if no image has been added as header image-->
+                                                       <div class="img_uploader text-center">
+                                                            <div class="file_upload">
+                                                                <label for="item_image" class="upload_trigger">
+                                                                    <input type="file" name="file" id="item_image" class="inputfile hidden" />
+                                                                    <i class="fa fa-upload" title="Attach signature"></i>
+                                                                </label>
+                                                            </div>
+                                                           <p>Attach Signature</p>
+                                                       </div>
+                                                    </div>
+                                                    <label class="control-label">
+                                                        Signature (of Principal Office of the Company)
+                                                    </label>
+                                                </div>
+                                            </fieldset>
+                                       </form>
+                                       <div class="more__btn text-center">
+                                            <a href="tax_form.html" class="btn btn-default">
+                                                <i class="fa fa-arrow-left"></i> Back
+                                            </a>
+                                            <a href="#" id="taxForm2" class="btn btn-secondary">
+                                                Continue <i class="fa fa-arrow-right"></i>
+                                            </a>
+                                        </div> 
+                                    </div>
+                               </article>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <a href="#0 " class="to-top ">Top</a>
+
+    <script src="js/jquery-2.1.4.js "></script>
+    <script src="js/base.min.js "></script>
+    <script src="js/main.js "></script>
+    <!-- Resource jQuery -->
+
+    <script src="./js/sweetalert.min.js"></script>
+    <script src="js/jstorage.js "></script>
+
+    <script>
+        (function(){
+            if($.jStorage.get("activeUser")){
+                var currentUser = $.jStorage.get('currentuser');
+                $(".user").text(currentUser.name);
+            }
+            else{
+                location.href='login.html';
+            }
+        })();
+
+
+        $("#taxForm2").click(function(e){
+            e.preventDefault();
+            let outstand = $("#outstand").val();
+            let arrange = $("#arrange").val();
+            let otherInfo = $("#otherInfo").val();
+            let fullName = $("#fullName").val();
+
+            let designation = $("#designation").val();
+            let date = $("#date").val();
+
+
+            AddTaxDetailsTwo(outstand,arrange,otherInfo,fullName,designation,date)
+        });
+
+
+        function AddTaxDetailsTwo(outstand,arrange,otherInfo,fullName,designation,date){
+
+            if(outstand!='' && arrange!='' && otherInfo!='' && fullName!='' && designation!='' ){
+                $.jStorage.set("taxform2",{"outstand":outstand,"arrange":arrange,"otherInfo":otherInfo,
+                    "fullName":fullName,"designation":designation,"date":date
+                });
+                swal("Success","Proceed to next stage","success");
+                setTimeout(function(){
+                    location.href= "tax_form_3.html"
+                },3000)
+            }
+            else{
+                swal("Oops","Ensure all fields are filled and valid","error");
+            }
+
+        }
+    </script>
+
+</body>
+
+</html>

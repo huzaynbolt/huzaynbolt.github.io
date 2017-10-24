@@ -1,0 +1,33 @@
+.auth__panel {
+    max-width: 500px;
+    margin: 0 auto 40px;
+    padding: 20px 0;
+    .section__header {
+        padding-bottom: 5px;
+        border-bottom: 1px solid $border_grey;
+        margin-bottom: 20px;
+    }
+    a {
+        font-family: $font_bold;
+    }
+}
+
+.content__wrapper {
+    display: block;
+    height: 100%;
+    width: 100%;
+    padding: 0 30px;
+}
+
+.auth__form {
+    padding: 15px 0;
+}
+
+.auth_support {
+    padding: 15px 0;
+    @include MQ(SM) {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+    }
+}

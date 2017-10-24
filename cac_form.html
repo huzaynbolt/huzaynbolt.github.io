@@ -1,0 +1,212 @@
+<!doctype html>
+<html lang="en" class="no-js">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="./img/favicon.ico" type="image/x-icon">
+    <title>CAC Registration - About Company | NIPC</title>
+    <link href="css/font-awesome.css" rel="stylesheet">
+    <link href="css/base.min.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/sweetalert.css">
+    <!-- Resource style -->
+    <script src="js/modernizr.js"></script>
+    <!-- Modernizr -->
+</head>
+
+<body class=" bg-off-white">
+
+    <header role="banner" class="nav_header">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html" class="logo-link">
+                    <img src="img/logo.png" alt="Invest in Nigeria">
+                </a>
+            </div>
+
+            <div class="nav_trigger">
+                <a class="primary-nav-trigger" href="#0">
+                    <span class="menu-icon"></span>
+                    <span class="menu-text">Menu</span>
+                </a>
+                <!--vm-primary-nav-trigger -->
+            </div>
+            <div class="primary_nav">
+                <ul class="menu_nav">
+                    <li class="nav_item"><a href="#" class="nav_link_item">Why Nigeria</a></li>
+                    <li class="nav_item"><a href="#" class="nav_link_item">Setting Up</a></li>
+                    <li class="nav_item"><a href="#" class="nav_link_item">Priority Sectors</a></li>
+                    <li class="nav_item"><a href="#" class="nav_link_item">States</a></li>
+                    <li class="nav_item "><a href=" # " class="nav_link_item ">Media Center</a></li>
+                    <li class="nav_item "><a href="# " class="nav_link_item ">Resources</a></li>
+                    <li class="nav_item font__bold"><a href="#" class="nav_link_item user"></a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <main class="main_content_area ">
+        <section class="hero_area main_hero">
+            <div class="container ">
+                <div class="intro_msg is__centered color-white">
+                    <h1 class="intro__title">CAC Registration</h1>
+                    
+                    <ul class="action_steps">
+                        <!--Add the class "step__done" to a submitted step-->
+                        <li class="step__item step__active">
+                            <a href="cac_form.html">
+                                <span class="step__count"></span>
+                                <span class="step__label">About</span>
+                            </a>
+                        </li>
+                        <li class="step__item">
+                            <a href="#cac_form_2.html">
+                                <span class="step__count"></span>
+                                <span class="step__label">Shares</span>
+                            </a>
+                        </li>
+                        <li class="step__item">
+                            <a href="#cac_form_3.html">
+                                <span class="step__count"></span>
+                                <span class="step__label">Directors</span>
+                            </a>
+                        </li>
+                        <li class="step__item">
+                            <a href="#cac_form_4.html">
+                                <span class="step__count"></span>
+                                <span class="step__label">Secretary</span>
+                            </a>
+                        </li>
+                        <li class="step__item">
+                            <a href="#cac_form_5.html">
+                                <span class="step__count"></span>
+                                <span class="step__label">Compliance</span>
+                            </a>
+                        </li>
+                        <li class="step__item">
+                            <a href="#cac_form_6.html">
+                                <span class="step__count"></span>
+                                <span class="step__label">Submit</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section class="with_panel">
+            <div class="narrow_container">
+                <div class="floating__panel">
+                    <div class="panel__wrapper">
+                        <section class="wizard">
+                           <div class=" wizard_body">
+                               <article class="wizard_step step_form">
+                                   <header class="step_heading">
+                                        <h4 class="title">About Company</h4>
+                                    </header>
+                                    <div class="step_body">
+                                        <form action="">
+                                            <div class="form-group">
+                                                <h5 class="form_title">Type of Company</h5>    
+                                                <label for="cmShares" class="radio-inline">
+                                                   <input type="radio" name="cmType" id="cmShares">
+                                                   <span class="control-label">Limited by Shares</span>
+                                                </label>
+                                                <label for="cmguar" class="radio-inline">
+                                                   <input type="radio" name="cmType" id="cmguar">
+                                                   <span class="control-label">Limited by Guarantee</span>
+                                                </label>
+                                                <label for="cmnolim" class="radio-inline">
+                                                   <input type="radio" name="cmType" id="cmnolim">
+                                                   <span class="control-label">Unlimited</span>
+                                                </label>
+                                           </div>
+                                           
+                                           <div class="form-group">
+                                               <h5 class="form_title">Company Name</h5>
+                                               <input type="text" id="companyname" class="form-control" placeholder="E.g Achebe and Co.">
+                                           </div>
+                                           
+                                           <div class="form-group">
+                                               <h5 class="form_title">Register Office Address</h5>
+                                               <textarea rows="2" id="registeroffice" class="form-control" placeholder="Enter address"></textarea>
+                                           </div>
+                                           
+                                           <div class="form-group">
+                                               <h5 class="form_title">Head Office Address</h5>
+                                               <textarea id="address" rows="2" class="form-control" placeholder="Enter address"></textarea>
+                                               <p class="help-block">Fill if it is different from the <strong>Registered Office Address</strong></p>
+                                           </div>
+                                           
+                                           <div class="form-group">
+                                               <h5 class="form_title">Email Address</h5>
+                                               <input id="email" type="email" class="form-control" placeholder="Enter Email address here.">
+                                           </div>
+                                           
+                                       </form>
+                                       <div class="more__btn text-center">
+                                            <a id="cac1" href="#cac_form_2.html" class="btn btn-secondary">
+                                                Continue <i class="fa fa-arrow-right"></i>
+                                            </a>
+                                        </div> 
+                                    </div>
+                               </article>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <a href="#0" class="to-top ">Top</a>
+
+    <script src="js/jquery-2.1.4.js "></script>
+    <script src="js/base.min.js "></script>
+    <script src="js/main.js "></script>
+    <script src="./js/sweetalert.min.js"></script>
+    <script src="js/jstorage.js "></script>
+
+    <script>
+        (function(){
+            if($.jStorage.get("activeUser")){
+                var currentUser = $.jStorage.get('currentuser');
+                $(".user").text(currentUser.name);
+            }
+            else{
+                location.href='login.html';
+            }
+        })();
+        $("#cac1").click(function(e){
+            e.preventDefault();
+            let email = $("#email").val();
+            let companyname = $("#companyname").val();
+            let registeroffice =$("#registeroffice").val();
+            let address= $("#address").val();
+
+            AddCacForm1(companyname,registeroffice,address,email);
+        });
+        function AddCacForm1(companyname,registeroffice,address,email){
+            if(companyname!='' && registeroffice!='' && address!='' && email!=''){
+                $.jStorage.set("cacform1",{"companyname":companyname,"registeroffice":registeroffice,"address":address,"email":email});
+                $.jStorage.set("companyName",companyname);
+                $.jStorage.set("email",email);
+                swal("Success","Proceed to next stage","success");
+                setTimeout(function(){
+                    location.href= "cac_form_2.html"
+                },3000)
+            }
+            else{
+                swal("Oops","Ensure all fields are filled and valid","error");
+            }
+        }
+    </script>
+    <!-- Resource jQuery -->
+
+</body>
+
+</html>

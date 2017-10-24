@@ -1,0 +1,165 @@
+a {
+    text-decoration: none;
+    @include transition(all, .4s, ease);
+    color: inherit;
+    >.fa {
+        padding: 0 4px;
+    }
+    &:hover,
+    &:focus {
+        text-decoration: none;
+        color: $brand_primary;
+    }
+    &:focus {
+        outline: thin dotted $brand_primary;
+        .no-touch & {
+            outline: none;
+        }
+    }
+}
+
+a:link,
+button {
+    -webkit-tap-highlight-color: rgba($brand_accent, .6);
+    -moz-tap-highlight-color: rgba($brand_accent, .6);
+}
+
+.caret {
+    margin-left: 4px;
+}
+
+.btn,
+a.btn {
+    outline: none;
+    box-shadow: none;
+    border: 1px solid transparent;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-radius: 4px;
+    @include transition(all .6s ease);
+    font-size: 1em;
+    letter-spacing: .5px;
+    padding: 8px 24px;
+    text-align: center;
+    color: $color_white;
+    .form-group & {
+        min-width: 120px;
+    }
+    &+.btn {
+        margin-left: 1em;
+    }
+    .fa {
+        padding-right: 4px;
+    }
+    &.btn-primary {
+        background-color: $brand_primary;
+        &:hover,
+        &:focus {
+            background-color: $brand_primary_hover;
+        }
+    }
+    &.btn-secondary {
+        background-color: $brand_accent;
+        &:hover,
+        &:focus {
+            background-color: $brand_accent_hover;
+        }
+    }
+    &.btn-icon {
+        padding: 0;
+        font-size: 14px;
+        border-radius: 50%;
+        height: 25px;
+        width: 25px;
+        line-height: 25px;
+    }
+    &.btn-rounded {
+        @include border-radius(25px);
+    }
+    &.btn-default {
+        background-color: white;
+        border-color: $border_grey;
+        color: $color_text;
+        &:hover {
+            background-color: $border_grey_light;
+            color: $border_grey_dark;
+        }
+    }
+    &:hover,
+    &:focus {
+        text-decoration: none !important;
+        color: $color_white;
+        .no-touch & {
+            outline: none;
+        }
+    }
+}
+
+.btn-sm.btn,
+.btn-group-sm>.btn {
+    padding: 5px 15px;
+}
+
+.btn-lg.btn,
+.btn-group-lg>.btn {
+    padding: 12px 48px;
+}
+
+.btn-link {
+    padding: 0;
+    color: inherit;
+    display: inline-block;
+    border-bottom: 1px dotted $border_grey_light;
+    &:hover,
+    &:focus {
+        text-decoration: none;
+        color: $brand_primary;
+        border-color: $brand_primary;
+    }
+}
+
+.more__btn {
+    display: block;
+    position: relative;
+    margin-top: 30px;
+    padding: 10px 0;
+}
+
+.to-top {
+    display: inline-block;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    position: fixed;
+    bottom: 15px;
+    right: 3.5%;
+    overflow: hidden;
+    text-indent: 100%;
+    white-space: nowrap;
+    background: $brand_primary url(../img/top-arrow.svg) no-repeat center 50%;
+    visibility: hidden;
+    opacity: 0;
+    @include transition (opacity .3s 0s, visibility 0s .3s);
+    z-index: 30000;
+    .no-touch & {
+        &:hover,
+        &:focus {
+            background-color: rgba($brand_primary, .66);
+            opacity: 1;
+        }
+    }
+    &.is-visible,
+    &.fade-out,
+    .no-touch &:hover {
+        @include transition(opacity .3s, visibility 0s);
+    }
+    &.is-visible {
+        /* the button becomes visible */
+        visibility: visible;
+        opacity: 1;
+    }
+    &.fade-out {
+        /* if the user keeps scrolling down, the button is out of focus and becomes less visible */
+        opacity: .5;
+    }
+}

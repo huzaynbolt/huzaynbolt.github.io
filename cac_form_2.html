@@ -1,0 +1,240 @@
+<!doctype html>
+<html lang="en" class="no-js">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="./img/favicon.ico" type="image/x-icon">
+    <title>CAC Registration - Authorized shares capital | NIPC</title>
+    <link href="css/font-awesome.css" rel="stylesheet">
+    <link href="css/base.min.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/sweetalert.css">
+    <!-- Resource style -->
+    <script src="js/modernizr.js"></script>
+    <!-- Modernizr -->
+</head>
+
+<body class=" bg-off-white">
+
+    <header role="banner" class="nav_header">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html" class="logo-link">
+                    <img src="img/logo.png" alt="Invest in Nigeria">
+                </a>
+            </div>
+
+            <div class="nav_trigger">
+                <a class="primary-nav-trigger" href="#0">
+                    <span class="menu-icon"></span>
+                    <span class="menu-text">Menu</span>
+                </a>
+                <!--vm-primary-nav-trigger -->
+            </div>
+            <div class="primary_nav">
+                <ul class="menu_nav">
+                    <li class="nav_item"><a href="#" class="nav_link_item">Why Nigeria</a></li>
+                    <li class="nav_item"><a href="#" class="nav_link_item">Setting Up</a></li>
+                    <li class="nav_item"><a href="#" class="nav_link_item">Priority Sectors</a></li>
+                    <li class="nav_item"><a href="#" class="nav_link_item">States</a></li>
+                    <li class="nav_item "><a href=" # " class="nav_link_item ">Media Center</a></li>
+                    <li class="nav_item "><a href="# " class="nav_link_item ">Resources</a></li>
+                    <li class="nav_item font__bold"><a href="#" class="nav_link_item user"></a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <main class="main_content_area ">
+        <section class="hero_area main_hero">
+            <div class="container ">
+                <div class="intro_msg is__centered color-white">
+                    <h1 class="intro__title">CAC Registration</h1>
+                    
+                    <ul class="action_steps">
+                        <!--Add the class "step__done" to a submitted step-->
+                        <li class="step__item step__done">
+                            <a href="cac_form.html">
+                                <span class="step__count"></span>
+                                <span class="step__label">About</span>
+                            </a>
+                        </li>
+                        <li class="step__item step__active">
+                            <a href="cac_form_2.html">
+                                <span class="step__count"></span>
+                                <span class="step__label">Shares</span>
+                            </a>
+                        </li>
+                        <li class="step__item">
+                            <a href="#cac_form_3.html">
+                                <span class="step__count"></span>
+                                <span class="step__label">Directors</span>
+                            </a>
+                        </li>
+                        <li class="step__item">
+                            <a href="#cac_form_4.html">
+                                <span class="step__count"></span>
+                                <span class="step__label">Secritary</span>
+                            </a>
+                        </li>
+                        <li class="step__item">
+                            <a href="#cac_form_5.html">
+                                <span class="step__count"></span>
+                                <span class="step__label">Compliance</span>
+                            </a>
+                        </li>
+                        <li class="step__item">
+                            <a href="#cac_form_6.html">
+                                <span class="step__count"></span>
+                                <span class="step__label">Submit</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section class="with_panel">
+            <div class="narrow_container">
+                <div class="floating__panel">
+                    <div class="panel__wrapper">
+                        <section class="wizard">
+                           <div class=" wizard_body">
+                               <article class="wizard_step step_form">
+                                   <header class="step_heading">
+                                        <h4 class="title">Authorized shares capital</h4>
+                                    </header>
+                                    <div class="step_body">
+                                        <form action="">
+                                                                                       
+                                           <div class="form-group">
+                                               <label class="control-label">Amount of Shares in words</label>
+                                               <textarea rows="2" id="sharesamount" class="form-control" placeholder="e.g One Million units of shares"></textarea>
+                                           </div>
+                                           
+                                           <div class="form-group">
+                                               <label class="control-label">Value In naira</label>
+                                               <div class="input-group">
+                                                    <span class="input-group-addon">
+                                                        <i class="currency naira"></i>
+                                                    </span>
+                                                   <input type="number" id="sharesinnaira" class="form-control" placeholder="Value in naira.">
+                                               </div>
+                                           </div>
+                                           
+                                           <div class="form-group">
+                                               <div class="input-group">
+                                                   <span class="input-group-addon">Divided Into</span>
+                                                   <input type="text" id="dividedinto" class="form-control" placeholder="">
+                                                   <span class="input-group-addon">of <i class="currency naira"></i></span>
+                                                   <input type="number" id="dividedunit" class="form-control" placeholder="">
+                                                   <span class="input-group-addon">
+                                                        Each
+                                                    </span>
+                                               </div>
+                                           </div>
+                                           
+                                           <div class="form-horizontal">
+                                               <div class="form-group col-sm-6">
+                                                   <label class="control-label">Name of Director</label>
+                                                   <input type="text" id="directorname" class="form-control" placeholder="Director name.">
+                                               </div>
+                                               <div class="form-group col-sm-6">
+                                                   <label class="control-label">Telephone number</label>
+                                                   <input type="tel" id="phonenumber" class="form-control" placeholder="Phone number.">
+                                               </div>
+                                           </div>
+                                           
+                                           <div class="form-group media_uploader">
+                                                <label class="control-label">
+                                                    Signature of Director
+                                                </label>
+                                                <div class="media_thumb">
+                                                  <!--Insert uploaded image here-->
+                                                   <!--<img src="../img/banners/article_image.jpg" class="" alt="Blog post header">-->
+                                                   <!--Show this if no image has been added as header image-->
+                                                   <div class="img_uploader text-center">
+                                                        <div class="file_upload">
+                                                            <label for="item_image" class="upload_trigger">
+                                                                <input type="file" name="file" id="item_image" class="inputfile hidden" />
+                                                                <i class="fa fa-upload" title="Attach signature"></i>
+                                                            </label>
+                                                        </div>
+                                                       <p>Attach Signature</p>
+                                                   </div>
+                                                </div>
+                                            </div>
+                                           
+                                       </form>
+                                       <div class="more__btn text-center">
+                                            <a href="cac_form.html" class="btn btn-default">
+                                                <i class="fa fa-arrow-left"></i> Back
+                                            </a>
+                                            <a href="#cac_form_3.html" id="cac2" class="btn btn-secondary">
+                                                Continue <i class="fa fa-arrow-right"></i>
+                                            </a>
+                                        </div> 
+                                    </div>
+                               </article>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <a href="#0 " class="to-top ">Top</a>
+
+    <script src="js/jquery-2.1.4.js "></script>
+    <script src="js/base.min.js "></script>
+    <script src="js/main.js "></script>
+    <script src="./js/sweetalert.min.js"></script>
+    <script src="js/jstorage.js "></script>
+
+    <script>
+        (function(){
+            if($.jStorage.get("activeUser")){
+                var currentUser = $.jStorage.get('currentuser');
+                $(".user").text(currentUser.name);
+            }
+            else{
+                location.href='login.html';
+            }
+        })();
+        $("#cac2").click(function(e){
+            e.preventDefault();
+            let sharesamount = $("#sharesamount").val();
+            let sharesinnaira = $("#sharesinnaira").val();
+            let dividedinto =$("#dividedinto").val();
+            let dividedunit= $("#dividedunit").val();
+            let directorname= $("#directorname").val();
+            let phonenumber= $("#phonenumber").val();
+
+            AddCacForm2(sharesamount,sharesinnaira,dividedinto,dividedunit,directorname,phonenumber)
+        });
+        function AddCacForm2(sharesamount,sharesinnaira,dividedinto,dividedunit,directorname,phonenumber){
+            if(sharesamount!='' && sharesinnaira!='' && dividedinto!='' && dividedunit!=''){
+                $.jStorage.set("cacform2",{"sharesamount":sharesamount,"sharesinnaira":sharesinnaira,"dividedinto":dividedinto,
+                    "dividedunit":dividedunit,"directorname":directorname
+                ,"phonenumber":phonenumber
+                });
+                swal("Success","Proceed to next stage","success");
+                setTimeout(function(){
+                    location.href= "cac_form_3.html"
+                },3000)
+            }
+            else{
+                swal("Oops","Ensure all fields are filled and valid","error");
+            }
+        }
+    </script>
+    <!-- Resource jQuery -->
+
+</body>
+
+</html>

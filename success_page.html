@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en" class="no-js">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="./img/favicon.ico" type="image/x-icon">
+    <title>Success | NIPC</title>
+    <link href="css/font-awesome.css" rel="stylesheet">
+    <link href="css/base.min.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Resource style -->
+    <script src="js/modernizr.js"></script>
+    <!-- Modernizr -->
+</head>
+
+<body class=" bg-off-white">
+
+    <header role="banner" class="nav_header">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html" class="logo-link">
+                    <img src="img/logo.png" alt="Invest in Nigeria">
+                </a>
+            </div>
+
+            <div class="nav_trigger">
+                <a class="primary-nav-trigger" href="#0">
+                    <span class="menu-icon"></span>
+                    <span class="menu-text">Menu</span>
+                </a>
+                <!--vm-primary-nav-trigger -->
+            </div>
+            <div class="primary_nav">
+                <ul class="menu_nav">
+                    <li class="nav_item"><a href="#" class="nav_link_item">Why Nigeria</a></li>
+                    <li class="nav_item"><a href="#" class="nav_link_item">Setting Up</a></li>
+                    <li class="nav_item"><a href="#" class="nav_link_item">Priority Sectors</a></li>
+                    <li class="nav_item"><a href="#" class="nav_link_item">States</a></li>
+                    <li class="nav_item "><a href=" # " class="nav_link_item ">Media Center</a></li>
+                    <li class="nav_item "><a href="# " class="nav_link_item ">Resources</a></li>
+                    <li class="nav_item font__bold"><a href="#" class="nav_link_item user"></a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <main class="main_content_area ">
+        
+        <section class="section__block">
+            <div class="narrow_container">
+                <section class="wizard">
+                   <div class=" wizard_body">
+                       <article class="wizard_step step_form">
+                            <div class="step_body">
+                                <div class="text-center">
+                                    <div class="icon_holder">
+                                        <img src="./img/icons/success.png" alt="Success">
+                                    </div>
+                                    <h4 class="color-primary">Success </h4>
+                                    
+                                    <p class="subtitle" id="text">.</p>
+                                    <div class="more__btn text-center">
+                                        <a href="registerBiz_home.html" class="btn btn-default">
+                                            <i class="fa fa-arrow-left"></i>Registration Home
+                                        </a>
+                                        <!--<a href="tax_form.html" class="btn btn-secondary">-->
+                                            <!--Get Stamp Duty<i class="fa fa-arrow-right"></i>-->
+                                        <!--</a>-->
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                </section>
+            </div>
+        </section>
+    </main>
+
+    <a href="#0 " class="to-top ">Top</a>
+
+    <script src="js/jquery-2.1.4.js "></script>
+    <script src="js/base.min.js "></script>
+    <script src="js/main.js "></script>
+    <!-- Resource jQuery -->
+    <script src="./js/sweetalert.min.js"></script>
+    <script src="js/jstorage.js "></script>
+
+    <script>
+        (function(){
+            if($.jStorage.get("activeUser")){
+                var currentUser = $.jStorage.get('currentuser');
+                $(".user").text(currentUser.name);
+                $("#text").text("Your " +  $.jStorage.get("stage") + " has been received. follow the link bellow to continue your business registration, or return to the home page.")
+            }
+            else{
+                location.href='login.html';
+            }
+        })();
+
+    </script>
+
+</body>
+
+</html>

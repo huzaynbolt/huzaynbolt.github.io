@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="en" class="no-js">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="./img/favicon.ico" type="image/x-icon">
+    <title>Confirm Registration | NIPC</title>
+    <link href="css/font-awesome.css" rel="stylesheet">
+    <link href="css/base.min.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="css/sweetalert.css">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Resource style -->
+    <script src="js/modernizr.js"></script>
+    <!-- Modernizr -->
+</head>
+
+<body class="">
+
+     <header role="banner" class="nav_header">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html" class="logo-link">
+                    <img src="img/logo.png" alt="Invest in Nigeria">
+                </a>
+            </div>
+
+            <div class="nav_trigger">
+                <a class="primary-nav-trigger" href="#0">
+                    <span class="menu-icon"></span>
+                    <span class="menu-text">Menu</span>
+                </a>
+                <!--vm-primary-nav-trigger -->
+            </div>
+            <div class="primary_nav">
+                <ul class="menu_nav">
+                    <li class="nav_item"><a href="#" class="nav_link_item">Why Nigeria</a></li>
+                    <li class="nav_item"><a href="#" class="nav_link_item">Setting Up</a></li>
+                    <li class="nav_item"><a href="#" class="nav_link_item">Priority Sectors</a></li>
+                    <li class="nav_item"><a href="#" class="nav_link_item">States</a></li>
+                    <li class="nav_item "><a href=" # " class="nav_link_item ">Media Center</a></li>
+                    <li class="nav_item "><a href="# " class="nav_link_item ">Resources</a></li>
+                    <li class="nav_item font__bold"><a href="#" class="nav_link_item user"></a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+	<main class="main_content_area">
+	    <section class="hero_area feedback_hero">
+            <div class="container">
+                <article class="info_pane">
+                    <div class="pane_wrapper">
+                        <h3 class="">Almost done</h3>
+                        <span class="divider bg-secondary"></span>
+                        
+                        <p class="subtitle">To complete the registration of your company - <strong id="namec">.</strong>, you will be required to make a one time payment of <strong><i class="currency naira"></i> 25,000</strong>. Click the button below to make payment </p>
+                        
+                        <div class="table-responsive post_table">
+                            <table class="table table-hover">
+                                <thead>
+                                    <tr>
+                                        <th>Company</th>
+                                        <th>Amount</th>
+                                        <th>Status</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><span id="namec">.</span></td>
+                                        <td><span><i class="currency naira"></i> 25,000</span></td>
+                                        <td><span>Pending</span></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <div class="pane_call_out">
+                            <div class="more__btn">
+                                <a href="registerBiz_home.html" class="btn btn-default">Cancel</a>
+                                <a href="#" id="makePayment" class="btn btn-primary">Make Payment</a>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+            <div class="altBg bg_city"></div>
+        </section>
+	</main>
+	
+	
+	<script src="js/jquery-2.1.4.js "></script>
+    <script src="js/base.min.js "></script>
+    <script src="js/main.js "></script>
+
+     <script src="./js/sweetalert.min.js"></script>
+     <script src="js/jstorage.js "></script>
+
+     <script src="https://js.paystack.co/v1/inline.js"></script>
+
+     <script>
+         var companyName="";
+         var email = "huzaynbolt@gmail.com";
+         (function(){
+             if($.jStorage.get("activeUser")){
+                 var currentUser = $.jStorage.get('currentuser');
+                 companyName = $.jStorage.get('companyName');
+
+                 $("#namec").text(companyName);
+                 $(".user").text(currentUser.name);
+
+
+             }
+             else{
+                 //location.href='login.html';
+             }
+         })();
+         $("#makePayment").click(function(e){
+             e.preventDefault();
+             payWithPaystack();
+
+         });
+
+         function payWithPaystack(){
+             var handler = PaystackPop.setup({
+                 key: 'pk_live_6c0d3efeb5f5e56ddf9c544cac02ad2fa3700a97',
+                 email: $.jStorage.get('email') ? $.jStorage.get('email'):email,
+                 amount: 2500000,
+                 channels:['bank','card'],
+                 metadata: {
+                     custom_fields: [
+                         {
+                             display_name: "Company Name",
+                             variable_name: "company_name",
+                             value: companyName
+                         }
+                     ]
+                 },
+                 callback: function(response){
+                     swal("Success","Payment was successful ","success");
+                     setTimeout(function(){
+                         location.href = "registerBiz_home.html";
+                     },4000)
+                 },
+                 onClose: function(){
+                     location.href="registerBiz_home.html";
+                 }
+             });
+             handler.openIframe();
+         }
+     </script>
+	
+</body>
+</html>

@@ -1,0 +1,126 @@
+.main_content_area {
+    position: relative;
+    z-index: $content-zindex;
+}
+
+.section__block {
+    width: 100%;
+    padding: 30px 0;
+    position: relative;
+    clear: both;
+    overflow: hidden;
+    background-size: cover;
+    background-blend-mode: multiply;
+    .section-title {
+        font-size: 30px;
+        line-height: 2;
+    }
+    @include MQ(SM) {
+        padding: 60px 0;
+    }
+}
+
+.section__header {
+    padding-bottom: 30px;
+    &.is__centered {
+        max-width: 700px;
+        margin: auto;
+        text-align: center;
+    }
+    .title {
+        font-size: 21px;
+    }
+    .subtitle {
+        font-size: 14px;
+        max-width: 760px;
+        display: inline-block;
+    }
+}
+
+.with_panel {
+    display: block;
+    padding-bottom: 50px;
+    min-height: 400px;
+    position: relative;
+    z-index: 5;
+}
+
+.floating__panel {
+    border-radius: 4px;
+    display: block;
+    width: 100%;
+    position: absolute;
+    top: -60px;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+    box-shadow: 0 1px 2px $border_grey;
+    background-color: white;
+    
+}
+
+.panel__wrapper {
+    padding: 20px;
+    @include MQ(MD) {
+        padding: 30px 40px;
+    }
+}
+
+.info_pane {
+    @include MQ(SM) {
+        position: absolute;
+        max-width: 650px; 
+        @include center(xy);
+    }
+
+    .pane_wrapper {
+        background-color: rgba(white, .8);
+        border-radius: 10px;
+        padding: 15px;
+        width: 100%;
+        height: 100%;
+        
+        @include MQ(SM) {
+            padding: 40px;
+        }
+    }
+
+    .subtitle {
+        padding: 15px 0;
+        font-size:14px;
+    }
+}
+
+.pane_header {
+    @include clearfix;
+
+    .pane_title, .pane_action {
+        display: inline-block;
+        vertical-align: -webkit-baseline-middle;
+    }
+
+    .info_pane & {
+        padding-bottom: 15px;
+        
+        @include MQ(SM) {
+            padding-left: 40px;
+        }
+    }
+}
+
+.pane_title {
+    font-size: 18px;
+
+    .pane_widget & {
+        font-size: 12px;
+    }
+}
+
+.pane_body, .pane_header {
+    padding: 10px 15px;
+
+    @include MQ(SM) {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}

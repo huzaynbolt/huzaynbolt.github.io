@@ -1,0 +1,430 @@
+<!doctype html>
+<html lang="en" class="no-js">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="./img/favicon.ico" type="image/x-icon">
+    <title>STamp Duty Service - Account | NIPC</title>
+    <link href="css/font-awesome.css" rel="stylesheet">
+    <link href="css/base.min.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/sweetalert.css">
+    <!-- Resource style -->
+    <script src="js/modernizr.js"></script>
+    <!-- Modernizr -->
+</head>
+
+<body class=" bg-off-white">
+
+    <header role="banner" class="nav_header">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html" class="logo-link">
+                    <img src="img/logo.png" alt="Invest in Nigeria">
+                </a>
+            </div>
+
+            <div class="nav_trigger">
+                <a class="primary-nav-trigger" href="#0">
+                    <span class="menu-icon"></span>
+                    <span class="menu-text">Menu</span>
+                </a>
+                <!--vm-primary-nav-trigger -->
+            </div>
+            <div class="primary_nav">
+                <ul class="menu_nav">
+                    <li class="nav_item"><a href="#" class="nav_link_item">Why Nigeria</a></li>
+                    <li class="nav_item"><a href="#" class="nav_link_item">Setting Up</a></li>
+                    <li class="nav_item"><a href="#" class="nav_link_item">Priority Sectors</a></li>
+                    <li class="nav_item"><a href="#" class="nav_link_item">States</a></li>
+                    <li class="nav_item "><a href=" # " class="nav_link_item ">Media Center</a></li>
+                    <li class="nav_item "><a href="# " class="nav_link_item ">Resources</a></li>
+                    <li class="nav_item font__bold"><a href="#" class="nav_link_item user"></a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <main class="main_content_area ">
+        <section class="hero_area main_hero">
+            <div class="container ">
+                <div class="intro_msg is__centered color-white">
+                    <h1 class="intro__title">Stamp Duty Certificate</h1>
+                    
+                    <ul class="action_steps">
+                        <!--Add the class "step__done" to a submitted step-->
+                        <li class="step__item step__active">
+                            <a href="#firs_form.html">
+                                <span class="step__count"></span>
+                                <span class="step__label">Create Account</span>
+                            </a>
+                        </li>
+                        <li class="step__item">
+                            <a href="#firs_form_2.html">
+                                <span class="step__count"></span>
+                                <span class="step__label">Articles of Association</span>
+                            </a>
+                        </li>
+                        <li class="step__item">
+                            <a href="#firs_form_3.html">
+                                <span class="step__count"></span>
+                                <span class="step__label">Company Registration</span>
+                            </a>
+                        </li>
+                        <li class="step__item">
+                            <a href="#firs_form_4.html">
+                                <span class="step__count"></span>
+                                <span class="step__label">Submit Documents</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section class="with_panel">
+            <div class="narrow_container">
+                <div class="floating__panel">
+                    <div class="panel__wrapper">
+                        <section class="wizard">
+                           <div class=" wizard_body">
+                               <article class="wizard_step step_form">
+                                   <header class="step_heading">
+                                        <h4 class="title">Create Account</h4>
+                                        <ul class="nav nav-tabs">
+                                            <li class="active"><a href="#corpAcct" data-toggle="tab">Corporate Account</a></li>
+                                            <li><a href="#indiAcct" data-toggle="tab">Individual Account</a></li>
+                                        </ul>
+                                    </header>
+                                    <div class="step_body tab-content">
+                                        <div class="tab-pane active fade in" id="corpAcct">
+                                            <form action="">
+                                                <fieldset>
+                                                    <div class="form-group">
+                                                        <label class="control-label">Tin</label>
+                                                        <div class="input-group">
+                                                            <input id="jtb_corp" type="text" class="form-control" placeholder="Enter your FIRS or JTB pin">
+                                                            <span class="input-group-btn">
+                                                                <button class="btn btn-default">Retrieve TIN Information</button>
+                                                            </span>
+                                                        </div>
+                                                   </div>
+
+                                                   <div class="form-group">
+                                                       <label class="control-label">Name of Institution</label>
+                                                       <input id="inst_nameCorp" type="text" class="form-control" placeholder="Institution Name">
+                                                   </div>
+
+                                                   <div class="form-horizontal">
+                                                       <div class="form-group col-sm-6">
+                                                           <label class="control-label">Email Address</label>
+                                                           <input type="email" id="emailcorp" class="form-control" placeholder="Enter Email address here.">
+                                                       </div>
+                                                       <div class="form-group col-sm-6">
+                                                           <label class="control-label">Phone number</label>
+                                                           <input id="phoneCorp" type="tel" class="form-control" placeholder="Enter phone number here.">
+                                                       </div>
+                                                   </div>
+
+                                                   <div class="form-group">
+                                                       <label class="control-label">Office Address</label>
+                                                       <textarea rows="2" id="addresscorp" class="form-control" placeholder="Enter the corporate address here"></textarea>
+                                                   </div>
+
+                                                   <div class="form-horizontal">
+                                                        <div class="form-group col-sm-6">
+                                                            <label class="control-label">Country of Residence</label>
+                                                            <select class="form-control" id="countrycorp">
+                                                                <option>Nigeria</option>
+                                                                <option>Ghana</option>
+                                                                <option>France</option>
+                                                                <option>United Kingdom</option>
+                                                                <option>United States of America</option>
+                                                                <option>Spain</option>
+                                                            </select>
+                                                        </div>
+                                                       <div class="form-group col-sm-6">
+                                                           <label class="control-label">State</label>
+                                                            <select class="form-control" id="stateCorp">
+                                                                <option>Select State</option>
+                                                                <option>Lagos</option>
+                                                                <option>Abuja</option>
+                                                                <option>Togo</option>
+                                                                <option>Lesotho</option>
+                                                                <option>Boston</option>
+                                                            </select>
+                                                       </div>
+                                                    </div>
+
+                                                    <div class="form-horizontal">
+                                                       <div class="form-group col-sm-6">
+                                                           <label class="control-label">CAC Registration Number</label>
+                                                           <input type="number" id="cacCorp" class="form-control" placeholder="Enter your corporate RC/BN/IT number here.">
+                                                       </div>
+                                                       <div class="form-group col-sm-6">
+                                                           <label class="control-label">Date of Incorporation</label>
+                                                           <input type="text" id="dateCorp" class="form-control" placeholder="Enter company incorporation date.">
+                                                       </div>
+                                                   </div>
+                                                </fieldset>
+                                                <fieldset>
+                                                    <h4 class="form_title">Contact Person's Information</h4>
+                                                   <div class="form-group">
+                                                       <label class="control-label">Contact Name</label>
+                                                       <input type="text" class="form-control" id="contactNamecorp" placeholder="Firstname Middlename Lastname">
+                                                   </div>
+                                                    <div class="form-horizontal">
+                                                       <div class="form-group col-sm-6">
+                                                           <label class="control-label">Email Address</label>
+                                                           <input type="email" id="contactEmailCorp" class="form-control" placeholder="Contact's email address">
+                                                       </div>
+                                                       <div class="form-group col-sm-6">
+                                                           <label class="control-label">Phone number</label>
+                                                           <input id="contactPhoneCorp" type="text" class="form-control" placeholder="Contact's phone number">
+                                                       </div>
+                                                   </div>
+                                                </fieldset>
+                                                
+                                                <fieldset>
+                                                    <h4 class="form_title">Account Credentials</h4>
+                                                   <div class="form-group">
+                                                       <label class="control-label">Username</label>
+                                                       <input type="text" id="usernameCorp" class="form-control" placeholder="create a username">
+                                                   </div>
+                                                    <div class="form-horizontal">
+                                                       <div class="form-group col-sm-6">
+                                                           <label class="control-label required">Password</label>
+                                                           <input type="email" id="emailAccCorp" class="form-control" placeholder="Contact's email address">
+                                                       </div>
+                                                       <div class="form-group col-sm-6">
+                                                           <label class="control-label required">Confirm Password</label>
+                                                           <input id="passwordCorp" type="text" class="form-control" placeholder="Contact's phone number">
+                                                       </div>
+                                                   </div>
+                                                </fieldset>
+                                               
+                                           </form>
+                                           <div class="more__btn text-center">
+                                                <a href="#" id="firs1Corp" class="btn btn-secondary">
+                                                    Create Account
+                                                </a>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="tab-pane fade in" id="indiAcct">
+                                            <form action="">
+                                                <fieldset>
+                                                    <div class="form-group">
+                                                        <label class="control-label">Tin</label>
+                                                        <div class="input-group">
+                                                            <input id="jtbind" type="text" class="form-control" placeholder="Enter your FIRS or JTB pin">
+                                                            <span class="input-group-btn">
+                                                                <button class="btn btn-default">Retrieve TIN Information</button>
+                                                            </span>
+                                                        </div>
+                                                   </div>
+
+                                                   <div class="form-group">
+                                                       <label class="control-label">Full Name</label>
+                                                       <input type="text" id="nameInd" class="form-control" placeholder="Enter your full name here">
+                                                   </div>
+
+                                                   <div class="form-horizontal">
+                                                       <div class="form-group col-sm-6">
+                                                           <label class="control-label">Email Address</label>
+                                                           <input  id="emailInd" type="email" class="form-control" placeholder="Enter Email address here.">
+                                                       </div>
+                                                       <div class="form-group col-sm-6">
+                                                           <label class="control-label">Phone number</label>
+                                                           <input id="phoneInd" type="tel" class="form-control" placeholder="Enter phone number here.">
+                                                       </div>
+                                                   </div>
+
+                                                   <div class="form-horizontal">
+                                                        <div class="form-group col-sm-6">
+                                                            <label class="control-label">Country of Residence</label>
+                                                            <select class="form-control" id="countryInd">
+                                                                <option>Nigeria</option>
+                                                                <option>Ghana</option>
+                                                                <option>France</option>
+                                                                <option>United Kingdom</option>
+                                                                <option>United States of America</option>
+                                                                <option>Spain</option>
+                                                            </select>
+                                                        </div>
+                                                       <div class="form-group col-sm-6">
+                                                           <label class="control-label">State</label>
+                                                            <select class="form-control" id="stateInd">
+                                                                <option>Select State</option>
+                                                                <option>Osun</option>
+                                                                <option>Rivers</option>
+                                                                <option>Plateau</option>
+                                                                <option>Imo</option>
+                                                                <option>Lagos</option>
+                                                            </select>
+                                                       </div>
+                                                    </div>
+                                                    
+                                                    <div class="form-group">
+                                                        <label class="control-label">Gender</label>
+                                                        <select class="form-control" id="genderInd">
+                                                            <option>Select Gender</option>
+                                                            <option>Male</option>
+                                                            <option>Female</option>
+                                                        </select>
+                                                    </div>
+
+                                                </fieldset>
+                                                
+                                                <fieldset>
+                                                    <h4 class="form_title">Account Credentials</h4>
+                                                   <div class="form-group">
+                                                       <label class="control-label">Username</label>
+                                                       <input id="usernameInd" type="text" class="form-control" placeholder="create a username">
+                                                   </div>
+                                                    <div class="form-horizontal">
+                                                       <div class="form-group col-sm-6">
+                                                           <label class="control-label required">Password</label>
+                                                           <input type="email"  id="emailacctInd" class="form-control" placeholder="Contact's email address">
+                                                       </div>
+                                                       <div class="form-group col-sm-6">
+                                                           <label class="control-label required">Confirm Password</label>
+                                                           <input id="passwordInd" type="text" class="form-control" placeholder="Contact's phone number">
+                                                       </div>
+                                                   </div>
+                                                </fieldset>
+                                           </form>
+                                           <div class="more__btn text-center">
+                                                <a href="#" id="firsFormInd" class="btn btn-secondary">
+                                                    Continue <i class="fa fa-arrow-right"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                         
+                                    </div>
+                               </article>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <a href="#0" class="to-top ">Top</a>
+
+    <script src="js/jquery-2.1.4.js "></script>
+    <script src="js/base.min.js "></script>
+    <script src="js/main.js "></script>
+
+    <script src="./js/sweetalert.min.js"></script>
+    <script src="js/jstorage.js "></script>
+
+    <script>
+        (function(){
+            if($.jStorage.get("activeUser")){
+                var currentUser = $.jStorage.get('currentuser');
+                $(".user").text(currentUser.name);
+            }
+            else{
+                location.href='login.html';
+            }
+        })();
+        $("#firs1Corp").click(function(e){
+            e.preventDefault();
+            let jtb_corp = $("#jtb_corp").val();
+            let inst_nameCorp = $("#inst_nameCorp").val();
+            let emailcorp = $("#emailcorp").val();
+            let phoneCorp = $("#phoneCorp").val();
+
+            let addresscorp = $("#addresscorp").val();
+            let countrycorp = $("#countrycorp").val();
+            let stateCorp = $("#stateCorp").val();
+            let cacCorp = $("#cacCorp").val();
+            let dateCorp = $("#dateCorp").val();
+            let contactNamecorp = $("#contactNamecorp").val();
+            let contactEmailCorp = $("#contactEmailCorp").val();
+            let contactPhoneCorp = $("#contactPhoneCorp").val();
+            let usernameCorp = $("#usernameCorp").val();
+            let emailAccCorp = $("#emailAccCorp").val();
+            let passwordCorp = $("#passwordCorp").val();
+
+
+
+            AddFirsCorp(jtb_corp,inst_nameCorp,emailcorp,phoneCorp,addresscorp,countrycorp,stateCorp,
+                    cacCorp,dateCorp,contactNamecorp,contactEmailCorp,contactPhoneCorp,usernameCorp,emailAccCorp,passwordCorp)
+        });
+
+        $("#firsFormInd").click(function(e){
+            e.preventDefault();
+            let jtbind = $("#jtbind").val();
+            let nameInd = $("#nameInd").val();
+            let emailInd = $("#emailInd").val();
+            let phoneInd = $("#phoneInd").val();
+
+            let countryInd = $("#countryInd").val();
+            let stateInd = $("#stateInd").val();
+            let genderInd = $("#genderInd").val();
+            let usernameInd = $("#usernameInd").val();
+            let emailacctInd = $("#emailacctInd").val();
+            let passwordInd = $("#passwordInd").val();
+
+
+
+
+            AddFirsInd(jtbind,nameInd,emailInd,phoneInd,countryInd,stateInd,genderInd,
+                    usernameInd,emailacctInd,passwordInd)
+        });
+
+        function AddFirsCorp(jtb_corp,inst_nameCorp,emailcorp,phoneCorp,addresscorp,countrycorp,stateCorp,
+                             cacCorp,dateCorp,contactNamecorp,contactEmailCorp,contactPhoneCorp,usernameCorp,emailAccCorp,passwordCorp){
+            if(jtb_corp!='' && inst_nameCorp!='' && emailcorp!='' && phoneCorp!='' && addresscorp!='' ){
+                $.jStorage.set("firsform1corp",{"jtb_corp":jtb_corp,"inst_nameCorp":inst_nameCorp,"emailcorp":emailcorp,
+                    "phoneCorp":phoneCorp,"addresscorp":addresscorp
+                    ,"countrycorp":countrycorp,"stateCorp":stateCorp,"cacCorp":cacCorp,
+                    "dateCorp":dateCorp,"contactNamecorp":contactNamecorp
+                    ,"contactEmailCorp":contactEmailCorp,"contactPhoneCorp":contactPhoneCorp,
+                    "usernameCorp":usernameCorp,"emailAccCorp":emailAccCorp
+                    ,"passwordCorp":passwordCorp
+                });
+                swal("Success","Proceed to next stage","success");
+                $.jStorage.set("stage","CAC REGISTRATION");
+                $.jStorage.set("cacStage",true);
+                setTimeout(function(){
+                    location.href= "firs_form_2.html"
+                },3000)
+            }
+            else{
+                swal("Oops","Ensure all fields are filled and valid","error");
+            }
+        }
+
+
+        function AddFirsInd(jtbind,nameInd,emailInd,phoneInd,countryInd,stateInd,genderInd,
+                            usernameInd,emailacctInd,passwordInd){
+
+            if(jtbind!='' && nameInd!='' && emailInd!='' && phoneInd!='' && countryInd!='' ){
+                $.jStorage.set("firsform1indiv",{"jtbind":jtbind,"nameInd":nameInd,"emailInd":emailInd,
+                    "phoneInd":phoneInd,"countryInd":countryInd
+                    ,"stateInd":stateInd,"genderInd":genderInd,"usernameInd":usernameInd,
+                    "emailacctInd":emailacctInd,"passwordInd":passwordInd
+                });
+                swal("Success","Proceed to next stage","success");
+                setTimeout(function(){
+                    location.href= "firs_form_2.html"
+                },3000)
+            }
+            else{
+                swal("Oops","Ensure all fields are filled and valid","error");
+            }
+
+        }
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,237 @@
+/*Main Site Nav */
+
+header[role="banner"] {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: $header_height;
+    z-index: $header-zindex;
+    box-shadow: 0 1px 3px rgba($brand_black, .3);
+    @include font-smoothing;
+}
+
+.nav_header {
+    background: rgba(white, 1);
+    color: $color_text;
+    .logo {
+        float: left;
+        height: 100%;
+        line-height: $header_height;
+    }
+    @include MQ(SM) {
+        position: absolute;
+        .logo {
+            line-height: $header_height;
+        }
+        .primary_nav,
+        .altNav {
+            line-height: $header_height;
+            display: inline-block;
+        }
+    }
+    @include MQ(MD) {
+        @include transition(background-color .5s);
+        /* Force Hardware Acceleration in WebKit */
+        @include transform(translate3d(0, 0, 0));
+        @include backface-visibility(hidden);
+        &.is-fixed {
+            /* when the user scrolls down, we hide the header right above the viewport */
+            position: fixed;
+            top: -$header_height;
+            background-color: rgba($color_white, .95);
+            @include transition(transform .5s);
+            &.default_header {
+                top: -$header-height;
+            }
+        }
+        &.is-visible {
+            /* if the user changes the scrolling direction, we show the header */
+            @include transform(translate3d(0, $header_height, 0));
+            &.default_header {
+                @include transform(translate3d(0, $header-height, 0));
+            }
+        }
+    }
+}
+
+.nav_item {
+    text-transform: capitalize;
+    display: inline-block;
+    padding: 10px;
+    line-height: 22px;
+    .primary_nav & {
+        display: block;
+        border-bottom: 1px solid $border_grey_light;
+        a[class*="btn"] {
+            display: block;
+        }
+        @include MQ(SM) {
+            display: inline-block;
+            border-bottom: none;
+            a[class*="btn"] {
+                display: inline-block;
+            }
+        }
+    }
+}
+
+.altNav {
+    float: right;
+}
+
+.primary_nav {
+    background: white;
+    visibility: hidden;
+    width: 100%;
+    @include transform(scaleY(0));
+    @include transition(all .6s cubic-bezier(.68, .34, .15, 1));
+    height: 100%;
+    transform-origin: top;
+    position: fixed;
+    left: 0;
+    top: $header_height;
+    padding-top: 30px;
+    border-top: 2px solid $brand_primary;
+    .menu_nav {
+        @include transform(scaleY(0));
+        transform-origin: top;
+        opacity: .2;
+        @include transition(all 1s cubic-bezier(.45, 1, .61, 1.17));
+        transition-delay: .05s;
+    }
+    .is-active & {
+        @include transform(scaleY(1));
+        visibility: visible;
+        @include transition(transform .8s cubic-bezier(.68, .34, .15, 1));
+        .menu_nav {
+            @include transform(scaleY(1));
+            opacity: 1;
+        }
+    }
+    @include MQ(SM) {
+        width: auto;
+        display: inline-block;
+        float: right;
+        @include transform(scaleY(1));
+        position: static;
+        visibility: visible;
+        border-top: none;
+        padding: 0;
+        background-color: transparent;
+        .menu_nav {
+            @include transform(none);
+            opacity: 1;
+        }
+    }
+}
+
+.nav_link_item {
+    display: block;
+    color: inherit;
+    @include transition(all .6s ease-out);
+    position: relative;
+    padding: 0;
+    text-transform: capitalize;
+    .active &,
+    &:hover,
+    &:focus {
+        color: $brand_accent;
+    }
+}
+
+.logo {
+    height: 100%;
+    width: 120px;
+    margin-right: 15px;
+    position: relative;
+    z-index: 30;
+    >a {
+        padding: 0;
+        display: block;
+        font-size: 16px;
+        background: transparent url(../img/logo.png) no-repeat center center;
+        @include image_replacement;
+        background-size: contain;
+    }
+}
+
+.nav_trigger {
+    display: inline-block;
+    position: absolute;
+    width: 120px;
+    @include center(y);
+    right: 15px;
+    text-align: right;
+    @include MQ(SM) {
+        display: none;
+    }
+}
+
+.menu-text {
+    text-transform: uppercase;
+    display: block;
+    font-size: 14px;
+}
+
+.primary-nav-trigger {
+    .menu-icon {
+        /* this span is the central line of the menu icon */
+        display: inline-block;
+        position: absolute;
+        @include center; // mixin inside partials > _mixins.scss
+        width: 18px;
+        height: 2px;
+        background-color: $brand_primary;
+        @include transition(background-color .3s);
+        /* these are the upper and lower lines in the menu icon */
+        &::before,
+        &:after {
+            content: '';
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            background-color: $brand_accent;
+            right: 0;
+            @include transition(transform .3s, top .3s, background-color 0s);
+        }
+        &::before {
+            top: -5px;
+        }
+        &::after {
+            top: 5px;
+        }
+        &.is-clicked {
+            background-color: rgba($brand_accent, 0);
+            &::before,
+            &::after {
+                background-color: rgba($brand_accent, 1);
+            }
+            &::before {
+                top: 0;
+                @include transform(rotate(135deg));
+            }
+            &::after {
+                top: 0;
+                @include transform(rotate(225deg));
+            }
+        }
+    }
+    @include MQ(SM) {
+        width: 100px;
+        padding-left: 1em;
+        background-color: transparent;
+        height: 30px;
+        line-height: 30px;
+        position: relative;
+        border: none;
+        @include center(y);
+        .menu-text {
+            display: inline-block;
+        }
+        .menu-icon {
+            left: -1em;
+            @include transform(translateX(0) translateY(-50%));
+        }
+    }
+}

@@ -1,0 +1,160 @@
+.action_steps {
+	padding: 20px 0 10px;
+	display:flex;
+}
+
+.step__item {
+	list-style: none;
+	counter-increment: steps;
+	flex: 1;
+	line-height: 1.5;
+	margin-bottom: 2.5px;
+	text-align: center;
+
+	a {
+		padding: 5px 7.5px;
+		background-color: transparent;
+		display: block;
+		border-radius: 5px;
+		color: $border_grey_dark;
+		@include transition(all .6s ease);
+
+		&:hover, &:focus {
+			background-color: rgba(black, .1);
+			color: $color_grey_light;
+		}
+	}
+
+	&.step__done {
+		color: $color_grey_light;
+		font-weight: bold;
+	}
+}
+
+.step__count {
+    height: 35px;
+    width: 35px;
+    display: inline-block;
+    border: 2px solid $border_grey_dark;
+    border-radius: 50%;
+    line-height: 31px;
+    font-size: 12px;
+    font-family: $font_bold;
+    padding: 0;
+    margin-right: 5px;
+
+    .step__active & {
+    	border-color: $brand_accent;
+    }
+
+    .step__done & {
+        background-color: rgba($brand_primary, .6);
+        color: $color_white;
+
+        &::before {
+            font-family: "fontAwesome";
+            content: "\f00c";
+        }
+    }
+
+    &::before {
+        content: counter(steps);
+    }
+}
+
+.step__label {
+	display: block;
+    padding-top: 5px;
+}
+
+.step_heading {
+	clear: both;
+	padding: 20px 0;
+
+    .title {
+        font-size: 20px;
+    }
+
+	.subtitle {
+		font-size: 12px;
+		margin-bottom: 5px;
+	}
+}
+
+.step_body {
+	padding-top: 20px;
+	clear: both;
+
+    .intro-text {
+        padding: 0;
+    }
+}
+
+.wizard_body {
+    padding: 30px 0;
+
+    .page_main & {
+        padding-top: 0;
+    }
+}
+
+.step_form {
+    max-width: 600px;
+    margin: 10px auto;
+    
+    .pane_title {
+        font-size: 22px;
+        padding: 0;
+    }
+}
+
+/* Uploader */
+
+.media_uploader {
+    @include clearfix;
+    padding-top: 20px;
+}
+
+.media_thumb {
+    position: relative;
+    background-color: $border_grey_light;
+    overflow: hidden;
+    height: 80px;
+    width: 160px;
+
+    img {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.img_uploader {
+    position: absolute;
+    top: 0;left: 0;
+    right: 0; bottom: 0;
+    margin: auto;
+    @include center(y);
+
+    p {
+        padding: 5px 0;
+        color: $color_text;
+        font-size: 1em;
+    }
+}
+
+.upload_trigger {
+	display: inline-block;
+	width: 30px;
+	height: 30px;
+	font-size:16px;
+	line-height:30px;
+	cursor: pointer;
+	margin: 5px auto;
+	border-radius: 50%;
+	background-color: rgba(black, .2);
+	
+	&:hover, &:focus {
+		background-color: $brand_black;
+		color: $color_white;
+	}
+}
