@@ -129,6 +129,7 @@
 
             $.jStorage.set("accounts",accounts);
             $.jStorage.set("currentuser",newAccount);
+            $.jStorage.set("activeUser",true);
             swal("Success","Registration was successful, Proceed to email confirmation","success");
             sendEmail(email);
 
@@ -142,7 +143,6 @@
         var confirm_url =window.location.origin + "/user_success.html";
         let url = "https://rest.paytithe.co/v1/users/sendVerificationEmail?email="+" "+ email+"&confirmationWebHook="+ confirm_url +"&asOsic=true";
         $.post(url,function(resp){
-            console.log(resp);
             setTimeout(function(){ location.href="/confirm_email.html"},3000)
 
         })
