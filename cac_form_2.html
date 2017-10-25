@@ -71,25 +71,25 @@
                             </a>
                         </li>
                         <li class="step__item">
-                            <a href="#cac_form_3.html">
+                            <a href="cac_form_3.html">
                                 <span class="step__count"></span>
                                 <span class="step__label">Directors</span>
                             </a>
                         </li>
                         <li class="step__item">
-                            <a href="#cac_form_4.html">
+                            <a href="cac_form_4.html">
                                 <span class="step__count"></span>
                                 <span class="step__label">Secritary</span>
                             </a>
                         </li>
                         <li class="step__item">
-                            <a href="#cac_form_5.html">
+                            <a href="cac_form_5.html">
                                 <span class="step__count"></span>
                                 <span class="step__label">Compliance</span>
                             </a>
                         </li>
                         <li class="step__item">
-                            <a href="#cac_form_6.html">
+                            <a href="cac_form_6.html">
                                 <span class="step__count"></span>
                                 <span class="step__label">Submit</span>
                             </a>
@@ -113,7 +113,7 @@
                                                                                        
                                            <div class="form-group">
                                                <label class="control-label">Amount of Shares in words</label>
-                                               <textarea rows="2" id="sharesamount" class="form-control" placeholder="e.g One Million units of shares"></textarea>
+                                               <textarea rows="2" id="sharesamount" class="form-control" placeholder="e.g One Million units of shares">One Million units of shares</textarea>
                                            </div>
                                            
                                            <div class="form-group">
@@ -122,16 +122,16 @@
                                                     <span class="input-group-addon">
                                                         <i class="currency naira"></i>
                                                     </span>
-                                                   <input type="number" id="sharesinnaira" class="form-control" placeholder="Value in naira.">
+                                                   <input type="number" value="50" id="sharesinnaira" class="form-control" placeholder="Value in naira.">
                                                </div>
                                            </div>
                                            
                                            <div class="form-group">
                                                <div class="input-group">
                                                    <span class="input-group-addon">Divided Into</span>
-                                                   <input type="text" id="dividedinto" class="form-control" placeholder="">
+                                                   <input type="text" value="20000" id="dividedinto" class="form-control" placeholder="">
                                                    <span class="input-group-addon">of <i class="currency naira"></i></span>
-                                                   <input type="number" id="dividedunit" class="form-control" placeholder="">
+                                                   <input value="500" type="number" id="dividedunit" class="form-control" placeholder="">
                                                    <span class="input-group-addon">
                                                         Each
                                                     </span>
@@ -141,11 +141,11 @@
                                            <div class="form-horizontal">
                                                <div class="form-group col-sm-6">
                                                    <label class="control-label">Name of Director</label>
-                                                   <input type="text" id="directorname" class="form-control" placeholder="Director name.">
+                                                   <input type="text" value="Jackson P. Robinson " id="directorname" class="form-control" placeholder="Director name.">
                                                </div>
                                                <div class="form-group col-sm-6">
                                                    <label class="control-label">Telephone number</label>
-                                                   <input type="tel" id="phonenumber" class="form-control" placeholder="Phone number.">
+                                                   <input type="tel" value="+1-541-754-3010" id="phonenumber" class="form-control" placeholder="Phone number.">
                                                </div>
                                            </div>
                                            
@@ -285,7 +285,7 @@
             AddCacForm2(sharesamount,sharesinnaira,dividedinto,dividedunit,directorname,phonenumber)
         });
         function AddCacForm2(sharesamount,sharesinnaira,dividedinto,dividedunit,directorname,phonenumber){
-            if(sharesamount!='' && sharesinnaira!='' && dividedinto!='' && dividedunit!=''){
+            if(sharesamount!=''){
                 $.jStorage.set("cacform2",{"sharesamount":sharesamount,"sharesinnaira":sharesinnaira,"dividedinto":dividedinto,
                     "dividedunit":dividedunit,"directorname":directorname
                 ,"phonenumber":phonenumber

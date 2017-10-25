@@ -83,13 +83,13 @@
                             </a>
                         </li>
                         <li class="step__item">
-                            <a href="#cac_form_5.html">
+                            <a href="cac_form_5.html">
                                 <span class="step__count"></span>
                                 <span class="step__label">Compliance</span>
                             </a>
                         </li>
                         <li class="step__item">
-                            <a href="#cac_form_6.html">
+                            <a href="cac_form_6.html">
                                 <span class="step__count"></span>
                                 <span class="step__label">Submit</span>
                             </a>
@@ -116,13 +116,13 @@
                                                     Individual Secretary
                                                 </h4>                            
                                                <div class="form-group">
-                                                   <label class="control-label">Name of Secritary</label>
-                                                   <input id="secetryname" type="text" class="form-control" placeholder="">
+                                                   <label class="control-label">Name of Secretary</label>
+                                                   <input id="secetryname" value="Gloria J Smith" type="text" class="form-control" placeholder="">
                                                </div>
 
                                                <div class="form-group">
                                                    <label class="control-label">Address</label>
-                                                   <input id="address" type="text" class="form-control" placeholder="">
+                                                   <input id="address" value="301 Wilson Blvd, Fairfield, IA, 52556" type="text" class="form-control" placeholder="">
                                                </div>
                                                
                                                <div class="form-horizontal">
@@ -130,26 +130,26 @@
                                                        <label class="control-label">ID. Type</label>
                                                         <select class="form-control" id="identify">
                                                             <option>Driver Licence</option>
-                                                            <option>Voter Card</option>
+                                                            <option selected>Voter Card</option>
                                                             <option>International Passport</option>
-                                                            <option>international Id Card</option>
+                                                            <option selected>International Id Card</option>
                                                             <option>Others</option>
                                                         </select>
                                                    </div>
                                                     <div class="form-group col-sm-6">
                                                         <label class="control-label">ID. Number</label>
-                                                        <input id="identifyno" type="number" class="form-control" placeholder="">
+                                                        <input value="QEDSC09876453N" id="identifyno" type="text" class="form-control" placeholder="">
                                                     </div>
                                                </div>
 
                                                <div class="form-horizontal">
                                                    <div class="form-group col-sm-6">
                                                        <label class="control-label">Email Address</label>
-                                                        <input type="email" id="email" class="form-control" placeholder="">
+                                                        <input type="email" value="gloria@nods.com" id="email" class="form-control" placeholder="">
                                                    </div>
                                                     <div class="form-group col-sm-6">
                                                         <label class="control-label">Phone Number</label>
-                                                        <input id="phonenumber" type="number" class="form-control" placeholder="">
+                                                        <input id="phonenumber" value="(609) 345-7534" type="text" class="form-control" placeholder="">
                                                     </div>
                                                </div>
 
@@ -180,29 +180,29 @@
                                                 </h4>                            
                                                <div class="form-group">
                                                    <label class="control-label">Name of Secretary</label>
-                                                   <input type="text" id="seceteryCorpName" class="form-control" placeholder="">
+                                                   <input value="Doris L Smith" type="text" id="seceteryCorpName" class="form-control" placeholder="">
                                                </div>
 
                                                
                                                 <div class="form-group">
                                                     <label class="control-label">BN/RC No</label>
-                                                    <input type="number" id="rcNo" class="form-control" placeholder="">
+                                                    <input value="RC 03773" type="text" id="rcNo" class="form-control" placeholder="">
                                                 </div>
 
                                                <div class="form-horizontal">
                                                     <div class="form-group col-sm-6">
                                                         <label class="control-label">Phone Number</label>
-                                                        <input type="number" id="phoneno" class="form-control" placeholder="">
+                                                        <input value="(641) 469-5134"  type="text" id="phoneno" class="form-control" placeholder="">
                                                     </div>
                                                    <div class="form-group col-sm-6">
                                                        <label class="control-label">Email Address</label>
-                                                        <input type="email" id="emailCorp" class="form-control" placeholder="">
+                                                        <input value="jane@nods.com" type="email" id="emailCorp" class="form-control" placeholder="">
                                                    </div>
                                                </div>
                                                
                                                 <div class="form-group">
                                                    <label class="control-label">Address</label>
-                                                   <input type="text" id="addressCorp" class="form-control" placeholder="">
+                                                   <input value="301 Wilson Blvd, Fairfield, IA, 52556" type="text" id="addressCorp" class="form-control" placeholder="">
                                                </div>
 
                                                <div class="form-group media_uploader">
@@ -353,7 +353,7 @@
             AddCacForm4(secetryname,address,identify,identifyno,email,phonenumber,seceteryCorpName,rcNo,phoneno,emailCorp,addressCorp)
         });
         function AddCacForm4(secetryname,address,identify,identifyno,email,phonenumber,seceteryCorpName,rcNo,phoneno,emailCorp,addressCorp){
-            if(secetryname!='' && address!='' && identify!='' && identifyno!='' && phonenumber!='' && seceteryCorpName!='' && rcNo!=''){
+            if(secetryname!=''){
                 $.jStorage.set("cacform4",{"secetryname":secetryname,"address":address,"identify":identify,
                     "identifyno":identifyno,"email":email
                     ,"phonenumber":phonenumber, "seceteryCorpName":seceteryCorpName,"rcNo":rcNo, "phoneno":phoneno, "emailCorp":emailCorp, addressCorp:addressCorp

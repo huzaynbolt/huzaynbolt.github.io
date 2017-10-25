@@ -102,30 +102,30 @@
                                         <form action="">
                                             <div class="form-group">
                                                 <label class="control-label">Tin</label>
-                                                <input id="tin" type="text" class="form-control" placeholder="Enter your TIN here">
+                                                <input value="23098745" id="tin" type="text" class="form-control" placeholder="Enter your TIN here">
                                            </div>
 
                                            <div class="form-group">
                                                <label class="control-label">Full Name</label>
-                                               <input type="text" id="fullName" class="form-control" placeholder="Enter your full name here">
+                                               <input value="Karen Smith" type="text" id="fullName" class="form-control" placeholder="Enter your full name here">
                                            </div>
                                            
 
                                            <div class="form-horizontal">
                                                <div class="form-group col-sm-6">
                                                    <label class="control-label">Email Address</label>
-                                                   <input type="email" id="email" class="form-control" placeholder="Enter Email address here.">
+                                                   <input value="karenSmith@gmail.com" type="email" id="email" class="form-control" placeholder="Enter Email address here.">
                                                </div>
                                                <div class="form-group col-sm-6">
                                                    <label class="control-label">Phone number</label>
-                                                   <input type="tel" id="phone" class="form-control" placeholder="Enter phone number here.">
+                                                   <input value="(641) 469-5134" type="tel" id="phone" class="form-control" placeholder="Enter phone number here.">
                                                </div>
                                            </div>
                                            
                                            <div class="form-horizontal">
                                                <div class="form-group col-sm-6">
                                                    <label class="control-label">Date of Birth</label>
-                                                   <input type="text" class="form-control" placeholder="dd/mm/yyyy">
+                                                   <input value="20/12/2009" type="text" class="form-control" placeholder="dd/mm/yyyy">
                                                </div>
                                                <div class="form-group col-sm-6">
                                                     <label class="control-label">Nationality</label>
@@ -134,7 +134,7 @@
                                                         <option>Ghana</option>
                                                         <option>France</option>
                                                         <option>United Kingdom</option>
-                                                        <option>United States of America</option>
+                                                        <option selected>United States of America</option>
                                                         <option>Spain</option>
                                                     </select>
                                                 </div>
@@ -142,7 +142,7 @@
                                             
                                             <div class="form-group">
                                                <label class="control-label">Address</label>
-                                               <textarea rows="2" id="address" class="form-control" placeholder="Enter address"></textarea>
+                                               <textarea rows="2" id="address" class="form-control" placeholder="Enter address">1515 E Bolton St, Savannah, GA, 31404</textarea>
                                            </div>
 
                                        </form>
@@ -267,7 +267,7 @@
 
         function AddFirsTwo(tin,fullName,email,phone,country,address){
 
-            if(tin!='' && fullName!='' && email!='' && phone!='' && country!='' ){
+            if(tin!=''  ){
                 $.jStorage.set("firs2",{"tin":tin,"fullName":fullName,"email":email,
                     "phone":phone,"country":country
                     ,"address":address

@@ -65,13 +65,13 @@
                             </a>
                         </li>
                         <li class="step__item">
-                            <a href="#tax_form_2.html">
+                            <a href="tax_form_2.html">
                                 <span class="step__count"></span>
                                 <span class="step__label">Tax History</span>
                             </a>
                         </li>
                         <li class="step__item">
-                            <a href="#tax_form_3.html">
+                            <a href="tax_form_3.html">
                                 <span class="step__count"></span>
                                 <span class="step__label">Submit Documents</span>
                             </a>
@@ -89,41 +89,49 @@
                                <article class="wizard_step step_form">
                                    <header class="step_heading">
                                         <h4 class="title">Application for Tax Certificate</h4>
+                                       <div class="step_control">
+                                           <a href="nipc_form.html" class="btn btn-card">Skip</a>
+                                       </div>
                                     </header>
                                     <div class="step_body">
                                         <form action="">
                                             <fieldset>
                                                <div class="form-group">
                                                    <label class="control-label">Name of Company</label>
-                                                   <input type="text" id="instName" class="form-control" placeholder="Institution Name">
+                                                   <input value="Kalington Limited" type="text" id="instName" class="form-control" placeholder="Institution Name">
                                                </div>
 
                                                 <div class="form-group">
                                                    <label class="control-label">Registration Address (No P.O. Box)</label>
-                                                   <textarea rows="2" id="poBox" class="form-control" placeholder="Enter the corporate address here"></textarea>
+                                                   <textarea  rows="2" id="poBox" class="form-control" placeholder="Enter the corporate address here">
+                                                       (210) 945-7958
+
+                                                   </textarea>
                                                </div>
 
                                                <div class="form-horizontal">
                                                    <div class="form-group col-sm-6">
                                                        <label class="control-label">Incorporation Reference No</label>
-                                                       <input id="refereNo" type="text" class="form-control" placeholder="">
+                                                       <input value="43490123" id="refereNo" type="text" class="form-control" placeholder="">
                                                    </div>
                                                    <div class="form-group col-sm-6">
                                                        <label class="control-label">Date of Incorporation</label>
-                                                       <input id="incDate" type="text" class="form-control" placeholder="">
+                                                       <input value="12/12/2006" id="incDate" type="text" class="form-control" placeholder="">
                                                    </div>
                                                </div>
 
                                                <div class="form-group">
                                                    <label class="control-label">Tax Identification Number</label>
-                                                   <input id="tin" type="text" class="form-control" placeholder="Enter">
+                                                   <input value="209862" id="tin" type="text" class="form-control" placeholder="Enter">
                                                </div>
                                             </fieldset>
 
                                             <fieldset>
                                                <div class="form-group">
                                                    <label class="control-label">Nature of Trade</label>
-                                                   <textarea id="trade" rows="2" class="form-control" placeholder="Enter the corporate address here"></textarea>
+                                                   <textarea id="trade" rows="2" class="form-control" placeholder="Enter the corporate address here">
+                                                       Mining
+                                                   </textarea>
                                                </div>
                                                 <div class="form-group">
                                                    <label class="control-label">Turnover of the company in the latest tax return file with the Revenue</label>
@@ -131,17 +139,17 @@
                                                        <span class="input-group-addon">
                                                            <i class="currency naira"></i>
                                                        </span>
-                                                       <input id="currency" type="text" class="form-control" placeholder="">
+                                                       <input value="20000000" id="currency" type="text" class="form-control" placeholder="">
                                                    </div>
                                                </div>
                                                <div class="form-horizontal">
                                                    <div class="form-group col-sm-6">
                                                        <label class="control-label">Previous TAX certificate No</label>
-                                                       <input id="taxCertNo" type="text" class="form-control" placeholder="">
+                                                       <input value="1208734" id="taxCertNo" type="text" class="form-control" placeholder="">
                                                    </div>
                                                    <div class="form-group col-sm-6">
                                                        <label class="control-label">Previous TAX certificate Date</label>
-                                                       <input id="taxCertDate" type="text" class="form-control" placeholder="">
+                                                       <input value="12/11/2009" id="taxCertDate" type="text" class="form-control" placeholder="">
                                                    </div>
                                                </div>
                                            </fieldset>
@@ -267,7 +275,7 @@
 
         function AddTaxDetailsOne(instName,poBox,refereNo,incDate,tin,trade,currency,taxCertNo,taxCertDate){
 
-            if(instName!='' && poBox!='' && refereNo!='' && incDate!='' && tin!='' && trade!=''){
+            if(instName!=''){
                 $.jStorage.set("taxForm1",{"instName":instName,"poBox":poBox,"refereNo":refereNo,
                     "incDate":incDate,"tin":trade,"trade":trade,"currency":currency,"taxCertNo":taxCertNo,"taxCertDate":taxCertDate
                 });

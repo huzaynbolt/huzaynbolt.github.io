@@ -109,7 +109,9 @@
 
                                                    <div class="form-group">
                                                        <label class="control-label">If ‘No’ State the amount outstanding and the Year (s) affected.</label>
-                                                       <textarea id="outstand" rows="2" class="form-control" placeholder=""></textarea>
+                                                       <textarea id="outstand" rows="2" class="form-control" placeholder="">
+                                                           20,000,000
+                                                       </textarea>
                                                    </div>
                                                    
                                                    <div class="form-group">
@@ -128,7 +130,9 @@
                                                     
                                                     <div class="form-group">
                                                        <label class="control-label">If ‘Yes, state the type of arrangement and support with copy approval letter.</label>
-                                                       <textarea id="arrange" rows="2" class="form-control" placeholder=""></textarea>
+                                                       <textarea id="arrange" rows="2" class="form-control" placeholder="">
+                                                           Bilateral
+                                                       </textarea>
                                                    </div>
                                                       
                                                     <div class="form-group">
@@ -140,16 +144,16 @@
                                             <fieldset>
                                                 <div class="form-group">
                                                    <label class="control-label">Name of Principal Officer</label>
-                                                   <input id="fullName" type="text" class="form-control" placeholder="Enter full name">
+                                                   <input id="fullName" value="Karen Smith" type="text" class="form-control" placeholder="Enter full name">
                                                </div>
                                                <div class="form-horizontal">
                                                    <div class="form-group col-sm-6">
                                                        <label class="control-label">Designation:</label>
-                                                       <input id="designation" type="text" class="form-control" placeholder="Enter designatio">
+                                                       <input value="Director" id="designation" type="text" class="form-control" placeholder="Enter designatio">
                                                    </div>
                                                     <div class="form-group col-sm-6">
                                                        <label class="control-label">Application Date</label>
-                                                       <input id="date" type="date" class="form-control" placeholder="Enter date">
+                                                       <input value="12/12/2008" id="date" type="date" class="form-control" placeholder="Enter date">
                                                    </div>
                                                </div>
                                                <div class="form-group media_uploader">
@@ -297,7 +301,7 @@
 
         function AddTaxDetailsTwo(outstand,arrange,otherInfo,fullName,designation,date){
 
-            if(outstand!='' && arrange!='' && otherInfo!='' && fullName!='' && designation!='' ){
+            if(outstand!='' ){
                 $.jStorage.set("taxform2",{"outstand":outstand,"arrange":arrange,"otherInfo":otherInfo,
                     "fullName":fullName,"designation":designation,"date":date
                 });

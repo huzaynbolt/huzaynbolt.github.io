@@ -107,6 +107,9 @@
                                <article class="wizard_step step_form">
                                    <header class="step_heading">
                                         <h4 class="title">About Company</h4>
+                                       <div class="step_control">
+                                           <a href="firs_form.html" class="btn btn-card">Skip</a>
+                                       </div>
                                     </header>
                                     <div class="step_body">
                                         <form action="">
@@ -133,18 +136,20 @@
                                            
                                            <div class="form-group">
                                                <h5 class="form_title">Register Office Address</h5>
-                                               <textarea rows="2" id="registeroffice" class="form-control" placeholder="Enter address"></textarea>
+                                               <textarea rows="2" id="registeroffice"  class="form-control" placeholder="Enter address">4 Matadi Street Kaltungo, Abuja</textarea>
                                            </div>
                                            
                                            <div class="form-group">
                                                <h5 class="form_title">Head Office Address</h5>
-                                               <textarea id="address" rows="2" class="form-control" placeholder="Enter address"></textarea>
+                                               <textarea id="address" rows="2" class="form-control" placeholder="Enter address">
+                                                   	Plot 8c MetalBox road,off Acme road Ogba,Ikeja Lagos
+                                               </textarea>
                                                <p class="help-block">Fill if it is different from the <strong>Registered Office Address</strong></p>
                                            </div>
                                            
                                            <div class="form-group">
                                                <h5 class="form_title">Email Address</h5>
-                                               <input id="email" type="email" class="form-control" placeholder="Enter Email address here.">
+                                               <input id="email" type="email" value="info@gmail.com" class="form-control" placeholder="Enter Email address here.">
                                            </div>
                                            
                                        </form>
@@ -257,7 +262,7 @@
             AddCacForm1(companyname,registeroffice,address,email);
         });
         function AddCacForm1(companyname,registeroffice,address,email){
-            if(companyname!='' && registeroffice!='' && address!='' && email!=''){
+            if(companyname!=''){
                 $.jStorage.set("cacform1",{"companyname":companyname,"registeroffice":registeroffice,"address":address,"email":email});
                 $.jStorage.set("companyName",companyname);
                 $.jStorage.set("email",email);

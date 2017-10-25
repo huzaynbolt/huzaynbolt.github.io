@@ -104,21 +104,21 @@
                                                 <div class="form-horizontal">
                                                     <div class="form-group col-sm-6">
                                                         <label class="control-label">Equity Amount</label>
-                                                        <input id="equityAmt" type="number" class="form-control">
+                                                        <input value="20000000" id="equityAmt" type="number" class="form-control">
                                                     </div>
                                                     <div class="form-group col-sm-6">
                                                         <label class="control-label">Equity %</label>
-                                                        <input id="equityPercent" type="text" class="form-control">
+                                                        <input value="65" id="equityPercent" type="text" class="form-control">
                                                     </div>
                                                 </div>
                                                 <div class="form-horizontal">
                                                     <div class="form-group col-sm-6">
                                                         <label class="control-label">Loan</label>
-                                                        <input id="loan" type="number" class="form-control">
+                                                        <input value="100000" id="loan" type="number" class="form-control">
                                                     </div>
                                                     <div class="form-group col-sm-6">
                                                         <label class="control-label">Preference Shares</label>
-                                                        <input id="sharesPref" type="text" class="form-control">
+                                                        <input value="20000" id="sharesPref" type="text" class="form-control">
                                                     </div>
                                                 </div>
                                             </fieldset>
@@ -128,21 +128,21 @@
                                                 <div class="form-horizontal">
                                                     <div class="form-group col-sm-6">
                                                         <label class="control-label">Equity Amount</label>
-                                                        <input id="equityAmtLocal" type="number" class="form-control">
+                                                        <input value="20000" id="equityAmtLocal" type="number" class="form-control">
                                                     </div>
                                                     <div class="form-group col-sm-6">
                                                         <label class="control-label">Equity %</label>
-                                                        <input id="equityPercentLocal" type="text" class="form-control">
+                                                        <input value="20" id="equityPercentLocal" type="text" class="form-control">
                                                     </div>
                                                 </div>
                                                 <div class="form-horizontal">
                                                     <div class="form-group col-sm-6">
                                                         <label class="control-label">Loan</label>
-                                                        <input type="number" id="loanLocal" class="form-control">
+                                                        <input value="0" type="number" id="loanLocal" class="form-control">
                                                     </div>
                                                     <div class="form-group col-sm-6">
                                                         <label class="control-label">Preference Shares</label>
-                                                        <input id="sharesLocal" type="text" class="form-control">
+                                                        <input value="20" id="sharesLocal" type="text" class="form-control">
                                                     </div>
                                                 </div>
                                             </fieldset>
@@ -271,7 +271,7 @@
 
         function AddNipcDetailsThree(equityAmt,equityPercent,loan,sharesPref,equityAmtLocal,equityPercentLocal,loanLocal,sharesLocal){
 
-            if(equityAmt!='' && equityPercent!='' && loan!='' && sharesPref!='' && equityAmtLocal!='' && equityPercentLocal!=''){
+            if(equityAmt!=''){
                 $.jStorage.set("nipcThree",{"equityAmt":equityAmt,"equityPercent":equityPercent,"loan":loan,
                     "sharesPref":sharesPref,"equityAmtLocal":equityAmtLocal,"equityPercentLocal":equityPercentLocal,"loanLocal":loanLocal,
                     "sharesLocal":sharesLocal

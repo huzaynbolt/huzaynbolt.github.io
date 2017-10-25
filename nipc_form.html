@@ -65,19 +65,19 @@
                             </a>
                         </li>
                         <li class="step__item">
-                            <a href="#nipc_form_2.html">
+                            <a href="nipc_form_2.html">
                                 <span class="step__count"></span>
                                 <span class="step__label">Investment Details</span>
                             </a>
                         </li>
                         <li class="step__item">
-                            <a href="#nipc_form_3.html">
+                            <a href="nipc_form_3.html">
                                 <span class="step__count"></span>
                                 <span class="step__label">Shareholding Pattern</span>
                             </a>
                         </li>
                         <li class="step__item">
-                            <a href="#nipc_form_3.html">
+                            <a href="nipc_form_3.html">
                                 <span class="step__count"></span>
                                 <span class="step__label">Submit Documents</span>
                             </a>
@@ -101,48 +101,50 @@
                                             <fieldset>
                                               <div class="form-group">
                                                    <label class="control-label">Date of Application</label>
-                                                   <input id="appDate" type="text" class="form-control" placeholder="">
+                                                   <input value="20/12/2006" id="appDate" type="text" class="form-control" placeholder="">
                                                </div>
                                                <div class="form-group">
                                                    <label class="control-label">Business / Organization Name</label>
-                                                   <input id="instName" type="text" class="form-control" placeholder="Institution Name">
+                                                   <input value="Kalington Institute" id="instName" type="text" class="form-control" placeholder="Institution Name">
                                                </div>
 
                                                 <div class="form-group">
                                                    <label class="control-label">Address</label>
-                                                   <textarea id="coopAddres" rows="2" class="form-control" placeholder="Enter the corporate address here"></textarea>
+                                                   <textarea  id="coopAddres" rows="2" class="form-control" placeholder="Enter the corporate address here">
+                                                       1515 E Bolton St, Savannah, GA, 31404
+                                                   </textarea>
                                                </div>
 
                                                <div class="form-horizontal">
                                                    <div class="form-group col-sm-6">
                                                        <label class="control-label">Phone Number</label>
-                                                       <input id="phoneNumber" type="tel" class="form-control" placeholder="">
+                                                       <input value="(912) 748-2985" id="phoneNumber" type="tel" class="form-control" placeholder="">
                                                    </div>
                                                    <div class="form-group col-sm-6">
                                                        <label class="control-label">Mobile</label>
-                                                       <input id="mobileNumnber" type="tel" class="form-control" placeholder="">
+                                                       <input value="(913) 748-2985" id="mobileNumnber" type="tel" class="form-control" placeholder="">
                                                    </div>
                                                </div>
                                                
                                                <div class="form-horizontal">
                                                    <div class="form-group col-sm-6">
                                                        <label class="control-label">Fax</label>
-                                                       <input id="fax" type="number" class="form-control" placeholder="">
+                                                       <input value="444-444-4444" id="fax" type="number" class="form-control" placeholder="">
                                                    </div>
                                                    <div class="form-group col-sm-6">
                                                        <label class="control-label">Email</label>
-                                                       <input id="email" type="email" class="form-control" placeholder="">
+                                                       <input value="steve@kalington.com" id="email" type="email" class="form-control" placeholder="">
                                                    </div>
                                                </div>
                                                
                                                <div class="form-horizontal">
                                                    <div class="form-group col-sm-6">
                                                        <label class="control-label">Website</label>
-                                                       <input id="website" type="url" class="form-control" placeholder="">
+                                                       <input value="www.kalington.com" id="website" type="url" class="form-control" placeholder="">
                                                    </div>
                                                    <div class="form-group col-sm-6">
                                                        <label class="control-label">incorporation (RC) Number</label>
-                                                       <input id="rcNo" type="text" class="form-control" placeholder="">
+                                                       <input value="40987623" id="rcNo" type="text" class="form-control" placeholder="">
                                                    </div>
                                                </div>
 
@@ -170,7 +172,13 @@
                                                 
                                                 <div class="form-group">
                                                    <label class="control-label">Briefly describe your business activity</label>
-                                                   <textarea id="businessAct" rows="5" class="form-control" placeholder=""></textarea>
+                                                   <textarea id="businessAct" rows="5" class="form-control" placeholder="">
+                                                       This is a new company that will provide high quality technical and environmental engineering services to it's clients. Terra Engineering is scheduled to begin operations on July 16, 2005. Terra Engineering will be a partnership, owned and operated by Norm Johnson and Rupert Smith.
+
+Mr. Johnson and Mr. Smith both have left their respective jobs in order to specialize in environmental engineering consulting to small and medium sized businesses
+
+
+                                                   </textarea>
                                                </div>
                                                
                                             </fieldset>
@@ -300,7 +308,7 @@
 
         function AddNipcDetailsOne(appDate,instName,coopAddres,phoneNumber,mobileNumnber,fax,email,website,rcNo,businessAct){
 
-            if(appDate!='' && instName!='' && coopAddres!='' && phoneNumber!='' && mobileNumnber!='' && fax!=''){
+            if(appDate!='' ){
                 $.jStorage.set("nipcOne",{"appDate":appDate,"instName":instName,"coopAddres":coopAddres,
                     "phoneNumber":phoneNumber,"mobileNumnber":mobileNumnber,"fax":fax,"email":email,"website":website,"rcNo":rcNo,"businessAct":businessAct
                 });

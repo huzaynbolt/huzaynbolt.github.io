@@ -65,19 +65,19 @@
                             </a>
                         </li>
                         <li class="step__item">
-                            <a href="#firs_form_2.html">
+                            <a href="firs_form_2.html">
                                 <span class="step__count"></span>
                                 <span class="step__label">Articles of Association</span>
                             </a>
                         </li>
                         <li class="step__item">
-                            <a href="#firs_form_3.html">
+                            <a href="firs_form_3.html">
                                 <span class="step__count"></span>
                                 <span class="step__label">Company Registration</span>
                             </a>
                         </li>
                         <li class="step__item">
-                            <a href="#firs_form_4.html">
+                            <a href="firs_form_4.html">
                                 <span class="step__count"></span>
                                 <span class="step__label">Submit Documents</span>
                             </a>
@@ -95,6 +95,9 @@
                                <article class="wizard_step step_form">
                                    <header class="step_heading">
                                         <h4 class="title">Create Account</h4>
+                                       <div class="step_control">
+                                           <a href="tax_form.html" class="btn btn-card">Skip</a>
+                                       </div>
                                         <ul class="nav nav-tabs">
                                             <li class="active"><a href="#corpAcct" data-toggle="tab">Corporate Account</a></li>
                                             <li><a href="#indiAcct" data-toggle="tab">Individual Account</a></li>
@@ -107,7 +110,7 @@
                                                     <div class="form-group">
                                                         <label class="control-label">Tin</label>
                                                         <div class="input-group">
-                                                            <input id="jtb_corp" type="text" class="form-control" placeholder="Enter your FIRS or JTB pin">
+                                                            <input value="3432SER4" id="jtb_corp" type="text" class="form-control" placeholder="Enter your FIRS or JTB pin">
                                                             <span class="input-group-btn">
                                                                 <button class="btn btn-default">Retrieve TIN Information</button>
                                                             </span>
@@ -116,23 +119,26 @@
 
                                                    <div class="form-group">
                                                        <label class="control-label">Name of Institution</label>
-                                                       <input id="inst_nameCorp" type="text" class="form-control" placeholder="Institution Name">
+                                                       <input id="inst_nameCorp" value="Kalington Peak" type="text" class="form-control" placeholder="Institution Name">
                                                    </div>
 
                                                    <div class="form-horizontal">
                                                        <div class="form-group col-sm-6">
                                                            <label class="control-label">Email Address</label>
-                                                           <input type="email" id="emailcorp" class="form-control" placeholder="Enter Email address here.">
+                                                           <input type="email" value="kalinton@gmail.com" id="emailcorp" class="form-control" placeholder="Enter Email address here.">
                                                        </div>
                                                        <div class="form-group col-sm-6">
                                                            <label class="control-label">Phone number</label>
-                                                           <input id="phoneCorp" type="tel" class="form-control" placeholder="Enter phone number here.">
+                                                           <input id="phoneCorp" value="(910) 568-5277" type="tel" class="form-control" placeholder="Enter phone number here.">
                                                        </div>
                                                    </div>
 
                                                    <div class="form-group">
                                                        <label class="control-label">Office Address</label>
-                                                       <textarea rows="2" id="addresscorp" class="form-control" placeholder="Enter the corporate address here"></textarea>
+                                                       <textarea rows="2" id="addresscorp" class="form-control" placeholder="Enter the corporate address here">
+
+                                                           3305 Crosswinds Dr, Hope Mills, NC, 28348
+                                                       </textarea>
                                                    </div>
 
                                                    <div class="form-horizontal">
@@ -143,7 +149,7 @@
                                                                 <option>Ghana</option>
                                                                 <option>France</option>
                                                                 <option>United Kingdom</option>
-                                                                <option>United States of America</option>
+                                                                <option selected>United States of America</option>
                                                                 <option>Spain</option>
                                                             </select>
                                                         </div>
@@ -155,7 +161,7 @@
                                                                 <option>Abuja</option>
                                                                 <option>Togo</option>
                                                                 <option>Lesotho</option>
-                                                                <option>Boston</option>
+                                                                <option selected>Boston</option>
                                                             </select>
                                                        </div>
                                                     </div>
@@ -163,11 +169,11 @@
                                                     <div class="form-horizontal">
                                                        <div class="form-group col-sm-6">
                                                            <label class="control-label">CAC Registration Number</label>
-                                                           <input type="number" id="cacCorp" class="form-control" placeholder="Enter your corporate RC/BN/IT number here.">
+                                                           <input value="098765436" type="number" id="cacCorp" class="form-control" placeholder="Enter your corporate RC/BN/IT number here.">
                                                        </div>
                                                        <div class="form-group col-sm-6">
                                                            <label class="control-label">Date of Incorporation</label>
-                                                           <input type="text" id="dateCorp" class="form-control" placeholder="Enter company incorporation date.">
+                                                           <input value="20/12/2006" type="text" id="dateCorp" class="form-control" placeholder="Enter company incorporation date.">
                                                        </div>
                                                    </div>
                                                 </fieldset>
@@ -175,16 +181,16 @@
                                                     <h4 class="form_title">Contact Person's Information</h4>
                                                    <div class="form-group">
                                                        <label class="control-label">Contact Name</label>
-                                                       <input type="text" class="form-control" id="contactNamecorp" placeholder="Firstname Middlename Lastname">
+                                                       <input value="Evalyn Smith" type="text" class="form-control" id="contactNamecorp" placeholder="Firstname Middlename Lastname">
                                                    </div>
                                                     <div class="form-horizontal">
                                                        <div class="form-group col-sm-6">
                                                            <label class="control-label">Email Address</label>
-                                                           <input type="email" id="contactEmailCorp" class="form-control" placeholder="Contact's email address">
+                                                           <input value="evalyn@gmail.com" type="email" id="contactEmailCorp" class="form-control" placeholder="Contact's email address">
                                                        </div>
                                                        <div class="form-group col-sm-6">
                                                            <label class="control-label">Phone number</label>
-                                                           <input id="contactPhoneCorp" type="text" class="form-control" placeholder="Contact's phone number">
+                                                           <input id="contactPhoneCorp" value="(912) 748-2985" type="text" class="form-control" placeholder="Contact's phone number">
                                                        </div>
                                                    </div>
                                                 </fieldset>
@@ -193,16 +199,16 @@
                                                     <h4 class="form_title">Account Credentials</h4>
                                                    <div class="form-group">
                                                        <label class="control-label">Username</label>
-                                                       <input type="text" id="usernameCorp" class="form-control" placeholder="create a username">
+                                                       <input type="text" value="evaSmith" id="usernameCorp" class="form-control" placeholder="create a username">
                                                    </div>
                                                     <div class="form-horizontal">
                                                        <div class="form-group col-sm-6">
                                                            <label class="control-label required">Password</label>
-                                                           <input type="email" id="emailAccCorp" class="form-control" placeholder="Contact's email address">
+                                                           <input value="evasmith@hotmail.com" type="email" id="emailAccCorp" class="form-control" placeholder="Contact's email address">
                                                        </div>
                                                        <div class="form-group col-sm-6">
                                                            <label class="control-label required">Confirm Password</label>
-                                                           <input id="passwordCorp" type="text" class="form-control" placeholder="Contact's phone number">
+                                                           <input value="12345" id="passwordCorp" type="text" class="form-control" placeholder="Contact's phone number">
                                                        </div>
                                                    </div>
                                                 </fieldset>
@@ -221,7 +227,7 @@
                                                     <div class="form-group">
                                                         <label class="control-label">Tin</label>
                                                         <div class="input-group">
-                                                            <input id="jtbind" type="text" class="form-control" placeholder="Enter your FIRS or JTB pin">
+                                                            <input id="jtbind" value="23469807" type="text" class="form-control" placeholder="Enter your FIRS or JTB pin">
                                                             <span class="input-group-btn">
                                                                 <button class="btn btn-default">Retrieve TIN Information</button>
                                                             </span>
@@ -230,17 +236,17 @@
 
                                                    <div class="form-group">
                                                        <label class="control-label">Full Name</label>
-                                                       <input type="text" id="nameInd" class="form-control" placeholder="Enter your full name here">
+                                                       <input type="text" value="Craig L Johnson" id="nameInd" class="form-control" placeholder="Enter your full name here">
                                                    </div>
 
                                                    <div class="form-horizontal">
                                                        <div class="form-group col-sm-6">
                                                            <label class="control-label">Email Address</label>
-                                                           <input  id="emailInd" type="email" class="form-control" placeholder="Enter Email address here.">
+                                                           <input value="brett@gmail.cm"  id="emailInd" type="email" class="form-control" placeholder="Enter Email address here.">
                                                        </div>
                                                        <div class="form-group col-sm-6">
                                                            <label class="control-label">Phone number</label>
-                                                           <input id="phoneInd" type="tel" class="form-control" placeholder="Enter phone number here.">
+                                                           <input value="(865) 717-2419" id="phoneInd" type="tel" class="form-control" placeholder="Enter phone number here.">
                                                        </div>
                                                    </div>
 
@@ -252,7 +258,7 @@
                                                                 <option>Ghana</option>
                                                                 <option>France</option>
                                                                 <option>United Kingdom</option>
-                                                                <option>United States of America</option>
+                                                                <option selected>United States of America</option>
                                                                 <option>Spain</option>
                                                             </select>
                                                         </div>
@@ -260,7 +266,7 @@
                                                            <label class="control-label">State</label>
                                                             <select class="form-control" id="stateInd">
                                                                 <option>Select State</option>
-                                                                <option>Osun</option>
+                                                                <option selected>New York</option>
                                                                 <option>Rivers</option>
                                                                 <option>Plateau</option>
                                                                 <option>Imo</option>
@@ -284,16 +290,16 @@
                                                     <h4 class="form_title">Account Credentials</h4>
                                                    <div class="form-group">
                                                        <label class="control-label">Username</label>
-                                                       <input id="usernameInd" type="text" class="form-control" placeholder="create a username">
+                                                       <input value="BrentJ" id="usernameInd" type="text" class="form-control" placeholder="create a username">
                                                    </div>
                                                     <div class="form-horizontal">
                                                        <div class="form-group col-sm-6">
                                                            <label class="control-label required">Password</label>
-                                                           <input type="email"  id="emailacctInd" class="form-control" placeholder="Contact's email address">
+                                                           <input value="brentJ@gmail.com" type="email"  id="emailacctInd" class="form-control" placeholder="Contact's email address">
                                                        </div>
                                                        <div class="form-group col-sm-6">
                                                            <label class="control-label required">Confirm Password</label>
-                                                           <input id="passwordInd" type="text" class="form-control" placeholder="Contact's phone number">
+                                                           <input value="(860) 668-7846" id="passwordInd" type="text" class="form-control" placeholder="Contact's phone number">
                                                        </div>
                                                    </div>
                                                 </fieldset>
@@ -475,7 +481,7 @@
         function AddFirsInd(jtbind,nameInd,emailInd,phoneInd,countryInd,stateInd,genderInd,
                             usernameInd,emailacctInd,passwordInd){
 
-            if(jtbind!='' && nameInd!='' && emailInd!='' && phoneInd!='' && countryInd!='' ){
+            if(jtbind!=''){
                 $.jStorage.set("firsform1indiv",{"jtbind":jtbind,"nameInd":nameInd,"emailInd":emailInd,
                     "phoneInd":phoneInd,"countryInd":countryInd
                     ,"stateInd":stateInd,"genderInd":genderInd,"usernameInd":usernameInd,

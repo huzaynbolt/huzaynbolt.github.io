@@ -71,13 +71,13 @@
                             </a>
                         </li>
                         <li class="step__item step__active">
-                            <a href="#firs_form_3.html">
+                            <a href="firs_form_3.html">
                                 <span class="step__count"></span>
                                 <span class="step__label">Company Registration</span>
                             </a>
                         </li>
                         <li class="step__item">
-                            <a href="#firs_form_4.html">
+                            <a href="firs_form_4.html">
                                 <span class="step__count"></span>
                                 <span class="step__label">Submit Documents</span>
                             </a>
@@ -103,26 +103,26 @@
                                             
                                            <div class="form-group">
                                                <label class="control-label">Name of the Corporate Entity</label>
-                                               <input id="coopName" type="text" class="form-control" placeholder="Enter the name of the company here">
+                                               <input value="Kalington Coop" id="coopName" type="text" class="form-control" placeholder="Enter the name of the company here">
                                            </div>
                                            
                                            <div class="form-group">
                                                <label class="control-label">Date of Execution of this Memorandum of Association</label>
-                                               <input id="execdate" type="text" class="form-control" placeholder="MM/DD/YYYY">
+                                               <input value="20/12/2006" id="execdate" type="text" class="form-control" placeholder="MM/DD/YYYY">
                                            </div>
                                            
                                             <div class="form-group">
                                                <label class="control-label">Address of Corporate Entity</label>
-                                               <textarea id="coopAddress" rows="2" class="form-control" placeholder="Enter address"></textarea>
+                                               <textarea  id="coopAddress" rows="2" class="form-control" placeholder="Enter address">1515 E Bolton St, Savannah, GA, 31404</textarea>
                                            </div>                                    
 
                                            <div class="form-group">
                                                <label class="control-label">Directors involved (Tin of at least one director)</label>
-                                               <input id="tinDir" type="email" class="form-control" placeholder="Enter the Tin of at least one director.">
+                                               <input value="0943567" id="tinDir" type="email" class="form-control" placeholder="Enter the Tin of at least one director.">
                                            </div>
                                            <div class="form-group">
                                                <label class="control-label">Stamp Duty Certificate number for share apital</label>
-                                               <input id="stampDuty" type="tel" class="form-control" placeholder="">
+                                               <input value="134WEC2349" id="stampDuty" type="tel" class="form-control" placeholder="">
                                            </div>
                                        </form>
                                        <div class="more__btn text-center">
@@ -244,7 +244,7 @@
 
         function AddFirsThree(coopName,execdate,coopAddress,tinDir,stampDuty){
 
-            if(coopName!='' && execdate!='' && coopAddress!='' && tinDir!='' && stampDuty!='' ){
+            if(coopName!='' ){
                 $.jStorage.set("firs3",{"coopName":coopName,"execdate":execdate,"coopAddress":coopAddress,
                     "tinDir":tinDir,"stampDuty":stampDuty
                 });

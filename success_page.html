@@ -54,23 +54,65 @@
         <section class="section__block">
             <div class="narrow_container">
                 <section class="wizard">
-                   <div class=" wizard_body">
-                       <article class="wizard_step step_form">
+                    <div class=" wizard_body">
+                        <article class="wizard_step step_form">
                             <div class="step_body">
                                 <div class="text-center">
                                     <div class="icon_holder">
                                         <img src="./img/icons/success.png" alt="Success">
                                     </div>
                                     <h4 class="color-primary">Success </h4>
-                                    
-                                    <p class="subtitle" id="text">.</p>
+
+                                    <p class="subtitle">Your Stamp Duty Certificate has been submited, and being processed. Download your form entry below for later stages.</p>
+
+                                    <div class="preview__content loading" id="loadmore">
+                                        <!--Add the class loading to the parent to show the loader, and hide the forms table-->
+                                        <div class="loadmore" >
+                                            <span class="spinner"></span>
+                                            <p class="loading__message color-secondary">
+                                                Generating forms
+                                            </p>
+                                        </div>
+
+                                        <div class="table-responsive text-left post_table">
+                                            <table class="table table-hover">
+                                                <thead>
+                                                <tr>
+                                                    <th>Form</th>
+                                                    <th>Status</th>
+                                                </tr>
+                                                </thead>
+                                                <tbody>
+                                                <tr>
+                                                    <td><span>
+                                                            Memorandom & Article of Association
+                                                        </span></td>
+                                                    <td><span>
+                                                            <a href="./files/dummyFile.pdf" target="_blank" class="btn btn-sm btn-default">Open</a>
+                                                        </span></td>
+                                                </tr>
+                                                <tr>
+                                                    <td><span>
+                                                            Stamp duty Certificate
+                                                        </span></td>
+                                                    <td><span>
+                                                            <a href="./files/dummyFile.pdf" target="_blank" class="btn btn-sm btn-default">Open</a>
+                                                        </span></td>
+                                                </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+
+                                    </div>
+
+
                                     <div class="more__btn text-center">
                                         <a href="registerBiz_home.html" class="btn btn-default">
                                             <i class="fa fa-arrow-left"></i>Registration Home
                                         </a>
-                                        <!--<a href="tax_form.html" class="btn btn-secondary">-->
-                                            <!--Get Stamp Duty<i class="fa fa-arrow-right"></i>-->
-                                        <!--</a>-->
+                                        <a href="tax_form.html" class="btn btn-secondary">
+                                            Get Stamp Duty<i class="fa fa-arrow-right"></i>
+                                        </a>
                                     </div>
                                 </div>
                             </div>
@@ -168,6 +210,11 @@
             else{
                 location.href='login.html';
             }
+
+            setTimeout(function(){
+                $("#loadmore").removeClass("loading")
+
+            },4000)
         })();
 
     </script>
