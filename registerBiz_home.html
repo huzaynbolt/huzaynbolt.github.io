@@ -207,18 +207,23 @@
             <div class="tile__wrapper">
                 <div class="action__tile_body">
                     <h4 class="item__title text__caps">
-                        <a href="{href}">{number} <span class="">{text}</span></a>
+                        <a href="agencies.html">{number} <span class="">{text}</span></a>
                     </h4>
                     <p class="subtitle">{desc}</p>
                 </div>
-                <footer class="action__tile__footer">
-                    <a href="{href}">{action}<i class="fa fa-arrow-right"></i></a>
+                <footer id="linkfooter" class="action__tile__footer">
+                    <a href="agencies.html" id="{access}" class="agency">{action}<i class="fa fa-arrow-right"></i></a>
                 </footer>
             </div>
         </article>
     </script>
 
     <script>
+        $("a.agency").on("click",function(e){
+            e.preventDefault();
+            console.log(e);
+            return false;
+        });
         (function(){
             if($.jStorage.get("activeUser")){
                 var currentUser = $.jStorage.get('currentuser');
@@ -227,6 +232,7 @@
             else{
                 location.href='login.html';
             }
+
 
             let selectedSector = $.jStorage.get("selectedsector");
 
@@ -251,11 +257,12 @@
             let parentEle = $("#contentParent");
             agencies.forEach(function(agency,index){
                 let agency_card = $("#cardtemplate").text();
+                agency_card=agency_card.replace("{access}","agencies.html?agency="+agency.name.toUpperCase() );
                 agency_card=agency_card.replace("{text}",agency.name);
                 agency_card=agency_card.replace("{desc}",agency.desc);
                 agency_card=agency_card.replace("{action}",agency.action_text);
                 agency_card=agency_card.replace("{number}",index + 5 );
-                agency_card=agency_card.replace("{href}","agencies.html?agency="+agency.name.toUpperCase() );
+
 
                 parentEle.append(agency_card);
             })
