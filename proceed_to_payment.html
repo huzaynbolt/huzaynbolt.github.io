@@ -115,11 +115,16 @@
                                      <td><span><i class="currency naira"></i> 50,000.00</span></td>
                                      <td><span>Pending</span></td>
                                  </tr>
+                                 <tr>
+                                     <td><span>Service Charge  </span></td>
+                                     <td><span><i class="currency naira"></i> 100.00</span></td>
+                                     <td><span>Pending</span></td>
+                                 </tr>
                                  </tbody>
                                  <tfoot>
                                  <tr>
                                      <td><span>Total</span></td>
-                                     <td><span><i class="currency naira"></i> 235,000.00</span></td>
+                                     <td><span><i class="currency naira"></i> 235,100.00</span></td>
                                      <td><span></span></td>
                                  </tr>
                                  </tfoot>
@@ -244,7 +249,7 @@
              var handler = PaystackPop.setup({
                  key: 'pk_live_6c0d3efeb5f5e56ddf9c544cac02ad2fa3700a97',
                  email: $.jStorage.get('email') ? $.jStorage.get('email'):email,
-                 amount: 23500000,
+                 amount: 23510000,
                  channels:['bank','card'],
                  metadata: {
                      custom_fields: [

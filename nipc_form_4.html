@@ -306,11 +306,11 @@
             $.jStorage.set("stage","NIPC REGISTRATION");
             $.jStorage.set("taxStage",true);
             setTimeout(function(){
-                if($.jStorage.get("isLocal")){
-                    location.href= "proceed_to_payment.html"
+                if($.jStorage.get("needExpratraite")){
+                    location.href= "frn_form.html"
                 }
                 else{
-                    location.href= "success_page.html"
+                    location.href= "proceed_to_payment.html"
                 }
 
             },3000)

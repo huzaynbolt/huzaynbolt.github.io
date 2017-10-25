@@ -745,6 +745,92 @@
 
 
             }
+
+            let  sectors = {
+                "Automotive" :
+                {
+                    "agencies":
+                        [
+                            {"name":"NADDC","desc":"Register your company with the Nigerian Automotive and Devt. Design Commision.","action_text":"Register with NADDC","url":""},
+                            {"name":"Ministry of Transport","desc":"Register your company with the Transport Ministry","action_text":"Register","url":""}
+                        ]
+                },
+                "Packaging":
+                {
+                    "agencies":
+                     [
+                        {
+                            "name":"SON","desc":"Register your business with the Standard Organization of Nigeria.","action_text":"Register with SON","url":""
+                        }
+                     ]
+                },
+                "LM":
+                {
+                    "agencies":
+                    [
+                        {
+                            "name":"SON","desc":"Register your business with the Standard Organization of Nigeria.","action_text":"Register with SON","url":""
+                        },
+                        {
+                            "name":"MAN","desc":"Register your business with the Manufacturers Associaition of Nigeria.","action_text":"Register with MAN","url":""
+                        }
+                    ]
+                }
+                ,
+                "Agriculture":
+                {
+                    "agencies":
+                            [
+                                {
+                                    "name":"Ministry of Agriculture","desc":"Register your business with the Ministry of Agriculture","action_text":"Register","url":""
+                                }
+                            ]
+                },
+                "SM":
+                {
+                    "agencies":
+                            [
+                                {
+                                    "name":"Ministry of Mines and Steel","desc":"Register your business with the Ministry of Mines and Steel","action_text":"Proceed to Register","url":""
+                                }
+                            ]
+                },
+                "Health":
+                {
+                    "agencies":
+                            [
+                                {
+                                    "name":"Ministry of Health","desc":"Register your business with the Ministry of Health","action_text":"Proceed to Register","url":""
+                                }
+                            ]
+                },
+                "Electricity":
+                {
+                    "agencies":
+                            [
+                                {
+                                    "name":"NERC","desc":"Register your business with the National Electricity Regulatory Commission","action_text":"Proceed to Register","url":""
+                                },
+                                {
+                                    "name":"Ministry of Power","desc":"Register your business with the Power Ministry","action_text":"Proceed to Register","url":""
+                                }
+                            ]
+                },
+                "BPS":
+                {
+                    "agencies":
+                            [
+                                {
+                                    "name":"NITDA","desc":"Register your business with the National Information Technology Development Agency","action_text":"Proceed to Register","url":""
+                                },
+                                {
+                                    "name":"NOTAP","desc":"Register your business with the National Office for Technology Acquisition and Promotion","action_text":"Proceed to Register","url":""
+                                }
+                            ]
+                }
+
+            };
+            $.jStorage.set("sectors",sectors);
         })();
 
     </script>

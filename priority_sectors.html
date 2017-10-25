@@ -13,6 +13,7 @@
     <link href="css/font-awesome.css" rel="stylesheet">
     <link href="css/base.min.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/sweetalert.css">
     <!-- Resource style -->
     <script src="js/modernizr.js"></script>
     <!-- Modernizr -->
@@ -43,8 +44,8 @@
                     <li class="nav_item"><a href="#" class="nav_link_item">States</a></li>
                     <li class="nav_item "><a href=" # " class="nav_link_item ">Media Center</a></li>
                     <li class="nav_item "><a href="# " class="nav_link_item ">Resources</a></li>
-                    <li class="nav_item "><a href="login.html" class="nav_link_item ">Login</a></li>
-                    <li class="nav_item "><a href="signup.html" class="btn btn-sm btn-secondary ">Register Business</a></li>
+                    <!--<li class="nav_item "><a href="login.html" class="nav_link_item ">Login</a></li>-->
+                    <!--<li class="nav_item "><a href="signup.html" class="btn btn-sm btn-secondary ">Register Business</a></li>-->
                 </ul>
             </div>
         </div>
@@ -71,7 +72,7 @@
                                 <h4 class="item__title">
                                     Healthcare
                                 </h4>
-                                <a href="signup.html" class="btn btn-secondary btn-sm">invest Here</a>
+                                <a href="#" onclick="addPrioritySector('Health',this)" class="btn btn-primary btn-sm">invest Here</a>
                             </div>
                         </div>
                     </article>
@@ -84,7 +85,7 @@
                                 <h4 class="item__title">
                                     Agriculture
                                 </h4>
-                                <a href="signup.html" class="btn btn-secondary btn-sm">invest Here</a>
+                                <a href="#" onclick="addPrioritySector('Agriculture',this)" class="btn btn-primary btn-sm">invest Here</a>
                             </div>
                         </div>
                     </article>
@@ -97,7 +98,7 @@
                                 <h4 class="item__title">
                                     Automotive
                                 </h4>
-                                <a href="signup.html" class="btn btn-secondary btn-sm">invest Here</a>
+                                <a href="#" onclick="addPrioritySector('Automotive',this)" class="btn btn-primary btn-sm">invest Here</a>
                             </div>
                         </div>
                     </article>
@@ -108,7 +109,7 @@
                             </div>
                             <div class="tile__details ">
                                 <h4 class="item__title">Power</h4>
-                                <a href="signup.html" class="btn btn-secondary btn-sm">invest Here</a>
+                                <a href="#" onclick="addPrioritySector('Electricity',this)" class="btn btn-primary btn-sm">invest Here</a>
                             </div>
                         </div>
                     </article>
@@ -119,7 +120,7 @@
                             </div>
                             <div class="tile__details">
                                 <h4 class="item__title">Solid Minerals</h4>
-                                <a href="signup.html" class="btn btn-secondary btn-sm">invest Here</a>
+                                <a href="#" onclick="addPrioritySector('SM',this)" class="btn btn-primary btn-sm">invest Here</a>
                             </div>
                         </div>
                     </article>
@@ -132,7 +133,7 @@
                                 <h4 class="item__title">
                                     Business Process Outsourcing
                                 </h4>
-                                <a href="signup.html" class="btn btn-secondary btn-sm">invest Here</a>
+                                <a onclick="addPrioritySector('BPS',this)" class="btn btn-primary btn-sm">invest Here</a>
                             </div>
                         </div>
                     </article>
@@ -145,7 +146,7 @@
                                 <h4 class="item__title">
                                     Light Manufacturing
                                 </h4>
-                                <a href="signup.html" class="btn btn-secondary btn-sm">invest Here</a>
+                                <a href="#" onclick="addPrioritySector('LM',this)" class="btn btn-primary btn-sm">invest Here</a>
                             </div>
                         </div>
                     </article>
@@ -158,10 +159,15 @@
                                 <h4 class="item__title">
                                     Packaging
                                 </h4>
-                                <a href="signup.html" class="btn btn-secondary btn-sm">Invest Here</a>
+                                <a href="#" onclick="addPrioritySector('Packaging',this)" class="btn btn-primary btn-sm">Invest Here</a>
                             </div>
                         </div>
                     </article>
+                </div>
+                <div class="more__btn text-center">
+                    <a href="#" id="proceed" class="btn btn-secondary">
+                        Continue <i class="fa fa-arrow-right"></i>
+                    </a>
                 </div>
             </div>
         </section>
@@ -240,7 +246,62 @@
     <script src="js/jquery-2.1.4.js "></script>
     <script src="js/base.min.js "></script>
     <script src="js/main.js "></script>
-    
+
+    <script src="./js/sweetalert.min.js"></script>
+    <script src="js/jstorage.js "></script>
+
+    <script>
+
+        let sectors = [];
+        let selectedSectors = [];
+
+        (function(){
+            if($.jStorage.get("activeUser")){
+                var currentUser = $.jStorage.get('currentuser');
+                $(".user").text(currentUser.name);
+                $("login").attr("hidden",true);
+                $("#registerButton").attr("hidden",false);
+
+            }
+            else{
+
+
+            }
+
+            sectors = $.jStorage.get("sectors");
+
+        })();
+
+        $("#proceed").click(function(e){
+           if(selectedSectors.length<=0){
+               swal("Oops", "Kindly select at least a sector","warning");
+           }
+            else{
+               console.log(selectedSectors);
+               $.jStorage.set("selectedsector",selectedSectors);
+               location.href="registerBiz_home.html";
+           }
+        });
+        function addPrioritySector(sector,element){
+
+
+           let index =  selectedSectors.indexOf(sector);
+            if(index !==-1){
+                selectedSectors.splice(index,1);
+                $(element).text("Invest Here");
+                $(element).removeClass('btn-card').addClass("btn-primary");
+                return true;
+            }
+            else{
+                selectedSectors.push(sector);
+                $(element).text("Remove Sector");
+                $(element).removeClass('btn-primary').addClass("btn-card");
+                return true;
+            }
+
+        }
+
+    </script>
 
 </body>
 

@@ -61,7 +61,7 @@
             <div class="narrow_container">
                 <div class="floating__panel">
                     <div class="panel__wrapper">
-                        <div class="feature-tiles tiles__twos">
+                        <div class="feature-tiles tiles__twos" id="contentParent">
                            
                             <article class="tile__item action__tile">
                                 <div class="tile__wrapper">
@@ -100,7 +100,7 @@
                                         <p class="subtitle">Submit your tax clearance documents obtained from the Federal Inland Revenue Service.</p>
                                     </div>
                                     <footer class="action__tile__footer">
-                                        <a href="tax_form.html">Get Tax Clearance Certificate<i class="fa fa-arrow-right"></i></a>
+                                        <a href="nipc_form.html">Get Tax Clearance Certificate<i class="fa fa-arrow-right"></i></a>
                                     </footer>
                                 </div>
                             </article>
@@ -114,24 +114,12 @@
                                         <p class="subtitle">Complete your business registration with the National Investment promotion Commission.</p>
                                     </div>
                                     <footer class="action__tile__footer">
-                                        <a href="tax_form.html">Register business with NIPC<i class="fa fa-arrow-right"></i></a>
+                                        <a href="nipc_form.html">Register business with NIPC<i class="fa fa-arrow-right"></i></a>
                                     </footer>
                                 </div>
                             </article>
                                                        
-                            <article class="tile__item action__tile">
-                                <div class="tile__wrapper">
-                                    <div class="action__tile_body">
-                                        <h4 class="item__title text__caps">
-                                            <a href="frn_form.html">5. <span class="">Expatriate Quota Registration</span></a>
-                                        </h4>
-                                        <p class="subtitle">Register your venture with the ministry of interior, to obtain your quota permit.</p>
-                                    </div>
-                                    <footer class="action__tile__footer">
-                                        <a href="frn_form.html">Get Quota Permit<i class="fa fa-arrow-right"></i></a>
-                                    </footer>
-                                </div>
-                            </article>
+
                                                         
                         </div>
                     </div>
@@ -207,12 +195,28 @@
         </div>
     </footer>
 
-    <a href="#0 " class="to-top ">Top</a>
+    <a href="#0" class="to-top ">Top</a>
 
     <script src="js/jquery-2.1.4.js "></script>
     <script src="js/base.min.js "></script>
     <script src="js/main.js "></script>
     <script src="js/jstorage.js "></script>
+
+    <script type="application/xhtml+xml" id="cardtemplate">
+        <article class="tile__item action__tile">
+            <div class="tile__wrapper">
+                <div class="action__tile_body">
+                    <h4 class="item__title text__caps">
+                        <a href="{href}">{number} <span class="">{text}</span></a>
+                    </h4>
+                    <p class="subtitle">{desc}</p>
+                </div>
+                <footer class="action__tile__footer">
+                    <a href="{href}">{action}<i class="fa fa-arrow-right"></i></a>
+                </footer>
+            </div>
+        </article>
+    </script>
 
     <script>
         (function(){
@@ -224,6 +228,37 @@
                 location.href='login.html';
             }
 
+            let selectedSector = $.jStorage.get("selectedsector");
+
+            let sectors = $.jStorage.get("sectors");
+            let agencies = [];
+
+
+            //Get agencies related to the selected sectors
+            selectedSector.forEach(function(sector){
+                if(sectors.hasOwnProperty(sector)){
+                    let _agency = sectors[sector];
+                    if(_agency["agencies"]){
+                        _agency["agencies"].forEach(function(agency){
+                            if(!agencies.some(function(c){return c.name===agency.name }))
+                            agencies.push(agency);
+                        })
+                    }
+
+                }
+            });
+
+            let parentEle = $("#contentParent");
+            agencies.forEach(function(agency,index){
+                let agency_card = $("#cardtemplate").text();
+                agency_card=agency_card.replace("{text}",agency.name);
+                agency_card=agency_card.replace("{desc}",agency.desc);
+                agency_card=agency_card.replace("{action}",agency.action_text);
+                agency_card=agency_card.replace("{number}",index + 5 );
+                agency_card=agency_card.replace("{href}","agencies.html?agency="+agency.name.toUpperCase() );
+
+                parentEle.append(agency_card);
+            })
 
         })();
     </script>

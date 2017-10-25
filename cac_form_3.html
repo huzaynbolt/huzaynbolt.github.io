@@ -243,7 +243,7 @@
                                                 </div>
                                             </fieldset>
                                             
-                                            <a href="#" class="btn-link font__bold color-primary"><i class="fa fa-plus"></i>    Add another Director</a>
+                                            <a href="#"  id="addDirector" class="btn-link font__bold color-primary"><i class="fa fa-plus"></i>    Add another Director</a>
                                            
                                        </form>
                                        <div class="more__btn text-center">
@@ -348,6 +348,13 @@
                 location.href='login.html';
             }
         })();
+        $("#addDirector").click(function(){
+            let nationality = $("#nationality").val();
+            if(nationality!="Nigeria"){
+                $.jStorage.set('needExpratraite',true);
+            }
+        });
+
         $("#cac3").click(function(e){
             e.preventDefault();
             let directorname = $("#directorname").val();
