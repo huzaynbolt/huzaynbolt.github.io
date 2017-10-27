@@ -265,7 +265,7 @@
          });
 
          function payWithUnified(merchantId){
-             let url = "http://196.46.20.80:8085/" +merchantId;
+             let url = "https://196.46.20.80:8085/" +merchantId;
              let payloadData = {
                  "amount" : 235100,
                  "currency" : 566,
@@ -277,7 +277,7 @@
              $.post(url,payloadData,function(resp){
                  console.log(resp);
                  let transaction_id = 0;
-                 location.href = "http://196.46.20.80:8085/"+transaction_id;
+                 location.href = "https://196.46.20.80:8085/"+transaction_id;
              });
          }
          function payWithPaystack(){
