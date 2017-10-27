@@ -144,7 +144,7 @@
                                      </a>
                                  </div>
                                  <div class="tileItem">
-                                     <a href="" class="tile__wrapper">
+                                     <a href="#" id="unifiedPayment" class="tile__wrapper">
                                          <img src="./img/icons/unified.png" alt="Unfied Payments">
                                      </a>
                                  </div>
@@ -259,6 +259,27 @@
 
          });
 
+         $("#unifiedPayment").click(function(e){
+             let merchantId = 'COMPUMETRIC';
+             payWithUnified(merchantId);
+         });
+
+         function payWithUnified(merchantId){
+             let url = "http://196.46.20.80:8085/" +merchantId;
+             let payloadData = {
+                 "amount" : 235100,
+                 "currency" : 566,
+                 "description" : "OSIC Payment ",
+                 "returnUrl" : "http://huzaynbolt.github.io/success_payment.html",
+                 "secretKey" : "1E2D6962A5AE2EDB55DF96826B21E1FF9B9E8E2DDB02897F",
+                 "fee": 0
+             };
+             $.post(url,payloadData,function(resp){
+                 console.log(resp);
+                 let transaction_id = 0;
+                 location.href = "http://196.46.20.80:8085/"+transaction_id;
+             });
+         }
          function payWithPaystack(){
              var handler = PaystackPop.setup({
                  key: 'pk_live_6c0d3efeb5f5e56ddf9c544cac02ad2fa3700a97',
